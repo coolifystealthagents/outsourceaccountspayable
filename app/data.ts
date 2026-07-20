@@ -175,8 +175,8 @@ export const stats = [
   { label: 'Start with', value: '5-10 tasks', note: 'clear recurring tasks beat vague job descriptions' },
 ] as const;
 
-export const stealthOffer = {
-  partner: 'Stealth Agents',
+export const staffingOffer = {
+  partner: 'our staffing team',
   promise: 'Get a managed offshore staffing plan built around the AP work you need removed from your plate.',
   fit: [
     'finance teams with a crowded AP inbox and slow approval follow-up',
@@ -207,9 +207,9 @@ export const leadQuestions = [
 
 export const staffingProcess = [
   { step: '1', title: 'Map the AP role', body: 'We turn messy invoice tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'Stealth Agents can help match remote staff to the work, schedule, communication style, and finance-support level you need.' },
+  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and finance-support level you need.' },
   { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample invoices, limited access, daily review, and a simple scorecard so quality is easy to see.' },
   { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger AP coverage without guessing.' },
 ] as const;
 
-export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details and Stealth Agents can guide the best fit.';
+export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details and our staffing team can guide the best fit.';

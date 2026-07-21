@@ -47,7 +47,7 @@ export function Footer() {
         <div className="footer-brand">
           <a className="footer-logo" href="/" aria-label={`${site.brand || domain} home`}><LogoMark /></a>
           <p>Plan help for invoice intake, vendor follow-up, approval tracking, and AP reports while your finance team keeps control of money decisions.</p>
-          <p className="footer-note">This is an independent informational website. We may route a submitted request to a staffing team or service partner that can follow up.</p>
+          <p className="footer-note">We recruit and hire talent only in the Philippines. This is an independent informational website. We may route a submitted request to a staffing team or service partner that can follow up.</p>
         </div>
         <div>
           <h3>AP services</h3>

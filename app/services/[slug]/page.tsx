@@ -86,7 +86,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
               <a className="btn" href="/contact">Plan this AP role</a>
             </div>
             <div className="hero-card">
-              <img src={site.serviceImage} alt={`${s.title} offshore service team`} />
+              <img src={site.serviceImage} alt={`${s.title} team reviewing accounts payable work`} />
             </div>
           </div>
         </section>
@@ -94,7 +94,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
         <section className="section">
           <div className="container cards">
             <div className="card">
-              <h2>Best tasks</h2>
+              <h2>Work to hand off</h2>
               <ul>{s.bestTasks.map((task) => <li key={task}>{task}</li>)}</ul>
             </div>
             <div className="card">

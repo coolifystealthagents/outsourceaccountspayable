@@ -145,55 +145,122 @@ export const services = [
 export const blogPosts = [
   {
     slug: 'outsource-accounts-payable-planning',
-    title: 'Outsource accounts payable: what should you plan first?',
+    title: 'What to plan before you outsource accounts payable',
     excerpt: 'A plain-English guide to AP scope, controls, and handoff planning before you hire.',
     minutes: 6,
   },
   {
     slug: 'outsource-accounts-payable-tasks-to-outsource',
-    title: 'Outsource accounts payable: tasks to hand off first',
+    title: 'Which AP tasks should you hand off first?',
     excerpt: 'Start with recurring AP work that has examples, rules, and a clear reviewer.',
     minutes: 7,
   },
   {
     slug: 'outsource-accounts-payable-provider-questions',
-    title: 'Outsource accounts payable: questions to ask before hiring',
+    title: 'Questions to ask an accounts payable provider',
     excerpt: 'Use these AP provider questions before you sign with a staffing firm or freelancer.',
     minutes: 8,
   },
   {
     slug: 'outsource-accounts-payable-onboarding-checklist',
-    title: 'Outsource accounts payable: first week onboarding checklist',
+    title: 'Your first-week AP onboarding checklist',
     excerpt: 'A simple checklist for tools, SOPs, calls, QA, reporting, and payment controls.',
     minutes: 9,
   },
 ] as const;
 
-export const stats = [
-  { label: 'Typical savings target', value: '30-60%', note: 'depends on role, management, and local hiring plan' },
-  { label: 'Best pilot length', value: '14 days', note: 'enough time to test quality before scaling' },
-  { label: 'Start with', value: '5-10 tasks', note: 'clear recurring tasks beat vague job descriptions' },
-] as const;
+export const blogDetails = {
+  'outsource-accounts-payable-planning': {
+    shortAnswer: 'Choose one AP lane before you choose a person. Write down what enters the queue, who reviews it, and which decisions must stay with your finance team.',
+    sections: [
+      {
+        title: 'Draw the control line',
+        paragraphs: [
+          'An AP assistant can collect invoices, prepare coding notes, chase missing documents, and keep the approval list current. Vendor bank changes, invoice approval, and payment release should still belong to named employees.',
+          'Put those limits in the role brief. A vague promise to "help with AP" leaves too much room for mistakes.',
+        ],
+      },
+      {
+        title: 'Pick a queue you can review',
+        paragraphs: [
+          'Start with one inbox, company entity, or vendor group. Give the assistant examples of complete and incomplete invoice packets, then review the early work against those examples.',
+          'The first handoff should be small enough that a finance owner can inspect it without rebuilding the whole packet.',
+        ],
+      },
+    ],
+    checklistTitle: 'Bring these details to the planning call',
+    checklist: ['Monthly invoice volume and busy periods', 'Accounting system and approval tools', 'Current approval owners and escalation rules', 'Tasks that must stay with employees'],
+  },
+  'outsource-accounts-payable-tasks-to-outsource': {
+    shortAnswer: 'Hand off work with a clear input, a repeatable check, and a named reviewer. Invoice filing and follow-up are usually easier to test than payment or vendor-master work.',
+    sections: [
+      {
+        title: 'Good first tasks',
+        paragraphs: [
+          'Inbox sorting, duplicate checks, statement matching, missing-document requests, and blocked-invoice lists all leave a visible trail. Your reviewer can compare the result with the source records.',
+          'Use real examples instead of a long job description. Ten completed invoice packets will teach the process better than a page of broad responsibilities.',
+        ],
+      },
+      {
+        title: 'Keep these decisions inside finance',
+        paragraphs: [
+          'The assistant should not create vendors, accept bank-detail changes, approve invoices, or release payments without your company\'s review. Separate preparation from approval in both the SOP and the software permissions.',
+        ],
+      },
+    ],
+    checklistTitle: 'A task is ready to hand off when',
+    checklist: ['The input and finished result are easy to show', 'The assistant knows when to stop and escalate', 'A reviewer can check the work from source records', 'Access is limited to what the task needs'],
+  },
+  'outsource-accounts-payable-provider-questions': {
+    shortAnswer: 'Ask providers to explain who will do the work, how AP experience is checked, and what happens when an invoice or vendor request falls outside the written rules.',
+    sections: [
+      {
+        title: 'Ask for the actual review process',
+        paragraphs: [
+          '"We check quality" is not enough. Ask who reviews the first invoice packets, how errors are recorded, and who contacts you when the worker is unsure.',
+          'You should also know whether the provider manages attendance and replacement questions or leaves those jobs with your finance manager.',
+        ],
+      },
+      {
+        title: 'Test the access answer',
+        paragraphs: [
+          'Describe a vendor asking to change bank details. A useful answer should include an internal callback or approval step, limited software permissions, and a record of who approved the change. If the answer depends on the assistant simply being careful, the control is too weak.',
+        ],
+      },
+    ],
+    checklistTitle: 'Questions for the provider call',
+    checklist: ['Who checks AP experience before a candidate reaches us?', 'Who reviews early work and records errors?', 'How are passwords and vendor data handled?', 'What happens if the role or worker is a poor fit?'],
+  },
+  'outsource-accounts-payable-onboarding-checklist': {
+    shortAnswer: 'Use the first week to teach one AP lane, confirm access limits, and watch real work. Do not open every inbox and accounting permission on day one.',
+    sections: [
+      {
+        title: 'Before access is granted',
+        paragraphs: [
+          'Choose the first queue, gather good and bad examples, and name the person who will answer questions. Write down the events that require an immediate stop, such as a bank-detail change or a request to release payment.',
+          'Begin with read-only access where the task allows it. Add permissions only after the assistant has shown they can follow the review path.',
+        ],
+      },
+      {
+        title: 'Review real work together',
+        paragraphs: [
+          'Check the first packets for vendor name, invoice number, amount, due date, coding note, approval owner, and attached source record. Keep an exception log so the same question does not need a fresh answer each time.',
+          'At the end of the week, decide whether to keep the lane as it is, narrow it, or add one more task. Add access only when the work calls for it and the review process is holding up.',
+        ],
+      },
+    ],
+    checklistTitle: 'First-week check',
+    checklist: ['One queue and one reviewer are named', 'Permissions match the work being tested', 'Sample invoice packets are available', 'Exceptions and corrections are written down'],
+  },
+} as const;
 
 export const staffingOffer = {
-  partner: 'an AP staffing partner',
-  promise: 'Get a managed staffing plan built around the AP work you need taken off your plate.',
-  fit: [
-    'finance teams with a crowded AP inbox and slow approval follow-up',
-    'owners who need invoice and vendor support but want payment control to stay internal',
-    'companies that need help with AP admin, reporting, vendor replies, and month-end prep',
-  ],
+  promise: 'Get an AP staffing plan based on the queue, controls, and review work you need covered.',
   included: [
-    'role planning call to turn your AP task list into a clear staffing scope',
-    'candidate matching based on schedule, tools, communication needs, and finance-support experience',
-    'onboarding guidance for SOPs, scorecards, reporting, and safe tool access',
-    'managed support so quality, attendance, and replacement questions do not sit only on the owner',
-  ],
-  proof: [
-    'clear AP task scope before hiring',
-    'weekly reporting rhythm',
-    'named accountability and escalation path',
-    'simple handoff plan for tools, SOPs, and quality checks',
+    'Turn your invoice and vendor tasks into a role with clear limits',
+    'Match the schedule, software, and AP experience the work calls for',
+    'Plan examples, review steps, reports, and limited tool access for the first week',
+    'Set an escalation path for errors, attendance issues, and role-fit problems',
   ],
 } as const;
 
@@ -203,13 +270,6 @@ export const leadQuestions = [
   'What hours, time zone, and response time do you need?',
   'Who checks invoice quality during the first two weeks?',
   'What should the staff member never approve or change without permission?',
-] as const;
-
-export const staffingProcess = [
-  { step: '1', title: 'Map the AP role', body: 'We turn messy invoice tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'An AP staffing partner can match remote staff to the work, schedule, communication style, and finance-support level you need.' },
-  { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample invoices, limited access, daily review, and a simple scorecard so quality is easy to see.' },
-  { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger AP coverage without guessing.' },
 ] as const;
 
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';

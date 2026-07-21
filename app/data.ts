@@ -176,8 +176,8 @@ export const stats = [
 ] as const;
 
 export const staffingOffer = {
-  partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the AP work you need removed from your plate.',
+  partner: 'an AP staffing partner',
+  promise: 'Get a managed staffing plan built around the AP work you need taken off your plate.',
   fit: [
     'finance teams with a crowded AP inbox and slow approval follow-up',
     'owners who need invoice and vendor support but want payment control to stay internal',
@@ -207,9 +207,9 @@ export const leadQuestions = [
 
 export const staffingProcess = [
   { step: '1', title: 'Map the AP role', body: 'We turn messy invoice tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and finance-support level you need.' },
+  { step: '2', title: 'Match the staff', body: 'An AP staffing partner can match remote staff to the work, schedule, communication style, and finance-support level you need.' },
   { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample invoices, limited access, daily review, and a simple scorecard so quality is easy to see.' },
   { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger AP coverage without guessing.' },
 ] as const;
 
-export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';

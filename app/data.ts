@@ -16,130 +16,18 @@ export const site = {
 } as const;
 
 export const services = [
-  {
-    slug: 'operations-support',
-    title: 'AP operations support',
-    desc: 'Remote accounts payable help for invoice intake, coding prep, approval chasing, and payment-run support with clear finance controls.',
-    bestTasks: [
-      'Sort AP inbox mail by vendor, due date, PO match, and approval owner',
-      'Prepare invoice coding notes before a controller or manager approves them',
-      'Track missing W-9s, bank details, receipts, and vendor statements',
-      'Keep the open-invoice list clean before weekly payment review',
-    ],
-    qualityControls: [
-      'No vendor setup, bank change, or payment release without a named approver',
-      'Two-sample daily spot check during the first two weeks',
-      'Exception log for duplicate invoices, price gaps, tax issues, and missing POs',
-    ],
-    firstWeek: [
-      'Give read-only access first, then add limited task permissions after review',
-      'Share ten good invoice examples and three bad examples',
-      'Agree on the daily AP inbox cutoff and end-of-day status note',
-    ],
-    faqs: [
-      {
-        question: 'Can an outsourced AP assistant approve invoices?',
-        answer: 'They can prepare the packet and chase the approver. A company manager should still own invoice approval and payment release.',
-      },
-      {
-        question: 'What should we test first?',
-        answer: 'Start with inbox sorting, vendor follow-up, and invoice-status reporting before giving access to more sensitive accounting tasks.',
-      },
-    ],
-  },
-  {
-    slug: 'customer-support',
-    title: 'Vendor support desk',
-    desc: 'A remote vendor-response desk for payment-status emails, missing-document requests, and invoice follow-up without handing over payment control.',
-    bestTasks: [
-      'Answer vendor emails with approved payment-status language',
-      'Request missing invoices, statements, tax forms, and remittance details',
-      'Route urgent vendor issues to the right finance owner',
-      'Update a simple vendor-contact tracker after each reply',
-    ],
-    qualityControls: [
-      'Approved reply templates for payment timing, short pays, and missing paperwork',
-      'Same-day escalation for threats to pause service, collections notices, or legal language',
-      'Weekly review of unanswered vendor threads and repeat questions',
-    ],
-    firstWeek: [
-      'Load the top 20 vendor questions into a shared answer sheet',
-      'Tag the assistant on live examples before they reply alone',
-      'Keep payment promises out of replies unless finance approved the date',
-    ],
-    faqs: [
-      {
-        question: 'Should a remote vendor-support assistant promise payment dates?',
-        answer: 'No. They should use approved language and escalate payment-date questions to the finance owner.',
-      },
-      {
-        question: 'What access does the vendor desk need?',
-        answer: 'Start with shared inbox access, vendor contact history, and read-only invoice status. Keep banking and payment permissions separate.',
-      },
-    ],
-  },
-  {
-    slug: 'admin-support',
-    title: 'AP admin support',
-    desc: 'Administrative help for invoice files, vendor records, statement matching, and audit-ready AP folders.',
-    bestTasks: [
-      'Rename and file invoices, statements, approvals, and remittance records',
-      'Compare vendor statements against open bills and flag gaps',
-      'Prepare new-vendor packets for internal review',
-      'Maintain AP checklists for month-end close support',
-    ],
-    qualityControls: [
-      'Folder naming rules that match your accounting system and audit habits',
-      'Checklist signoff before month-end folders are marked complete',
-      'Manager review for every vendor master data change',
-    ],
-    firstWeek: [
-      'Give a sample folder with correct file names and approval proof',
-      'Choose one entity, one vendor group, or one AP inbox lane for the pilot',
-      'Review the first 25 filed documents before expanding the scope',
-    ],
-    faqs: [
-      {
-        question: 'Is AP admin support the same as bookkeeping?',
-        answer: 'No. AP admin support prepares records, files, and follow-up. Your finance owner or bookkeeper still reviews accounting decisions.',
-      },
-      {
-        question: 'What work is safest to hand off first?',
-        answer: 'Document filing, statement matching, and missing-paperwork follow-up are usually safer first than vendor setup or payment tasks.',
-      },
-    ],
-  },
-  {
-    slug: 'reporting-and-qa',
-    title: 'AP reporting and QA',
-    desc: 'Weekly AP reporting support for aging lists, blocked invoices, duplicate checks, and manager-ready status notes.',
-    bestTasks: [
-      'Build a weekly blocked-invoice list with owner, reason, and next step',
-      'Flag duplicate invoice numbers, odd amounts, and missing purchase orders',
-      'Summarize vendor follow-up aging before the finance meeting',
-      'Prepare a payment-run review packet without releasing funds',
-    ],
-    qualityControls: [
-      'Simple red-flag labels for duplicates, bank changes, tax forms, and old balances',
-      'Controller review before any status note goes to leadership',
-      'Saved source links for every number in the weekly AP report',
-    ],
-    firstWeek: [
-      'Pick the three AP numbers leadership actually wants each week',
-      'Use last week\'s report as the model for labels and notes',
-      'Compare the assistant\'s first report against the accounting system together',
-    ],
-    faqs: [
-      {
-        question: 'Can an outsourced assistant prepare AP reports?',
-        answer: 'Yes, if they use read-only data and your finance owner checks the report before decisions are made from it.',
-      },
-      {
-        question: 'Which AP report should come first?',
-        answer: 'A blocked-invoice report is often the best first report because it shows owners, reasons, and next steps without adding payment risk.',
-      },
-    ],
-  },
+  { slug: "invoice-data-capture", title: "Invoice Data Capture", desc: "Filipino accounts payable specialists can handle invoice data capture with documented workflows, approval limits, and owner review." },
+  { slug: "three-way-match-support", title: "Three-Way Match Support", desc: "Filipino accounts payable specialists can handle three-way match support with documented workflows, approval limits, and owner review." },
+  { slug: "purchase-order-reconciliation", title: "Purchase Order Reconciliation", desc: "Filipino accounts payable specialists can handle purchase order reconciliation with documented workflows, approval limits, and owner review." },
+  { slug: "vendor-statement-reconciliation", title: "Vendor Statement Reconciliation", desc: "Filipino accounts payable specialists can handle vendor statement reconciliation with documented workflows, approval limits, and owner review." },
+  { slug: "payment-run-preparation", title: "Payment Run Preparation", desc: "Filipino accounts payable specialists can handle payment run preparation with documented workflows, approval limits, and owner review." },
+  { slug: "vendor-onboarding-administration", title: "Vendor Onboarding Administration", desc: "Filipino accounts payable specialists can handle vendor onboarding administration with documented workflows, approval limits, and owner review." },
+  { slug: "expense-report-review", title: "Expense Report Review", desc: "Filipino accounts payable specialists can handle expense report review with documented workflows, approval limits, and owner review." },
+  { slug: "ap-inbox-management", title: "AP Inbox Management", desc: "Filipino accounts payable specialists can handle ap inbox management with documented workflows, approval limits, and owner review." },
+  { slug: "duplicate-invoice-review", title: "Duplicate Invoice Review", desc: "Filipino accounts payable specialists can handle duplicate invoice review with documented workflows, approval limits, and owner review." },
+  { slug: "aging-report-preparation", title: "Aging Report Preparation", desc: "Filipino accounts payable specialists can handle aging report preparation with documented workflows, approval limits, and owner review." },
+  { slug: "tax-document-collection", title: "Tax Document Collection", desc: "Filipino accounts payable specialists can handle tax document collection with documented workflows, approval limits, and owner review." },
+  { slug: "month-end-ap-close-support", title: "Month-End AP Close Support", desc: "Filipino accounts payable specialists can handle month-end ap close support with documented workflows, approval limits, and owner review." },
 ] as const;
 
 export const blogPosts = [
@@ -273,3 +161,6 @@ export const leadQuestions = [
 ] as const;
 
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';
+
+
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [];

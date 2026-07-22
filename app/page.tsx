@@ -87,7 +87,7 @@ export default function Home() {
               <p className="eyebrow">Clear control lines</p>
               <h2>Support the work. Keep the money decisions.</h2>
               <p>An AP assistant can prepare records, follow up, and flag gaps. Your company still owns vendor master changes, invoice approval, and payment release.</p>
-              <a href="/services/operations-support">See the AP controls</a>
+              <a href="/services/payment-run-preparation">See payment preparation controls</a>
             </div>
             <div className="control-ledger" aria-label="Example AP responsibility split">
               <div className="ledger-head"><span>Work item</span><span>Owner</span></div>

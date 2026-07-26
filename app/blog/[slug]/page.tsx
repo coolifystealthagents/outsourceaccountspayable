@@ -63,7 +63,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
   } : null;
 
   return <>
-    <Header/>
+    <Header hidePricing/>
     <main className="section article-page" data-article-marker={slug}>
       <JsonLd data={articleSchema}/>
       <JsonLd data={breadcrumbSchema}/>
@@ -101,10 +101,51 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           <div className="number-grid">{detail.planningNumbers.map((item: any) => <div className="number-card" key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</div>
         </section>}
 
-        {detail.sections.map((section: any) => <section className="article-block prose-block" key={section.title}>
-          <h2>{section.title}</h2>
-          {section.paragraphs.map((paragraph: string) => <p key={paragraph}>{paragraph}</p>)}
-        </section>)}
+        {detail.evidenceStats && <section className="article-block evidence-block" aria-labelledby="evidence-numbers">
+          <p className="section-kicker">What the reports show</p>
+          <h2 id="evidence-numbers">The email risk reaches the payment desk</h2>
+          <div className="evidence-grid">{detail.evidenceStats.map((item: any) => <div className="evidence-card" key={item.value}><strong>{item.value}</strong><span>{item.label}</span><small>{item.context}</small></div>)}</div>
+        </section>}
+
+        {detail.riskRows && <section className="article-block" aria-labelledby="risk-control-table">
+          <p className="section-kicker">AP control table</p>
+          <h2 id="risk-control-table">Match each request with a check and an owner</h2>
+          <p className="scroll-cue">Swipe or scroll the table sideways on a small screen.</p>
+          <div className="table-scroll" tabIndex={0} aria-label="Accounts payable fraud prevention control table">
+            <table className="decision-table"><thead><tr><th>Request</th><th>Risk clue</th><th>Assistant action</th><th>Owner action</th></tr></thead><tbody>{detail.riskRows.map((row: any) => <tr key={row.request}><th scope="row">{row.request}</th><td>{row.clue}</td><td>{row.assistant}</td><td>{row.owner}</td></tr>)}</tbody></table>
+          </div>
+        </section>}
+
+        {detail.lossChart && <figure className="article-block evidence-figure" aria-labelledby="loss-chart-title">
+          <figcaption><p className="section-kicker">FBI complaint data</p><h2 id="loss-chart-title">Reported BEC losses stayed above $2.7 billion</h2></figcaption>
+          <svg className="loss-chart" viewBox="0 0 720 390" role="img" aria-labelledby="loss-chart-svg-title loss-chart-svg-desc">
+            <title id="loss-chart-svg-title">Reported Business Email Compromise losses for 2022, 2023, and 2024</title>
+            <desc id="loss-chart-svg-desc">Three vertical bars show 2.742 billion dollars in 2022, 2.947 billion dollars in 2023, and 2.770 billion dollars in 2024.</desc>
+            <line x1="90" y1="315" x2="680" y2="315"/><line x1="90" y1="65" x2="90" y2="315"/>
+            <text x="76" y="320" textAnchor="end">$0</text><text x="76" y="238" textAnchor="end">$1B</text><text x="76" y="155" textAnchor="end">$2B</text><text x="76" y="72" textAnchor="end">$3B</text>
+            {detail.lossChart.map((item: any, index: number) => {const height=item.value/3000*250;const x=145+index*175;return <g key={item.year}><rect x={x} y={315-height} width="100" height={height} rx="10"/><text className="chart-value" x={x+50} y={300-height} textAnchor="middle">{item.label}</text><text x={x+50} y="350" textAnchor="middle">{item.year}</text></g>})}
+          </svg>
+          <p className="methods-note"><strong>Method:</strong> Values come from the FBI IC3 three-year complaint-loss table and are rounded to the nearest million for the chart. IC3 records reports submitted to the bureau; the figures are not an AP-only loss count and do not prove every complaint.</p>
+        </figure>}
+
+        {detail.controlGraphic && <figure className="article-block control-figure" aria-labelledby="control-graphic-title">
+          <figcaption><p className="section-kicker">Separate graphic</p><h2 id="control-graphic-title">A safer path for a changed payment instruction</h2></figcaption>
+          <svg viewBox="0 0 920 270" role="img" aria-labelledby="control-svg-title control-svg-desc">
+            <title id="control-svg-title">Four-step payment instruction check</title><desc id="control-svg-desc">The assistant logs the request, pauses the change, verifies through a known contact, and sends the verified record to a company owner for approval.</desc>
+            {detail.controlGraphic.map((item: any, index: number) => <g key={item.step} transform={`translate(${20+index*225} 45)`}><rect width="190" height="150" rx="18"/><circle cx="28" cy="31" r="17"/><text className="graphic-step" x="28" y="37" textAnchor="middle">{item.step}</text><text className="graphic-title" x="20" y="76">{item.title}</text><foreignObject x="20" y="88" width="150" height="54"><p>{item.text}</p></foreignObject>{index<detail.controlGraphic.length-1&&<path d="M194 75 H220"/>}</g>)}
+          </svg>
+          <p className="methods-note">This graphic is a sample control path, not a claim about how every company works. Put the known vendor contact and named company approver in your own written procedure.</p>
+        </figure>}
+
+        {detail.expertQuote && <blockquote className="article-block expert-quote"><p>"{detail.expertQuote.text}"</p><cite>{detail.expertQuote.cite}</cite></blockquote>}
+
+        {detail.sections.map((section: any, index: number) => <div key={section.title}>
+          <section className="article-block prose-block">
+            <h2>{section.title}</h2>
+            {section.paragraphs.map((paragraph: string) => <p data-narrative="true" key={paragraph}>{paragraph}</p>)}
+          </section>
+          {detail.banners && (index + 1) % 2 === 0 && detail.banners[(index + 1) / 2 - 1] && <aside className="article-banner" data-rotating-banner="true"><div><span>{detail.banners[(index + 1) / 2 - 1].eyebrow}</span><strong>{detail.banners[(index + 1) / 2 - 1].title}</strong><p>{detail.banners[(index + 1) / 2 - 1].text}</p></div><a href={detail.banners[(index + 1) / 2 - 1].href}>{detail.banners[(index + 1) / 2 - 1].label}</a></aside>}
+        </div>)}
 
         {detail.workflow && <section className="article-block" aria-labelledby="invoice-path">
           <p className="section-kicker">Sample workflow</p>
@@ -144,6 +185,6 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
       </article>
       <CTA/>
     </main>
-    <Footer/>
+    <Footer hidePricing/>
   </>;
 }

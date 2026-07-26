@@ -1,3 +1,5 @@
+import {fraudPostDetail} from './fraud-post';
+
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
   slug: 'outsourceaccountspayable',
@@ -60,6 +62,12 @@ export const blogPosts = [
     title: 'Accounts payable virtual assistant: tasks, controls, and hiring plan',
     excerpt: 'See which AP tasks a Filipino virtual assistant can prepare and which decisions stay with your finance owner. Use the tables, scripts, and first-week plan to shape a safer role.',
     minutes: 12,
+  },
+  {
+    slug: 'accounts-payable-fraud-prevention-philippines',
+    title: 'Accounts payable fraud prevention for a Philippines-based AP team',
+    excerpt: 'Build a clear check for changed bank details, urgent invoice requests, access, and payment handoffs when a Filipino AP assistant supports your finance team.',
+    minutes: 14,
   },
 ] as const;
 
@@ -257,6 +265,7 @@ export const blogDetails = {
       { name: 'CISA, Recognize and Report Phishing', url: 'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing', note: 'CISA describes urgent or emotional language as a phishing warning sign and recommends verifying suspicious messages through trusted channels.' },
     ],
   },
+  'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
 } as const;
 
 export const staffingOffer = {

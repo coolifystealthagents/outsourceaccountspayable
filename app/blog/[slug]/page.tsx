@@ -116,8 +116,9 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           </div>
         </section>}
 
-        {detail.lossChart && <figure className="article-block evidence-figure" aria-labelledby="loss-chart-title">
+        {detail.lossChart && <figure className="article-block evidence-figure" aria-labelledby="loss-chart-title" tabIndex={0}>
           <figcaption><p className="section-kicker">FBI complaint data</p><h2 id="loss-chart-title">Reported BEC losses stayed above $2.7 billion</h2></figcaption>
+          <p className="scroll-cue">Swipe or scroll the chart sideways on a small screen.</p>
           <svg className="loss-chart" viewBox="0 0 720 390" role="img" aria-labelledby="loss-chart-svg-title loss-chart-svg-desc">
             <title id="loss-chart-svg-title">Reported Business Email Compromise losses for 2022, 2023, and 2024</title>
             <desc id="loss-chart-svg-desc">Three vertical bars show 2.742 billion dollars in 2022, 2.947 billion dollars in 2023, and 2.770 billion dollars in 2024.</desc>
@@ -128,8 +129,9 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           <p className="methods-note"><strong>Method:</strong> Values come from the FBI IC3 three-year complaint-loss table and are rounded to the nearest million for the chart. IC3 records reports submitted to the bureau; the figures are not an AP-only loss count and do not prove every complaint.</p>
         </figure>}
 
-        {detail.controlGraphic && <figure className="article-block control-figure" aria-labelledby="control-graphic-title">
+        {detail.controlGraphic && <figure className="article-block control-figure" aria-labelledby="control-graphic-title" tabIndex={0}>
           <figcaption><p className="section-kicker">Separate graphic</p><h2 id="control-graphic-title">A safer path for a changed payment instruction</h2></figcaption>
+          <p className="scroll-cue">Swipe or scroll the steps sideways on a small screen.</p>
           <svg viewBox="0 0 920 270" role="img" aria-labelledby="control-svg-title control-svg-desc">
             <title id="control-svg-title">Four-step payment instruction check</title><desc id="control-svg-desc">The assistant logs the request, pauses the change, verifies through a known contact, and sends the verified record to a company owner for approval.</desc>
             {detail.controlGraphic.map((item: any, index: number) => <g key={item.step} transform={`translate(${20+index*225} 45)`}><rect width="190" height="150" rx="18"/><circle cx="28" cy="31" r="17"/><text className="graphic-step" x="28" y="37" textAnchor="middle">{item.step}</text><text className="graphic-title" x="20" y="76">{item.title}</text><foreignObject x="20" y="88" width="150" height="54"><p>{item.text}</p></foreignObject>{index<detail.controlGraphic.length-1&&<path d="M194 75 H220"/>}</g>)}

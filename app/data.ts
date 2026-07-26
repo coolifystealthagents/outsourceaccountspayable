@@ -1,4 +1,5 @@
 import {fraudPostDetail} from './fraud-post';
+import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -67,6 +68,12 @@ export const blogPosts = [
     slug: 'accounts-payable-fraud-prevention-philippines',
     title: 'Accounts payable fraud prevention for a Philippines-based AP team',
     excerpt: 'Build a clear check for changed bank details, urgent invoice requests, access, and payment handoffs when a Filipino AP assistant supports your finance team.',
+    minutes: 14,
+  },
+  {
+    slug: 'vendor-onboarding-checklist-philippines-ap-team',
+    title: 'Vendor onboarding checklist for a Philippines AP team',
+    excerpt: 'Use a clear vendor packet, bank check, access limit, and approval path when a Filipino AP assistant prepares new vendor records.',
     minutes: 14,
   },
 ] as const;
@@ -266,6 +273,7 @@ export const blogDetails = {
     ],
   },
   'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
+  'vendor-onboarding-checklist-philippines-ap-team': vendorOnboardingPostDetail,
 } as const;
 
 export const staffingOffer = {

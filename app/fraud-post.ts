@@ -92,7 +92,7 @@ export const fraudPostDetail = {
     banners: [
       { eyebrow: 'Narrow the first lane', title: 'Start with invoice data capture', text: 'Give the assistant one queue and one reviewer before adding broader AP access.', href: '/services/invoice-data-capture', label: 'See invoice support' },
       { eyebrow: 'Write the inbox rule', title: 'Plan AP inbox management', text: 'Set the labels, stop points, and response owners for invoice and vendor messages.', href: '/services/ap-inbox-management', label: 'Map the inbox lane' },
-      { eyebrow: 'Prepare the first week', title: 'Use the AP onboarding checklist', text: 'Turn the control line into examples, access limits, and daily review steps.', href: '/blog/outsource-accounts-payable-onboarding-checklist', label: 'Open the checklist' },
+      { eyebrow: 'Prepare the first week', title: 'Use the AP onboarding checklist', text: 'Turn the control line into examples, access limits, and daily review steps.', href: '/blog', label: 'Open the checklist' },
     ],
     scripts: [
       { title: 'Changed bank-detail reply', text: 'Hi [name], I received the request to change payment details for [vendor]. I have paused the record and sent the request to [finance owner]. Our team will verify it through the approved vendor contact before any change is made.' },
@@ -120,7 +120,7 @@ export const fraudPostDetail = {
       { href: '/services/duplicate-invoice-review', label: 'Duplicate invoice review' },
       { href: '/services/ap-inbox-management', label: 'AP inbox management' },
       { href: '/blog/accounts-payable-virtual-assistant', label: 'Accounts payable virtual assistant guide' },
-      { href: '/blog/outsource-accounts-payable-onboarding-checklist', label: 'First-week AP onboarding checklist' },
+      { href: '/blog', label: 'First-week AP onboarding checklist' },
     ],
     sources: [
       { name: '1. FBI IC3, 2024 Annual Report', url: 'https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf', note: 'Reports 21,442 BEC complaints and $2,770,151,146 in losses for 2024. Its table supplies chart values and its introduction contains Yarbrough\'s quote.' },

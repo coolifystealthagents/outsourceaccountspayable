@@ -35,30 +35,6 @@ export const services = [
 
 export const blogPosts = [
   {
-    slug: 'outsource-accounts-payable-planning',
-    title: 'What to plan before you outsource accounts payable',
-    excerpt: 'A plain-English guide to AP scope, controls, and handoff planning before you hire.',
-    minutes: 6,
-  },
-  {
-    slug: 'outsource-accounts-payable-tasks-to-outsource',
-    title: 'Which AP tasks should you hand off first?',
-    excerpt: 'Start with recurring AP work that has examples, rules, and a clear reviewer.',
-    minutes: 7,
-  },
-  {
-    slug: 'outsource-accounts-payable-provider-questions',
-    title: 'Questions to ask an accounts payable provider',
-    excerpt: 'Use these AP provider questions before you sign with a staffing firm or freelancer.',
-    minutes: 8,
-  },
-  {
-    slug: 'outsource-accounts-payable-onboarding-checklist',
-    title: 'Your first-week AP onboarding checklist',
-    excerpt: 'A simple checklist for tools, SOPs, calls, QA, reporting, and payment controls.',
-    minutes: 9,
-  },
-  {
     slug: 'accounts-payable-virtual-assistant',
     title: 'Accounts payable virtual assistant: tasks, controls, and hiring plan',
     excerpt: 'See which AP tasks a Filipino virtual assistant can prepare and which decisions stay with your finance owner. Use the tables, scripts, and first-week plan to shape a safer role.',
@@ -264,7 +240,7 @@ export const blogDetails = {
       { href: '/services/three-way-match-support', label: 'Three-way match support' },
       { href: '/services/payment-run-preparation', label: 'Payment-run preparation' },
       { href: '/services/vendor-statement-reconciliation', label: 'Vendor statement reconciliation' },
-      { href: '/blog/outsource-accounts-payable-onboarding-checklist', label: 'First-week AP onboarding checklist' },
+      { href: '/blog', label: 'First-week AP onboarding checklist' },
     ],
     sources: [
       { name: 'IRS, Form W-9', url: 'https://www.irs.gov/pub/irs-pdf/fw9.pdf', note: 'The form and instructions explain that a US person gives a correct taxpayer identification number and certification to the requester.' },

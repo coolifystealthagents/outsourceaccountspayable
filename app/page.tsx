@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="ap-home">
+      <main className="ap-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
 
         <section className="ap-hero">
@@ -34,10 +34,10 @@ export default function Home() {
             <div className="ap-hero-copy">
               <p className="eyebrow">Managed accounts payable support</p>
               <h1>Build a calmer AP desk.</h1>
-              <ul className="hero-checks" aria-label="Accounts payable support tasks">
-                <li>Sort invoices and chase missing details</li>
-                <li>Keep due dates and approval owners visible</li>
-                <li>Prepare clean packets for finance review</li>
+              <ul className="hero-checks icon-replacement-list" aria-label="Accounts payable support tasks">
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt=""/>Sort invoices and chase missing details</li>
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt=""/>Keep due dates and approval owners visible</li>
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt=""/>Prepare clean packets for finance review</li>
                 <li>Log exceptions before they become fire drills</li>
               </ul>
               <a className="btn primary" href="/contact">Request an AP staffing plan</a>
@@ -46,7 +46,7 @@ export default function Home() {
 
             <figure className="ap-hero-visual">
               <div className="image-frame">
-                <img src="/ap-team.jpg" alt="Finance team reviewing accounts payable work together" />
+                <img src="/illustrations/getillustrations/drawink-e-commerce-illustrations-svg/accounts-payable-desk.svg" alt="Illustration of an accounts payable specialist reviewing financial records" />
               </div>
               <figcaption>
                 <span>AP support that fits your process</span>
@@ -110,6 +110,11 @@ export default function Home() {
             <article><span>02</span><h3>Review live work</h3><p>Check the first invoice packets together. Fix labels and permissions while the scope is still small.</p></article>
             <article><span>03</span><h3>Add what is stable</h3><p>Expand only after the first tasks are accurate and the finance owner can see every exception.</p></article>
           </div>
+        </section>
+
+        <section className="container gi-proof" aria-label="Accounts payable control points">
+          <img className="gi-proof-art" src="/illustrations/getillustrations/hannah-business-illustrations-svg/invoice-workflow.svg" alt="" />
+          <div><p className="eyebrow">A visible AP workflow</p><h2>Prepare, review, and approve in order.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt=""/>Invoice review</span><span><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt=""/>Due dates</span><span><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt=""/>Approval control</span></div></div>
         </section>
 
         <section className="container ap-guides">

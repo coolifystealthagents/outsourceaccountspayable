@@ -1,4 +1,5 @@
 import {fraudPostDetail} from './fraud-post';
+import {invoiceApprovalWorkflowPostDetail} from './invoice-approval-workflow-post';
 import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 
 export const site = {
@@ -34,6 +35,12 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  {
+    slug: 'invoice-approval-workflow-philippines-ap-team',
+    title: 'Invoice approval workflow for a Philippines AP team',
+    excerpt: 'Build a clear invoice packet, exception queue, approval path, and payment handoff when a Filipino AP assistant supports your finance team.',
+    minutes: 15,
+  },
   {
     slug: 'accounts-payable-virtual-assistant',
     title: 'Accounts payable virtual assistant: tasks, controls, and hiring plan',
@@ -248,6 +255,7 @@ export const blogDetails = {
       { name: 'CISA, Recognize and Report Phishing', url: 'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing', note: 'CISA describes urgent or emotional language as a phishing warning sign and recommends verifying suspicious messages through trusted channels.' },
     ],
   },
+  'invoice-approval-workflow-philippines-ap-team': invoiceApprovalWorkflowPostDetail,
   'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
   'vendor-onboarding-checklist-philippines-ap-team': vendorOnboardingPostDetail,
 } as const;

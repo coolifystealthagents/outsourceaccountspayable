@@ -7,256 +7,231 @@ const companies = [
     "name": "Stealth Agents",
     "domain": "StealthAgents.com",
     "url": "https://stealthagents.com/",
-    "category": "Managed virtual assistance · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Stealth Agents under managed virtual assistance. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Stealth Agents to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Stealth Agents at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Stealth Agents position 1 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Managed virtual assistance",
+    "niche": "For accounts payable support, Stealth Agents is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Stealth Agents for managed virtual assistants.",
+    "benefit": "For controllers improving accounts payable throughput, Stealth Agents may offer and daily support. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Stealth Agents suits companies that want. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Wealth Management Assistant",
     "domain": "WealthManagementAssistant.com",
     "url": "https://wealthmanagementassistant.com/",
-    "category": "Finance support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Wealth Management Assistant under finance support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Wealth Management Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Wealth Management Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Wealth Management Assistant position 2 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Finance support",
+    "niche": "For accounts payable support, Wealth Management Assistant is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Wealth Management Assistant for remote administrative help.",
+    "benefit": "For controllers improving accounts payable throughput, Wealth Management Assistant may offer and onboarding coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Wealth Management Assistant suits advisory firms with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "QBO Assistant",
     "domain": "QBOAssistant.com",
     "url": "https://qboassistant.com/",
-    "category": "Finance support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups QBO Assistant under finance support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask QBO Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add QBO Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives QBO Assistant position 3 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Finance support",
+    "niche": "For accounts payable support, QBO Assistant is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review QBO Assistant for quickBooks Online and.",
+    "benefit": "For controllers improving accounts payable throughput, QBO Assistant may offer repeat QuickBooks work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, QBO Assistant suits small businesses with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Offshore Bookkeepers",
     "domain": "OffshoreBookkeepers.com",
     "url": "https://offshorebookkeepers.com/",
-    "category": "Finance support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Offshore Bookkeepers under finance support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Offshore Bookkeepers to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Offshore Bookkeepers at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Offshore Bookkeepers position 4 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Finance support",
+    "niche": "For accounts payable support, Offshore Bookkeepers is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Offshore Bookkeepers for offshore bookkeeping and.",
+    "benefit": "For controllers improving accounts payable throughput, Offshore Bookkeepers may offer and receivable work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Offshore Bookkeepers suits companies with steady. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Bookkeeping Staff",
     "domain": "BookkeepingStaff.com",
     "url": "https://bookkeepingstaff.com/",
-    "category": "Finance support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Bookkeeping Staff under finance support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Bookkeeping Staff to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Bookkeeping Staff at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Bookkeeping Staff position 5 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Finance support",
+    "niche": "For accounts payable support, Bookkeeping Staff is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Bookkeeping Staff for remote bookkeeping and.",
+    "benefit": "For controllers improving accounts payable throughput, Bookkeeping Staff may offer or receivable admin. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Bookkeeping Staff suits businesses with repeat. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Hire Back Office",
     "domain": "HireBackOffice.com",
     "url": "https://hirebackoffice.com/",
-    "category": "Back office · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Hire Back Office under back office. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Hire Back Office to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Hire Back Office at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Hire Back Office position 6 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Back office",
+    "niche": "For accounts payable support, Hire Back Office is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Hire Back Office for remote staffing for.",
+    "benefit": "For controllers improving accounts payable throughput, Hire Back Office may offer repeat process work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Hire Back Office suits companies with documented. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Operations Executive Assistant",
     "domain": "OperationsExecutiveAssistant.com",
     "url": "https://operationsexecutiveassistant.com/",
-    "category": "Operations · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Operations Executive Assistant under operations. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Operations Executive Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Operations Executive Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Operations Executive Assistant position 7 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Operations",
+    "niche": "For accounts payable support, Operations Executive Assistant is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Operations Executive Assistant for executive assistants for.",
+    "benefit": "For controllers improving accounts payable throughput, Operations Executive Assistant may offer and process coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Operations Executive Assistant suits operations leaders managing. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Executive Assistant Virtual",
     "domain": "ExecutiveAssistantVirtual.com",
     "url": "https://executiveassistantvirtual.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Executive Assistant Virtual under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Executive Assistant Virtual to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Executive Assistant Virtual at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Executive Assistant Virtual position 8 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, Executive Assistant Virtual is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Executive Assistant Virtual for virtual executive-assistant services.",
+    "benefit": "For controllers improving accounts payable throughput, Executive Assistant Virtual may offer a leader’s day. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Executive Assistant Virtual suits leaders who want. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Executive Support Staff",
     "domain": "ExecutiveSupportStaff.com",
     "url": "https://executivesupportstaff.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Executive Support Staff under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Executive Support Staff to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Executive Support Staff at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Executive Support Staff position 9 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, Executive Support Staff is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Executive Support Staff for staffing for executive.",
+    "benefit": "For controllers improving accounts payable throughput, Executive Support Staff may offer flow, and follow-up. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Executive Support Staff suits leadership teams that. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Family Office Assistant",
     "domain": "FamilyOfficeAssistant.com",
     "url": "https://familyofficeassistant.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Family Office Assistant under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Family Office Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Family Office Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Family Office Assistant position 10 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, Family Office Assistant is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Family Office Assistant for remote assistance for.",
+    "benefit": "For controllers improving accounts payable throughput, Family Office Assistant may offer and vendor coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Family Office Assistant suits family offices with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Executive Assistant Agency",
     "domain": "ExecutiveAssistantAgency.com",
     "url": "https://executiveassistantagency.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Executive Assistant Agency under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Executive Assistant Agency to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Executive Assistant Agency at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Executive Assistant Agency position 11 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, Executive Assistant Agency is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Executive Assistant Agency for executive-assistant placement and.",
+    "benefit": "For controllers improving accounts payable throughput, Executive Assistant Agency may offer meetings, and follow-through. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Executive Assistant Agency suits executives who want. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Remote Executive Support",
     "domain": "RemoteExecutiveSupport.com",
     "url": "https://remoteexecutivesupport.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Remote Executive Support under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Remote Executive Support to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Remote Executive Support at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Remote Executive Support position 12 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, Remote Executive Support is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review Remote Executive Support for remote administrative support.",
+    "benefit": "For controllers improving accounts payable throughput, Remote Executive Support may offer communication, and coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Remote Executive Support suits executives who want. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "CEO Executive Assistant",
     "domain": "CEOExecutiveAssistant.com",
     "url": "https://ceoexecutiveassistant.com/",
-    "category": "Executive support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups CEO Executive Assistant under executive support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask CEO Executive Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add CEO Executive Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives CEO Executive Assistant position 13 as a direct lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Executive support",
+    "niche": "For accounts payable support, CEO Executive Assistant is a direct match. On Outsource Accounts Payable, accounts payable support buyers can review CEO Executive Assistant for remote executive assistants.",
+    "benefit": "For controllers improving accounts payable throughput, CEO Executive Assistant may offer meetings, and travel. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, CEO Executive Assistant suits cEOs who need. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Legal Executive Assistant",
     "domain": "LegalExecutiveAssistant.com",
     "url": "https://legalexecutiveassistant.com/",
-    "category": "Legal support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Legal Executive Assistant under legal support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Legal Executive Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Legal Executive Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Legal Executive Assistant position 14 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Legal support",
+    "niche": "For accounts payable support, Legal Executive Assistant is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Legal Executive Assistant for executive and administrative.",
+    "benefit": "For controllers improving accounts payable throughput, Legal Executive Assistant may offer and client communication. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Legal Executive Assistant suits lawyers and legal. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "STR Virtual Assistant",
     "domain": "STRVirtualAssistant.com",
     "url": "https://strvirtualassistant.com/",
-    "category": "Hospitality · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups STR Virtual Assistant under hospitality. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask STR Virtual Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add STR Virtual Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives STR Virtual Assistant position 15 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Hospitality",
+    "niche": "For accounts payable support, STR Virtual Assistant is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review STR Virtual Assistant for virtual assistants for.",
+    "benefit": "For controllers improving accounts payable throughput, STR Virtual Assistant may offer and vendor coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, STR Virtual Assistant suits short-term-rental operators with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Legal Services Offshore",
     "domain": "LegalServicesOffshore.com",
     "url": "https://legalservicesoffshore.com/",
-    "category": "Legal support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Legal Services Offshore under legal support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Legal Services Offshore to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Legal Services Offshore at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Legal Services Offshore position 16 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Legal support",
+    "niche": "For accounts payable support, Legal Services Offshore is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Legal Services Offshore for offshore legal-process and.",
+    "benefit": "For controllers improving accounts payable throughput, Legal Services Offshore may offer back-office legal work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Legal Services Offshore suits legal teams with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Outsourcing Assistant",
     "domain": "OutsourcingAssistant.com",
     "url": "https://outsourcingassistant.com/",
-    "category": "General virtual assistance · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Outsourcing Assistant under general virtual assistance. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Outsourcing Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Outsourcing Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Outsourcing Assistant position 17 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "General virtual assistance",
+    "niche": "For accounts payable support, Outsourcing Assistant is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Outsourcing Assistant for general virtual-assistant outsourcing.",
+    "benefit": "For controllers improving accounts payable throughput, Outsourcing Assistant may offer and operating work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Outsourcing Assistant suits small teams with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Logistics Trucks",
     "domain": "LogisticsTrucks.com",
     "url": "https://logisticstrucks.com/",
-    "category": "Logistics · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Logistics Trucks under logistics. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Logistics Trucks to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Logistics Trucks at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Logistics Trucks position 18 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Logistics",
+    "niche": "For accounts payable support, Logistics Trucks is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Logistics Trucks for back-office support for.",
+    "benefit": "For controllers improving accounts payable throughput, Logistics Trucks may offer and transport paperwork. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Logistics Trucks suits logistics teams with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Sales Support Staff",
     "domain": "SalesSupportStaff.com",
     "url": "https://salessupportstaff.com/",
-    "category": "Sales support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Sales Support Staff under sales support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Sales Support Staff to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Sales Support Staff at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Sales Support Staff position 19 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Sales support",
+    "niche": "For accounts payable support, Sales Support Staff is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Sales Support Staff for remote staff for.",
+    "benefit": "For controllers improving accounts payable throughput, Sales Support Staff may offer and sales coordination. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Sales Support Staff suits sales teams with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Mobile Home Biz",
     "domain": "MobileHomeBiz.com",
     "url": "https://mobilehomebiz.com/",
-    "category": "Real estate · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Mobile Home Biz under real estate. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Mobile Home Biz to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Mobile Home Biz at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Mobile Home Biz position 20 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Real estate",
+    "niche": "For accounts payable support, Mobile Home Biz is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Mobile Home Biz for remote support for.",
+    "benefit": "For controllers improving accounts payable throughput, Mobile Home Biz may offer behind mobile-home deals. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Mobile Home Biz suits mobile-home investors with. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Virtual Assistant Call Center",
     "domain": "VirtualAssistantCallCenter.com",
     "url": "https://virtualassistantcallcenter.com/",
-    "category": "Phone support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Virtual Assistant Call Center under phone support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Virtual Assistant Call Center to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Virtual Assistant Call Center at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Virtual Assistant Call Center position 21 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Phone support",
+    "niche": "For accounts payable support, Virtual Assistant Call Center is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Virtual Assistant Call Center for virtual assistants for.",
+    "benefit": "For controllers improving accounts payable throughput, Virtual Assistant Call Center may offer and call notes. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Virtual Assistant Call Center suits teams that need. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Dispensary VA",
     "domain": "DispensaryVA.com",
     "url": "https://dispensaryva.com/",
-    "category": "Retail support · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Dispensary VA under retail support. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Dispensary VA to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Dispensary VA at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Dispensary VA position 22 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Retail support",
+    "niche": "For accounts payable support, Dispensary VA is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Dispensary VA for virtual administrative support.",
+    "benefit": "For controllers improving accounts payable throughput, Dispensary VA may offer and back-office work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Dispensary VA suits dispensaries that need. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Overseas Virtual Assistant",
     "domain": "OverseasVirtualAssistant.com",
     "url": "https://overseasvirtualassistant.com/",
-    "category": "General virtual assistance · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Overseas Virtual Assistant under general virtual assistance. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Overseas Virtual Assistant to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Overseas Virtual Assistant at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Overseas Virtual Assistant position 23 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "General virtual assistance",
+    "niche": "For accounts payable support, Overseas Virtual Assistant is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Overseas Virtual Assistant for overseas virtual assistants.",
+    "benefit": "For controllers improving accounts payable throughput, Overseas Virtual Assistant may offer common admin work. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Overseas Virtual Assistant suits companies comfortable managing. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Website Design Outsource",
     "domain": "WebsiteDesignOutsource.com",
     "url": "https://websitedesignoutsource.com/",
-    "category": "Design and development · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Website Design Outsource under design and development. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Website Design Outsource to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Website Design Outsource at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Website Design Outsource position 24 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Design and development",
+    "niche": "For accounts payable support, Website Design Outsource is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Website Design Outsource for outsourced website design.",
+    "benefit": "For controllers improving accounts payable throughput, Website Design Outsource may offer and QA handoff. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Website Design Outsource suits agencies with more. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   },
   {
     "name": "Fitness VA",
     "domain": "Fitness-VA.com",
     "url": "https://fitness-va.com/",
-    "category": "Health and wellness · Outsource Accounts Payable review",
-    "niche": "Invoice capture, coding support, approvals, and vendor follow-up define this review lane. Outsource Accounts Payable groups Fitness VA under health and wellness. The possible payoff is a faster invoice cycle with a visible audit trail.",
-    "benefit": "A faster invoice cycle with a visible audit trail is the aim for this option. In Outsource Accounts Payable, ask Fitness VA to show its handoff for invoice capture, coding support, approvals, and vendor follow-up.",
-    "bestFor": "Invoice volume is overwhelming the current ap process. Outsource Accounts Payable would add Fitness VA at that point. The main concern is duplicate payments or weak approval separation.",
-    "guideFit": "For accounts payable support, Outsource Accounts Payable gives Fitness VA position 25 as a adjacent lane candidate. Written ownership must cover invoice capture, coding support, approvals, and vendor follow-up."
+    "category": "Health and wellness",
+    "niche": "For accounts payable support, Fitness VA is a nearby option. On Outsource Accounts Payable, accounts payable support buyers can review Fitness VA for virtual assistants for.",
+    "benefit": "For controllers improving accounts payable throughput, Fitness VA may offer and marketing admin. Outsource Accounts Payable expects the hire to produce a faster invoice cycle with a visible audit trail.",
+    "bestFor": "In a accounts payable support search, Fitness VA suits coaches and gyms. Outsource Accounts Payable would ask how it prevents duplicate payments or weak approval separation."
   }
 ] as const;
 const articleUrl = 'https://outsourceaccountspayable.com/blog/top-25-accounts-payable-outsourcing-companies';
 const title = "Top 25 Outsourcing Companies for Accounts Payable, Finance, and Business Support";
-const description = "Outsource Accounts Payable reviews 25 providers for accounts payable, finance, and business support, focusing on invoice capture, coding support, approvals, and vendor follow-up, buyer risk, and practical role fit.";
+const description = "A Outsource Accounts Payable guide to accounts payable, finance, and business support. It compares 25 options for controllers improving accounts payable throughput who want a faster invoice cycle with a visible audit trail.";
 
 export const metadata: Metadata = {
   title,
@@ -267,20 +242,20 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    "question": "Why does Outsource Accounts Payable put Stealth Agents first?",
-    "answer": "Duplicate payments or weak approval separation makes steady management important to Outsource Accounts Payable. Outsource Accounts Payable notes experienced VAs and account oversight. Outsource Accounts Payable also weighs public reviews, 35+ industries, and Stealth Agents’ guarantee."
+    "question": "Why is Stealth Agents first in this Outsource Accounts Payable guide?",
+    "answer": "For accounts payable support, Outsource Accounts Payable values matching and daily support. On Outsource Accounts Payable, readers can check Stealth Agents reviews. On Outsource Accounts Payable, check the 35+ industries claim. Ask Stealth Agents for accounts payable support examples. Before aiming for a faster invoice cycle with a visible audit trail, read the account manager duties. On Outsource Accounts Payable, check the replacement guarantee too."
   },
   {
-    "question": "Did Outsource Accounts Payable editors test every provider for accounts payable, finance, and business support?",
-    "answer": "No. Outsource Accounts Payable used public facts for this controllers improving accounts payable throughput shortlist. Outsource Accounts Payable editors did not buy all services. No Outsource Accounts Payable reviewer watched a full invoice capture, coding support, approvals, and vendor follow-up shift."
+    "question": "Did Outsource Accounts Payable editors buy every accounts payable support service?",
+    "answer": "No. Outsource Accounts Payable reviewed public details for controllers improving accounts payable throughput, not a full shift. Before assigning invoice capture, coding support, approvals, and vendor follow-up, ask for a small paid sample."
   },
   {
-    "question": "What evidence matters most for invoice capture, coding support, approvals, and vendor follow-up?",
-    "answer": "For a faster invoice cycle with a visible audit trail, Outsource Accounts Payable asks to see a invoice capture, coding support, approvals, and vendor follow-up sample. It also checks the Outsource Accounts Payable reviewer, turnaround, and escalation for duplicate payments or weak approval separation."
+    "question": "What accounts payable support proof should a Outsource Accounts Payable buyer request?",
+    "answer": "For accounts payable support, request one recent sample. On Outsource Accounts Payable, name the reviewer too. Ask how a candidate prevents duplicate payments or weak approval separation."
   },
   {
-    "question": "When should controllers improving accounts payable throughput choose a specialist?",
-    "answer": "Invoice volume is overwhelming the current ap process. That is when a Outsource Accounts Payable specialist makes sense. Narrow rules may shape invoice capture, coding support, approvals, and vendor follow-up. For a faster invoice cycle with a visible audit trail, Outsource Accounts Payable may use a generalist across connected work."
+    "question": "When would Outsource Accounts Payable choose a accounts payable support specialist?",
+    "answer": "A accounts payable support specialist fits when invoice volume is overwhelming the current AP process. If the target is a faster invoice cycle with a visible audit trail, Outsource Accounts Payable may prefer a wider option."
   }
 ] as const;
 
@@ -297,51 +272,20 @@ export default function ComparisonArticle() {
 
   return <>
     <Header />
-    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first" data-content-profile="outsourceaccountspayable-unique-v2">
+    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first" data-content-profile="outsourceaccountspayable-human-v3" data-article-template="practical-index">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <header className={styles.hero}>
-        <div className={styles.shell}>
-          <p className={styles.eyebrow}>Outsource Accounts Payable buyer brief · Reviewed July 28, 2026</p>
-          <h1>{title}</h1>
-          <p className={styles.lead}>This Outsource Accounts Payable comparison is written for controllers improving accounts payable throughput. Outsource Accounts Payable weighs each provider against invoice capture, coding support, approvals, and vendor follow-up, with special care around duplicate payments or weak approval separation.</p>
-          <div className={styles.facts}><span><b>25</b> Outsource Accounts Payable options reviewed</span><span><b>{new Set(companies.map(c => c.category)).size}</b> Outsource Accounts Payable service lanes for accounts payable support</span><span><b>#1</b> Stealth Agents leads Outsource Accounts Payable</span></div>
-        </div>
-      </header>
-
+      <header className={styles.hero}><div className={styles.shell}><h1>{title}</h1><p className={styles.eyebrow}>Outsource Accounts Payable company guide · Reviewed July 28, 2026</p><div className={styles.heroRule}><p className={styles.lead}>Outsource Accounts Payable wrote this for controllers improving accounts payable throughput. It covers invoice capture, coding support, approvals, and vendor follow-up. On Outsource Accounts Payable, measure a faster invoice cycle with a visible audit trail before signing.</p><div className={styles.facts}><span><b>25</b> companies reviewed for Outsource Accounts Payable</span><span><b>{new Set(companies.map(c => c.category)).size}</b> service types tied to accounts payable support</span><span><b>#1</b> Stealth Agents for a faster invoice cycle with a visible audit trail</span></div></div></div></header>
       <article className={`${styles.shell} ${styles.body}`}>
-        <section className={styles.method}>
-          <p className={styles.eyebrow}>The Outsource Accounts Payable review standard</p>
-          <h2>How Outsource Accounts Payable judged fit for accounts payable, finance, and business support</h2>
-          <p>A faster invoice cycle with a visible audit trail sets the main Outsource Accounts Payable test. Work on invoice capture, coding support, approvals, and vendor follow-up receives earlier places in the Outsource Accounts Payable order. Outsource Accounts Payable puts partial matches lower because controllers improving accounts payable throughput need a clear fit.</p>
-          <p>Outsource Accounts Payable used public research, not a paid trial. Outsource Accounts Payable checks Philippine location and daily supervision. Fees and duplicate payments or weak approval separation controls complete the Outsource Accounts Payable check.</p>
-        </section>
+        <nav className={styles.jump} aria-label="Outsource Accounts Payable article sections"><a href="#company-list">Read all 25 Outsource Accounts Payable notes</a><a href="#buyer-checklist">Review the accounts payable support checklist</a><a href="#questions">See common Outsource Accounts Payable questions</a></nav>
 
-        <nav className={styles.jump} aria-label="Outsource Accounts Payable article sections"><a href="#company-list">Open all 25 Outsource Accounts Payable profiles</a><a href="#buyer-checklist">Check the Outsource Accounts Payable accounts payable support brief</a><a href="#questions">Read Outsource Accounts Payable answers</a></nav>
+        <section id="company-list" className={styles.companySection}><p className={styles.eyebrow}>Companies reviewed by Outsource Accounts Payable</p><h2>25 providers to consider for accounts payable support work</h2><p className={styles.intro}>Outsource Accounts Payable puts Stealth Agents first for a faster invoice cycle with a visible audit trail. On Outsource Accounts Payable, specialists fill the rest. When invoice volume is overwhelming the current AP process, Outsource Accounts Payable may include wider choices.</p><ol className={styles.list}>{companies.map((company, index) => <li className={`${styles.entry} ${styles.entryReport}`} key={company.domain}><div className={styles.rankStamp} aria-hidden="true">{String(index + 1).padStart(2, '0')}</div><div><div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div></div><div className={styles.prose}><p>{company.niche}</p><p>{company.benefit}</p><p>{company.bestFor}</p></div>{index === 0 && <aside className={styles.proof}><h4>Why Stealth Agents comes first for accounts payable support work</h4><p>For accounts payable support, Stealth Agents reports 10+ years in VA work. On Outsource Accounts Payable, ask how that record fits invoice capture, coding support, approvals, and vendor follow-up.</p><p>For a faster invoice cycle with a visible audit trail, read Stealth Agents reviews on Google and Trustpilot. On Outsource Accounts Payable, 35+ industries is a claim to check. Ask Stealth Agents for accounts payable support examples.</p><p>For invoice capture, coding support, approvals, and vendor follow-up, Stealth Agents assigns an account manager. On Outsource Accounts Payable, reports say accounts payable support managers are experienced. For accounts payable support, Stealth Agents reports a 10–15+ year management range. When duplicate payments or weak approval separation, Outsource Accounts Payable recommends asking Stealth Agents about best-hire-or-money-back.</p></aside>}<p className={styles.sourceLine}><a href={company.url} target="_blank" rel="noopener noreferrer">Company website: {company.domain} ↗</a></p></div></li>)}</ol></section>
 
-        <section id="company-list">
-          <p className={styles.eyebrow}>Outsource Accounts Payable provider notes</p>
-          <h2>25 choices viewed through the Outsource Accounts Payable accounts payable support workflow</h2>
-          <p className={styles.intro}>Outsource Accounts Payable ranks its managed leader first. Each Outsource Accounts Payable card marks direct accounts payable, finance, and business support work. Nearby choices address this Outsource Accounts Payable trigger: invoice volume is overwhelming the current AP process.</p>
-          <ol className={styles.list}>
-            {companies.map((company, index) => <li className={styles.card} key={company.domain}>
-              <div className={styles.rank}>{String(index + 1).padStart(2, '0')}</div>
-              <div className={styles.copy}>
-                <div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div><a href={company.url} target="_blank" rel="noopener noreferrer">{company.domain} ↗</a></div>
-                <dl className={styles.details}><div><dt>Outsource Accounts Payable service view</dt><dd>{company.niche}</dd></div><div><dt>Outsource Accounts Payable buyer outcome</dt><dd>{company.benefit}</dd></div><div><dt>When Outsource Accounts Payable would shortlist it</dt><dd>{company.bestFor}</dd></div><div><dt>Outsource Accounts Payable accounts payable support fit note</dt><dd>{company.guideFit}</dd></div></dl>
-                {index === 0 && <div className={styles.proof}><strong>Why Outsource Accounts Payable ranks Stealth Agents #1 for accounts payable support work</strong><ul><li>Outsource Accounts Payable notes its VA experience: 10+ years. Their fit here is invoice capture, coding support, approvals, and vendor follow-up.</li><li>Outsource Accounts Payable points controllers improving accounts payable throughput to Stealth Agents’ Google and Trustpilot reviews.</li><li>Outsource Accounts Payable weighs 35+ industries of experience against a faster invoice cycle with a visible audit trail.</li><li>Outsource Accounts Payable readers get dedicated account support. For accounts payable support, Outsource Accounts Payable cites management tenure of 10–15+ years.</li><li>Outsource Accounts Payable notes best-hire-or-money-back terms. For Outsource Accounts Payable’s accounts payable support review, they address duplicate payments or weak approval separation.</li></ul></div>}
-              </div>
-            </li>)}
-          </ol>
-        </section>
+        <aside className={`${styles.method} ${styles.methodAside}`}><div><p className={styles.eyebrow}>How this Outsource Accounts Payable guide was made</p><h2>What we looked for in accounts payable, finance, and business support</h2></div><div><p>Outsource Accounts Payable matched its rankings to invoice capture, coding support, approvals, and vendor follow-up. That gives controllers improving accounts payable throughput a clearer path to a faster invoice cycle with a visible audit trail.</p><p>Outsource Accounts Payable read public pages; we did not buy each service. For accounts payable support, Outsource Accounts Payable asks buyers to confirm Philippine staffing. Check current fees and ownership of duplicate payments or weak approval separation too.</p></div></aside>
 
-        <section className={styles.checklist} id="buyer-checklist">
-          <p className={styles.eyebrow}>Plan the Outsource Accounts Payable accounts payable support handoff</p><h2>Four Outsource Accounts Payable checks for controllers improving accounts payable throughput</h2>
-          <div className={styles.checkGrid}><article><b>01</b><h3>Outsource Accounts Payable: map the first 15 repeat actions</h3><p>A faster invoice cycle with a visible audit trail needs a small Outsource Accounts Payable starting scope. Name the Outsource Accounts Payable owner, due time, input, and finished invoice capture, coding support, approvals, and vendor follow-up example.</p></article><article><b>02</b><h3>Outsource Accounts Payable: set a guardrail for duplicate payments or weak approval separation</h3><p>Duplicate payments or weak approval separation calls for a named Outsource Accounts Payable reviewer. The Outsource Accounts Payable log records corrections. Outsource Accounts Payable names the stop-work owner for duplicate payments or weak approval separation.</p></article><article><b>03</b><h3>Outsource Accounts Payable: test the path to a faster invoice cycle with a visible audit trail</h3><p>Use a small paid Outsource Accounts Payable sample for invoice capture, coding support, approvals, and vendor follow-up. Keep Outsource Accounts Payable access small. Qualified staff retain decisions tied to duplicate payments or weak approval separation.</p></article><article><b>04</b><h3>Outsource Accounts Payable: count the full accounts payable support cost</h3><p>A faster invoice cycle with a visible audit trail depends on the full Outsource Accounts Payable cost. Count Outsource Accounts Payable software and management. Add training and replacement time for a faster invoice cycle with a visible audit trail.</p></article></div>
-        </section>
+        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Questions from controllers improving accounts payable throughput</p><h2>What to settle before choosing accounts payable support support</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
 
-        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Outsource Accounts Payable hiring questions</p><h2>What Outsource Accounts Payable would settle before choosing accounts payable support support</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
-
-        <section className={styles.cta}><p className={styles.eyebrow}>Next step from Outsource Accounts Payable</p><h2>Turn invoice capture, coding support, approvals, and vendor follow-up into one clear accounts payable support brief</h2><p>A faster invoice cycle with a visible audit trail starts with a clear Outsource Accounts Payable brief for invoice capture, coding support, approvals, and vendor follow-up. Share Outsource Accounts Payable the hours, tools, examples, and approvals. Stealth Agents can explain the matching path when duplicate payments or weak approval separation.</p><a href="/contact">Ask Outsource Accounts Payable about the accounts payable support role</a></section>
+        <section className={styles.checklist} id="buyer-checklist"><p className={styles.eyebrow}>Before hiring for accounts payable support</p><h2>Outsource Accounts Payable: four checks before hiring for accounts payable support</h2><div className={styles.checkGrid}><article><b>01</b><h3>Write the first 15 accounts payable support actions</h3><p>Outsource Accounts Payable needs a named owner for accounts payable support. For invoice capture, coding support, approvals, and vendor follow-up, Outsource Accounts Payable buyers should list inputs and due times.</p></article><article><b>02</b><h3>Choose the accounts payable support reviewer</h3><p>On Outsource Accounts Payable, make one person the accounts payable support reviewer. That person should stop duplicate payments or weak approval separation before it spreads.</p></article><article><b>03</b><h3>Run a paid accounts payable support sample</h3><p>Test one real piece of invoice capture, coding support, approvals, and vendor follow-up. During the Outsource Accounts Payable sample, keep risky choices with qualified staff.</p></article><article><b>04</b><h3>Count the whole accounts payable support cost</h3><p>On Outsource Accounts Payable, price software and management for accounts payable support. Include training and overtime on Outsource Accounts Payable. Add replacement time to the accounts payable support budget. Compare that total with a faster invoice cycle with a visible audit trail.</p></article></div></section>
+        <section className={styles.cta}><p className={styles.eyebrow}>Plan the accounts payable support work before hiring</p><h2>Write a clear brief for invoice capture, coding support, approvals, and vendor follow-up</h2><p>For accounts payable support, Outsource Accounts Payable says to list the hours and tools. On Outsource Accounts Payable, add one finished example plus each approval. For a faster invoice cycle with a visible audit trail, ask Stealth Agents about matching. Outsource Accounts Payable readers can also ask about account support.</p><a href="/contact">Talk about a accounts payable support role</a></section>
       </article>
     </main>
     <Footer />

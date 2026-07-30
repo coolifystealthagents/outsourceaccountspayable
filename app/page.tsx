@@ -40,7 +40,7 @@ export default function Home() {
                 <li><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt=""/>Prepare clean packets for finance review</li>
                 <li>Log exceptions before they become fire drills</li>
               </ul>
-              <a className="btn primary" href="/contact">Request an AP staffing plan</a>
+              <a className="btn primary" href="/contact-us">Request an AP staffing plan</a>
               <p className="hero-assurance">Your finance owner keeps approval and payment control.</p>
             </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
             <h2>Show us where AP gets stuck.</h2>
             <p>{staffingOffer.promise}</p>
           </div>
-          <a className="btn primary" href="/contact">Request an AP staffing plan</a>
+          <a className="btn primary" href="/contact-us">Request an AP staffing plan</a>
         </section>
       </main>
       <Footer />

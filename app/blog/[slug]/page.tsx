@@ -184,7 +184,9 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           <p>These sources support the tax-form, access-control, and phishing guidance in this article. The planning numbers above are labeled examples and do not come from these sources.</p>
           <ol>{detail.sources.map((source: any) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><span>{source.note}</span></li>)}</ol>
         </section>}
-      </article>
+      <p className='article-source-note'><a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces why remote role briefs should document expectations, communication rhythms, and accountable handoffs.</p>
+        <p className='article-source-note'><a href='/contact-us'>Contact Us</a> to turn this article into a scoped Philippines-based staffing brief.</p>
+        </article>
       <CTA/>
     </main>
     <Footer hidePricing/>

@@ -72,7 +72,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <nav className="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a></nav>
         <p className="eyebrow">Philippines AP staffing guide</p>
         <h1>{post.title}</h1>
-        <p className="lead">{post.excerpt}</p>
+        <p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div>
         {detail.published && <p className="article-meta">Published {detail.published} · {post.minutes} minute read · Philippines-only staffing</p>}
 
         <section className="answer-card" aria-labelledby="direct-answer">
@@ -146,7 +146,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
             <h2>{section.title}</h2>
             {section.paragraphs.map((paragraph: string) => <p data-narrative="true" key={paragraph}>{paragraph}</p>)}
           </section>
-          {detail.banners && (index + 1) % 2 === 0 && detail.banners[(index + 1) / 2 - 1] && <aside className="article-banner" data-rotating-banner="true"><div><span>{detail.banners[(index + 1) / 2 - 1].eyebrow}</span><strong>{detail.banners[(index + 1) / 2 - 1].title}</strong><p>{detail.banners[(index + 1) / 2 - 1].text}</p></div><a href={detail.banners[(index + 1) / 2 - 1].href}>{detail.banners[(index + 1) / 2 - 1].label}</a></aside>}
+          {detail.banners && (index + 1) % 2 === 0 && detail.banners[(index + 1) / 2 - 1] && <aside className="article-banner" data-article-banner="true"><div><span>{detail.banners[(index + 1) / 2 - 1].eyebrow}</span><strong>{detail.banners[(index + 1) / 2 - 1].title}</strong><p>{detail.banners[(index + 1) / 2 - 1].text}</p></div><a href={detail.banners[(index + 1) / 2 - 1].href}>{detail.banners[(index + 1) / 2 - 1].label}</a></aside>}
         </div>)}
 
         {detail.workflow && <section className="article-block" aria-labelledby="invoice-path">

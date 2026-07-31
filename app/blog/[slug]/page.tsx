@@ -63,7 +63,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
   } : null;
 
   return <>
-    <Header hidePricing/>
+    <Header hideScope/>
     <main className="section article-page" data-article-marker={slug}>
       <JsonLd data={articleSchema}/>
       <JsonLd data={breadcrumbSchema}/>
@@ -189,6 +189,6 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         </article>
       <CTA/>
     </main>
-    <Footer hidePricing/>
+    <Footer hideScope/>
   </>;
 }

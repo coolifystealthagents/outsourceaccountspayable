@@ -68,6 +68,46 @@
       },
       "push": { "repository": "coolifystealthagents/outsourceaccountspayable", "branch": "main" },
       "afterPush": "stop"
+    },
+    {
+      "id": "batched-coolify-deployment",
+      "title": "Batched Coolify Deployment",
+      "cron": "0 3,9,15,21 * * *",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "project": "Onboarding",
+      "assignee": "Chief of staff",
+      "workflow": [
+        "verify_exact_domain_repository_branch_application_mapping",
+        "require_all_daily_blog_items_complete_validated_and_build_verified",
+        "reconcile_persisted_batch_sha_and_deployment_before_mutation",
+        "create_one_validated_combined_blog_commit_and_one_production_push",
+        "confirm_sha_has_no_queued_active_or_successful_deployment",
+        "inspect_global_coolify_queue_once",
+        "emit_SKIPPED_COOLIFY_QUEUE_at_three_or_more_without_submission_or_polling",
+        "trigger_exactly_one_manual_deployment_below_queue_cap",
+        "persist_non_secret_batch_and_deployment_evidence",
+        "reconcile_until_success_then_verify_exact_commit_and_new_blog_pages_live",
+        "finish_with_exactly_one_allowed_outcome"
+      ],
+      "protectedConfiguration": [
+        "COOLIFY_API_URL",
+        "COOLIFY_API_TOKEN",
+        "COOLIFY_APPLICATION_UUID"
+      ],
+      "allowedOutcomes": [
+        "SKIPPED_INCOMPLETE",
+        "NO_NEW_CHANGES",
+        "ALREADY_DEPLOYED",
+        "DEPLOYMENT_ALREADY_PENDING",
+        "SKIPPED_COOLIFY_QUEUE",
+        "DEPLOYMENT_SUBMITTED",
+        "DEPLOYMENT_IN_PROGRESS",
+        "DEPLOYMENT_FAILED",
+        "LIVE_VERIFIED"
+      ]
     }
   ]
 }

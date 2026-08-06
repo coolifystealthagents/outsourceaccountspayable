@@ -27,6 +27,29 @@
       "target": { "minimum": 10, "maximum": 15 },
       "contentDirectory": "app/data.ts",
       "articleType": "research"
+    },
+    {
+      "id": "batched-coolify-deployment",
+      "title": "Batched Coolify Deployment",
+      "cron": "0 3,9,15,21 * * *",
+      "timezone": "UTC",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "project": "Onboarding",
+      "assignee": "Chief of staff",
+      "application": {
+        "domain": "outsourceaccountspayable.com",
+        "repository": "coolifystealthagents/outsourceaccountspayable.git",
+        "productionBranch": "main",
+        "coolifyApplicationUuid": "hbmdk3sbdm0u52xlxnn43r9n",
+        "autoDeploy": false
+      },
+      "protectedConfiguration": ["COOLIFY_API_URL", "COOLIFY_API_TOKEN", "COOLIFY_APPLICATION_UUID"],
+      "queueCap": { "scope": "global", "queuedAtOrAbove": 3, "action": "SKIPPED_COOLIFY_QUEUE" },
+      "batchPolicy": { "oneCommit": true, "oneProductionPush": true, "oneDeploymentTrigger": true },
+      "persist": ["domain", "paperclipProject", "applicationUuid", "gitSha", "deploymentUuid", "triggeredAtUtc", "acceptedStatus", "observedQueuedCount"],
+      "allowedOutcomes": ["SKIPPED_INCOMPLETE", "NO_NEW_CHANGES", "ALREADY_DEPLOYED", "DEPLOYMENT_ALREADY_PENDING", "SKIPPED_COOLIFY_QUEUE", "DEPLOYMENT_SUBMITTED", "DEPLOYMENT_IN_PROGRESS", "DEPLOYMENT_FAILED", "LIVE_VERIFIED"]
     }
   ]
 }

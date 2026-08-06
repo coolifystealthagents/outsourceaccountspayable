@@ -12,7 +12,7 @@ if (config.version !== '2.4' || config.site !== 'OutsourceAccountsPayable.com' |
     config.branch !== 'main' || config.timezone !== 'UTC') fail('identity or v2.4 settings are invalid');
 if (config.coolifyDeploymentInRoutine !== false || config.googleSearchConsoleInRoutine !== false) fail('prohibited workflow enabled');
 if (JSON.stringify(config.secretInjection) !== JSON.stringify(['github', 'gemini'])) fail('secret injection must be GitHub and Gemini only');
-if (!Array.isArray(config.routines) || config.routines.length !== expected.length) fail('exactly two routines are required');
+if (!Array.isArray(config.routines) || config.routines.length !== expected.length + 1) fail('content routines plus exactly one deployment routine are required');
 for (const [i, [id, cron, min, max, concurrency, priority]] of expected.entries()) {
   const r = config.routines[i];
   if (r.id !== id || r.cron !== cron || r.randomTarget.minimum !== min || r.randomTarget.maximum !== max ||
@@ -21,4 +21,12 @@ for (const [i, [id, cron, min, max, concurrency, priority]] of expected.entries(
   if (r.humanizer.source !== 'https://github.com/blader/humanizer' || r.humanizer.minimumVersion !== '2.9.1' || !r.humanizer.required) fail(`${id} humanizer gate is invalid`);
   if (!r.workflow.includes('build_and_structured_data_validation') || !r.workflow.includes('record_sha_branch_files_push_and_validation')) fail(`${id} validation/evidence steps are missing`);
 }
+const deployment = config.routines[2];
+if (deployment.id !== 'batched-coolify-deployment' || deployment.title !== 'Batched Coolify Deployment' ||
+    deployment.cron !== '0 3,9,15,21 * * *' || deployment.timezone !== 'UTC' ||
+    deployment.concurrency !== 'skip_if_active' || deployment.catchUp !== 'skip_missed' || deployment.priority !== 'high' ||
+    deployment.project !== 'Onboarding' || deployment.assignee !== 'Chief of staff') fail('Coolify deployment schedule or ownership is invalid');
+if (JSON.stringify(deployment.protectedConfiguration) !== JSON.stringify(['COOLIFY_API_URL', 'COOLIFY_API_TOKEN', 'COOLIFY_APPLICATION_UUID'])) fail('Coolify protected configuration is invalid');
+const outcomes = ['SKIPPED_INCOMPLETE', 'NO_NEW_CHANGES', 'ALREADY_DEPLOYED', 'DEPLOYMENT_ALREADY_PENDING', 'SKIPPED_COOLIFY_QUEUE', 'DEPLOYMENT_SUBMITTED', 'DEPLOYMENT_IN_PROGRESS', 'DEPLOYMENT_FAILED', 'LIVE_VERIFIED'];
+if (JSON.stringify(deployment.allowedOutcomes) !== JSON.stringify(outcomes)) fail('Coolify allowed outcomes are invalid');
 console.log('v2.4 routine manifest: PASS');

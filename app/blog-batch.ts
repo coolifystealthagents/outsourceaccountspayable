@@ -21,6 +21,7 @@ const topics = [
   ['ap-document-retention-workflow', 'AP document retention workflow for remote support', 'AP document retention', 'Keep source invoices, approvals, and exception evidence together in the approved system with clear retention ownership.'],
   ['ap-quality-review-scorecard', 'AP quality review scorecard for a Philippines AP assistant', 'AP quality review', 'Review invoice packets using observable checks instead of vague feedback or volume-only measures.'],
   ['outsource-ap-first-30-days', 'The first 30 days of outsourced accounts payable support', 'outsourced AP onboarding', 'Start with one AP lane, sample real packets, review access, and expand only after the control path works.'],
+  ['ap-kpi-review-dashboard', 'AP KPI review dashboard for outsourced finance support', 'AP KPI review dashboard', 'Track useful AP review signals such as corrections, exceptions, aging, and handoff timing without using volume as the only measure.'],
 ] as const;
 
 export const batchPosts = topics.map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}));

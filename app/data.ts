@@ -1,6 +1,7 @@
 import {fraudPostDetail} from './fraud-post';
 import {invoiceApprovalWorkflowPostDetail} from './invoice-approval-workflow-post';
 import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
+import {batchPosts, batchDetails} from './blog-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -59,6 +60,7 @@ export const blogPosts = [
     excerpt: 'Use a clear vendor packet, bank check, access limit, and approval path when a Filipino AP assistant prepares new vendor records.',
     minutes: 14,
   },
+  ...batchPosts,
 ] as const;
 
 export const blogDetails = {
@@ -258,6 +260,7 @@ export const blogDetails = {
   'invoice-approval-workflow-philippines-ap-team': invoiceApprovalWorkflowPostDetail,
   'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
   'vendor-onboarding-checklist-philippines-ap-team': vendorOnboardingPostDetail,
+  ...batchDetails,
 } as const;
 
 export const staffingOffer = {

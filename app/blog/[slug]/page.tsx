@@ -16,8 +16,13 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
     title: post.title,
     description: post.excerpt,
     alternates: {canonical: url},
-    openGraph: {title: post.title, description: post.excerpt, url, type: 'article'},
+    openGraph: {title: post.title, description: post.excerpt, url, type: 'article', images: detailImage(post.slug)},
   };
+}
+
+function detailImage(slug: string) {
+  const detail = (blogDetails as Record<string, any>)[slug];
+  return detail?.thumbnail ? [{url: `https://${String(site.domain).toLowerCase()}${detail.thumbnail}`, width: 1200, height: 630, alt: blogPosts.find((item) => item.slug === slug)?.title}] : undefined;
 }
 
 export default async function Post({params}: {params: Promise<{slug: string}>}) {
@@ -148,6 +153,8 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           </section>
           {detail.banners && (index + 1) % 2 === 0 && detail.banners[(index + 1) / 2 - 1] && <aside className="article-banner" data-article-banner="true"><div><span>{detail.banners[(index + 1) / 2 - 1].eyebrow}</span><strong>{detail.banners[(index + 1) / 2 - 1].title}</strong><p>{detail.banners[(index + 1) / 2 - 1].text}</p></div><a href={detail.banners[(index + 1) / 2 - 1].href}>{detail.banners[(index + 1) / 2 - 1].label}</a></aside>}
         </div>)}
+
+        {detail.bodyLinks && <p className="article-context-links">Continue with <a href={detail.bodyLinks[0].href}>{detail.bodyLinks[0].label}</a> and the <a href={detail.bodyLinks[1].href}>{detail.bodyLinks[1].label}</a>.</p>}
 
         {detail.workflow && <section className="article-block" aria-labelledby="invoice-path">
           <p className="section-kicker">Sample workflow</p>

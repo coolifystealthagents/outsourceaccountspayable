@@ -2,6 +2,7 @@ import {fraudPostDetail} from './fraud-post';
 import {invoiceApprovalWorkflowPostDetail} from './invoice-approval-workflow-post';
 import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 import {batchPosts, batchDetails} from './blog-batch';
+import {researchBatch} from './research-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -284,4 +285,4 @@ export const leadQuestions = [
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [];
+export const researchPosts = researchBatch;

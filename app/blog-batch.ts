@@ -68,6 +68,34 @@ const topics = [
   ['ap-invoice-approval-follow-up', 'Invoice approval follow-up workflow', 'invoice approval follow-up', 'Keep pending approvals visible with a dated reminder, evidence link, backup path, and escalation rule.'],
 ] as const;
 
+// Explicit publication binding for the frozen August 10 batch. Keep this
+// slug-specific so dates cannot be inferred from a shared batch default.
+export const aug10BlogPublicationDates: Record<string, string> = {
+  'ap-accounts-payable-handoff-metrics': '2026-08-10',
+  'ap-ap-close-calendar': '2026-08-10',
+  'ap-approval-evidence-checklist': '2026-08-10',
+  'ap-cash-application-support': '2026-08-10',
+  'ap-close-handoff-template': '2026-08-10',
+  'ap-fraud-risk-escalation': '2026-08-10',
+  'ap-invoice-access-log': '2026-08-10',
+  'ap-invoice-approval-follow-up': '2026-08-10',
+  'ap-invoice-coding-exception-log': '2026-08-10',
+  'ap-invoice-data-quality-checks': '2026-08-10',
+  'ap-invoice-receipt-index': '2026-08-10',
+  'ap-invoice-status-dashboard': '2026-08-10',
+  'ap-invoice-volume-forecast': '2026-08-10',
+  'ap-invoice-work-queue-priorities': '2026-08-10',
+  'ap-non-po-invoice-workflow': '2026-08-10',
+  'ap-payment-support-segregation': '2026-08-10',
+  'ap-purchase-request-review': '2026-08-10',
+  'ap-reconciliation-evidence-pack': '2026-08-10',
+  'ap-supplier-statement-request-script': '2026-08-10',
+  'ap-unmatched-invoice-follow-up': '2026-08-10',
+  'ap-vendor-change-request-workflow': '2026-08-10',
+  'ap-vendor-inquiry-triage': '2026-08-10',
+  'ap-vendor-onboarding-checklist': '2026-08-10',
+};
+
 export const batchPosts = topics.map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}));
 
 export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword, excerpt], index) => {
@@ -82,7 +110,7 @@ export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword
   ];
   return [slug, {
     mainKeyword: keyword,
-    published: '2026-08-10',
+    published: aug10BlogPublicationDates[slug] ?? '2026-08-10',
     modified: '2026-08-10',
     thumbnail: `/blog-thumbnails/${slug}.svg`,
     shortAnswer: `${excerpt} The assistant prepares evidence and follows the written queue rules; your finance owner keeps approval, bank-detail changes, and payment release.`,

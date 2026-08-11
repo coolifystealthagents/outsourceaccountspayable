@@ -9,7 +9,7 @@
   "minimum": 22,
   "priorRunId": "53994354-778c-41a9-a7d8-ea2925d07d63",
   "priorIssueId": "f1a3e44f-2429-441a-936b-a675761c6af6",
-  "validationCommands": ["node scripts/validate-aug10-blog.mjs", "npm run validate:routines", "npm run build"],
+  "validationCommands": ["npm run build", "node scripts/validate-aug10-blog.mjs", "npm run validate:routines"],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,

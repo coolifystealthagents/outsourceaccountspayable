@@ -68,6 +68,60 @@ const topics = [
   ['ap-invoice-approval-follow-up', 'Invoice approval follow-up workflow', 'invoice approval follow-up', 'Keep pending approvals visible with a dated reminder, evidence link, backup path, and escalation rule.'],
 ] as const;
 
+// August 11, 2026 publication batch. Each slug has its own explicit date
+// binding below; do not infer these dates from a batch-wide default.
+const aug11Topics = [
+  ['ap-invoice-intake-cutoff-rules', 'AP invoice intake cutoff rules for month-end', 'invoice intake cutoff rules', 'Set a clear intake cutoff, capture late documents, and route owner decisions before the close calendar moves on.'],
+  ['ap-vendor-credit-application-review', 'AP vendor credit application review checklist', 'vendor credit application review', 'Match vendor credits to source records, document open questions, and keep application decisions with the finance owner.'],
+  ['ap-invoice-approval-delegation-log', 'Invoice approval delegation log for AP support', 'invoice approval delegation log', 'Record temporary approval coverage with dates, scope, evidence, and a clear return to the normal approver.'],
+  ['ap-rejected-invoice-rework-queue', 'Rejected invoice rework queue for AP teams', 'rejected invoice rework', 'Make rejected invoices actionable by recording the reason, missing evidence, owner, and next review date.'],
+  ['ap-vendor-tax-form-review', 'Vendor tax form review workflow for AP support', 'vendor tax form review', 'Check tax-form completeness and route uncertain classifications without turning support staff into tax decision-makers.'],
+  ['ap-invoice-payment-term-review', 'Invoice payment term review checklist', 'invoice payment term review', 'Compare invoice terms with approved records and escalate mismatches before they affect a payment proposal.'],
+  ['ap-purchase-order-closeout', 'Purchase order closeout checklist for AP teams', 'purchase order closeout', 'Review remaining commitments, receipts, invoices, and owner notes before closing a purchase order.'],
+  ['ap-invoice-dispute-tracking', 'AP invoice dispute tracking workflow', 'invoice dispute tracking', 'Keep disputed invoices visible with the evidence, business owner, supplier contact, and next decision.'],
+  ['ap-vendor-duplicate-record-review', 'AP vendor duplicate record review', 'vendor duplicate record review', 'Compare names, addresses, tax identifiers, and source evidence before routing suspected duplicate vendors.'],
+  ['ap-invoice-scanning-quality-review', 'Invoice scanning quality review checklist', 'invoice scanning quality review', 'Catch unreadable pages, missing attachments, and altered-looking files before invoice data reaches the queue.'],
+  ['ap-accrual-support-evidence-log', 'AP accrual support evidence log', 'accrual support evidence log', 'Prepare open-receipt and unbilled-service evidence while leaving accrual judgments with the finance owner.'],
+  ['ap-invoice-due-date-exception-review', 'Invoice due-date exception review', 'invoice due-date exception review', 'Explain unusual due dates with source evidence and route changes through the approved owner path.'],
+  ['ap-remittance-advice-follow-up', 'Remittance advice follow-up for AP support', 'remittance advice follow-up', 'Collect remittance details, connect them to payment records, and escalate missing or conflicting information.'],
+  ['ap-invoice-company-code-checks', 'Invoice company code checks before entry', 'invoice company code checks', 'Use source documents and approved entity rules to flag uncertain company coding before entry.'],
+  ['ap-open-receipt-aging-review', 'Open receipt aging review for AP close', 'open receipt aging review', 'Age open receipts, identify the responsible requester, and prepare close notes without making accounting entries.'],
+  ['ap-vendor-bank-verification-log', 'Vendor bank verification log for AP support', 'vendor bank verification log', 'Document independent verification steps and approval evidence for bank-detail requests before any change is considered.'],
+  ['ap-invoice-approval-reminder-calendar', 'Invoice approval reminder calendar', 'invoice approval reminder calendar', 'Turn approval follow-up into dated reminders with backup paths and a clear escalation point.'],
+  ['ap-missing-invoice-evidence-review', 'Missing invoice evidence review process', 'missing invoice evidence review', 'Identify the exact missing record, request it clearly, and keep the invoice paused until the owner resolves the gap.'],
+  ['ap-ap-close-status-report', 'AP close status report fields that matter', 'AP close status report', 'Summarize completeness, open exceptions, owner decisions, and evidence gaps in a report finance can review quickly.'],
+  ['ap-invoice-entity-change-control', 'Invoice entity change control checklist', 'invoice entity change control', 'Pause unexpected entity changes, compare approved records, and route the question to the right finance owner.'],
+  ['ap-supplier-invoice-portal-review', 'Supplier invoice portal review workflow', 'supplier invoice portal review', 'Check portal submissions for completeness, duplicates, and routing information before preparing the invoice packet.'],
+  ['ap-ap-workload-handoff-notes', 'AP workload handoff notes for distributed teams', 'AP workload handoff notes', 'Make a daily handoff useful with completed work, blocked items, evidence links, and named next owners.'],
+] as const;
+
+export const aug11BlogPublicationDates: Record<string, string> = {
+  'ap-invoice-intake-cutoff-rules': '2026-08-11',
+  'ap-vendor-credit-application-review': '2026-08-11',
+  'ap-invoice-approval-delegation-log': '2026-08-11',
+  'ap-rejected-invoice-rework-queue': '2026-08-11',
+  'ap-vendor-tax-form-review': '2026-08-11',
+  'ap-invoice-payment-term-review': '2026-08-11',
+  'ap-purchase-order-closeout': '2026-08-11',
+  'ap-invoice-dispute-tracking': '2026-08-11',
+  'ap-vendor-duplicate-record-review': '2026-08-11',
+  'ap-invoice-scanning-quality-review': '2026-08-11',
+  'ap-accrual-support-evidence-log': '2026-08-11',
+  'ap-invoice-due-date-exception-review': '2026-08-11',
+  'ap-remittance-advice-follow-up': '2026-08-11',
+  'ap-invoice-company-code-checks': '2026-08-11',
+  'ap-open-receipt-aging-review': '2026-08-11',
+  'ap-vendor-bank-verification-log': '2026-08-11',
+  'ap-invoice-approval-reminder-calendar': '2026-08-11',
+  'ap-missing-invoice-evidence-review': '2026-08-11',
+  'ap-ap-close-status-report': '2026-08-11',
+  'ap-invoice-entity-change-control': '2026-08-11',
+  'ap-supplier-invoice-portal-review': '2026-08-11',
+  'ap-ap-workload-handoff-notes': '2026-08-11',
+};
+
+const allTopics = [...aug11Topics, ...topics];
+
 // Explicit publication binding for the frozen August 10 batch. Keep this
 // slug-specific so dates cannot be inferred from a shared batch default.
 export const aug10BlogPublicationDates: Record<string, string> = {
@@ -99,7 +153,7 @@ export const aug10BlogPublicationDates: Record<string, string> = {
 const frozenAug10Order = Object.keys(aug10BlogPublicationDates);
 const frozenAug10Rank = new Map(frozenAug10Order.map((slug, index) => [slug, index]));
 
-export const batchPosts = topics
+export const batchPosts = allTopics
   .map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}))
   .sort((a, b) => {
     const aRank = frozenAug10Rank.get(a.slug);
@@ -110,7 +164,7 @@ export const batchPosts = topics
     return 0;
   });
 
-export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword, excerpt], index) => {
+export const batchDetails = Object.fromEntries(allTopics.map(([slug, title, keyword, excerpt], index) => {
   const related = [
     {href: '/services/invoice-data-capture', label: 'Invoice data capture support'},
     {href: '/services/ap-inbox-management', label: 'AP inbox management'},
@@ -122,8 +176,8 @@ export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword
   ];
   return [slug, {
     mainKeyword: keyword,
-    published: aug10BlogPublicationDates[slug] ?? '2026-08-10',
-    modified: '2026-08-10',
+    published: aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
+    modified: aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
     thumbnail: `/blog-thumbnails/${slug}.svg`,
     shortAnswer: `${excerpt} The assistant prepares evidence and follows the written queue rules; your finance owner keeps approval, bank-detail changes, and payment release.`,
     sections: [

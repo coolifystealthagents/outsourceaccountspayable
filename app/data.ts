@@ -2,7 +2,7 @@ import {fraudPostDetail} from './fraud-post';
 import {invoiceApprovalWorkflowPostDetail} from './invoice-approval-workflow-post';
 import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 import {batchPosts, batchDetails} from './blog-batch';
-import {researchBatch} from './research-batch';
+import {researchBatch, aug10ResearchPublicationDates} from './research-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -285,5 +285,9 @@ export const leadQuestions = [
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';
 
 
-// Keep the Research library newest-first so the public index reflects publication dates.
-export const researchPosts = [...researchBatch].sort((a,b)=>b.published.localeCompare(a.published));
+// Keep the Research library newest-first; the frozen August 10 batch leads equal-date legacy posts.
+const aug10ResearchSlugs = new Set(Object.keys(aug10ResearchPublicationDates));
+export const researchPosts = [...researchBatch].sort((a,b)=>
+  b.published.localeCompare(a.published) ||
+  Number(aug10ResearchSlugs.has(b.slug)) - Number(aug10ResearchSlugs.has(a.slug))
+);

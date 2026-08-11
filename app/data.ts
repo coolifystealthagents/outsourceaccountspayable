@@ -3,6 +3,7 @@ import {invoiceApprovalWorkflowPostDetail} from './invoice-approval-workflow-pos
 import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 import {batchPosts, batchDetails} from './blog-batch';
 import {researchBatch, aug10ResearchPublicationDates} from './research-batch';
+import {aug11ResearchBatch} from './research-aug11-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -285,9 +286,12 @@ export const leadQuestions = [
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';
 
 
-// Keep the Research library newest-first; the frozen August 10 batch leads equal-date legacy posts.
+// Keep the Research library newest-first; the August 11 batch leads the frozen August 10 batch.
 const aug10ResearchSlugs = new Set(Object.keys(aug10ResearchPublicationDates));
-export const researchPosts = [...researchBatch].sort((a,b)=>
+const aug11ResearchSlugs = new Set(aug11ResearchBatch.map(post=>post.slug));
+export const researchPosts = [...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   b.published.localeCompare(a.published) ||
-  Number(aug10ResearchSlugs.has(b.slug)) - Number(aug10ResearchSlugs.has(a.slug))
+  Number(aug11ResearchSlugs.has(b.slug)) - Number(aug11ResearchSlugs.has(a.slug)) ||
+  Number(aug10ResearchSlugs.has(b.slug)) - Number(aug10ResearchSlugs.has(a.slug)) ||
+  a.slug.localeCompare(b.slug)
 );

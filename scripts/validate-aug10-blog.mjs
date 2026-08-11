@@ -29,14 +29,23 @@ for (const entry of manifest.entries) {
   const builtPath = `.next/server/app/blog/${entry.slug}.html`;
   if (fs.existsSync(builtPath)) {
     const built = fs.readFileSync(builtPath, 'utf8');
-    if (!built.includes('2026-08-10') || !built.includes('datePublished') || !built.includes(`/blog/${entry.slug}`)) throw new Error(`built route date/canonical: ${entry.slug}`);
+    if (!built.includes('2026-08-10') || !built.includes('datePublished') || !built.includes(`<time dateTime="2026-08-10">2026-08-10</time>`) || !built.includes(`/blog/${entry.slug}`)) throw new Error(`built route date/canonical: ${entry.slug}`);
   }
   const parent = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/blog-batch.ts`], {encoding:'utf8'});
   const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/blog-batch.ts`], {encoding:'utf8'});
   if (parent.includes(`['${entry.slug}',`) || !introduced.includes(`['${entry.slug}',`)) throw new Error(`diff provenance: ${entry.slug}`);
 }
 if (JSON.stringify([...seen].sort()) !== JSON.stringify([...frozenSlugs].sort())) throw new Error('frozen slug identity mismatch');
-if (!route.includes('datePublished: detail.published') || !route.includes('Published {detail.published}') || !route.includes('alternates: {canonical: url}')) throw new Error('article route date/canonical contract missing');
+if (!route.includes('datePublished: detail.published') || !route.includes('<time dateTime={detail.published}>{detail.published}</time>') || !route.includes('alternates: {canonical: url}')) throw new Error('article route date/canonical contract missing');
 if (!sitemap.includes('blogPosts.map')) throw new Error('blog sitemap eligibility missing');
 if (!data.includes('...batchPosts,') || data.indexOf('...batchPosts,') > data.indexOf("slug: 'invoice-approval-workflow-philippines-ap-team'")) throw new Error('blog index is not newest-first');
+const indexHtml = [
+  '.next/server/app/blog.html',
+  '.next/server/app/blog/page/2.html',
+  '.next/server/app/blog/page/3.html',
+].filter(fs.existsSync).map((path) => fs.readFileSync(path, 'utf8')).join('\n');
+const indexedFrozenSlugs = [...indexHtml.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)]
+  .map((match) => match[1])
+  .filter((slug, index, all) => frozenSlugs.includes(slug) && all.indexOf(slug) === index);
+if (JSON.stringify(indexedFrozenSlugs) !== JSON.stringify(frozenSlugs)) throw new Error(`built index order mismatch: ${indexedFrozenSlugs.join(',')}`);
 console.log(`PASS: ${manifest.entries.length} accepted Blog entries; source, rendered-date, canonical, sitemap, index, and per-slug provenance checks passed.`);

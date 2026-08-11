@@ -96,7 +96,19 @@ export const aug10BlogPublicationDates: Record<string, string> = {
   'ap-vendor-onboarding-checklist': '2026-08-10',
 };
 
-export const batchPosts = topics.map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}));
+const frozenAug10Order = Object.keys(aug10BlogPublicationDates);
+const frozenAug10Rank = new Map(frozenAug10Order.map((slug, index) => [slug, index]));
+
+export const batchPosts = topics
+  .map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}))
+  .sort((a, b) => {
+    const aRank = frozenAug10Rank.get(a.slug);
+    const bRank = frozenAug10Rank.get(b.slug);
+    if (aRank !== undefined && bRank !== undefined) return aRank - bRank;
+    if (aRank !== undefined) return -1;
+    if (bRank !== undefined) return 1;
+    return 0;
+  });
 
 export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword, excerpt], index) => {
   const related = [

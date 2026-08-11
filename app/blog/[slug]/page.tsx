@@ -78,7 +78,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <p className="eyebrow">Philippines AP staffing guide</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div>
-        {detail.published && <p className="article-meta">Published {detail.published} · {post.minutes} minute read · Philippines-only staffing</p>}
+        {detail.published && <p className="article-meta">Published <time dateTime={detail.published}>{detail.published}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
 
         <section className="answer-card" aria-labelledby="direct-answer">
           <p className="section-kicker">Direct answer</p>

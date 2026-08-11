@@ -285,4 +285,5 @@ export const leadQuestions = [
 export const staffingFitNote = 'Every AP staffing plan depends on role scope, schedule, tools, controls, and management needs. Send the role details to map a sensible first step.';
 
 
-export const researchPosts = researchBatch;
+// Keep the Research library newest-first so the public index reflects publication dates.
+export const researchPosts = [...researchBatch].sort((a,b)=>b.published.localeCompare(a.published));

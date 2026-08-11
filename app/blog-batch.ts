@@ -82,8 +82,8 @@ export const batchDetails = Object.fromEntries(topics.map(([slug, title, keyword
   ];
   return [slug, {
     mainKeyword: keyword,
-    published: '2026-08-07',
-    modified: '2026-08-07',
+    published: '2026-08-10',
+    modified: '2026-08-10',
     thumbnail: `/blog-thumbnails/${slug}.svg`,
     shortAnswer: `${excerpt} The assistant prepares evidence and follows the written queue rules; your finance owner keeps approval, bank-detail changes, and payment release.`,
     sections: [

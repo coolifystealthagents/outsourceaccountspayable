@@ -37,6 +37,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...batchPosts,
   {
     slug: 'invoice-approval-workflow-philippines-ap-team',
     title: 'Invoice approval workflow for a Philippines AP team',
@@ -61,7 +62,6 @@ export const blogPosts = [
     excerpt: 'Use a clear vendor packet, bank check, access limit, and approval path when a Filipino AP assistant prepares new vendor records.',
     minutes: 14,
   },
-  ...batchPosts,
 ] as const;
 
 export const blogDetails = {

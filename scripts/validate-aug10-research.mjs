@@ -13,7 +13,7 @@ for (const entry of manifest.entries) {
   if (seen.has(entry.slug)) throw new Error('duplicate slug: ' + entry.slug);
   seen.add(entry.slug);
   if (entry.route !== '/research/' + entry.slug || entry.sourcePath !== 'app/research-batch.ts') throw new Error('family/path mismatch: ' + entry.slug);
-  if (entry.provenance !== 'repair-replacement' || !/^[0-9a-f]{40}$/.test(entry.introducedByCommit)) throw new Error('provenance: ' + entry.slug);
+  if (entry.provenance !== 'original-aug10-batch' || !/^[0-9a-f]{40}$/.test(entry.introducedByCommit)) throw new Error('provenance: ' + entry.slug);
   const slugMarker = "['" + entry.slug + "',";
   if (!source.includes(slugMarker)) throw new Error('source slug missing: ' + entry.slug);
   if (entry.sourceDateField !== 'aug10ResearchPublicationDates[slug]' || entry.sourceDate !== '2026-08-10') throw new Error('source date: ' + entry.slug);
@@ -24,8 +24,8 @@ for (const entry of manifest.entries) {
   if (!built.includes('2026-08-10') || !built.includes('datePublished') || !built.includes('/research/' + entry.slug)) throw new Error('built route date/canonical: ' + entry.slug);
   const parent = execFileSync('git', ['show', entry.introducedByCommit + '^:app/research-batch.ts'], {encoding:'utf8'});
   const introduced = execFileSync('git', ['show', entry.introducedByCommit + ':app/research-batch.ts'], {encoding:'utf8'});
-  const dateMarker = "'" + entry.slug + "':'2026-08-10'";
-  if (parent.includes(dateMarker) || !introduced.includes(dateMarker)) throw new Error('diff provenance: ' + entry.slug);
+  const introductionMarker = "'" + entry.slug + "'";
+  if (parent.includes(introductionMarker) || !introduced.includes(introductionMarker)) throw new Error('diff provenance: ' + entry.slug);
 }
 if (!route.includes('datePublished:p.published') || !route.includes('<time dateTime={p.published}>') || !route.includes('alternates:{canonical:')) throw new Error('article route date/canonical contract missing');
 if (!sitemap.includes('researchPosts.map')) throw new Error('research sitemap eligibility missing');

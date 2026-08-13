@@ -4,6 +4,7 @@ import {vendorOnboardingPostDetail} from './vendor-onboarding-post';
 import {batchPosts, batchDetails} from './blog-batch';
 import {researchBatch, aug10ResearchPublicationDates} from './research-batch';
 import {aug11ResearchBatch} from './research-aug11-batch';
+import {aug13ResearchBatch} from './research-aug13-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -289,8 +290,10 @@ export const staffingFitNote = 'Every AP staffing plan depends on role scope, sc
 // Keep the Research library newest-first; the August 11 batch leads the frozen August 10 batch.
 const aug10ResearchSlugs = new Set(Object.keys(aug10ResearchPublicationDates));
 const aug11ResearchSlugs = new Set(aug11ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+const aug13ResearchSlugs = new Set(aug13ResearchBatch.map(post=>post.slug));
+export const researchPosts = [...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   b.published.localeCompare(a.published) ||
+  Number(aug13ResearchSlugs.has(b.slug)) - Number(aug13ResearchSlugs.has(a.slug)) ||
   Number(aug11ResearchSlugs.has(b.slug)) - Number(aug11ResearchSlugs.has(a.slug)) ||
   Number(aug10ResearchSlugs.has(b.slug)) - Number(aug10ResearchSlugs.has(a.slug)) ||
   a.slug.localeCompare(b.slug)

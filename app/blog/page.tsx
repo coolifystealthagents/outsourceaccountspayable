@@ -1,27 +1,6 @@
-import {Header,Footer} from '../components';import {blogPosts,site} from '../data';
+import {Header,Footer} from '../components';import {blogPosts,site} from '../data';import {aug13BlogPublicationDates} from '../blog-batch';
 const acceptedBlogRank = new Map([
-  ['ap-invoice-intake-cutoff-rules', 0],
-  ['ap-vendor-credit-application-review', 1],
-  ['ap-invoice-approval-delegation-log', 2],
-  ['ap-rejected-invoice-rework-queue', 3],
-  ['ap-vendor-tax-form-review', 4],
-  ['ap-invoice-payment-term-review', 5],
-  ['ap-purchase-order-closeout', 6],
-  ['ap-invoice-dispute-tracking', 7],
-  ['ap-vendor-duplicate-record-review', 8],
-  ['ap-invoice-scanning-quality-review', 9],
-  ['ap-accrual-support-evidence-log', 10],
-  ['ap-invoice-due-date-exception-review', 11],
-  ['ap-remittance-advice-follow-up', 12],
-  ['ap-invoice-company-code-checks', 13],
-  ['ap-open-receipt-aging-review', 14],
-  ['ap-vendor-bank-verification-log', 15],
-  ['ap-invoice-approval-reminder-calendar', 16],
-  ['ap-missing-invoice-evidence-review', 17],
-  ['ap-ap-close-status-report', 18],
-  ['ap-invoice-entity-change-control', 19],
-  ['ap-supplier-invoice-portal-review', 20],
-  ['ap-ap-workload-handoff-notes', 21],
+  ...Object.keys(aug13BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
 ]);
 const orderedBlogPosts = [...blogPosts].sort((a, b) => {
   const aRank = acceptedBlogRank.get(a.slug);

@@ -160,6 +160,49 @@ const aug13Guidance: Record<string, {answer: string; sections: {title: string; p
   }])
 );
 
+// August 14, 2026 publication batch. The date is repeated in every source
+// record and in the slug map so each article has a direct, auditable binding.
+const aug14Topics = [
+  ['ap-invoice-service-period-note', 'How to record an invoice service-period note', 'invoice service-period notes', 'Separate the service period from invoice and arrival dates so a close reviewer can see the question without guessing.', '2026-08-14'],
+  ['ap-invoice-billing-address-check', 'AP invoice billing-address check before entry', 'invoice billing-address checks', 'Compare billing details with the approved entity record and stop when the source does not support the match.', '2026-08-14'],
+  ['ap-vendor-invoice-number-normalization', 'Vendor invoice-number normalization for AP review', 'invoice-number normalization', 'Preserve the supplier number while recording a consistent search form for duplicate review and traceability.', '2026-08-14'],
+  ['ap-invoice-currency-evidence-review', 'Invoice currency evidence review for AP support', 'invoice currency evidence', 'Keep currency, amount, and conversion questions visible for the finance owner before an entry is prepared.', '2026-08-14'],
+  ['ap-invoice-unit-price-variance-note', 'Invoice unit-price variance notes that help AP reviewers', 'unit-price variance notes', 'Describe the exact quantity and price difference with source references instead of labeling every difference an error.', '2026-08-14'],
+  ['ap-vendor-statement-date-control', 'Vendor statement date control for AP reconciliation', 'vendor statement date control', 'Record the statement period and retrieval date so open-item comparisons use a clear time boundary.', '2026-08-14'],
+  ['ap-invoice-approval-channel-record', 'Invoice approval channel record for remote AP teams', 'approval channel records', 'Capture where approval occurred and connect it to the invoice packet without treating an informal message as authority.', '2026-08-14'],
+  ['ap-purchase-order-line-evidence', 'Purchase order line evidence for invoice matching', 'purchase order line evidence', 'Link invoice lines to the relevant order lines and isolate unmatched details for the accountable requester.', '2026-08-14'],
+  ['ap-invoice-receipt-date-log', 'AP invoice receipt-date log for close support', 'invoice receipt-date logs', 'Record when an invoice entered the process and keep that date distinct from service, invoice, and posting dates.', '2026-08-14'],
+  ['ap-vendor-contact-source-check', 'Vendor contact source check for AP follow-up', 'vendor contact source checks', 'Use an approved contact source for follow-up and pause when a message asks for a new channel or payment change.', '2026-08-14'],
+  ['ap-invoice-tax-jurisdiction-note', 'Invoice tax-jurisdiction notes for finance review', 'tax-jurisdiction notes', 'Record the source location and open question without turning AP support into a tax classification decision.', '2026-08-14'],
+  ['ap-close-invoice-status-snapshot', 'AP close invoice status snapshot', 'close invoice status snapshots', 'Take a dated view of invoice status, owner, evidence gaps, and next action for a reviewable close handoff.', '2026-08-14'],
+  ['ap-vendor-invoice-frequency-review', 'Vendor invoice-frequency review for AP planning', 'vendor invoice-frequency review', 'Use historical intake records to spot recurring patterns while keeping staffing and accounting decisions with the business owner.', '2026-08-14'],
+  ['ap-invoice-approval-comment-index', 'Invoice approval comment index for AP support', 'approval comment indexes', 'Index decision comments with the invoice identifier, author, date, and unresolved question so the record stays traceable.', '2026-08-14'],
+  ['ap-open-credit-owner-review', 'Open vendor credit owner review for AP', 'open credit owner reviews', 'Assign each open credit to a named owner and keep the source statement, invoice link, and next action together.', '2026-08-14'],
+  ['ap-invoice-document-version-log', 'Invoice document version log for AP records', 'invoice document version logs', 'Distinguish original and replacement files while preserving the source version used for review.', '2026-08-14'],
+  ['ap-expense-policy-evidence-note', 'Expense policy evidence notes for AP review', 'expense policy evidence notes', 'Point to the policy field and source receipt that need review without making an employee reimbursement decision.', '2026-08-14'],
+  ['ap-invoice-approval-timezone-handoff', 'Invoice approval time-zone handoff notes', 'approval time-zone handoffs', 'Make overnight approval queues clear with local timestamps, owner, next window, and stop conditions.', '2026-08-14'],
+  ['ap-vendor-statement-retrieval-log', 'Vendor statement retrieval log for AP teams', 'vendor statement retrieval logs', 'Record statement requests, response dates, covered periods, and missing pages for a cleaner reconciliation queue.', '2026-08-14'],
+  ['ap-invoice-attachment-page-index', 'AP invoice attachment page index', 'invoice attachment page indexes', 'List the pages and supporting files in an invoice packet so reviewers can find missing or unrelated documents quickly.', '2026-08-14'],
+  ['ap-approval-threshold-evidence-note', 'Approval threshold evidence note for AP support', 'approval threshold evidence notes', 'Show the amount, entity, rule source, and approver question before routing a threshold exception.', '2026-08-14'],
+  ['ap-invoice-correction-history', 'Invoice correction history for AP review', 'invoice correction histories', 'Keep the original value, correction reason, source, and reviewer visible when an invoice packet changes.', '2026-08-14'],
+] as const;
+
+export const aug14BlogPublicationDates: Record<string, string> = Object.fromEntries(
+  aug14Topics.map(([slug,,,, date]) => [slug, date]),
+);
+
+const aug14Guidance: Record<string, {answer: string; sections: {title: string; paragraphs: string[]}[]}> = Object.fromEntries(
+  aug14Topics.map(([slug, title, keyword, excerpt]) => [slug, {
+    answer: `${excerpt} The support role makes the evidence easy to review; the finance owner keeps the approval or accounting decision.`,
+    sections: [
+      {title: 'Name the evidence before the work starts', paragraphs: [`For ${keyword}, write down the source that proves each field and the result the reviewer should receive. A packet is useful when another person can follow it back to the original document.`, `Begin with the question in this article: ${excerpt} Keep the source wording, file location, identifier, and date together. Do not replace an uncertain source with a confident summary.`]},
+      {title: 'Record the comparison plainly', paragraphs: [`Compare the relevant fields side by side and state what agrees, what differs, and what is missing. A short factual note is more useful than a status label that hides the reason for a stop.`, `The support role may prepare ${keyword}, request a document, and route a question. It should not alter the source, approve an exception, or decide an accounting treatment just to clear the queue.`]},
+      {title: 'Give the next question to an owner', paragraphs: [`End the packet with one decision request, such as confirming a source, accepting a documented difference, or providing a missing record. Name the owner and the next review date.`, `If a request includes changed bank details, unusual urgency, or a new contact path, pause it and use the approved independent verification route. Time-zone coverage helps only when authority remains clear.`]},
+      {title: 'Review stopped and completed items', paragraphs: [`Sample both finished and stopped records. Check that the source is retrievable, the comparison can be repeated, and the next action has not been implied as an approval.`, `Keep permissions limited to the documents and queue needed for ${keyword}. If the same question returns, improve the written rule and show the revision to the finance reviewer before widening the lane.`]},
+    ],
+  }])
+);
+
 export const aug11BlogPublicationDates: Record<string, string> = {
   'ap-invoice-intake-cutoff-rules': '2026-08-12',
   'ap-vendor-credit-application-review': '2026-08-12',
@@ -185,7 +228,7 @@ export const aug11BlogPublicationDates: Record<string, string> = {
   'ap-ap-workload-handoff-notes': '2026-08-12',
 };
 
-const allTopics = [...aug13Topics, ...aug11Topics, ...topics];
+const allTopics = [...aug14Topics, ...aug13Topics, ...aug11Topics, ...topics];
 
 // Explicit publication binding for the frozen August 10 batch. Keep this
 // slug-specific so dates cannot be inferred from a shared batch default.
@@ -219,16 +262,18 @@ const frozenAug10Order = Object.keys(aug10BlogPublicationDates);
 const frozenAug10Rank = new Map(frozenAug10Order.map((slug, index) => [slug, index]));
 const aug13Rank = new Map<string, number>(aug13Topics.map(([slug], index) => [slug, index]));
 const aug11Rank = new Map<string, number>(aug11Topics.map(([slug], index) => [slug, index]));
+const aug14Rank = new Map<string, number>(aug14Topics.map(([slug], index) => [slug, index]));
 
 export const batchPosts = allTopics
   .map(([slug, title, keyword, excerpt], index) => ({slug, title, excerpt, minutes: 10 + (index % 5)}))
   .sort((a, b) => {
-    const batchRank = (slug: string) => aug13Rank.has(slug) ? 0 : aug11Rank.has(slug) ? 1 : frozenAug10Rank.has(slug) ? 2 : 3;
+    const batchRank = (slug: string) => aug14Rank.has(slug) ? 0 : aug13Rank.has(slug) ? 1 : aug11Rank.has(slug) ? 2 : frozenAug10Rank.has(slug) ? 3 : 4;
     const aBatch = batchRank(a.slug);
     const bBatch = batchRank(b.slug);
     if (aBatch !== bBatch) return aBatch - bBatch;
-    if (aBatch === 0) return aug13Rank.get(a.slug)! - aug13Rank.get(b.slug)!;
-    if (aBatch === 1) return aug11Rank.get(a.slug)! - aug11Rank.get(b.slug)!;
+    if (aBatch === 0) return aug14Rank.get(a.slug)! - aug14Rank.get(b.slug)!;
+    if (aBatch === 1) return aug13Rank.get(a.slug)! - aug13Rank.get(b.slug)!;
+    if (aBatch === 2) return aug11Rank.get(a.slug)! - aug11Rank.get(b.slug)!;
     const aRank = frozenAug10Rank.get(a.slug);
     const bRank = frozenAug10Rank.get(b.slug);
     if (aRank !== undefined && bRank !== undefined) return aRank - bRank;
@@ -247,11 +292,11 @@ export const batchDetails = Object.fromEntries(allTopics.map(([slug, title, keyw
   ];
   return [slug, {
     mainKeyword: keyword,
-    published: aug13BlogPublicationDates[slug] ?? aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
-    modified: aug13BlogPublicationDates[slug] ?? aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
+    published: aug14BlogPublicationDates[slug] ?? aug13BlogPublicationDates[slug] ?? aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
+    modified: aug14BlogPublicationDates[slug] ?? aug13BlogPublicationDates[slug] ?? aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug] ?? '2026-08-10',
     thumbnail: `/blog-thumbnails/${slug}.svg`,
-    shortAnswer: aug13Guidance[slug]?.answer ?? `${excerpt} The assistant prepares evidence and follows the written queue rules; your finance owner keeps approval, bank-detail changes, and payment release.`,
-    sections: aug13Guidance[slug]?.sections ?? [
+    shortAnswer: aug14Guidance[slug]?.answer ?? aug13Guidance[slug]?.answer ?? `${excerpt} The assistant prepares evidence and follows the written queue rules; your finance owner keeps approval, bank-detail changes, and payment release.`,
+    sections: aug14Guidance[slug]?.sections ?? aug13Guidance[slug]?.sections ?? [
       {title: 'Define the first AP lane', paragraphs: [`Start with ${keyword.toLowerCase()} as one visible lane rather than a broad promise to help with finance. Name the input, the expected finished record, the reviewer, and the conditions that stop the work.`, `A Philippines-based AP assistant can prepare repeatable records, request missing documents, and keep the queue current. The company should keep accounting judgment, vendor approval, invoice approval, and payment release with named employees.`, `Use real examples from your own system. One clean example and several stopped examples will teach the process more clearly than a list of general duties.`]},
       {title: 'Separate preparation from approval', paragraphs: [`Write the control line beside each step. The assistant may compare source records, enter allowed draft fields, and route a packet, but should not turn an incomplete record into an approved transaction.`, `Use the ${bodyLinks[0].label} service lane only as a preparation task unless your own finance policy says otherwise. Keep the final money decision with an employee who has the required authority.`, `NIST describes least privilege as limiting access to what assigned work requires. Start with the smallest useful role and review permissions when scope, system, or worker changes.`]},
       {title: 'Make exceptions easy to escalate', paragraphs: [`Keep an exception list with the item, issue, date found, current owner, next action, and evidence. That list gives a remote team one shared place to continue work across time zones.`, `A request for changed bank details, an unknown attachment, a duplicate clue, or pressure to bypass a normal check should pause the item. The assistant should use the named escalation path, not improvise.`, `Review normal questions at set times and risky requests immediately. This keeps routine work moving while preserving a clear record of why a transaction did not proceed.`]},

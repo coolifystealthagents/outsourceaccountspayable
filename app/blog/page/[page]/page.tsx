@@ -1,6 +1,7 @@
 import { FeaturedComparison } from '../../FeaturedComparison';
-import {notFound,redirect} from 'next/navigation';import {Header,Footer} from '../../../components';import {blogPosts} from '../../../data';import {aug13BlogPublicationDates} from '../../../blog-batch';const acceptedBlogRank = new Map(
-  Object.keys(aug13BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
+import {notFound,redirect} from 'next/navigation';import {Header,Footer} from '../../../components';import {blogPosts} from '../../../data';import {aug14BlogPublicationDates,aug13BlogPublicationDates} from '../../../blog-batch';const acceptedBlogRank = new Map(
+  [...Object.keys(aug14BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
+  ...Object.keys(aug13BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number])],
 );
 const orderedBlogPosts = [...blogPosts].sort((a, b) => {
   const aRank = acceptedBlogRank.get(a.slug);

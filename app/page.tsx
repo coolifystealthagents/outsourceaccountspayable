@@ -35,9 +35,9 @@ export default function Home() {
               <p className="eyebrow">Managed accounts payable support</p>
               <h1>Build a calmer AP desk.</h1>
               <ul className="hero-checks icon-replacement-list" aria-label="Accounts payable support tasks">
-                <li><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt=""/>Sort invoices and chase missing details</li>
-                <li><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt=""/>Keep due dates and approval owners visible</li>
-                <li><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt=""/>Prepare clean packets for finance review</li>
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt="AP invoice review"/>Sort invoices and chase missing details</li>
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt="AP due date tracking"/>Keep due dates and approval owners visible</li>
+                <li><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt="AP approval control"/>Prepare clean packets for finance review</li>
                 <li>Log exceptions before they become fire drills</li>
               </ul>
               <a className="btn primary" href="/contact-us">Request an AP staffing plan</a>
@@ -113,8 +113,8 @@ export default function Home() {
         </section>
 
         <section className="container gi-proof" aria-label="Accounts payable control points">
-          <img className="gi-proof-art" src="/illustrations/getillustrations/hannah-business-illustrations-svg/invoice-workflow.svg" alt="" />
-          <div><p className="eyebrow">A visible AP workflow</p><h2>Prepare, review, and approve in order.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt=""/>Invoice review</span><span><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt=""/>Due dates</span><span><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt=""/>Approval control</span></div></div>
+          <img className="gi-proof-art" src="/illustrations/getillustrations/hannah-business-illustrations-svg/invoice-workflow.svg" alt="Accounts payable invoice workflow" />
+          <div><p className="eyebrow">A visible AP workflow</p><h2>Prepare, review, and approve in order.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/3d-finance-icons-png/invoice-review.webp" alt="Invoice review step"/>Invoice review</span><span><img src="/icons/getillustrations/3d-finance-icons-png/due-date.webp" alt="Invoice due dates"/>Due dates</span><span><img src="/icons/getillustrations/3d-finance-icons-png/approval-control.webp" alt="Invoice approval control"/>Approval control</span></div></div>
         </section>
 
         <section className="container ap-guides">

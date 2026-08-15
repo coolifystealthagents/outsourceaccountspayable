@@ -1,4 +1,4 @@
-export type ResearchPost = {slug:string;title:string;excerpt:string;published:string;modified:string;thumbnail:string;keywords:string[];body:string[];citations:{label:string;href:string}[];internalLinks:{label:string;href:string}[];cta:string};
+export type ResearchPost = {slug:string;title:string;excerpt:string;published:string;modified:string;thumbnail:string;keywords:string[];body:string[];citations:{label:string;href:string}[];internalLinks:{label:string;href:string}[];cta:string;serviceHandoff?:{heading:string;body:string;label:string;href:string}};
 const sources=[
 {label:'NIST: Least Privilege Glossary',href:'https://csrc.nist.gov/glossary/term/least_privilege'},
 {label:'NIST SP 800-53 Rev. 5',href:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'},

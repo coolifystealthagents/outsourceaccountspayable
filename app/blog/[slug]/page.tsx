@@ -85,7 +85,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <nav className="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a></nav>
         <p className="eyebrow">Philippines AP staffing guide</p>
         <h1>{post.title}</h1>
-        <p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div>
+        <p className="lead">{post.excerpt}</p>
         {detail.published && <p className="article-meta">Published <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
 
         <section className="answer-card" aria-labelledby="direct-answer">

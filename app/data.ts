@@ -6,6 +6,7 @@ import {researchBatch, aug10ResearchPublicationDates} from './research-batch';
 import {aug11ResearchBatch} from './research-aug11-batch';
 import {aug13ResearchBatch} from './research-aug13-batch';
 import {aug14ResearchBatch} from './research-aug14-batch';
+import {aug17BlogPosts, aug17BlogDetails} from './blog-aug17-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -40,6 +41,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug17BlogPosts,
   ...batchPosts,
   {
     slug: 'invoice-approval-workflow-philippines-ap-team',
@@ -264,6 +266,7 @@ export const blogDetails = {
   'invoice-approval-workflow-philippines-ap-team': invoiceApprovalWorkflowPostDetail,
   'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
   'vendor-onboarding-checklist-philippines-ap-team': vendorOnboardingPostDetail,
+  ...aug17BlogDetails,
   ...batchDetails,
 } as const;
 

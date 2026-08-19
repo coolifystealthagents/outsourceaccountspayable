@@ -7,6 +7,7 @@ import {aug11ResearchBatch} from './research-aug11-batch';
 import {aug13ResearchBatch} from './research-aug13-batch';
 import {aug14ResearchBatch} from './research-aug14-batch';
 import {aug17ResearchBatch} from './research-aug17-batch';
+import {aug18ResearchBatch} from './research-aug18-batch';
 import {aug17BlogPosts, aug17BlogDetails} from './blog-aug17-batch';
 import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
 
@@ -301,7 +302,9 @@ const aug11ResearchSlugs = new Set(aug11ResearchBatch.map(post=>post.slug));
 const aug13ResearchSlugs = new Set(aug13ResearchBatch.map(post=>post.slug));
 const aug14ResearchSlugs = new Set(aug14ResearchBatch.map(post=>post.slug));
 const aug17ResearchSlugs = new Set(aug17ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+const aug18ResearchSlugs = new Set(aug18ResearchBatch.map(post=>post.slug));
+export const researchPosts = [...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+  Number(aug18ResearchSlugs.has(b.slug)) - Number(aug18ResearchSlugs.has(a.slug)) ||
   Number(aug17ResearchSlugs.has(b.slug)) - Number(aug17ResearchSlugs.has(a.slug)) ||
   Number(aug14ResearchSlugs.has(b.slug)) - Number(aug14ResearchSlugs.has(a.slug)) ||
   b.published.localeCompare(a.published) ||

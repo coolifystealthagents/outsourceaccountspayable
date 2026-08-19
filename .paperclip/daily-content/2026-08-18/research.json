@@ -1,0 +1,16 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "research",
+  "entries": [
+    {"route":"/research/ap-invoice-source-completeness-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-invoice-queue-aging-cause-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-approval-evidence-chain-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-vendor-inquiry-boundary-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-credit-application-evidence-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-entity-routing-evidence-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-payment-due-date-evidence-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-receipt-gap-routing-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-invoice-currency-exception-research","sourcePaths":["app/research-aug18-batch.ts"]},
+    {"route":"/research/ap-close-cutoff-exception-research","sourcePaths":["app/research-aug18-batch.ts"]}
+  ]
+}

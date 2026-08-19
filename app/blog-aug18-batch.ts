@@ -27,6 +27,34 @@ const topics: Topic[] = [
   ['ap-invoice-correction-request-workflow','AP invoice correction request workflow','invoice correction request','Request supplier corrections with enough detail to be actionable while preserving the original invoice and finance decision path.','correction requests',['incorrect field','source comparison','supplier message','replacement record','re-review']],
 ];
 
+// Route-local publication evidence. Keep the target date beside every accepted
+// identity so a release audit does not have to infer it from a shared map.
+// These are source bindings, not a second set of article identities.
+export const aug18BlogRouteSourceSegments: Record<string,{published:'2026-08-18';sourceDate:'2026-08-18'}> = {
+  'ap-invoice-intake-channel-map': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-approval-owner-roster': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-vendor-statement-reconciliation-notes': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-business-purpose-check': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-received-date-log': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-approval-rejection-notes': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-supplier-portal-export-checks': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-line-description-review': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-approver-response-log': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-attachment-version-control': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-po-quantity-variance-review': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-recurring-charge-review': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-urgent-escalation-log': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-closed-period-question': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-employee-expense-evidence': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-payment-run-exclusion-log': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-vendor-inquiry-record': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-approval-threshold-check': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-reconciliation-break-log': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-document-access-review': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-month-end-evidence-index': {published:'2026-08-18',sourceDate:'2026-08-18'},
+  'ap-invoice-correction-request-workflow': {published:'2026-08-18',sourceDate:'2026-08-18'},
+};
+
 const paragraph = (topic: Topic, item: string, n: number) => `${topic[1]} requires a clear record of ${item}, not a vague status label. Begin with the invoice identifier, supplier, entity, date received, and source location. Compare the relevant document or report without overwriting the original. State what the AP support role observed, what the evidence does not establish, and which person owns the unresolved judgment. For ${item}, preserve the message, line, file, or report that caused the review and note the exact field that needs attention. This keeps preparation separate from approval, accounting treatment, vendor-master maintenance, tax judgment, and payment release. A reviewer should be able to open the packet later and understand why the item was routed, what was checked, and what still needs an answer. ${n % 2 ? 'Record a named next action and review date; “follow up” is not a control unless someone owns the response.' : 'Keep both agreement and disagreement visible; hiding clean fields makes the eventual exception harder to explain.'} If the source is incomplete, pause the item and request the missing evidence through the approved channel. If the request is urgent, preserve the urgency claim but do not let it bypass the normal control path. Repeated questions belong in a process review, where the finance owner can decide whether the intake rule, access boundary, or escalation route should change.`;
 
 export const aug18BlogPublicationDates: Record<string,string> = {
@@ -35,6 +63,8 @@ export const aug18BlogPublicationDates: Record<string,string> = {
 export const aug18BlogPosts = topics.map(([slug,title,,excerpt])=>({slug,title,excerpt,minutes:14}));
 export const aug18BlogDetails = Object.fromEntries(topics.map((topic, index) => {
   const [slug,title,keyword,excerpt,angle,items] = topic;
+  const routeSource = aug18BlogRouteSourceSegments[slug];
+  if (!routeSource) throw new Error(`Missing August 18 route source segment: ${slug}`);
   const sections: Section[] = [
     {title:`Define the ${angle} boundary`,paragraphs:[paragraph(topic,items[0],index),paragraph(topic,items[1],index+1)]},
     {title:`Build the ${items[2]} evidence path`,paragraphs:[paragraph(topic,items[2],index+2),paragraph(topic,items[3],index+3)]},
@@ -42,5 +72,5 @@ export const aug18BlogDetails = Object.fromEntries(topics.map((topic, index) => 
     {title:'Keep the role boundary visible',paragraphs:[paragraph(topic,'owner decision',index+6),paragraph(topic,'escalation record',index+7)]},
     {title:'Turn the record into a repeatable AP routine',paragraphs:[paragraph(topic,'sample review',index+8),paragraph(topic,'handoff improvement',index+9)]},
   ];
-  return [slug,{mainKeyword:keyword,published:'2026-08-18',modified:'2026-08-18',shortAnswer:`Prepare the ${keyword} record from approved source documents, then route any judgment or exception to the named finance owner.`,sections,faqs:[{question:`What is the support role’s job in ${keyword}?`,answer:'It gathers and compares source evidence, records gaps, and follows the documented escalation path. It does not approve, release payment, alter master data, or invent a missing decision.'},{question:'What should remain in the packet?',answer:'Keep the original source, comparison note, owner, action date, response evidence, and final disposition together so another reviewer can resume the item.'}]}];
+  return [slug,{mainKeyword:keyword,published:routeSource.published,sourceDate:routeSource.sourceDate,modified:routeSource.published,shortAnswer:`Prepare the ${keyword} record from approved source documents, then route any judgment or exception to the named finance owner.`,sections,faqs:[{question:`What is the support role’s job in ${keyword}?`,answer:'It gathers and compares source evidence, records gaps, and follows the documented escalation path. It does not approve, release payment, alter master data, or invent a missing decision.'},{question:'What should remain in the packet?',answer:'Keep the original source, comparison note, owner, action date, response evidence, and final disposition together so another reviewer can resume the item.'}]}];
 }));

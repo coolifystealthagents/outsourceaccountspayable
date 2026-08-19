@@ -1,8 +1,9 @@
 import { FeaturedComparison } from '../../FeaturedComparison';
-import {notFound,redirect} from 'next/navigation';import {Header,Footer} from '../../../components';import {blogPosts} from '../../../data';import {aug17BlogPublicationDates} from '../../../blog-aug17-batch';import {aug14BlogPublicationDates,aug13BlogPublicationDates} from '../../../blog-batch';const acceptedBlogRank = new Map(
-  [...Object.keys(aug17BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
-  ...Object.keys(aug14BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug17BlogPublicationDates).length] as [string,number]),
-  ...Object.keys(aug13BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug17BlogPublicationDates).length+Object.keys(aug14BlogPublicationDates).length] as [string,number])],
+import {notFound,redirect} from 'next/navigation';import {Header,Footer} from '../../../components';import {blogPosts} from '../../../data';import {aug18BlogPublicationDates} from '../../../blog-aug18-batch';import {aug17BlogPublicationDates} from '../../../blog-aug17-batch';import {aug14BlogPublicationDates,aug13BlogPublicationDates} from '../../../blog-batch';const acceptedBlogRank = new Map(
+  [...Object.keys(aug18BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
+  ...Object.keys(aug17BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug18BlogPublicationDates).length] as [string,number]),
+  ...Object.keys(aug14BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug18BlogPublicationDates).length+Object.keys(aug17BlogPublicationDates).length] as [string,number]),
+  ...Object.keys(aug13BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug18BlogPublicationDates).length+Object.keys(aug17BlogPublicationDates).length+Object.keys(aug14BlogPublicationDates).length] as [string,number])],
 );
 const orderedBlogPosts = [...blogPosts].sort((a, b) => {
   const aRank = acceptedBlogRank.get(a.slug);

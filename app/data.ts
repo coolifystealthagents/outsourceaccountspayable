@@ -8,6 +8,7 @@ import {aug13ResearchBatch} from './research-aug13-batch';
 import {aug14ResearchBatch} from './research-aug14-batch';
 import {aug17ResearchBatch} from './research-aug17-batch';
 import {aug17BlogPosts, aug17BlogDetails} from './blog-aug17-batch';
+import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -42,6 +43,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug18BlogPosts,
   ...aug17BlogPosts,
   ...batchPosts,
   {
@@ -268,6 +270,7 @@ export const blogDetails = {
   'accounts-payable-fraud-prevention-philippines': fraudPostDetail,
   'vendor-onboarding-checklist-philippines-ap-team': vendorOnboardingPostDetail,
   ...aug17BlogDetails,
+  ...aug18BlogDetails,
   ...batchDetails,
 } as const;
 

@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/research/accounts-payable-source-quality-evidence-research",
+      "source": "content/research/accounts-payable-source-quality-evidence-research.md"
+    },
+    {
+      "route": "/research/accounts-payable-exception-aging-patterns-research",
+      "source": "content/research/accounts-payable-exception-aging-patterns-research.md"
+    },
+    {
+      "route": "/research/accounts-payable-review-consistency-research",
+      "source": "content/research/accounts-payable-review-consistency-research.md"
+    },
+    {
+      "route": "/research/accounts-payable-access-governance-research",
+      "source": "content/research/accounts-payable-access-governance-research.md"
+    },
+    {
+      "route": "/research/accounts-payable-handoff-reliability-research",
+      "source": "content/research/accounts-payable-handoff-reliability-research.md"
+    }
+  ]
+}

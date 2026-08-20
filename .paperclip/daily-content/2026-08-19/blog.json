@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/accounts-payable-intake-source-register",
+      "source": "content/blog/accounts-payable-intake-source-register.md"
+    },
+    {
+      "route": "/blog/accounts-payable-approval-evidence-matrix",
+      "source": "content/blog/accounts-payable-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/accounts-payable-exception-queue-triage",
+      "source": "content/blog/accounts-payable-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/accounts-payable-quality-review-cadence",
+      "source": "content/blog/accounts-payable-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/accounts-payable-handoff-acceptance-log",
+      "source": "content/blog/accounts-payable-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/accounts-payable-access-recertification-review",
+      "source": "content/blog/accounts-payable-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/accounts-payable-weekly-decision-brief",
+      "source": "content/blog/accounts-payable-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/accounts-payable-source-of-truth-map",
+      "source": "content/blog/accounts-payable-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/accounts-payable-change-control-record",
+      "source": "content/blog/accounts-payable-change-control-record.md"
+    },
+    {
+      "route": "/blog/accounts-payable-work-queue-ownership",
+      "source": "content/blog/accounts-payable-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/accounts-payable-escalation-path-design",
+      "source": "content/blog/accounts-payable-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/accounts-payable-launch-readiness-review",
+      "source": "content/blog/accounts-payable-launch-readiness-review.md"
+    }
+  ]
+}

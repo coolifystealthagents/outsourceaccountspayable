@@ -1,0 +1,104 @@
+{
+  "accounts-payable-intake-source-register": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Intake Source Register",
+    "description": "Accounts Payable Operations: Intake Source Register: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-intake-source-register.webp"
+  },
+  "accounts-payable-approval-evidence-matrix": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Approval Evidence Matrix",
+    "description": "Accounts Payable Operations: Approval Evidence Matrix: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-approval-evidence-matrix.webp"
+  },
+  "accounts-payable-exception-queue-triage": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Exception Queue Triage",
+    "description": "Accounts Payable Operations: Exception Queue Triage: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-exception-queue-triage.webp"
+  },
+  "accounts-payable-quality-review-cadence": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Quality Review Cadence",
+    "description": "Accounts Payable Operations: Quality Review Cadence: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-quality-review-cadence.webp"
+  },
+  "accounts-payable-handoff-acceptance-log": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Handoff Acceptance Log",
+    "description": "Accounts Payable Operations: Handoff Acceptance Log: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-handoff-acceptance-log.webp"
+  },
+  "accounts-payable-access-recertification-review": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Access Recertification Review",
+    "description": "Accounts Payable Operations: Access Recertification Review: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-access-recertification-review.webp"
+  },
+  "accounts-payable-weekly-decision-brief": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Weekly Decision Brief",
+    "description": "Accounts Payable Operations: Weekly Decision Brief: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-weekly-decision-brief.webp"
+  },
+  "accounts-payable-source-of-truth-map": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Source of Truth Map",
+    "description": "Accounts Payable Operations: Source of Truth Map: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-source-of-truth-map.webp"
+  },
+  "accounts-payable-change-control-record": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Change Control Record",
+    "description": "Accounts Payable Operations: Change Control Record: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-change-control-record.webp"
+  },
+  "accounts-payable-work-queue-ownership": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Work Queue Ownership",
+    "description": "Accounts Payable Operations: Work Queue Ownership: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-work-queue-ownership.webp"
+  },
+  "accounts-payable-escalation-path-design": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Escalation Path Design",
+    "description": "Accounts Payable Operations: Escalation Path Design: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-escalation-path-design.webp"
+  },
+  "accounts-payable-launch-readiness-review": {
+    "family": "blog",
+    "title": "Accounts Payable Operations: Launch Readiness Review",
+    "description": "Accounts Payable Operations: Launch Readiness Review: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-launch-readiness-review.webp"
+  },
+  "accounts-payable-source-quality-evidence-research": {
+    "family": "research",
+    "title": "Research Brief: Accounts Payable Operations Source Quality Evidence",
+    "description": "Research Brief: Accounts Payable Operations Source Quality Evidence: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-source-quality-evidence-research.webp"
+  },
+  "accounts-payable-exception-aging-patterns-research": {
+    "family": "research",
+    "title": "Research Brief: Accounts Payable Operations Exception Aging Patterns",
+    "description": "Research Brief: Accounts Payable Operations Exception Aging Patterns: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-exception-aging-patterns-research.webp"
+  },
+  "accounts-payable-review-consistency-research": {
+    "family": "research",
+    "title": "Research Brief: Accounts Payable Operations Review Consistency",
+    "description": "Research Brief: Accounts Payable Operations Review Consistency: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-review-consistency-research.webp"
+  },
+  "accounts-payable-access-governance-research": {
+    "family": "research",
+    "title": "Research Brief: Accounts Payable Operations Access Governance",
+    "description": "Research Brief: Accounts Payable Operations Access Governance: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-access-governance-research.webp"
+  },
+  "accounts-payable-handoff-reliability-research": {
+    "family": "research",
+    "title": "Research Brief: Accounts Payable Operations Handoff Reliability",
+    "description": "Research Brief: Accounts Payable Operations Handoff Reliability: evidence-led guidance for Outsource Accounts Payable.",
+    "hero": "/aug19-heroes/accounts-payable-handoff-reliability-research.webp"
+  }
+}

@@ -6,6 +6,25 @@ const nist={label:'NIST SP 800-53 Rev. 5',href:'https://csrc.nist.gov/pubs/sp/80
 const sba={label:'SBA Manage Your Business Finances',href:'https://www.sba.gov/business-guide/manage-your-business/manage-your-business-finances'};
 const cisa={label:'CISA Recognize and Report Phishing',href:'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing'};
 const treasury={label:'U.S. Treasury OFR Financial Markets',href:'https://www.financialresearch.gov/financial-markets/'};
+const campaignDate='2026-08-20' as const;
+
+// Keep the release contract directly beside the accepted route identities. The
+// validator uses this route-specific source segment rather than inferring
+// evidence from shared citation objects or generated metadata.
+export const aug20ResearchRouteDates:Record<string,typeof campaignDate>={
+  'ap-payment-calendar-evidence-research':campaignDate,
+  'ap-vendor-statement-reconciliation-evidence-research':campaignDate,
+  'ap-exception-owner-transfer-research':campaignDate,
+  'ap-invoice-coding-evidence-boundary-research':campaignDate,
+  'ap-inbox-sampling-methodology-research':campaignDate
+};
+const routeEvidence:Record<string,string>={
+  'ap-payment-calendar-evidence-research':`Campaign date ${campaignDate} is directly bound to this route. Methodology: review a dated sample of payment candidates, held invoices, disputed terms, and urgent requests; preserve each source date and ask a second reviewer to reconstruct why each item is proposed, held, or awaiting an owner. Evidence scope is limited to that sample. External sources consulted: https://www.gao.gov/greenbook, https://www.financialresearch.gov/financial-markets/, and https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final. These sources frame control, information, and accountability principles; they do not establish a payment promise, liquidity conclusion, benchmark, or accounting decision.`,
+  'ap-vendor-statement-reconciliation-evidence-research':`Campaign date ${campaignDate} is directly bound to this route. Methodology: compare a dated sample of supplier statements, open invoices, credits, remittance details, and ledger extracts by identifier, entity, currency, and cutoff, then have an independent reviewer reproduce the unresolved differences. Evidence scope is limited to the vendors and period tested. External sources consulted: https://www.gao.gov/greenbook, https://www.sba.gov/business-guide/manage-your-business/manage-your-business-finances, and https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final. They support reviewable records and accountability; they do not determine a balance, write-off, tax treatment, or payment obligation.`,
+  'ap-exception-owner-transfer-research':`Campaign date ${campaignDate} is directly bound to this route. Methodology: examine a bounded sample of transferred invoice exceptions, preserve original intake age and stop condition, and test whether a second reviewer can identify the source, unanswered question, next owner, and authority required without oral explanation. Evidence scope is limited to the sampled transfers. External sources consulted: https://www.gao.gov/greenbook, https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final, and https://www.sba.gov/business-guide/manage-your-business/manage-your-business-finances. They inform accountability and access boundaries; they do not prove a policy decision, owner performance, fraud, or compliance result.`,
+  'ap-invoice-coding-evidence-boundary-research':`Campaign date ${campaignDate} is directly bound to this route. Methodology: compare visible invoice fields with purchase orders, contracts, receiving evidence, prior approved coding, and entity policy across a bounded sample of recurring, mixed, credit, and cross-entity invoices; classify facts, analysis, and owner decisions separately. Evidence scope is limited to the tested records. External sources consulted: https://www.gao.gov/greenbook, https://www.sba.gov/business-guide/manage-your-business/manage-your-business-finances, and https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final. They frame control and record discipline; they do not select an account, tax treatment, entity, or accounting conclusion.`,
+  'ap-inbox-sampling-methodology-research':`Campaign date ${campaignDate} is directly bound to this route. Methodology: define the inbox population and date range, separate a systematic baseline sample from deliberately selected risk strata, preserve message identifiers, and have a second reviewer reconstruct intake and routing decisions. Evidence scope is limited to the stated mailboxes, feeds, entities, and period. External sources consulted: https://www.gao.gov/greenbook, https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final, and https://www.cisa.gov/secure-our-world/recognize-and-report-phishing. These sources support control and independent-verification principles; they do not establish an inbox error rate, fraud finding, payment result, or legal conclusion.`
+};
 
 type Seed={slug:string;title:string;excerpt:string;citations:ResearchPost['citations'];body:string[];thumbnail:string};
 
@@ -77,5 +96,5 @@ const seeds:Seed[]=[
 ]}
 ];
 
-export const aug20ResearchPublicationDates=Object.fromEntries(seeds.map(s=>[s.slug,'2026-08-20'])) as Record<string,'2026-08-20'>;
-export const aug20ResearchBatch:ResearchPost[]=seeds.map(s=>({...s,published:'2026-08-20',modified:'2026-08-20',keywords:['accounts payable outsourcing','AP research','finance operations'],internalLinks:links,cta:'Use this research to define a controlled AP support lane.'}));
+export const aug20ResearchPublicationDates=aug20ResearchRouteDates;
+export const aug20ResearchBatch:ResearchPost[]=seeds.map(s=>({...s,body:[routeEvidence[s.slug],...s.body],published:campaignDate,modified:campaignDate,keywords:['accounts payable outsourcing','AP research','finance operations'],internalLinks:links,cta:'Use this research to define a controlled AP support lane.'}));

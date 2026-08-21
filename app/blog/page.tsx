@@ -1,5 +1,6 @@
-import {Header,Footer} from '../components';import {blogPosts,site} from '../data';import {aug18BlogPublicationDates} from '../blog-aug18-batch';import {aug17BlogPublicationDates} from '../blog-aug17-batch';import {aug14BlogPublicationDates,aug13BlogPublicationDates} from '../blog-batch';
+import {Header,Footer} from '../components';import {blogPosts,site} from '../data';import {aug20BlogPublicationDates} from '../blog-aug20-batch';import {aug18BlogPublicationDates} from '../blog-aug18-batch';import {aug17BlogPublicationDates} from '../blog-aug17-batch';import {aug14BlogPublicationDates,aug13BlogPublicationDates} from '../blog-batch';
 const acceptedBlogRank = new Map([
+  ...Object.keys(aug20BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
   ...Object.keys(aug18BlogPublicationDates).map((slug,index)=>[slug,index] as [string,number]),
   ...Object.keys(aug17BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug18BlogPublicationDates).length] as [string,number]),
   ...Object.keys(aug14BlogPublicationDates).map((slug,index)=>[slug,index+Object.keys(aug18BlogPublicationDates).length+Object.keys(aug17BlogPublicationDates).length] as [string,number]),

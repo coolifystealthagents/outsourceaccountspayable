@@ -10,6 +10,7 @@ import {aug17ResearchBatch} from './research-aug17-batch';
 import {aug18ResearchBatch} from './research-aug18-batch';
 import {aug17BlogPosts, aug17BlogDetails} from './blog-aug17-batch';
 import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
+import {aug20BlogPosts, aug20BlogDetails} from './blog-aug20-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -44,6 +45,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug20BlogPosts,
   ...aug18BlogPosts,
   ...aug17BlogPosts,
   ...batchPosts,
@@ -74,6 +76,7 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  ...aug20BlogDetails,
   'outsource-accounts-payable-planning': {
     shortAnswer: 'Choose one AP lane before you choose a person. Write down what enters the queue, who reviews it, and which decisions must stay with your finance team.',
     sections: [

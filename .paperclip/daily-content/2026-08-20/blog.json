@@ -1,0 +1,14 @@
+[
+{"route":"/blog/ap-invoice-queue-handoff-design","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-vendor-statement-reconciliation-triage","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-payment-run-exception-brief","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-non-po-invoice-business-purpose-review","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-invoice-coding-review-notes","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-invoice-cutoff-evidence-pack","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-vendor-bank-change-escalation","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-approval-backup-coverage-plan","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-duplicate-invoice-investigation-log","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-invoice-receipt-evidence-request","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-month-end-open-items-review","sourcePath":"app/blog-aug20-batch.ts"},
+{"route":"/blog/ap-invoice-approval-escalation-matrix","sourcePath":"app/blog-aug20-batch.ts"}
+]

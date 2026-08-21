@@ -1,0 +1,18 @@
+{
+  "campaignDate":"2026-08-21",
+  "generator":"built-in image generation tool",
+  "assets":[
+    {"route":"/blog/ap-invoice-source-confidence-review","imagePath":"public/blog-thumbnails/aug21-2026/hero-01.png","prompt":"AP analyst checks invoice source confidence with a magnifying glass over a clean document stack; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-three-way-match-evidence-map","imagePath":"public/blog-thumbnails/aug21-2026/hero-02.png","prompt":"Three-way match shown as invoice, purchase order, and receiving slip arranged as three connected cards; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-close-cutoff-evidence-calendar","imagePath":"public/blog-thumbnails/aug21-2026/hero-03.png","prompt":"Close calendar beside invoice packets and a month-end checklist; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-vendor-inquiry-evidence-log","imagePath":"public/blog-thumbnails/aug21-2026/hero-04.png","prompt":"Vendor email inquiry beside an organized AP evidence log and headset; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-invoice-coding-question-register","imagePath":"public/blog-thumbnails/aug21-2026/hero-05.png","prompt":"AP specialist highlights an uncertain invoice coding field with sticky notes; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-payment-calendar-source-check","imagePath":"public/blog-thumbnails/aug21-2026/hero-06.png","prompt":"Payment calendar and verified source documents with a shield-shaped paper clip; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-reconciliation-open-item-aging","imagePath":"public/blog-thumbnails/aug21-2026/hero-07.png","prompt":"Reconciliation ledger with open items sorted into colored folders by decision type; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-invoice-approval-evidence-chain","imagePath":"public/blog-thumbnails/aug21-2026/hero-08.png","prompt":"Invoice approval chain represented by linked paper clips between an invoice and employee review stamp; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-receipt-exception-owner-routing","imagePath":"public/blog-thumbnails/aug21-2026/hero-09.png","prompt":"Receiving dock checklist and invoice packet with one missing receipt highlighted; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-vendor-master-change-evidence-packet","imagePath":"public/blog-thumbnails/aug21-2026/hero-10.png","prompt":"Vendor master record folder with old and requested details separated by a verification barrier; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-invoice-duplicate-signal-review","imagePath":"public/blog-thumbnails/aug21-2026/hero-11.png","prompt":"Two similar invoices side by side with comparison marks and a correction tab; warm ochre and deep teal; no text, logos, or watermark."},
+    {"route":"/blog/ap-invoice-handoff-quality-review","imagePath":"public/blog-thumbnails/aug21-2026/hero-12.png","prompt":"AP handoff quality review shown as a packet passed between two desks with visible checklist marks; warm ochre and deep teal; no text, logos, or watermark."}
+  ]
+}

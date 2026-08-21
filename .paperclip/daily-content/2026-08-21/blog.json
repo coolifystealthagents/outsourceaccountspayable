@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/ap-invoice-source-confidence-review","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-three-way-match-evidence-map","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-close-cutoff-evidence-calendar","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-vendor-inquiry-evidence-log","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-invoice-coding-question-register","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-payment-calendar-source-check","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-reconciliation-open-item-aging","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-invoice-approval-evidence-chain","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-receipt-exception-owner-routing","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-vendor-master-change-evidence-packet","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-invoice-duplicate-signal-review","sourcePaths":["app/blog-aug21-batch.ts"]},
+    {"route":"/blog/ap-invoice-handoff-quality-review","sourcePaths":["app/blog-aug21-batch.ts"]}
+  ]
+}

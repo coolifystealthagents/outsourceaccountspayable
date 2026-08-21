@@ -1,0 +1,7 @@
+[
+  {"route":"/research/ap-payment-calendar-evidence-research","prompt":"Editorial illustration for accounts payable research: a finance payment calendar with distinct source dates, approval markers, and a review check, navy, ochre, teal, no text, no logos."},
+  {"route":"/research/ap-vendor-statement-reconciliation-evidence-research","prompt":"Editorial illustration for accounts payable research: two vendor statement documents being reconciled with linked evidence, navy, sky blue, ochre, no text, no logos."},
+  {"route":"/research/ap-exception-owner-transfer-research","prompt":"Editorial illustration for accounts payable research: an invoice exception moving between three accountable review owners, indigo, ochre, teal, no text, no logos."},
+  {"route":"/research/ap-invoice-coding-evidence-boundary-research","prompt":"Editorial illustration for accounts payable research: invoice source fields connected to a controlled coding review, deep teal, cream, ochre, no text, no logos."},
+  {"route":"/research/ap-inbox-sampling-methodology-research","prompt":"Editorial illustration for accounts payable research: sampled AP inbox messages with a risk marker and review checklist, warm brown, cream, teal, no text, no logos."}
+]

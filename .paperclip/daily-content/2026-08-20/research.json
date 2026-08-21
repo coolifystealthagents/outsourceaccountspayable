@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "entries": [
+    {"route":"/research/ap-payment-calendar-evidence-research","sourcePaths":["app/research-aug20-batch.ts"],"imagePath":"public/research-thumbnails/aug20-payment-calendar-evidence.svg"},
+    {"route":"/research/ap-vendor-statement-reconciliation-evidence-research","sourcePaths":["app/research-aug20-batch.ts"],"imagePath":"public/research-thumbnails/aug20-vendor-statement-evidence.svg"},
+    {"route":"/research/ap-exception-owner-transfer-research","sourcePaths":["app/research-aug20-batch.ts"],"imagePath":"public/research-thumbnails/aug20-exception-transfer.svg"},
+    {"route":"/research/ap-invoice-coding-evidence-boundary-research","sourcePaths":["app/research-aug20-batch.ts"],"imagePath":"public/research-thumbnails/aug20-invoice-coding-evidence.svg"},
+    {"route":"/research/ap-inbox-sampling-methodology-research","sourcePaths":["app/research-aug20-batch.ts"],"imagePath":"public/research-thumbnails/aug20-inbox-sampling.svg"}
+  ]
+}

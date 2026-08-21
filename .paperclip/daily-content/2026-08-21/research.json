@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "research",
+  "entries": [
+    {"route":"/research/ap-invoice-receipt-timestamp-research","sourcePaths":["app/research-aug21-batch.ts"]},
+    {"route":"/research/ap-approval-evidence-reconstruction-research","sourcePaths":["app/research-aug21-batch.ts"]},
+    {"route":"/research/ap-vendor-statement-cutoff-research","sourcePaths":["app/research-aug21-batch.ts"]},
+    {"route":"/research/ap-payment-run-hold-reason-research","sourcePaths":["app/research-aug21-batch.ts"]},
+    {"route":"/research/ap-ap-inbox-channel-integrity-research","sourcePaths":["app/research-aug21-batch.ts"]}
+  ]
+}

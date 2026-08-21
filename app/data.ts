@@ -13,6 +13,7 @@ import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
 import {aug20BlogPosts, aug20BlogDetails} from './blog-aug20-batch';
 import {aug21BlogPosts, aug21BlogDetails} from './blog-aug21-batch';
 import {aug20ResearchBatch, aug20ResearchPublicationDates} from './research-aug20-batch';
+import {aug21ResearchBatch, aug21ResearchRouteDates} from './research-aug21-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -311,7 +312,9 @@ const aug14ResearchSlugs = new Set(aug14ResearchBatch.map(post=>post.slug));
 const aug17ResearchSlugs = new Set(aug17ResearchBatch.map(post=>post.slug));
 const aug18ResearchSlugs = new Set(aug18ResearchBatch.map(post=>post.slug));
 const aug20ResearchSlugs = new Set(Object.keys(aug20ResearchPublicationDates));
-export const researchPosts = [...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+const aug21ResearchSlugs = new Set(Object.keys(aug21ResearchRouteDates));
+export const researchPosts = [...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+  Number(aug21ResearchSlugs.has(b.slug)) - Number(aug21ResearchSlugs.has(a.slug)) ||
   Number(aug20ResearchSlugs.has(b.slug)) - Number(aug20ResearchSlugs.has(a.slug)) ||
   Number(aug18ResearchSlugs.has(b.slug)) - Number(aug18ResearchSlugs.has(a.slug)) ||
   Number(aug17ResearchSlugs.has(b.slug)) - Number(aug17ResearchSlugs.has(a.slug)) ||

@@ -1,0 +1,12 @@
+{
+  "campaignDate":"2026-08-21",
+  "family":"research",
+  "generator":"built-in image generation tool",
+  "receipts":[
+    {"route":"/research/ap-invoice-receipt-timestamp-research","imagePath":"public/research-thumbnails/aug21-receipt-timestamp.png","prompt":"Editorial business illustration for an accounts-payable research article: a finance team reviewing an invoice evidence packet, layered paper records and a clear decision trail on a desk, warm gold and deep teal palette, sophisticated realistic collage, no text, no logos, landscape 1200x630."},
+    {"route":"/research/ap-approval-evidence-reconstruction-research","imagePath":"public/research-thumbnails/aug21-approval-reconstruction.png","prompt":"Editorial business illustration for an accounts-payable research article: a clean AP inbox represented by incoming invoice envelopes flowing into separate evidence lanes, one lane flagged for review, warm gold and deep teal palette, sophisticated realistic collage, no text, no logos, landscape 1200x630."},
+    {"route":"/research/ap-vendor-statement-cutoff-research","imagePath":"public/research-thumbnails/aug21-statement-cutoff.png","prompt":"Editorial business illustration for an accounts-payable research article: a vendor statement reconciliation scene with two ledgers aligned beside an open-item timeline and magnifying glass, warm gold and deep teal palette, sophisticated realistic collage, no text, no logos, landscape 1200x630."},
+    {"route":"/research/ap-payment-run-hold-reason-research","imagePath":"public/research-thumbnails/aug21-payment-hold.png","prompt":"Editorial business illustration for an accounts-payable research article: an invoice approval boundary shown as a transparent handoff from preparation notes to a finance owner decision, documents, approval mark, and stop signal, warm gold and deep teal palette, sophisticated realistic collage, no text, no logos, landscape 1200x630."},
+    {"route":"/research/ap-ap-inbox-channel-integrity-research","imagePath":"public/research-thumbnails/aug21-inbox-channel.png","prompt":"Editorial business illustration for an accounts-payable research article: a payment-run exception review with a calendar, held invoice packet, source documents, and an audit trail, warm gold and deep teal palette, sophisticated realistic collage, no text, no logos, landscape 1200x630."}
+  ]
+}

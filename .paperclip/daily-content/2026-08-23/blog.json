@@ -1,0 +1,19 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/ap-approval-aging-visibility-board","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-applied-credit-memo-reconciliation","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-invoice-payment-term-evidence","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-invoice-entity-routing-check","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-duplicate-invoice-investigation-notes","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-vendor-statement-open-item-index","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-invoice-tax-field-source-check","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-payment-run-exception-rehearsal","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-month-end-invoice-intake-cutoff","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-vendor-inquiry-response-evidence","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-ap-access-review-by-task","sourcePaths":["app/blog-aug23-batch.ts"]},
+    {"route":"/blog/ap-invoice-exception-reason-taxonomy","sourcePaths":["app/blog-aug23-batch.ts"]}
+  ],
+  "imageGeneration": "Gemini unavailable in repository execution; no stock or retained image substituted."
+}

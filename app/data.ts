@@ -12,6 +12,7 @@ import {aug17BlogPosts, aug17BlogDetails} from './blog-aug17-batch';
 import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
 import {aug20BlogPosts, aug20BlogDetails} from './blog-aug20-batch';
 import {aug21BlogPosts, aug21BlogDetails} from './blog-aug21-batch';
+import {aug23BlogPosts, aug23BlogDetails} from './blog-aug23-batch';
 import {aug20ResearchBatch, aug20ResearchPublicationDates} from './research-aug20-batch';
 import {aug21ResearchBatch, aug21ResearchRouteDates} from './research-aug21-batch';
 
@@ -48,6 +49,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug23BlogPosts,
   ...aug21BlogPosts,
   ...aug20BlogPosts,
   ...aug18BlogPosts,
@@ -80,6 +82,7 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  ...aug23BlogDetails,
   ...aug21BlogDetails,
   ...aug20BlogDetails,
   'outsource-accounts-payable-planning': {

@@ -1,0 +1,7 @@
+[
+{"route":"/research/ap-invoice-approval-evidence-chain-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
+{"route":"/research/ap-vendor-statement-cutoff-uncertainty-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
+{"route":"/research/ap-payment-terms-conflict-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
+{"route":"/research/ap-invoice-entity-routing-evidence-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
+{"route":"/research/ap-duplicate-invoice-signal-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null}
+]

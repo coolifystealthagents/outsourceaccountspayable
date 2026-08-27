@@ -18,11 +18,20 @@ The site helps finance teams plan Philippines-based AP support. Its money pages 
 | `/services/payment-run-preparation` | Prepare the approved payment list without releasing funds. | `/blog/invoice-approval-workflow-philippines-ap-team`, `/blog/accounts-payable-fraud-prevention-philippines` | Link where the page distinguishes preparation from the finance owner’s release decision. |
 | `/services/month-end-ap-close-support` | Gather close evidence while finance keeps accounting judgments. | `/research/ap-invoice-service-period-evidence-research`, `/research/ap-invoice-receipt-date-evidence-research`, `/research/ap-close-unbilled-service-evidence-log` | Link from close-support wording only after confirming the article route renders the exact phrase. |
 
-## First execution queue
+## Delivery reconciliation
 
-1. Audit `/research/ap-invoice-service-period-evidence-research` for a body-level route to `/services/month-end-ap-close-support`. The subject and service intent align, but the rendered route must show a useful contextual sentence before a link is added.
-2. Audit `/research/ap-purchase-order-line-evidence-research` for a body-level route to `/services/three-way-match-support`. Keep the link near the record-comparison discussion and do not turn the research conclusion into a sales claim.
-3. Audit `/blog/vendor-onboarding-checklist-philippines-ap-team` for a body-level route to `/services/vendor-onboarding-administration`. The source already has a related-link model, so verify that it is not only a repeated card or footer path.
+Verified from the 2026-08-27 production build. These records are already present in each source route's local `<main>` and are not candidates for a second CTA:
+
+- `/research/ap-invoice-service-period-evidence-research` has one route-local link to `/services/month-end-ap-close-support`.
+- `/research/ap-purchase-order-line-evidence-research` has one route-local link to `/services/purchase-order-reconciliation`. That destination matches the page's line-level reconciliation question; do not replace it with a broader matching link without a separate editorial review.
+- `/blog/vendor-onboarding-checklist-philippines-ap-team` has one route-local link to `/services/vendor-onboarding-administration`.
+
+All three source routes and their destination services have generated H1s, canonicals, and sitemap entries. This sitemap intentionally has no `<lastmod>` values.
+
+## Next execution queue
+
+1. Audit `/research/ap-invoice-source-completeness-research` for one body-level route to `/services/invoice-data-capture`. The 2026-08-27 build confirms both routes exist and the source `<main>` has no current link to that service. Keep the link near the source-field preparation guidance and keep invoice approval with the finance owner.
+2. Audit `/research/ap-payment-run-exclusion-evidence-research` for one body-level route to `/services/payment-run-preparation`. The 2026-08-27 build confirms both routes exist and the source `<main>` has no current link to that service. Keep the copy about preparing the exclusion record, not releasing payment.
 
 ## Authorship and research boundaries
 

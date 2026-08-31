@@ -16,6 +16,8 @@ import {aug23BlogPosts, aug23BlogDetails} from './blog-aug23-batch';
 import {aug20ResearchBatch, aug20ResearchPublicationDates} from './research-aug20-batch';
 import {aug21ResearchBatch, aug21ResearchRouteDates} from './research-aug21-batch';
 import {aug23ResearchBatch} from './research-aug23-batch';
+import {aug31BlogPosts, aug31BlogDetails} from './blog-aug31-batch';
+import {aug31ResearchBatch} from './research-aug31-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -50,6 +52,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug31BlogPosts,
   ...aug23BlogPosts,
   ...aug21BlogPosts,
   ...aug20BlogPosts,
@@ -83,6 +86,7 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  ...aug31BlogDetails,
   ...aug23BlogDetails,
   ...aug21BlogDetails,
   ...aug20BlogDetails,
@@ -317,7 +321,7 @@ const aug17ResearchSlugs = new Set(aug17ResearchBatch.map(post=>post.slug));
 const aug18ResearchSlugs = new Set(aug18ResearchBatch.map(post=>post.slug));
 const aug20ResearchSlugs = new Set(Object.keys(aug20ResearchPublicationDates));
 const aug21ResearchSlugs = new Set(Object.keys(aug21ResearchRouteDates));
-export const researchPosts = [...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+export const researchPosts = [...aug31ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   Number(aug21ResearchSlugs.has(b.slug)) - Number(aug21ResearchSlugs.has(a.slug)) ||
   Number(aug20ResearchSlugs.has(b.slug)) - Number(aug20ResearchSlugs.has(a.slug)) ||
   Number(aug18ResearchSlugs.has(b.slug)) - Number(aug18ResearchSlugs.has(a.slug)) ||

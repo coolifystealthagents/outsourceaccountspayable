@@ -1,13 +1,13 @@
 import {notFound} from 'next/navigation';
 import {Header,Footer,CTA} from '../../components';
-import {researchPosts,site} from '../../data';
+import {getResearchPostBySlug,researchPosts,site} from '../../data';
 const readerDate=new Intl.DateTimeFormat('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});const formatReaderDate=(value?:string)=>!value||!/^\d{4}-\d{2}-\d{2}$/.test(value)?value??'':readerDate.format(new Date(`${value}T00:00:00Z`));
 
 export function generateStaticParams(){return researchPosts.map(p=>({slug:p.slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=researchPosts.find(x=>x.slug===slug);return p?{title:`${p.title} | ${site.brand}`,description:p.excerpt,alternates:{canonical:`/research/${p.slug}`},openGraph:{images:[p.thumbnail]}}:{}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=getResearchPostBySlug(slug);return p?{title:`${p.title} | ${site.brand}`,description:p.excerpt,alternates:{canonical:`/research/${p.slug}`},openGraph:{images:[p.thumbnail]}}:{}}
 
 export default async function ResearchPost({params}:{params:Promise<{slug:string}>}){
-  const {slug}=await params; const p=researchPosts.find(x=>x.slug===slug); if(!p)notFound();
+  const {slug}=await params; const p=getResearchPostBySlug(slug); if(!p)notFound();
   const articleUrl=`https://${site.domain.toLowerCase()}/research/${p.slug}`;
   const schema={'@context':'https://schema.org','@type':'Article',headline:p.title,description:p.excerpt,datePublished:p.published,dateModified:p.modified,mainEntityOfPage:articleUrl,image:`https://${site.domain.toLowerCase()}${p.thumbnail}`,author:{'@type':'Organization',name:site.brand},citation:p.citations.map(c=>c.href)};
   return <><Header/><main className="section article-page"><article className="container guide-article"><p className="eyebrow">Research · Published <time dateTime={p.published}>{formatReaderDate(p.published)}</time></p><h1>{p.title}</h1><p className="lead">{p.excerpt}</p><div className="article-meta">Methodology-led research · {p.citations.length} primary sources · Updated <time dateTime={p.modified}>{formatReaderDate(p.modified)}</time></div><img src={p.thumbnail} alt={`${p.title} research illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>

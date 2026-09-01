@@ -88,6 +88,9 @@ export const blogPosts = [
   },
 ] as const;
 
+const sep1BlogPostBySlug = new Map(sep1BlogPosts.map(post => [post.slug, post]));
+export const getBlogPostBySlug = (slug: string) => sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
+
 export const blogDetails = {
   ...sep1BlogDetails,
   ...aug31BlogDetails,
@@ -295,6 +298,9 @@ export const blogDetails = {
   ...batchDetails,
 } as const;
 
+export const getBlogDetailBySlug = (slug: string) =>
+  (sep1BlogDetails as Record<string, any>)[slug] ?? (blogDetails as Record<string, any>)[slug];
+
 export const staffingOffer = {
   promise: 'Get an AP staffing plan based on the queue, controls, and review work you need covered.',
   included: [
@@ -325,7 +331,9 @@ const aug17ResearchSlugs = new Set(aug17ResearchBatch.map(post=>post.slug));
 const aug18ResearchSlugs = new Set(aug18ResearchBatch.map(post=>post.slug));
 const aug20ResearchSlugs = new Set(Object.keys(aug20ResearchPublicationDates));
 const aug21ResearchSlugs = new Set(Object.keys(aug21ResearchRouteDates));
+const sep1ResearchSlugs = new Set(sep1ResearchBatch.map(post=>post.slug));
 export const researchPosts = [...sep1ResearchBatch,...aug31ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+  Number(sep1ResearchSlugs.has(b.slug)) - Number(sep1ResearchSlugs.has(a.slug)) ||
   Number(aug21ResearchSlugs.has(b.slug)) - Number(aug21ResearchSlugs.has(a.slug)) ||
   Number(aug20ResearchSlugs.has(b.slug)) - Number(aug20ResearchSlugs.has(a.slug)) ||
   Number(aug18ResearchSlugs.has(b.slug)) - Number(aug18ResearchSlugs.has(a.slug)) ||
@@ -337,3 +345,5 @@ export const researchPosts = [...sep1ResearchBatch,...aug31ResearchBatch,...aug2
   Number(aug10ResearchSlugs.has(b.slug)) - Number(aug10ResearchSlugs.has(a.slug)) ||
   a.slug.localeCompare(b.slug)
 );
+const sep1ResearchPostBySlug = new Map(sep1ResearchBatch.map(post=>[post.slug,post]));
+export const getResearchPostBySlug = (slug:string) => sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);

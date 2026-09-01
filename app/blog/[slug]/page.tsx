@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {Header, Footer, CTA, JsonLd} from '../../components';
-import {blogDetails, blogPosts, site} from '../../data';
+import {blogDetails, blogPosts, getBlogDetailBySlug, getBlogPostBySlug, site} from '../../data';
 
 const publicationDateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({params}: {params: Promise<{slug: string}>}): Promise<Metadata> {
   const {slug} = await params;
-  const post = blogPosts.find((item) => item.slug === slug);
+  const post = getBlogPostBySlug(slug);
   if (!post) return {};
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   return {
@@ -35,10 +35,10 @@ function detailImage(slug: string) {
 
 export default async function Post({params}: {params: Promise<{slug: string}>}) {
   const {slug} = await params;
-  const post = blogPosts.find((item) => item.slug === slug);
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
-  const detail = (blogDetails as Record<string, any>)[slug];
+  const detail = getBlogDetailBySlug(slug);
   if (!detail) notFound();
 
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;

@@ -20,6 +20,8 @@ import {aug31BlogPosts, aug31BlogDetails} from './blog-aug31-batch';
 import {aug31ResearchBatch} from './research-aug31-batch';
 import {sep1BlogPosts, sep1BlogDetails} from './blog-sep1-batch';
 import {sep1ResearchBatch} from './research-sep1-batch';
+import {sep2BlogPosts, sep2BlogDetails} from './blog-sep2-batch';
+import {sep2ResearchBatch} from './research-sep2-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -54,6 +56,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...sep2BlogPosts,
   ...sep1BlogPosts,
   ...aug31BlogPosts,
   ...aug23BlogPosts,
@@ -89,9 +92,11 @@ export const blogPosts = [
 ] as const;
 
 const sep1BlogPostBySlug = new Map(sep1BlogPosts.map(post => [post.slug, post]));
-export const getBlogPostBySlug = (slug: string) => sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
+const sep2BlogPostBySlug = new Map(sep2BlogPosts.map(post => [post.slug, post]));
+export const getBlogPostBySlug = (slug: string) => sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...sep2BlogDetails,
   ...sep1BlogDetails,
   ...aug31BlogDetails,
   ...aug23BlogDetails,
@@ -299,7 +304,7 @@ export const blogDetails = {
 } as const;
 
 export const getBlogDetailBySlug = (slug: string) =>
-  (sep1BlogDetails as Record<string, any>)[slug] ?? (blogDetails as Record<string, any>)[slug];
+  (sep2BlogDetails as Record<string, any>)[slug] ?? (sep1BlogDetails as Record<string, any>)[slug] ?? (blogDetails as Record<string, any>)[slug];
 
 export const staffingOffer = {
   promise: 'Get an AP staffing plan based on the queue, controls, and review work you need covered.',
@@ -332,7 +337,9 @@ const aug18ResearchSlugs = new Set(aug18ResearchBatch.map(post=>post.slug));
 const aug20ResearchSlugs = new Set(Object.keys(aug20ResearchPublicationDates));
 const aug21ResearchSlugs = new Set(Object.keys(aug21ResearchRouteDates));
 const sep1ResearchSlugs = new Set(sep1ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...sep1ResearchBatch,...aug31ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+const sep2ResearchSlugs = new Set(sep2ResearchBatch.map(post=>post.slug));
+export const researchPosts = [...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+  Number(sep2ResearchSlugs.has(b.slug)) - Number(sep2ResearchSlugs.has(a.slug)) ||
   Number(sep1ResearchSlugs.has(b.slug)) - Number(sep1ResearchSlugs.has(a.slug)) ||
   Number(aug21ResearchSlugs.has(b.slug)) - Number(aug21ResearchSlugs.has(a.slug)) ||
   Number(aug20ResearchSlugs.has(b.slug)) - Number(aug20ResearchSlugs.has(a.slug)) ||
@@ -346,4 +353,5 @@ export const researchPosts = [...sep1ResearchBatch,...aug31ResearchBatch,...aug2
   a.slug.localeCompare(b.slug)
 );
 const sep1ResearchPostBySlug = new Map(sep1ResearchBatch.map(post=>[post.slug,post]));
-export const getResearchPostBySlug = (slug:string) => sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);
+const sep2ResearchPostBySlug = new Map(sep2ResearchBatch.map(post=>[post.slug,post]));
+export const getResearchPostBySlug = (slug:string) => sep2ResearchPostBySlug.get(slug) ?? sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);

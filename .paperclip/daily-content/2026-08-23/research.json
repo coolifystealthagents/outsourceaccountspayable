@@ -1,7 +1,7 @@
 [
-{"route":"/research/ap-invoice-approval-evidence-chain-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
-{"route":"/research/ap-vendor-statement-cutoff-uncertainty-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
-{"route":"/research/ap-payment-terms-conflict-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
-{"route":"/research/ap-invoice-entity-routing-evidence-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null},
-{"route":"/research/ap-duplicate-invoice-signal-research","sourcePaths":["app/research-aug23-batch.ts"],"heroPath":null}
+  {"route":"/research/ap-vendor-reactivation-authority-research","sourcePaths":["app/research-aug23-v8-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-08-23/prompts/ap-vendor-reactivation-authority-research.json"},
+  {"route":"/research/ap-invoice-attachment-provenance-research","sourcePaths":["app/research-aug23-v8-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-08-23/prompts/ap-invoice-attachment-provenance-research.json"},
+  {"route":"/research/ap-partial-receipt-quantity-evidence-research","sourcePaths":["app/research-aug23-v8-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-08-23/prompts/ap-partial-receipt-quantity-evidence-research.json"},
+  {"route":"/research/ap-remittance-delivery-evidence-research","sourcePaths":["app/research-aug23-v8-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-08-23/prompts/ap-remittance-delivery-evidence-research.json"},
+  {"route":"/research/ap-delegated-approval-expiry-research","sourcePaths":["app/research-aug23-v8-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-08-23/prompts/ap-delegated-approval-expiry-research.json"}
 ]

@@ -1,0 +1,19 @@
+{
+  "campaignDate":"2026-09-03",
+  "family":"blog",
+  "entries":[
+    {"route":"/blog/invoice-split-allocation-evidence","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/supplier-merger-transition-record","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/vendor-debit-balance-review","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/partial-payment-instruction-packet","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/zero-value-invoice-handling","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/purchase-order-amendment-trace","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/translated-invoice-review-handoff","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/late-arriving-invoice-close-register","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/remittance-advice-reconciliation","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/returned-payment-investigation","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/vendor-portal-access-custody","sourcePaths":["app/blog-sep3-batch.ts"]},
+    {"route":"/blog/intercompany-invoice-routing-evidence","sourcePaths":["app/blog-sep3-batch.ts"]}
+  ],
+  "imageGeneration":"Gemini image generation is unavailable in the repository execution environment; text-complete fallback used without stock or substitute imagery."
+}

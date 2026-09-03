@@ -1,0 +1,19 @@
+{
+  "provider": "Gemini",
+  "status": "unavailable",
+  "fallback": "text-complete",
+  "routes": [
+    "/blog/invoice-capture-confidence-flags",
+    "/blog/recurring-invoice-variance-review",
+    "/blog/vendor-statement-request-cadence",
+    "/blog/approval-delegation-absence-cover",
+    "/blog/purchase-order-residual-close-review",
+    "/blog/multi-entity-invoice-ownership",
+    "/blog/freight-invoice-evidence-packet",
+    "/blog/subscription-renewal-invoice-control",
+    "/blog/invoice-receipt-timezone-handoff",
+    "/blog/supplier-dispute-chronology",
+    "/blog/payment-proposal-change-log",
+    "/blog/ap-mailbox-continuity-plan"
+  ]
+}

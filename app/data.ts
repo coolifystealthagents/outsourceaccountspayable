@@ -13,6 +13,7 @@ import {aug18BlogPosts, aug18BlogDetails} from './blog-aug18-batch';
 import {aug20BlogPosts, aug20BlogDetails} from './blog-aug20-batch';
 import {aug21BlogPosts, aug21BlogDetails} from './blog-aug21-batch';
 import {aug23BlogPosts, aug23BlogDetails} from './blog-aug23-batch';
+import {aug23V8BlogPosts, aug23V8BlogDetails} from './blog-aug23-v8-batch';
 import {aug20ResearchBatch, aug20ResearchPublicationDates} from './research-aug20-batch';
 import {aug21ResearchBatch, aug21ResearchRouteDates} from './research-aug21-batch';
 import {aug23ResearchBatch} from './research-aug23-batch';
@@ -57,6 +58,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...aug23V8BlogPosts,
   ...sep2BlogPosts,
   ...sep1BlogPosts,
   ...aug31BlogPosts,
@@ -97,6 +99,7 @@ const sep2BlogPostBySlug = new Map(sep2BlogPosts.map(post => [post.slug, post]))
 export const getBlogPostBySlug = (slug: string) => sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...aug23V8BlogDetails,
   ...sep2BlogDetails,
   ...sep1BlogDetails,
   ...aug31BlogDetails,

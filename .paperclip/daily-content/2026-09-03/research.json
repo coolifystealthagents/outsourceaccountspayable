@@ -1,0 +1,7 @@
+[
+  {"route":"/research/ap-purchase-order-amendment-chronology-research","sourcePaths":["app/research-sep3-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-09-03/prompts/ap-purchase-order-amendment-chronology-research.json"},
+  {"route":"/research/ap-vendor-credit-balance-ownership-research","sourcePaths":["app/research-sep3-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-09-03/prompts/ap-vendor-credit-balance-ownership-research.json"},
+  {"route":"/research/ap-translated-invoice-field-provenance-research","sourcePaths":["app/research-sep3-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-09-03/prompts/ap-translated-invoice-field-provenance-research.json"},
+  {"route":"/research/ap-supplier-portal-ledger-divergence-research","sourcePaths":["app/research-sep3-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-09-03/prompts/ap-supplier-portal-ledger-divergence-research.json"},
+  {"route":"/research/ap-vendor-identity-merge-evidence-research","sourcePaths":["app/research-sep3-batch.ts"],"heroPath":null,"promptReceiptPath":".paperclip/daily-content/2026-09-03/prompts/ap-vendor-identity-merge-evidence-research.json"}
+]

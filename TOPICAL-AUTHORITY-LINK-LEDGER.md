@@ -30,7 +30,7 @@ All three source routes and their destination services have generated H1s, canon
 
 ## Next execution queue
 
-1. Audit `/research/ap-invoice-source-completeness-research` for one body-level route to `/services/invoice-data-capture`. The 2026-08-27 build confirms both routes exist and the source `<main>` has no current link to that service. Keep the link near the source-field preparation guidance and keep invoice approval with the finance owner.
+1. Delivered locally, non-duplicable: `/research/ap-invoice-source-completeness-research` has one route-local handoff to `/services/invoice-data-capture`. Rendered-source commit `6fd749292b44e5dc4e64103645021ad17e9bce5c` adds it beside the source-field preparation guidance and keeps invoice approval with the finance owner. Do not add a second CTA.
 2. Audit `/research/ap-payment-run-exclusion-evidence-research` for one body-level route to `/services/payment-run-preparation`. The 2026-08-27 build confirms both routes exist and the source `<main>` has no current link to that service. Keep the copy about preparing the exclusion record, not releasing payment.
 
 ## Authorship and research boundaries

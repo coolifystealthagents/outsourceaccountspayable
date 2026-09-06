@@ -6,7 +6,7 @@ This planning ledger maps existing Philippines-based accounts payable services t
 
 | Service pillar | Existing supporting research | Buyer question | Controlled next action |
 | --- | --- | --- | --- |
-| Invoice Data Capture | `/research/ap-invoice-source-completeness-research` | Which source fields must be present before an assistant prepares an invoice packet? | Review a source-page handoff to `/services/invoice-data-capture`. |
+| Invoice Data Capture | `/research/ap-invoice-source-completeness-research` | Which source fields must be present before an assistant prepares an invoice packet? | Delivered locally in rendered-source commit `6fd749292b44e5dc4e64103645021ad17e9bce5c`: one route-local handoff to `/services/invoice-data-capture` is present. Do not add another CTA. |
 | Three-Way Match Support | `/research/ap-purchase-order-line-evidence-research` | What should the preparer compare before the finance owner reviews a PO match? | Review a source-page handoff to `/services/three-way-match-support`. |
 | Purchase Order Reconciliation | `/research/ap-purchase-order-line-evidence-research` | How can a team keep unmatched PO details visible for the right owner? | Existing handoff to `/services/purchase-order-reconciliation` is documented in the source model; do not add a second link without an editorial review. |
 | Vendor Statement Reconciliation | `/research/ap-vendor-statement-cutoff-evidence-research` | Which dates and open-item records make a vendor statement reviewable? | Review a source-page handoff to `/services/vendor-statement-reconciliation`. |

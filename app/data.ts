@@ -28,6 +28,8 @@ import {sep2ResearchBatch} from './research-sep2-batch';
 import {sep3ResearchBatch} from './research-sep3-batch';
 import {sep4BlogPosts, sep4BlogDetails} from './blog-sep4-batch';
 import {sep4ResearchBatch} from './research-sep4-batch';
+import {sep7BlogPosts, sep7BlogDetails} from './blog-sep7-batch';
+import {sep7ResearchBatch} from './research-sep7-batch';
 
 export const site = {
   domain: 'OutsourceAccountsPayable.com',
@@ -62,6 +64,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...sep7BlogPosts,
   ...sep4BlogPosts,
   ...sep3BlogPosts,
   ...aug23V8BlogPosts,
@@ -103,9 +106,11 @@ export const blogPosts = [
 const sep1BlogPostBySlug = new Map(sep1BlogPosts.map(post => [post.slug, post]));
 const sep2BlogPostBySlug = new Map(sep2BlogPosts.map(post => [post.slug, post]));
 const sep4BlogPostBySlug = new Map(sep4BlogPosts.map(post => [post.slug, post]));
-export const getBlogPostBySlug = (slug: string) => sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
+const sep7BlogPostBySlug = new Map(sep7BlogPosts.map(post => [post.slug, post]));
+export const getBlogPostBySlug = (slug: string) => sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...sep7BlogDetails,
   ...sep4BlogDetails,
   ...sep3BlogDetails,
   ...aug23V8BlogDetails,
@@ -353,7 +358,9 @@ const sep1ResearchSlugs = new Set(sep1ResearchBatch.map(post=>post.slug));
 const sep2ResearchSlugs = new Set(sep2ResearchBatch.map(post=>post.slug));
 const sep3ResearchSlugs = new Set(sep3ResearchBatch.map(post=>post.slug));
 const sep4ResearchSlugs = new Set(sep4ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+const sep7ResearchSlugs = new Set(sep7ResearchBatch.map(post=>post.slug));
+export const researchPosts = [...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+  Number(sep7ResearchSlugs.has(b.slug)) - Number(sep7ResearchSlugs.has(a.slug)) ||
   Number(sep4ResearchSlugs.has(b.slug)) - Number(sep4ResearchSlugs.has(a.slug)) ||
   Number(sep3ResearchSlugs.has(b.slug)) - Number(sep3ResearchSlugs.has(a.slug)) ||
   Number(sep2ResearchSlugs.has(b.slug)) - Number(sep2ResearchSlugs.has(a.slug)) ||
@@ -372,4 +379,5 @@ export const researchPosts = [...sep4ResearchBatch,...sep3ResearchBatch,...sep2R
 const sep1ResearchPostBySlug = new Map(sep1ResearchBatch.map(post=>[post.slug,post]));
 const sep2ResearchPostBySlug = new Map(sep2ResearchBatch.map(post=>[post.slug,post]));
 const sep4ResearchPostBySlug = new Map(sep4ResearchBatch.map(post=>[post.slug,post]));
-export const getResearchPostBySlug = (slug:string) => sep4ResearchPostBySlug.get(slug) ?? sep2ResearchPostBySlug.get(slug) ?? sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);
+const sep7ResearchPostBySlug = new Map(sep7ResearchBatch.map(post=>[post.slug,post]));
+export const getResearchPostBySlug = (slug:string) => sep7ResearchPostBySlug.get(slug) ?? sep4ResearchPostBySlug.get(slug) ?? sep2ResearchPostBySlug.get(slug) ?? sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);

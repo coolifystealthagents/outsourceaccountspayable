@@ -4,7 +4,7 @@ import {getResearchPostBySlug,researchPosts,site} from '../../data';
 const readerDate=new Intl.DateTimeFormat('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});const formatReaderDate=(value?:string)=>!value||!/^\d{4}-\d{2}-\d{2}$/.test(value)?value??'':readerDate.format(new Date(`${value}T00:00:00Z`));
 
 export function generateStaticParams(){return researchPosts.map(p=>({slug:p.slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=getResearchPostBySlug(slug);return p?{title:`${p.title} | ${site.brand}`,description:p.excerpt,alternates:{canonical:`/research/${p.slug}`},...(p.thumbnail?{openGraph:{images:[p.thumbnail]}}:{})}:{}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=getResearchPostBySlug(slug);return p?{title:`${p.title} | ${site.brand}`,description:p.excerpt,alternates:{canonical:`/research/${p.slug}`},openGraph:{type:'article',publishedTime:p.published,modifiedTime:p.modified,...(p.thumbnail?{images:[p.thumbnail]}:{})}}:{}}
 
 export default async function ResearchPost({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const p=getResearchPostBySlug(slug); if(!p)notFound();

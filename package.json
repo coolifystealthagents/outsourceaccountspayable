@@ -2,7 +2,7 @@
   "name": "outsourceaccountspayable",
   "private": true,
   "scripts": {
-    "test": "node tests/homepage-image-labels.test.mjs",
+    "test": "node tests/homepage-image-labels.test.mjs && node tests/payment-run-exclusion-handoff.test.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",

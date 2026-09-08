@@ -1,5 +1,19 @@
 type Spec={slug:string;title:string;excerpt:string;keyword:string;scene:string;record:string;owner:string;check:string};
 const date='2026-09-07' as const;
+const thumbnails:Record<string,string>={
+ 'ap-invoice-receipt-timestamp-log':'/blog-thumbnails/ap-invoice-receipt-index.svg',
+ 'ap-po-closure-evidence-checklist':'/blog-thumbnails/purchase-order-reconciliation-checklist.svg',
+ 'ap-duplicate-supplier-record-review':'/blog-thumbnails/ap-vendor-master-review-checklist.svg',
+ 'ap-invoice-coding-reference-table':'/blog-thumbnails/invoice-coding-review-checklist.svg',
+ 'ap-vendor-portal-access-review':'/blog-thumbnails/ap-finance-support-access-review.svg',
+ 'ap-payment-return-triage-queue':'/blog-thumbnails/ap-payment-support-segregation.svg',
+ 'ap-unmatched-receipt-followup-log':'/blog-thumbnails/ap-receiving-report-follow-up.svg',
+ 'ap-small-balance-writeoff-review-queue':'/blog-thumbnails/ap-exception-queue-management.svg',
+ 'ap-early-payment-discount-calendar':'/blog-thumbnails/ap-early-payment-discount-review.svg',
+ 'ap-intercompany-invoice-routing-log':'/blog-thumbnails/ap-inbox-labels-and-routing.svg',
+ 'ap-supplier-contact-change-log':'/blog-thumbnails/ap-vendor-change-request-workflow.svg',
+ 'ap-month-end-invoice-cutoff-register':'/blog-thumbnails/ap-invoice-cutoff-checklist.svg',
+};
 const specs:Spec[]=[
 {slug:'ap-invoice-receipt-timestamp-log',title:'Keep an invoice receipt timestamp log',excerpt:'Preserve when an invoice first reached the business so queues, due dates, and handoffs can be reviewed from evidence.',keyword:'invoice receipt timestamp log',scene:'A supplier resends an overdue invoice and the forwarded copy obscures when the original message arrived.',record:'original message ID, sender, recipient inbox, received time, attachment identity, forwarding history, queue entry, and correction notes',owner:'invoice intake owner',check:'test direct mail, forwarded mail, portal downloads, duplicates, delayed sync, and missing headers'},
 {slug:'ap-po-closure-evidence-checklist',title:'Use an evidence checklist before closing purchase orders',excerpt:'Give AP a bounded way to identify open invoice questions without deciding whether procurement should close a purchase order.',keyword:'purchase order closure evidence checklist',scene:'The final invoice appears paid, but one receipt was reversed after the buyer requested closure.',record:'PO version, lines, receipts, reversals, invoices, credits, open commitments, buyer response, closure decision, and system event',owner:'procurement or purchasing owner',check:'cover fully used, partially used, over-invoiced, credited, reversed-receipt, cancelled, and disputed orders'},
@@ -20,4 +34,4 @@ const sections=(s:Spec)=>[
  {title:'Test exceptions and replay the result',paragraphs:[`Choose awkward cases before launch and ask a second reviewer to reconstruct the outcome from the retained packet without an oral explanation.`, `For acceptance, ${s.check}. If the reviewers differ, repair the rule, example, access, or escalation path before scaling the queue.`]},
 ];
 export const sep7BlogPosts=specs.map(s=>({slug:s.slug,title:s.title,excerpt:s.excerpt,minutes:8}));
-export const sep7BlogDetails=Object.fromEntries(specs.map(s=>[s.slug,{mainKeyword:s.keyword,published:date,modified:date,sourceDate:date,shortAnswer:`Build a source-linked ${s.keyword}, show missing evidence, and reserve decisions for the ${s.owner}.`,sections:sections(s),faqs:[{question:`What can outsourced AP support do with this ${s.keyword}?`,answer:`Support can collect approved records, compare observable fields, maintain factual status, and route exceptions. The ${s.owner} keeps decisions and authorization.`},{question:'How should the routine be tested?',answer:`Retain ${s.record}, then ${s.check}.`}]}]));
+export const sep7BlogDetails=Object.fromEntries(specs.map(s=>[s.slug,{mainKeyword:s.keyword,published:date,modified:date,sourceDate:date,thumbnail:thumbnails[s.slug],shortAnswer:`Build a source-linked ${s.keyword}, show missing evidence, and reserve decisions for the ${s.owner}.`,sections:sections(s),faqs:[{question:`What can outsourced AP support do with this ${s.keyword}?`,answer:`Support can collect approved records, compare observable fields, maintain factual status, and route exceptions. The ${s.owner} keeps decisions and authorization.`},{question:'How should the routine be tested?',answer:`Retain ${s.record}, then ${s.check}.`}]}]));

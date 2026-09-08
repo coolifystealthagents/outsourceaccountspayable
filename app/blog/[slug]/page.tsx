@@ -53,6 +53,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
     dateModified: detail.modified,
     author: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
     publisher: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
+    image: detail.thumbnail ? `https://${String(site.domain).toLowerCase()}${detail.thumbnail}` : undefined,
     keywords: detail.mainKeyword ? [detail.mainKeyword] : undefined,
     citation: detail.sources?.map((source: any) => source.url),
   };
@@ -87,6 +88,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
         {detail.published && <p className="article-meta">Published <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
+        {detail.sourceDate === '2026-09-07' && detail.thumbnail && <img src={detail.thumbnail} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>}
 
         <section className="answer-card" aria-labelledby="direct-answer">
           <p className="section-kicker">Direct answer</p>

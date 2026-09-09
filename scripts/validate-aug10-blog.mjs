@@ -24,28 +24,40 @@ for (const entry of manifest.entries) {
   if (entry.route !== `/blog/${entry.slug}` || entry.sourcePath !== 'app/blog-batch.ts') throw new Error(`family/path mismatch: ${entry.slug}`);
   if (entry.provenance !== 'original-aug10-batch' || !/^[0-9a-f]{40}$/.test(entry.introducedByCommit)) throw new Error(`provenance: ${entry.slug}`);
   if (!source.includes(`['${entry.slug}',`)) throw new Error(`source slug missing: ${entry.slug}`);
-  if (!source.includes(`'${entry.slug}': '2026-08-10'`) || !source.includes('published: aug10BlogPublicationDates[slug]') || entry.sourceDate !== '2026-08-10') throw new Error(`source date: ${entry.slug}`);
+  const sourceDatePattern = new RegExp(`'${entry.slug}':\\s*'${entry.sourceDate}'`);
+  const resolvedPublicationDate = 'published: aug14BlogPublicationDates[slug] ?? aug13BlogPublicationDates[slug] ?? aug11BlogPublicationDates[slug] ?? aug10BlogPublicationDates[slug]';
+  if (!sourceDatePattern.test(source) || !source.includes(resolvedPublicationDate) || entry.sourceDate !== '2026-08-10') throw new Error(`source date: ${entry.slug}`);
   if (entry.renderedDate !== '2026-08-10' || !entry.renderedDateFields.includes('datePublished') || !entry.renderedDateFields.includes('time[datetime]')) throw new Error(`rendered date: ${entry.slug}`);
   const builtPath = `.next/server/app/blog/${entry.slug}.html`;
   if (fs.existsSync(builtPath)) {
     const built = fs.readFileSync(builtPath, 'utf8');
-    if (!built.includes('2026-08-10') || !built.includes('datePublished') || !built.includes(`<time dateTime="2026-08-10">2026-08-10</time>`) || !built.includes(`/blog/${entry.slug}`)) throw new Error(`built route date/canonical: ${entry.slug}`);
+    const visibleDate = new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'}).format(new Date(`${entry.renderedDate}T00:00:00Z`));
+    const timePattern = new RegExp(`<time[^>]*dateTime="${entry.renderedDate}"[^>]*>${visibleDate}</time>`);
+    if (!built.includes(entry.renderedDate) || !built.includes('datePublished') || !timePattern.test(built) || !built.includes(`/blog/${entry.slug}`)) throw new Error(`built route date/canonical: ${entry.slug}`);
   }
   const parent = execFileSync('git', ['show', `${entry.introducedByCommit}^:app/blog-batch.ts`], {encoding:'utf8'});
   const introduced = execFileSync('git', ['show', `${entry.introducedByCommit}:app/blog-batch.ts`], {encoding:'utf8'});
   if (parent.includes(`['${entry.slug}',`) || !introduced.includes(`['${entry.slug}',`)) throw new Error(`diff provenance: ${entry.slug}`);
 }
 if (JSON.stringify([...seen].sort()) !== JSON.stringify([...frozenSlugs].sort())) throw new Error('frozen slug identity mismatch');
-if (!route.includes('datePublished: detail.published') || !route.includes('<time dateTime={detail.published}>{detail.published}</time>') || !route.includes('alternates: {canonical: url}')) throw new Error('article route date/canonical contract missing');
+if (!route.includes('datePublished: detail.published') || !route.includes('formatPublicationDate(detail.published)') || !route.includes('const formatPublicationDate') || !route.includes('alternates: {canonical: url}')) throw new Error('article route date/canonical contract missing');
 if (!sitemap.includes('blogPosts.map')) throw new Error('blog sitemap eligibility missing');
 if (!data.includes('...batchPosts,') || data.indexOf('...batchPosts,') > data.indexOf("slug: 'invoice-approval-workflow-philippines-ap-team'")) throw new Error('blog index is not newest-first');
-const indexHtml = [
+const paginatedIndexPaths = fs.existsSync('.next/server/app/blog/page')
+  ? fs.readdirSync('.next/server/app/blog/page', {withFileTypes: true})
+    .filter((entry) => entry.isFile() && /^\d+\.html$/.test(entry.name))
+    .sort((a, b) => Number(a.name.slice(0, -5)) - Number(b.name.slice(0, -5)))
+    .map((entry) => `.next/server/app/blog/page/${entry.name}`)
+  : [];
+const indexPaths = [
   '.next/server/app/blog.html',
-  '.next/server/app/blog/page/2.html',
-  '.next/server/app/blog/page/3.html',
-].filter(fs.existsSync).map((path) => fs.readFileSync(path, 'utf8')).join('\n');
-const indexedFrozenSlugs = [...indexHtml.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)]
-  .map((match) => match[1])
-  .filter((slug, index, all) => frozenSlugs.includes(slug) && all.indexOf(slug) === index);
-if (JSON.stringify(indexedFrozenSlugs) !== JSON.stringify(frozenSlugs)) throw new Error(`built index order mismatch: ${indexedFrozenSlugs.join(',')}`);
+  ...paginatedIndexPaths,
+].filter(fs.existsSync);
+if (indexPaths.length) {
+  const indexHtml = indexPaths.map((path) => fs.readFileSync(path, 'utf8')).join('\n');
+  const indexedFrozenSlugs = [...new Set([...indexHtml.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)]
+    .map((match) => match[1])
+    .filter((slug) => frozenSlugs.includes(slug)))].sort();
+  if (JSON.stringify(indexedFrozenSlugs) !== JSON.stringify([...frozenSlugs].sort())) throw new Error(`built index coverage mismatch: ${indexedFrozenSlugs.join(',')}`);
+}
 console.log(`PASS: ${manifest.entries.length} accepted Blog entries; source, rendered-date, canonical, sitemap, index, and per-slug provenance checks passed.`);

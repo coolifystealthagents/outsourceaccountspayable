@@ -29,6 +29,6 @@ for (const entry of manifest.entries) {
 }
 if (!route.includes('datePublished:p.published') || !route.includes('<time dateTime={p.published}>') || !route.includes('alternates:{canonical:')) throw new Error('article route date/canonical contract missing');
 if (!sitemap.includes('researchPosts.map')) throw new Error('research sitemap eligibility missing');
-if (!data.includes('researchPosts = [...researchBatch].sort')) throw new Error('research index sort missing');
+if (!/export const researchPosts\s*=\s*\[[\s\S]*?\.\.\.researchBatch\s*\]\s*\.sort\(\(a,b\)=>/.test(data)) throw new Error('research index must include the August 10 batch in its sorted aggregate');
 if (!source.includes('aug10ResearchPublicationDates') || !source.includes("'ap-approval-matrix-research':'2026-08-10'")) throw new Error('explicit source date mapping missing');
 console.log('PASS: ' + manifest.entries.length + ' accepted Research entries; source, rendered-date, canonical, sitemap, index, and per-slug provenance checks passed.');

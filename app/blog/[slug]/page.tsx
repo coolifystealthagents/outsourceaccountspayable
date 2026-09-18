@@ -20,11 +20,13 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
+  const images = detailImage(post.slug);
   return {
     title: post.title,
     description: post.excerpt,
     alternates: {canonical: url},
-    openGraph: {title: post.title, description: post.excerpt, url, type: 'article', images: detailImage(post.slug)},
+    openGraph: {title: post.title, description: post.excerpt, url, type: 'article', images},
+    twitter: {card: 'summary_large_image', title: post.title, description: post.excerpt, images: images?.map((image) => image.url)},
   };
 }
 
@@ -88,7 +90,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
         {detail.published && <p className="article-meta">Published: <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
-        {(detail.sourceDate === '2026-09-07' || detail.sourceDate === '2026-09-08' || detail.sourceDate === '2026-09-09' || detail.sourceDate === '2026-09-10' || detail.sourceDate === '2026-09-11' || detail.sourceDate === '2026-09-14') && detail.thumbnail && <img src={detail.thumbnail} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>}
+        {detail.thumbnail && <img src={detail.thumbnail} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>}
 
         <section className="answer-card" aria-labelledby="direct-answer">
           <p className="section-kicker">Direct answer</p>

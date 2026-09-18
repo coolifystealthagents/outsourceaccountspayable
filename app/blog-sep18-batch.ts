@@ -252,6 +252,7 @@ const publishedTopics = topics.filter(topic => topic.slug !== 'invoice-approval-
 export const sep18BlogPosts = publishedTopics.map(topic => ({slug:topic.slug,title:topic.title,excerpt:topic.excerpt,minutes:11}));
 
 export const sep18BlogDetails = Object.fromEntries(publishedTopics.map(topic => [topic.slug, {
+  thumbnail: `/blog-thumbnails/sep18-2026/${topic.slug}.svg`,
   shortAnswer: topic.excerpt,
   published: '2026-09-18',
   modified: '2026-09-18',

@@ -1,0 +1,22 @@
+{
+  "campaignDate": "2026-09-18",
+  "family": "blog",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "branch": "main",
+  "entries": [
+    {"route":"/blog/prepayment-invoice-tracking-register","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/retainage-invoice-review-packet","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/freight-accessorial-charge-review","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/utility-invoice-account-verification","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/corporate-card-receipt-invoice-match","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/payment-run-cutoff-calendar","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/accrual-reversal-invoice-match","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/vendor-tax-form-refresh-workflow","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/shared-services-ap-transition-checklist","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/supplier-self-billing-invoice-control","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/vendor-credit-reissue-control","sourcePaths":["app/blog-sep18-batch.ts"]},
+    {"route":"/blog/invoice-ocr-field-exception-review","sourcePaths":["app/blog-sep18-batch.ts"]}
+  ],
+  "publicationStatus": "pending-live-verification",
+  "imageGeneration": "Existing repository article presentation used; no unsupported stock or generated image introduced."
+}

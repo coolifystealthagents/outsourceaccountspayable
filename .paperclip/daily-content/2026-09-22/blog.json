@@ -3,7 +3,10 @@
   "branch": "main",
   "campaignDate": "2026-09-22",
   "family": "blog",
-  "publicationStatus": "awaiting-deployment-and-live-verification-0-of-12",
+  "publicationStatus": "blocked-coolify-queue-live-verified-0-of-12",
+  "sourceCommitSha": "7b7abca88426aa78195cfc3035a086110638bb1b",
+  "deploymentEvidence": "Coolify deployment ztxkbzsin6xsrf4swrwm2kkh is queued for source commit 7b7abca88426aa78195cfc3035a086110638bb1b; status remained queued from 2026-09-22T16:14:53Z through 2026-09-22T16:17:43Z. Public transition check returned HTTP 404, so no article is counted as verified.",
+  "blocker": "Coolify3 must start and finish deployment ztxkbzsin6xsrf4swrwm2kkh. Recovery: monitor the deployment, then verify all 12 URLs, images, canonicals, datePublished values, visible dates, sitemap entries, and unique article markers before finalizing each entry.",
   "imageGeneration": "Twelve original repository-native SVG article illustrations created for this run.",
   "entries": [
     {"family":"blog","topic":"invoice currency mismatch review","slug":"invoice-currency-mismatch-review","route":"/blog/invoice-currency-mismatch-review","sourcePaths":["app/blog-sep22-batch.ts","public/blog-thumbnails/sep22-2026/invoice-currency-mismatch-review.svg"],"sources":["NIST least privilege","CISA phishing guidance","IRS Form W-9 guidance"],"contentHash":"22358b1dd0d122c679630c1abf88eeb036548453fa5907b491fddd5a82f1b820","publicationDate":"2026-09-22","commitSha":"pending","deploymentEvidence":"pending","liveUrl":"https://outsourceaccountspayable.com/blog/invoice-currency-mismatch-review","verificationTime":null},

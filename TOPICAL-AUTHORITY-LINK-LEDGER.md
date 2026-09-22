@@ -36,6 +36,27 @@ All three source routes and their destination services have generated H1s, canon
 
 ## Authorship and research boundaries
 
+## 2026-09-22 Blog topic delivery
+
+This run adds 12 buyer-facing guides across the site's existing AP service pillars. Each route links to the most relevant service and to `/contact-us`; approval, tax, vendor-master, access, banking, and payment-release decisions remain with named company owners.
+
+| Route | Pillar |
+| --- | --- |
+| `/blog/invoice-currency-mismatch-review` | Three-way match support |
+| `/blog/vendor-statement-cutoff-reconciliation` | Vendor statement reconciliation |
+| `/blog/intercompany-invoice-routing` | Invoice data capture |
+| `/blog/purchase-order-closed-status-review` | Purchase order reconciliation |
+| `/blog/invoice-tax-total-mismatch` | Invoice data capture |
+| `/blog/supplier-refund-tracking` | Vendor statement reconciliation |
+| `/blog/recurring-invoice-price-change-review` | Three-way match support |
+| `/blog/partial-payment-allocation-tracking` | Payment run preparation |
+| `/blog/invoice-legal-entity-mismatch` | Invoice data capture |
+| `/blog/goods-receipt-reversal-review` | Three-way match support |
+| `/blog/payment-return-remediation` | Payment run preparation |
+| `/blog/ap-mailbox-auto-forwarding-controls` | AP inbox management |
+
+These slugs were checked against the repository's Blog batches and publishing manifests before creation. Do not reuse them for a later routine.
+
 The live article models identify `Outsource Accounts Payable` as the Organization author. Keep that attribution unless an actual named author page and on-site evidence exist; do not manufacture a person or credentials.
 
 Research pages publish citations and label their planning figures as workflow examples rather than benchmarks. Any new research page must keep the same distinction, name its source set, and avoid claims about market size, results, or provider performance that the site cannot support.

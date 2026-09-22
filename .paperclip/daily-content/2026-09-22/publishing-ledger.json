@@ -1,0 +1,24 @@
+{
+  "family": "research",
+  "requiredCount": 5,
+  "verifiedCount": 0,
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "branch": "main",
+  "contentCommit": "70dedf25091f7f3170baac1aeec9f66faaa2e2a7",
+  "publicationDate": "2026-09-22",
+  "timezone": "UTC",
+  "deployment": {
+    "applicationUuid": "hbmdk3sbdm0u52xlxnn43r9n",
+    "attempts": ["9mx7qmhk9vxnh64kb0nv8kd9", "iaauzar9il2euj0trqquxybn"],
+    "status": "blocked-queued-against-stale-sha",
+    "observedCommit": "3cb750aa32af5d0cf55ff3ff0a21a5b07bfe10a6",
+    "expectedCommit": "70dedf25091f7f3170baac1aeec9f66faaa2e2a7"
+  },
+  "entries": [
+    {"topic":"blanket purchase-order drawdown evidence","slug":"blanket-purchase-order-drawdown-evidence-research","sources":["GAO Green Book","NIST SP 800-53 Rev. 5","OCC Accounts Payable Operations"],"contentHash":"sha256:ec6204db84370bbe0d3e4bd8696192fa51ac129219af2cfd5b8792b7bedceb3f","actualPublicationDate":null,"commitSha":"70dedf25091f7f3170baac1aeec9f66faaa2e2a7","deploymentEvidence":"queued against stale SHA; not counted","liveUrl":"https://outsourceaccountspayable.com/research/blanket-purchase-order-drawdown-evidence-research","verificationTime":null},
+    {"topic":"service milestone invoice acceptance evidence","slug":"service-milestone-invoice-acceptance-evidence-research","sources":["GAO Green Book","NIST SP 800-53 Rev. 5","OCC Accounts Payable Operations"],"contentHash":"sha256:9a8cb7f875fa3bd700e45ab9ac61d6c2d2c015633bcb4c450d3afa2d4df1b246","actualPublicationDate":null,"commitSha":"70dedf25091f7f3170baac1aeec9f66faaa2e2a7","deploymentEvidence":"queued against stale SHA; not counted","liveUrl":"https://outsourceaccountspayable.com/research/service-milestone-invoice-acceptance-evidence-research","verificationTime":null},
+    {"topic":"recurring invoice price-change evidence","slug":"recurring-invoice-price-change-evidence-research","sources":["GAO Green Book","NIST SP 800-53 Rev. 5","OCC Accounts Payable Operations"],"contentHash":"sha256:2a52008f83083bcd31a6b11ff39952d3cdefc42079fece1408cde3a62bb62da7","actualPublicationDate":null,"commitSha":"70dedf25091f7f3170baac1aeec9f66faaa2e2a7","deploymentEvidence":"queued against stale SHA; not counted","liveUrl":"https://outsourceaccountspayable.com/research/recurring-invoice-price-change-evidence-research","verificationTime":null},
+    {"topic":"three-way match tolerance override evidence","slug":"three-way-match-tolerance-override-evidence-research","sources":["GAO Green Book","NIST SP 800-53 Rev. 5","OCC Accounts Payable Operations"],"contentHash":"sha256:ea7e618780a20e46b435fc02cff5df58f4c4d5ed5f1095b9cd9d5a0576ebc393","actualPublicationDate":null,"commitSha":"70dedf25091f7f3170baac1aeec9f66faaa2e2a7","deploymentEvidence":"queued against stale SHA; not counted","liveUrl":"https://outsourceaccountspayable.com/research/three-way-match-tolerance-override-evidence-research","verificationTime":null},
+    {"topic":"supplier bank-account callback provenance","slug":"supplier-bank-account-callback-provenance-research","sources":["CISA Recognize and Report Phishing","NIST SP 800-53 Rev. 5","GAO Green Book"],"contentHash":"sha256:166cbf501e8e7cc722325100007d881ed1db782d60793ea420015299d9b17050","actualPublicationDate":null,"commitSha":"70dedf25091f7f3170baac1aeec9f66faaa2e2a7","deploymentEvidence":"queued against stale SHA; not counted","liveUrl":"https://outsourceaccountspayable.com/research/supplier-bank-account-callback-provenance-research","verificationTime":null}
+  ]
+}

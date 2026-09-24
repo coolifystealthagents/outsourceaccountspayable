@@ -29,6 +29,7 @@ import {sep3ResearchBatch} from './research-sep3-batch';
 import {sep18BlogPosts, sep18BlogDetails} from './blog-sep18-batch';
 import {sep22BlogPosts, sep22BlogDetails} from './blog-sep22-batch';
 import {sep23BlogPosts, sep23BlogDetails} from './blog-sep23-batch';
+import {sep24BlogPosts, sep24BlogDetails} from './blog-sep24-batch';
 import {sep4BlogPosts, sep4BlogDetails} from './blog-sep4-batch';
 import {sep4ResearchBatch} from './research-sep4-batch';
 import {sep7BlogPosts, sep7BlogDetails} from './blog-sep7-batch';
@@ -81,6 +82,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...sep24BlogPosts,
   ...sep23BlogPosts,
   ...sep22BlogPosts,
   ...sep18BlogPosts,
@@ -140,6 +142,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...sep24BlogDetails,
   ...sep23BlogDetails,
   ...sep22BlogDetails,
   ...sep18BlogDetails,

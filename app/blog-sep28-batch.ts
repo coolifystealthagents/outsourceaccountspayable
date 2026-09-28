@@ -206,15 +206,35 @@ const sources = [
 ];
 
 const opening = (t:Topic) => `The operating question is specific: ${t.question} Start with ${t.records}. Keep every source identifier and retrieval time so a reviewer can reproduce the comparison. ${t.boundary}`;
-const detail = (t:Topic,s:Section,index:number) => `${s.focus} ${s.example} For this ${t.keyword}, the outsourced AP specialist should record the observation, affected amount or document, missing evidence, and one answerable question. The ${t.owner} keeps the decision. This distinction matters because a tidy packet can support judgment but cannot replace commercial, accounting, tax, security, or payment authority.`;
-const control = (t:Topic,s:Section,index:number) => `Use a status that describes the real next action for “${s.title.toLowerCase()}”: evidence requested, source conflict, owner review, supplier correction, approved for the normal workflow, or closed with a recorded reason. Link corrections instead of overwriting the first record. Apply least privilege to files and systems, and keep sensitive banking, tax, employee, or identity data in its approved source rather than copying it into a coordination note. Test the step on an ordinary case and an exception before treating it as routine.`;
+const detailTails = [
+  (t:Topic) => `The AP specialist records the observation, affected amount or document, missing evidence, and one answerable question. The ${t.owner} decides what happens next. A well-organized packet helps that judgment; it does not supply commercial, accounting, tax, security, or payment authority.`,
+  (t:Topic) => `The specialist's note should name the source, the factual difference, the value at issue, and the response needed. It then goes to the ${t.owner}. Preparation ends where interpretation, approval, master-data authority, or movement of funds begins.`,
+  (t:Topic) => `Write down what the records show and what they do not show. Add the affected document or amount and route a single focused question to the ${t.owner}. Support can make the case easier to review without taking over the owner's decision.`,
+  (t:Topic) => `The working record needs the evidence, the discrepancy, its financial or operational effect, and the next question. The ${t.owner} resolves that question. Do not turn a clean spreadsheet into implied approval or policy.`,
+];
+const controlTails = [
+  `Keep corrections linked to the first record. Restrict file and system access to what the task requires, and leave sensitive bank, tax, employee, or identity data in the approved source. Try the step on one ordinary case and one exception before using it as routine.`,
+  `A correction should add history, not erase it. Give the specialist only the access needed for preparation, and use source links instead of copying protected data into notes. A normal item and a conflicting item make a useful first test.`,
+  `Retain the original evidence when a new document arrives. Limit permissions, store protected details in their authorized system, and confirm that a second reviewer can follow both a straightforward case and an exception.`,
+  `Do not overwrite the first result when the supplier or owner responds. Preserve the trail, keep access narrow, and avoid duplicating sensitive fields in a coordination queue. Pilot the status on routine and incomplete records.`,
+];
+const detail = (t:Topic,s:Section,seed:number) => `${s.focus} ${s.example} For this ${t.keyword}, ${detailTails[seed % detailTails.length](t)}`;
+const control = (t:Topic,s:Section,seed:number) => {
+  const leads = [
+    `For “${s.title.toLowerCase()},” choose a status that names the next action: evidence requested, source conflict, owner review, supplier correction, normal processing, or closure with a reason.`,
+    `The status for “${s.title.toLowerCase()}” should tell the next person what must happen. Record whether the case awaits evidence, a supplier correction, owner review, ordinary processing, or documented closure.`,
+    `Avoid a vague “pending” label at this stage. For “${s.title.toLowerCase()},” name the missing evidence, conflict, reviewer, correction, processing step, or closure reason.`,
+    `Make the queue useful to the backup reviewer. The “${s.title.toLowerCase()}” entry should state the next action and who owns it, whether that is evidence collection, correction, review, processing, or closure.`,
+  ];
+  return `${leads[seed % leads.length]} ${controlTails[(seed + 1) % controlTails.length]}`;
+};
 
 export const sep28BlogPosts = topics.map(t=>({slug:t.slug,title:t.title,excerpt:t.excerpt,minutes:13}));
-export const sep28BlogDetails = Object.fromEntries(topics.map(t=>[t.slug,{
+export const sep28BlogDetails = Object.fromEntries(topics.map((t,topicIndex)=>[t.slug,{
   thumbnail:`/blog-thumbnails/sep24-2026/${t.image}`,shortAnswer:`${t.excerpt} ${t.boundary}`,published:'2026-09-28',modified:'2026-09-28',mainKeyword:t.keyword,
   sections:[
     {title:'Define the decision before touching the queue',paragraphs:[opening(t),`Write the lane in plain language: included suppliers and entities, intake source, expected output, stop conditions, authorized reviewer, response target, and retention location. A workable ${t.keyword} does not ask support to “use judgment” without naming whose judgment is required. It makes missing, conflicting, late, and security-sensitive evidence visible while leaving the source record intact.`]},
-    ...t.sections.map((s,i)=>({title:s.title,paragraphs:[detail(t,s,i),control(t,s,i)]})),
+    ...t.sections.map((s,i)=>({title:s.title,paragraphs:[detail(t,s,topicIndex+i),control(t,s,topicIndex+i)]})),
     {title:'Pilot the workflow and review exceptions',paragraphs:[`Choose a bounded sample of ${t.keyword} cases that includes a normal item, incomplete evidence, conflicting sources, an older unresolved item, and a request with a security or authority concern. Ask a backup reviewer to reproduce each result from the packet alone. Revise fields and statuses when the reviewer must rely on private memory, chat history, or assumptions that are absent from the record.`, `Track measures only after defining their source and purpose. Useful operational signals can include items waiting by reason, age since the last meaningful event, returned packets, correction causes, and owner response time. Volume processed is not proof that liabilities, supplier accounts, or payments are right. Review patterns with the ${t.owner}, then assign process changes separately from one-off corrections.`]},
     {title:'Scope an outsourced handoff',paragraphs:[`For an outsourced ${t.keyword} lane, document system access, approved contacts, expected volume, peak timing, source-of-truth fields, evidence storage, quality sampling, backup coverage, and escalation deadlines. Keep vendor-master changes, policy interpretation, invoice approval, accounting treatment, and payment release with named company owners. The specialist prepares a consistent decision packet and follows the recorded next action.`, `Start with one entity or queue and a short review cycle. The related ${t.serviceLabel} service page can help define the preparation work, while the contact and scoping page can turn sources, outputs, permissions, owners, and stop conditions into a role brief. Expand only after routine and exception cases remain traceable from intake through closure.`]},
   ],

@@ -1,0 +1,25 @@
+{
+  "cycleLabel": "September 28, 2026",
+  "intendedFirstPublicationDate": "2026-09-28",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "baseSha": "abd51a7d30813f467af6fe9979765a1921d97cc3",
+  "branch": "routine/2026-09-28-research",
+  "taskId": "097ab8ed-fa1e-444c-a069-92c86d54324e",
+  "runId": "257cecf3-9989-48c5-8b56-c266d8655f7e",
+  "requiredCount": 5,
+  "draftCount": 5,
+  "verifiedCount": 0,
+  "status": "blocked-editorial-overlap",
+  "sourceFileSha256": "670f3d9e0cdc8054630ad70c3a66b8bf6737654d4e8a62a7353fa9854e11b91e",
+  "maximumFiveWordShingleJaccard": 0.5321637426900585,
+  "blocker": "Maximum pairwise overlap remains above the 0.50 contract threshold after three substantive correction attempts; same articles require further independent rewriting before Blog integration.",
+  "articles": [
+    {"slug":"supplier-tax-id-collision-review-research","bodyWords":1404},
+    {"slug":"payment-beneficiary-name-mismatch-research","bodyWords":1369},
+    {"slug":"invoice-ocr-table-boundary-error-research","bodyWords":1418},
+    {"slug":"dormant-vendor-open-invoice-research","bodyWords":1414},
+    {"slug":"payment-file-rejection-reconstruction-research","bodyWords":1439}
+  ],
+  "publicationNote": "These are unpublished local drafts. Reconcile all publication-date metadata to each article's actual first public verification date before the sole combined push."
+}

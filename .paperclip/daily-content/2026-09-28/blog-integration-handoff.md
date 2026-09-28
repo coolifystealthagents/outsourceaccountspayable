@@ -21,7 +21,7 @@
 
 ## Isolated Blog workspace
 
-- Durable worktree: `/tmp/paperclip-run-outaaaaaaa-73-35649081-b93-AYKKWX/blog-2026-09-28`
+- Durable branch: `routine/outaaaaaaa-73-20260928` (reattached to the current run worktree when execution resumes)
 - Branch: `routine/outaaaaaaa-73-20260928`
 - Branch starting point: `abd51a7d30813f467af6fe9979765a1921d97cc3`
 - Production has not been pushed or deployed by this routine.
@@ -42,9 +42,8 @@ At inspection time, `OUTAAAAAAA-72` was `in_progress` and had no issue-thread ha
 
 ## Current counts
 
-- New September 28 Blog articles committed: 0 / 12
+- New September 28 Blog articles drafted and validated: 12 / 12
 - New September 28 Research articles handed off: 0 / 5
 - Combined production pushes: 0 / 1
 - Deployments submitted by Blog: 0 (required)
 - Public articles claimed live: 0 (required until user verification)
-

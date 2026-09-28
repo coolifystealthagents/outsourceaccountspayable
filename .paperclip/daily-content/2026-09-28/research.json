@@ -11,6 +11,8 @@
   "draftCount": 5,
   "verifiedCount": 0,
   "status": "eligible-local-research-handoff",
+  "handoffCommitSha": "6b4fb46b9142076bd07f0927ceaada5f1fb0fec9",
+  "integratedCommitSha": "16d7f95194e477fcd3a016c7a22e80d2019922a0",
   "batchFileSha256": "c248ef40aff0b285fe31a9912a0dc11c25b64468e09ca4094f9f513fbb7812b7",
   "maximumFiveWordShingleJaccard": 0.0012401818933443572,
   "blocker": null,

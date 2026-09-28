@@ -28,7 +28,7 @@
 
 ## Research dependency state
 
-At inspection time, `OUTAAAAAAA-72` was `in_progress` and had no issue-thread handoff comment. No September 28 Research branch, full commit SHA, five-item inventory, manifest, word-count audit, similarity audit, or validation evidence had been reported to the Blog integrator. Blog must not substitute old Research work or push a category-only release.
+The corrected eligible Research handoff was received at local SHA `6b4fb46b9142076bd07f0927ceaada5f1fb0fec9` and integrated into the Blog release branch. It contains exactly five preserved Research slugs, all above 1,200 body words, with a maximum Research-family five-word-shingle Jaccard overlap of 0.124%. The earlier ineligible Research draft was not integrated by itself.
 
 ## Required recovery sequence
 
@@ -43,7 +43,7 @@ At inspection time, `OUTAAAAAAA-72` was `in_progress` and had no issue-thread ha
 ## Current counts
 
 - New September 28 Blog articles drafted and validated: 12 / 12
-- New September 28 Research articles handed off: 0 / 5
+- New September 28 Research articles handed off and integrated: 5 / 5
 - Combined production pushes: 0 / 1
 - Deployments submitted by Blog: 0 (required)
 - Public articles claimed live: 0 (required until user verification)

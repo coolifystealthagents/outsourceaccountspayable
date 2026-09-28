@@ -6,20 +6,20 @@
   "baseSha": "abd51a7d30813f467af6fe9979765a1921d97cc3",
   "branch": "routine/2026-09-28-research",
   "taskId": "097ab8ed-fa1e-444c-a069-92c86d54324e",
-  "runId": "257cecf3-9989-48c5-8b56-c266d8655f7e",
+  "runId": "0d447da7-49a5-47b6-9ba5-4bf2f4cae431",
   "requiredCount": 5,
   "draftCount": 5,
   "verifiedCount": 0,
-  "status": "blocked-editorial-overlap",
-  "sourceFileSha256": "670f3d9e0cdc8054630ad70c3a66b8bf6737654d4e8a62a7353fa9854e11b91e",
-  "maximumFiveWordShingleJaccard": 0.5321637426900585,
-  "blocker": "Maximum pairwise overlap remains above the 0.50 contract threshold after three substantive correction attempts; same articles require further independent rewriting before Blog integration.",
+  "status": "eligible-local-research-handoff",
+  "batchFileSha256": "c248ef40aff0b285fe31a9912a0dc11c25b64468e09ca4094f9f513fbb7812b7",
+  "maximumFiveWordShingleJaccard": 0.0012401818933443572,
+  "blocker": null,
   "articles": [
-    {"slug":"supplier-tax-id-collision-review-research","bodyWords":1404},
-    {"slug":"payment-beneficiary-name-mismatch-research","bodyWords":1369},
-    {"slug":"invoice-ocr-table-boundary-error-research","bodyWords":1418},
-    {"slug":"dormant-vendor-open-invoice-research","bodyWords":1414},
-    {"slug":"payment-file-rejection-reconstruction-research","bodyWords":1439}
+    {"slug":"supplier-tax-id-collision-review-research","bodyWords":1234,"sourceFile":"app/research-sep28-supplier-tax-id.ts","sha256":"6c2e9505a925d2d8748c0a6c45cf9ea0ccd7dd0337655ff8925f2bfda316e29b"},
+    {"slug":"payment-beneficiary-name-mismatch-research","bodyWords":1206,"sourceFile":"app/research-sep28-beneficiary-name.ts","sha256":"72a33ba466786fb3ba8f0347f53b7025046b193fb8fec30cf3949c14d50a7a88"},
+    {"slug":"invoice-ocr-table-boundary-error-research","bodyWords":1250,"sourceFile":"app/research-sep28-ocr-table-boundary.ts","sha256":"de09c764033a33655440465c793a4cbc9d374d3bf61bbe5cc8d90d74997ca225"},
+    {"slug":"dormant-vendor-open-invoice-research","bodyWords":1224,"sourceFile":"app/research-sep28-dormant-vendor.ts","sha256":"b560d1fca516c2884ccb343bfbd0b4d6ae00e0ae9af05caa103c54d1975c270c"},
+    {"slug":"payment-file-rejection-reconstruction-research","bodyWords":1208,"sourceFile":"app/research-sep28-payment-file.ts","sha256":"109c6a3b1a7e8727fb8db29979da7d2121eccd63e2217259b5bea4b21113f282"}
   ],
   "publicationNote": "These are unpublished local drafts. Reconcile all publication-date metadata to each article's actual first public verification date before the sole combined push."
 }

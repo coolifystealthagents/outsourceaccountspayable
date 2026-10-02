@@ -6,7 +6,7 @@
   "requiredCount": 12,
   "bodyWordCounts": {
     "invoice-exchange-rate-evidence-packet": 913,
-    "supplier-invoice-contact-change-review": 909
+    "supplier-invoice-contact-change-review": 912
   },
   "maximumPairwiseFiveWordShingleJaccard": {
     "slugs": [

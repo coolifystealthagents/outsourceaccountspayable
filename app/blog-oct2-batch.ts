@@ -272,5 +272,145 @@ export const oct2BlogDrafts: Draft[] = [
         {name:'CISA guidance on phishing',url:'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing',note:'Supports verified communication channels when resolving supplier identity or invoice questions.'}
       ]
     }
+  },
+  {
+    slug: 'supplier-credit-memo-application-aging',
+    title: 'Age and resolve unapplied supplier credit memos',
+    excerpt: 'Trace each credit to its cause, eligible invoices, supplier application, restrictions, and decision owner before treating it as available value.',
+    minutes: 12,
+    detail: {
+      thumbnail: '/blog-thumbnails/ap-credit-memo-follow-up-workflow.svg',
+      shortAnswer: 'An unapplied credit needs its own evidence trail. Connect the memo to the original charge or return, verify the supplier account and eligible invoices, separate company and supplier application records, and give the authorized owner a specific disposition to approve.',
+      published: null,
+      modified: null,
+      mainKeyword: 'unapplied supplier credit memo aging',
+      sections: [
+        {
+          title: 'Identify the credit before aging it',
+          paragraphs: [
+            'A credit balance can appear on a supplier statement, in the AP subledger, or in correspondence before the company receives a usable credit memo. Start by naming the record you actually have. Capture the supplier legal name, account number, company entity, credit number, credit date, currency, amount, referenced invoice, stated reason, and source. If the evidence is only a statement line or supplier promise, label it that way. Do not create a credit document from a balance that lacks the fields required by the company process.',
+            'Find the event that caused the credit. It may relate to returned goods, a price correction, duplicate billing, service cancellation, tax correction, deposit, rebate, short shipment, or payment made twice. Link the original invoice, purchase order, receipt or service record, return authorization, dispute, payment, and supplier correspondence. The cause determines who must review the credit and what it can offset. A general ledger balance by itself does not explain whether the company may apply it to the next invoice.'
+          ]
+        },
+        {
+          title: 'Reconcile the company and supplier views',
+          paragraphs: [
+            'Build two columns instead of blending the records. On the company side, show whether the credit was received, validated, approved, posted, allocated, used in a payment proposal, or left open. On the supplier side, show whether it is open, linked to a particular invoice, applied against a payment, restricted to an account, or already consumed. Preserve statement dates and extraction times. A supplier can show a credit as applied while the company ledger still carries it, especially after a consolidated remittance or deduction.',
+            'Reproduce the bridge at document level. List the gross invoice, payments, deductions, other credits, the credit memo, and the remaining balance in the same currency. Keep tax, freight, restocking fees, and exchange differences visible when they explain why the memo does not equal the disputed amount. If the supplier issued one credit for several invoices, record the allocation it supplied. If the company wants another allocation, that is a decision and communication step, not a spreadsheet assumption.'
+          ]
+        },
+        {
+          title: 'Age from meaningful events',
+          paragraphs: [
+            'One age field cannot describe every credit. Track days since the triggering return or correction, days since the supplier promised the memo, days since receipt, days since internal approval, and days since the last application attempt when those dates exist. State whether the measure uses calendar or business days and which timezone applies. A memo received yesterday for a return made two months ago is new in the ledger but old as a supplier follow-up case. Both views can matter.',
+            'Give every open item a next event and owner. Examples include waiting for the source invoice, purchasing review of a restocking charge, finance approval to post, supplier confirmation of account allocation, or treasury review of a payment deduction. Avoid the status "open credit" without a reason. Set the next review date from a documented promise or operating target, not an invented deadline. When the supplier misses a commitment, retain the earlier date and add the escalation rather than replacing the history.'
+          ]
+        },
+        {
+          title: 'Test whether the credit is eligible for application',
+          paragraphs: [
+            'Confirm the legal entity, supplier account, currency, remit relationship, document type, validity limits, and any referenced invoice. Check whether the candidate invoice is approved, disputed, held, already scheduled for payment, or owned by another account. A credit on a parent account may not be usable against a subsidiary invoice. A credit in one currency should not be netted against another without an authorized process. AP support can collect these constraints; finance and treasury owners decide the accounting and payment action.',
+            'Search for prior use before proposing an application. Review remittances, payment deductions, debit memos, journals, supplier statements, refund receipts, and related correspondence. Similar amounts can cause false matches, so use document references and dates as well. If a collector asks for full payment while a valid credit is open, reply with a controlled reconciliation and request the supplier application. Do not simply short-pay an invoice because the arithmetic looks convenient. The approved payment process still applies.'
+          ]
+        },
+        {
+          title: 'Handle refunds and cross-account requests as separate cases',
+          paragraphs: [
+            'A supplier may offer cash repayment instead of applying the credit, or it may suggest moving the balance to another account. Treat either proposal as a new controlled step. Verify the supplier contact, receiving entity, currency, amount, account ownership, and company instructions. Treasury or finance should identify the approved refund channel and confirm receipt. Do not send new bank details in an ordinary email thread or mark the credit resolved when the supplier says a refund was initiated.',
+            'For a transfer between supplier accounts, document the balance leaving the first account and appearing on the second. Preserve the authorization and effective date on both sides. If the supplier applies only part of the amount or converts currency, keep the arithmetic and residual visible. The original credit case closes only when the approved destination record can be traced. A transfer request should never become an unexplained journal created merely to remove an old item from an aging report.'
+          ]
+        },
+        {
+          title: 'Close the item only after both records move',
+          paragraphs: [
+            'Record the approved disposition: applied to named invoices, used in a payment proposal, refunded, transferred through an authorized process, written off by the owner, rejected as unsupported, or kept open with a specific reason. Preserve the approval and resulting system document. Then obtain the next supplier statement or application confirmation and compare it with the company ledger. Posting the credit internally does not prove that the supplier applied it to the same documents.',
+            'Keep any residual amount as a separate open item with its own cause and owner. A partial application may leave a fee, tax difference, currency difference, or disputed balance. For an outsourced vendor-statement reconciliation role, define which records the specialist may access, who approves posting and netting, how supplier messages are verified, and when an old credit escalates. Review outcomes by cause and stage. That shows whether delays come from missing memos, internal approvals, account restrictions, or supplier application rather than treating every old credit as the same problem.'
+          ]
+        }
+      ],
+      checklistTitle: 'Review the unapplied-credit case',
+      checklist: ['The credit document and triggering event are linked', 'Company and supplier application records remain separate', 'Age measures name their starting event', 'Entity, account, currency, and eligibility are checked', 'Prior use and refunds are searched before application', 'Closure includes supplier confirmation or a documented residual'],
+      bodyLinks: [{href:'/services/vendor-statement-reconciliation',label:'vendor statement reconciliation'}, {href:'/contact-us',label:'scope a credit follow-up queue'}],
+      faqs: [
+        {question:'Can an open supplier credit automatically reduce the next invoice?',answer:'No. Confirm the entity, supplier account, currency, eligible documents, prior use, internal approval, and supplier application before changing a payment amount.'},
+        {question:'Which date should be used to age a supplier credit?',answer:'Keep the dates that describe the actual process, including the triggering event, supplier promise, credit receipt, internal approval, and application attempt. Label each measure clearly.'},
+        {question:'When is an unapplied credit resolved?',answer:'Resolution requires the approved company disposition and evidence that the supplier account reflects the intended application, refund, or other outcome. Any residual remains open.'}
+      ],
+      sources: [
+        {name:'GAO Standards for Internal Control in the Federal Government',url:'https://www.gao.gov/products/gao-14-704g',note:'Authoritative framework supporting documented transactions, review, and assigned responsibility.'},
+        {name:'NIST least privilege glossary',url:'https://csrc.nist.gov/glossary/term/least_privilege',note:'Supports limiting access and keeping application approval with designated owners.'},
+        {name:'CISA guidance on phishing',url:'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing',note:'Supports verified supplier communications during credit follow-up and account reconciliation.'}
+      ]
+    }
+  },
+  {
+    slug: 'freight-invoice-accessorial-evidence',
+    title: 'Review accessorial charges on a freight invoice',
+    excerpt: 'Connect detention, redelivery, liftgate, storage, and other added freight charges to shipment events, contracted terms, and commercial approval.',
+    minutes: 12,
+    detail: {
+      thumbnail: '/blog-thumbnails/sep18-2026/freight-accessorial-charge-review.svg',
+      shortAnswer: 'Review each accessorial as a separate charge. Match its code and amount to the shipment, event evidence, carrier tariff or agreement, responsible location, prior billings, and approval owner before adding it to an otherwise matched freight invoice.',
+      published: null,
+      modified: null,
+      mainKeyword: 'freight invoice accessorial charge review',
+      sections: [
+        {
+          title: 'Separate the base freight from the added charge',
+          paragraphs: [
+            'A freight invoice may match the quoted line-haul rate while carrying extra amounts for detention, layover, liftgate service, redelivery, storage, reclassification, address correction, fuel, or another event. Do not review only the invoice total. Capture each charge code, description, quantity, unit, rate, amount, currency, tax, shipment identifier, bill of lading, purchase order, carrier account, pickup, and delivery. Preserve the carrier document exactly as received and place normalized fields beside it.',
+            'State which charge triggered the exception and why. The amount may exceed a tolerance, use an unknown code, repeat a prior fee, lack supporting documents, or conflict with a contracted allowance. A generic note such as "freight variance" forces the commercial owner to reconstruct the whole invoice. A useful case names the $ amount and code, the shipment involved, the expected term, and the missing or conflicting evidence. Base freight can continue through its approved path only if company policy permits partial handling.'
+          ]
+        },
+        {
+          title: 'Reconstruct the shipment event',
+          paragraphs: [
+            'Build the timeline from dispatch through delivery. Include appointment requests, arrival and departure times, check-in records, proof of delivery, driver notes, warehouse records, redelivery notices, exception messages, and carrier timestamps. Note the timezone for each source. Detention measured from a facility log can differ from a carrier timestamp if one uses local time and the other uses UTC. Preserve both values and explain the comparison instead of changing a timestamp to make the charge fit.',
+            'Identify the location and party associated with the event. A liftgate fee may belong to a delivery site without a dock. Storage may follow a consignee closure, carrier delay, customs hold, or failed appointment. AP support should report what the records show, not assign legal or commercial fault. Ask the logistics, warehouse, purchasing, or business owner the narrow question the evidence leaves open. Their answer should identify the accepted event, responsibility, and any approved exception.'
+          ]
+        },
+        {
+          title: 'Read the governing term and calculate the fee',
+          paragraphs: [
+            'Locate the contract, rate confirmation, tariff reference, purchase order, or approved quote that covers the shipment. Record its version and effective dates. Capture free time, unit basis, minimum, maximum, geographic condition, notice requirement, documentation requirement, and rate. Do not assume a term from an earlier shipment still applies. If documents conflict, show the alternatives and send the interpretation to the commercial owner. AP preparation ends before choosing which agreement governs.',
+            'Reproduce the carrier calculation. For detention, show arrival, free-time start, free minutes, billable minutes, billing increment, rate, and total. For redelivery or storage, show the triggering event, dates, units, and agreed schedule. Keep rounding and minimum charges visible. If the invoice combines several events into one line, request or build a supported breakdown. A correct total with an unexplained basis is not a complete review, especially when the company wants to challenge only one part.'
+          ]
+        },
+        {
+          title: 'Search for duplicates, credits, and bundled charges',
+          paragraphs: [
+            'Compare the charge with earlier carrier invoices, corrected bills, credit memos, shipment portals, and payment records. Carriers may rebill a shipment after changing one code while leaving the original invoice open. The same detention event can appear on a supplemental invoice. Normalize shipment and invoice identifiers without discarding suffixes that mark corrections. Check whether a broker and carrier both billed the same event, and whether the contract bundles the fee into another rate.',
+            'Link a promised credit to the disputed charge and keep both open until the credit arrives and is applied. Do not subtract an email promise from another invoice without approval. If the carrier supplies new evidence, add it to the chronology rather than overwriting the first packet. Record the revised calculation and the reason it changed. This lets the owner see whether the dispute turned on missing evidence, a different term, a timing correction, or an actual duplicate.'
+          ]
+        },
+        {
+          title: 'Keep operational learning separate from invoice approval',
+          paragraphs: [
+            'Once several cases accumulate, group them by charge code, lane, carrier, location, and cause. A warehouse may repeatedly miss appointment windows, a carrier may use a code that the AP system does not recognize, or a rate table may omit a common service. Give those patterns to the logistics or procurement owner with links to the underlying cases. The pattern review can support training, contract changes, routing changes, or better source fields, but it does not retroactively approve the invoices in the sample.',
+            'Choose measures that can be reproduced. Count charges reviewed, approved, partly approved, rejected, credited, and still awaiting evidence. Track elapsed time from receipt to an answer and from a credit promise to the actual memo. Keep savings claims out of the report unless the company defines and verifies them. A rejected charge is not a saving if it was never owed, and a promised credit is not recovered value until the account and ledger show the result. This distinction keeps the operating report useful to finance.'
+          ]
+        },
+        {
+          title: 'Route the commercial decision and verify the outcome',
+          paragraphs: [
+            'Give the owner the source invoice, charge-level calculation, shipment timeline, applicable terms, conflicting evidence, prior billings, and one decision request. Outcomes may include approve, reject, approve a supported portion, request a credit, or route the cost to a responsible internal owner. Record the approver, reason, amount, currency, and system action. AP support should not accept liability, change a carrier agreement, create receiving evidence, or release payment to clear the queue.',
+            'After the decision, confirm that the invoice, hold, credit, and supplier or carrier statement reflect it. Keep a residual difference visible. For an outsourced three-way-match support lane, define the shipment systems, carrier contacts, evidence fields, response targets, and escalation owners. Sample ordinary charges and disputed events before expanding the scope. Track cause and disposition, not merely dollars challenged. A low exception count can mean clean freight operations, but it can also mean that bundled or unsupported charges were never separated for review.'
+          ]
+        }
+      ],
+      checklistTitle: 'Review the accessorial packet',
+      checklist: ['Base freight and every added charge are separated', 'Shipment events retain source timestamps and timezones', 'The governing term and version are identified', 'The carrier calculation can be reproduced', 'Prior bills, corrections, and credits are checked', 'The commercial owner approves the recorded disposition'],
+      bodyLinks: [{href:'/services/three-way-match-support',label:'three-way match support'}, {href:'/contact-us',label:'define a freight exception handoff'}],
+      faqs: [
+        {question:'What evidence supports a detention charge?',answer:'Use the shipment identifiers, arrival and departure records, appointment history, free-time term, billable duration, rate, calculation, and the responsible owner review.'},
+        {question:'Can AP decide who caused an accessorial charge?',answer:'AP support can reconstruct events and contract terms. Logistics, purchasing, legal, or another authorized commercial owner determines responsibility and acceptance.'},
+        {question:'How should a promised carrier credit be handled?',answer:'Link the promise to the disputed charge, retain the amount as open, and verify receipt and application of the actual credit before closing the case.'}
+      ],
+      sources: [
+        {name:'Federal Motor Carrier Safety Administration consumer resources',url:'https://www.fmcsa.dot.gov/protect-your-move',note:'Primary federal resource illustrating the importance of written estimates, shipment records, and documented additional charges in covered moves.'},
+        {name:'GAO Standards for Internal Control in the Federal Government',url:'https://www.gao.gov/products/gao-14-704g',note:'Authoritative framework supporting transaction documentation, review, and assigned responsibility.'},
+        {name:'NIST least privilege glossary',url:'https://csrc.nist.gov/glossary/term/least_privilege',note:'Supports narrow access for shipment evidence preparation and retained approval authority.'}
+      ]
+    }
   }
 ];

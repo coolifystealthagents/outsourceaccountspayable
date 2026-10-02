@@ -2,13 +2,15 @@
   "family": "blog",
   "cycleLabel": "2026-10-02",
   "status": "partial-draft-not-registered-for-publication",
-  "draftedCount": 4,
+  "draftedCount": 6,
   "requiredCount": 12,
   "bodyWordCounts": {
     "invoice-exchange-rate-evidence-packet": 913,
     "supplier-invoice-contact-change-review": 912,
     "purchase-order-line-closure-exception": 912,
-    "cross-entity-duplicate-invoice-review": 919
+    "cross-entity-duplicate-invoice-review": 919,
+    "supplier-credit-memo-application-aging": 961,
+    "freight-invoice-accessorial-evidence": 919
   },
   "maximumPairwiseFiveWordShingleJaccard": {
     "slugs": [
@@ -20,7 +22,7 @@
   "qualitativeOriginality": {
     "repeatedParagraphs": 0,
     "sharedArgument": false,
-    "notes": "The four articles separately address currency evidence, supplier-contact authority, closed-order chronology, and cross-entity duplicate analysis. Each uses its own evidence population, decision sequence, examples, operating boundary, and closing test. They do not reuse an outline, paragraph, example, or conclusion."
+    "notes": "The six articles separately address currency evidence, supplier-contact authority, closed-order chronology, cross-entity duplicate analysis, credit application aging, and freight accessorial evidence. Each uses its own evidence population, decision sequence, examples, operating boundary, and closing test. They do not reuse an outline, paragraph, example, or conclusion."
   },
   "humanizerAudit": {
     "emOrEnDashes": 0,

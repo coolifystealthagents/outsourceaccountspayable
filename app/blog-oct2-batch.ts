@@ -146,5 +146,131 @@ export const oct2BlogDrafts: Draft[] = [
         {name:'FBI business email compromise guidance',url:'https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/business-email-compromise',note:'Government guidance supporting out-of-band verification when business correspondence changes.'}
       ]
     }
+  },
+  {
+    slug: 'purchase-order-line-closure-exception',
+    title: 'Resolve an invoice exception after a purchase order line is closed',
+    excerpt: 'Reconstruct the order line, receipts, reversals, invoices, commitments, and closure event before an owner decides how to handle the late charge.',
+    minutes: 12,
+    detail: {
+      thumbnail: '/blog-thumbnails/sep22-2026/purchase-order-closed-status-review.svg',
+      shortAnswer: 'A closed purchase-order line needs a chronology, not a quick reopen request. Show what was ordered, received, reversed, invoiced, credited, and closed; identify the remaining quantity or value; then route the commercial and accounting decision to the authorized owners.',
+      published: null,
+      modified: null,
+      mainKeyword: 'purchase order line closure invoice exception',
+      sections: [
+        {
+          title: 'Find out what "closed" means in this system',
+          paragraphs: [
+            'A supplier invoice can fail against a purchase order even when the goods arrived and the price looks familiar. The line may be manually closed, finally invoiced, delivery completed, cancelled, expired, or exhausted by value. Those statuses are not interchangeable. Start with the exact system status, status date, person or automated job that set it, and the rule that prevents further matching. Capture the header and line separately. An open order header does not prove that the invoiced line can accept another receipt or invoice.',
+            'Preserve the current order before anyone edits it. Record the order number, version, supplier, company entity, currency, line description, unit of measure, ordered quantity or value, tolerance, validity dates, and change history. Link the rejected invoice and system error. Avoid paraphrasing the error as "PO closed" when the system gives a more specific reason. A precise status tells purchasing whether it is reviewing a legitimate late invoice, a missing receipt, a duplicate demand, or activity that was never authorized on the order.'
+          ]
+        },
+        {
+          title: 'Build a line-level chronology',
+          paragraphs: [
+            'Put every event on one timeline: order approval, amendments, releases, shipment or service dates, receipts, receipt reversals, prior invoices, invoice reversals, credits, returns, closure, and the arrival of the current invoice. Use system timestamps and stable document identifiers. A late invoice may relate to a receipt posted before closure, while an invoice dated earlier may cover service performed after the order expired. The sequence matters more than the date printed at the top of one document.',
+            'Keep reversals visible. Suppose the line ordered 100 units, received 100, reversed 15 after a return, and paid an invoice for 85. A new invoice for 15 is not supported merely because the original order quantity was 100. It may duplicate the returned units or reflect a replacement shipment that needs its own receipt. Show the quantities and values after each event. The owner should be able to identify the first point where the supplier record and company record diverge.'
+          ]
+        },
+        {
+          title: 'Reconcile quantity, value, and unit of measure separately',
+          paragraphs: [
+            'A line can have enough quantity and still lack value, or the reverse. Calculate ordered, released, received, reversed, invoiced, credited, and remaining amounts in both the purchasing unit and invoice unit. Document pack conversions rather than embedding them in a spreadsheet formula. If the order is value based, show the committed value and approved change orders. If tax, freight, or an accessorial charge sits outside the line, do not force it into the remaining balance simply to make the invoice match.',
+            'Price changes also need their own bridge. Compare the order version effective when the goods or services were supplied with the invoice rate and any later amendment. A later increase does not automatically authorize an earlier charge, and an expired rate does not automatically invalidate work the owner accepted. AP support can reproduce the numbers and locate the controlled documents. Purchasing interprets commercial scope, the business owner confirms delivery, and finance decides posting and accounting treatment.'
+          ]
+        },
+        {
+          title: 'Test the common explanations before requesting a reopen',
+          paragraphs: [
+            'Search for a missing receipt, receipt posted to another line, invoice entered against the wrong order, duplicate invoice with altered punctuation, supplier credit, return, cancelled release, replacement order, and manual journal. Check related entity ledgers only through approved access. Ask the supplier which delivery, service period, or release supports the charge. A supplier statement is useful evidence that the amount remains open on its account, but it does not prove that the company owes the amount or that this order line is the right destination.',
+            'Write one disposition for each explanation tested. "No receipt found" is stronger when the note names the locations, date range, line numbers, and system searched. "Not a duplicate" should state which normalized invoice fields and prior records were compared. This record prevents the next reviewer from repeating the same search and makes gaps obvious. If the evidence points to a different order or entity, route the invoice there without changing the closed line. If it points nowhere, keep the invoice out of ordinary processing.'
+          ]
+        },
+        {
+          title: 'Give the owner a decision packet, not a preferred answer',
+          paragraphs: [
+            'Summarize the invoice amount, supported quantity or value, unresolved difference, chronology, records checked, and specific decision needed. Put the affected line and proposed next action in the subject so the request is easy to route. Purchasing may decide to reopen the line, issue a new order, reject the charge, or document an authorized exception. Finance may need to decide the posting period or treatment. The preparer should not reopen a line, manufacture a receipt, move an invoice to another entity, or use a broad tolerance as a substitute for those decisions. Record the owner, approval reference, effective date, and exact system action.',
+            'After the action, rerun the match and compare the result with the approved packet. Preserve both the closed state and the authorized change. Link any new order, receipt, credit, or rejection to the original case and tell the supplier the factual status through an approved contact. Check the next ledger extract to confirm that the invoice did not remain in a second queue after resolution. A reopened line can also admit an unrelated invoice, so the purchasing owner should close or adjust it again when the approved action is complete. Record that final state. For an outsourced purchase-order reconciliation lane, sample closed-line exceptions by cause and age. Repeated late invoices may point to intake or supplier follow-up problems; repeated premature closures belong with the process owner. Compare cases that ended in valid processing with cases rejected for missing authority, and inspect how often the first evidence packet gave the owner enough information. Volume alone does not show whether the control works.'
+          ]
+        }
+      ],
+      checklistTitle: 'Check the closed-line decision packet',
+      checklist: ['Exact header and line statuses are preserved', 'The chronology includes reversals and amendments', 'Quantity, value, price, and unit conversions reconcile separately', 'Duplicate and wrong-order searches are documented', 'Commercial and accounting decisions have named owners', 'The final system action matches the recorded approval'],
+      bodyLinks: [{href:'/services/purchase-order-reconciliation',label:'purchase order reconciliation'}, {href:'/contact-us',label:'scope a controlled exception queue'}],
+      faqs: [
+        {question:'Should AP reopen a purchase order line to process a late invoice?',answer:'Only an authorized purchasing owner should approve that action. AP support can reconstruct the line and provide the evidence needed for the decision.'},
+        {question:'Does a supplier statement prove the closed-line invoice is owed?',answer:'No. It shows the supplier still carries the amount. The company must still confirm the entity, order, receipt or service evidence, price, prior invoices, credits, and approval.'},
+        {question:'What should remain after the exception is resolved?',answer:'Keep the original closed state, chronology, decision packet, approval, system action, match result, and links to any new order, receipt, credit, or rejection.'}
+      ],
+      sources: [
+        {name:'NIST least privilege glossary',url:'https://csrc.nist.gov/glossary/term/least_privilege',note:'Supports limiting preparation access and reserving order changes for authorized owners.'},
+        {name:'GAO Standards for Internal Control in the Federal Government',url:'https://www.gao.gov/products/gao-14-704g',note:'Authoritative control framework supporting documented transactions, responsibilities, and review.'},
+        {name:'CISA guidance on phishing',url:'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing',note:'Supports using verified supplier channels when requesting evidence or communicating disposition.'}
+      ]
+    }
+  },
+  {
+    slug: 'cross-entity-duplicate-invoice-review',
+    title: 'Check for duplicate invoices across related legal entities',
+    excerpt: 'Compare invoice identity and transaction history across permitted entity ledgers without collapsing separate obligations or approval paths.',
+    minutes: 12,
+    detail: {
+      thumbnail: '/blog-thumbnails/ap-invoice-duplicate-controls.svg',
+      shortAnswer: 'A cross-entity duplicate review compares normalized supplier and invoice evidence across legal entities, then tests whether similar records represent one demand, separate obligations, or an allocation error. Each entity keeps its own approval, posting, and payment authority.',
+      published: null,
+      modified: null,
+      mainKeyword: 'cross entity duplicate invoice review',
+      sections: [
+        {
+          title: 'Start with the invoice, not the supplier name',
+          paragraphs: [
+            'Related companies often buy from the same supplier. Two ledgers can therefore contain invoices with the same date and amount without containing a duplicate. Begin with the source documents and the obligation they describe. Record the supplier legal name and account, invoice number exactly as shown, invoice date, currency, total, purchase order, service period or shipment, bill-to entity, tax registration shown on the document, remit account reference, and attachment hash when the system provides one. Keep the original files unchanged.',
+            'Define why the record was flagged. A normalized invoice number may match after spaces, punctuation, prefixes, or leading zeros are removed. The amount and date may match while the number differs. An image may be identical even though a later entry uses another entity. State the rule that created the candidate pair and its limitations. A useful alert says "same supplier account, normalized number, currency, and total" rather than declaring a duplicate before anyone reviews the underlying transaction.'
+          ]
+        },
+        {
+          title: 'Confirm the legal-entity boundary',
+          paragraphs: [
+            'For each candidate, identify the company entity, ledger, business unit, purchasing organization, ship-to location, contract owner, and approval path. Use access that the company has explicitly granted for cross-entity review. Do not copy protected supplier, bank, tax, or employee data into a shared worksheet merely because it makes searching easier. If the specialist can see only one ledger, route the comparison to an authorized reviewer instead of recording "not found" as proof that no duplicate exists elsewhere.',
+            'Bill-to text is useful but not decisive by itself. Suppliers can use an old address, invoice a parent for a subsidiary purchase, or send one consolidated document that the company allocates. Compare the controlled order and receipt or service evidence with the invoice. If one entity owns the order and another received the invoice, that may be a routing error. If both entities have separate orders and deliveries, similar invoices may be valid. The packet should expose that distinction without proposing an intercompany entry.'
+          ]
+        },
+        {
+          title: 'Normalize identifiers without erasing differences',
+          paragraphs: [
+            'Create comparison fields beside the source values. Normalize case, surrounding spaces, common separators, and leading zeros according to a documented rule. Do not overwrite the invoice number or strip letters that distinguish a credit, location, period, or supplier series. Compare supplier master IDs as well as names because related supplier entities may trade under similar branding. Record currency before comparing totals; 10,000 in one currency is not the same demand as 10,000 in another.',
+            'Use several signals together: exact file hash, invoice image, normalized number, source number, date, amount, currency, order, receipt, service period, and line descriptions. An exact file submitted to two entity inboxes is a strong clue, but the business context still matters. Conversely, a corrected invoice can have a new file hash while repeating the same demand. Explain which fields agree, which conflict, and what evidence would resolve the uncertainty. A score without its contributing fields is hard to review and easy to trust too much.'
+          ]
+        },
+        {
+          title: 'Reconstruct both processing histories',
+          paragraphs: [
+            'Build a separate timeline for each entity. Include receipt through the AP mailbox or portal, rejection, correction, order match, approval, hold, posting, credit, payment proposal, settlement, reversal, and supplier correspondence. Keep document and payment identifiers with their own ledger. One candidate may have been rejected before posting while the other was paid; another pair may both be approved but neither released. The response depends on state, so a static duplicate flag is not enough.',
+            'Check whether a shared-services team forwarded the same invoice, whether a supplier resubmitted it after a rejection, or whether an internal user uploaded it to another entity. If payment occurred, preserve bank or settlement evidence through the authorized treasury record and place further payment activity on hold according to company procedure. AP support should not reverse a posting, net another supplier balance, or ask the supplier to return funds without the responsible finance and treasury owners deciding the next action.'
+          ]
+        },
+        {
+          title: 'Close each candidate with a reason another reviewer can test',
+          paragraphs: [
+            'Use outcomes that describe the evidence: confirmed duplicate demand, separate entity obligations, consolidated invoice with approved allocation, corrected replacement, credit and rebill, wrong-entity routing, or unresolved pending source documents. Name the surviving record when one entry is cancelled or rejected. Link the related records rather than deleting the history that triggered the review. Record who can reopen the case if a later statement, credit, or collection message conflicts with the disposition. If the supplier must clarify the bill-to party or transaction, contact it through a verified channel and retain the answer with both cases. Send only the account and document details needed for the question, and keep the response with the entity records that the reviewer is permitted to access.',
+            'Review patterns separately from individual decisions. Repeated cross-entity candidates can point to a shared mailbox rule, unclear supplier instructions, inconsistent master data, or weak invoice-number normalization. Measure confirmed outcomes and their causes instead of counting alerts alone. Review false positives as well. If legitimate recurring invoices are repeatedly flagged because two entities buy the same service for the same amount, add the entity-specific order, location, or service period to the comparison rule. If confirmed duplicates bypass the rule because suppliers add prefixes, update the normalization logic without erasing meaningful letters. Test the revised rule on known valid and duplicate pairs before changing the live queue. For an outsourced duplicate-review lane, define which ledgers the specialist may search, which fields may be compared, who places a hold, and who resolves accounting or payment consequences. State how the specialist should handle a candidate that spans an inaccessible ledger or a different country retention rule. The specialist prepares the evidence; each entity retains its approval and posting authority.'
+          ]
+        }
+      ],
+      checklistTitle: 'Review the cross-entity comparison',
+      checklist: ['Original invoice values and files remain unchanged', 'Each entity, ledger, order, receipt, and approval path is explicit', 'Normalized fields sit beside their source values', 'Both processing and payment histories are reconstructed', 'Access stays within approved entity boundaries', 'The disposition names the evidence and surviving record'],
+      bodyLinks: [{href:'/services/duplicate-invoice-review',label:'duplicate invoice review'}, {href:'/contact-us',label:'define a cross-entity review role'}],
+      faqs: [
+        {question:'Do matching invoice numbers and amounts prove a duplicate?',answer:'No. They create a candidate pair. Review the currencies, legal entities, orders, deliveries or service periods, invoice files, and processing histories before deciding.'},
+        {question:'Can an outsourced AP specialist search every company ledger?',answer:'Only if the company grants that access for the role. Otherwise, the specialist should route the comparison to an authorized cross-entity reviewer.'},
+        {question:'What happens after a duplicate payment is suspected?',answer:'Preserve both histories and follow the company hold and escalation procedure. Finance and treasury owners decide reversals, supplier recovery, credits, and future payment action.'}
+      ],
+      sources: [
+        {name:'NIST least privilege glossary',url:'https://csrc.nist.gov/glossary/term/least_privilege',note:'Supports limiting cross-entity ledger access to the information required for the review.'},
+        {name:'GAO Standards for Internal Control in the Federal Government',url:'https://www.gao.gov/products/gao-14-704g',note:'Authoritative control framework supporting transaction documentation, responsibility, and review.'},
+        {name:'CISA guidance on phishing',url:'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing',note:'Supports verified communication channels when resolving supplier identity or invoice questions.'}
+      ]
+    }
   }
 ];

@@ -2,23 +2,25 @@
   "family": "blog",
   "cycleLabel": "2026-10-02",
   "status": "partial-draft-not-registered-for-publication",
-  "draftedCount": 2,
+  "draftedCount": 4,
   "requiredCount": 12,
   "bodyWordCounts": {
     "invoice-exchange-rate-evidence-packet": 913,
-    "supplier-invoice-contact-change-review": 912
+    "supplier-invoice-contact-change-review": 912,
+    "purchase-order-line-closure-exception": 912,
+    "cross-entity-duplicate-invoice-review": 919
   },
   "maximumPairwiseFiveWordShingleJaccard": {
     "slugs": [
-      "invoice-exchange-rate-evidence-packet",
-      "supplier-invoice-contact-change-review"
+      "supplier-invoice-contact-change-review",
+      "purchase-order-line-closure-exception"
     ],
-    "percent": "0.00%"
+    "percent": "0.06%"
   },
   "qualitativeOriginality": {
     "repeatedParagraphs": 0,
     "sharedArgument": false,
-    "notes": "The exchange-rate article follows currency identification, source selection, calculation, mismatch diagnosis, and correction history. The supplier-contact article follows authority boundaries, independent verification, account scope, system updates, and safe channel testing. They do not reuse an outline, examples, or conclusion."
+    "notes": "The four articles separately address currency evidence, supplier-contact authority, closed-order chronology, and cross-entity duplicate analysis. Each uses its own evidence population, decision sequence, examples, operating boundary, and closing test. They do not reuse an outline, paragraph, example, or conclusion."
   },
   "humanizerAudit": {
     "emOrEnDashes": 0,

@@ -1,0 +1,19 @@
+{
+  "cycleLabel":"2026-10-02","timezone":"UTC","repository":"coolifystealthagents/outsourceaccountspayable","productionBranch":"main","requiredCount":12,"draftCount":12,"verifiedCount":0,"publicationDate":"2026-10-02","status":"validated-awaiting-sole-combined-push","deploymentResource":"hbmdk3sbdm0u52xlxnn43r9n","maximumFiveWordShingleJaccard":0.000708215297450425,"repeatedParagraphCount":0,"qualitativeOriginality":"PASS: all articles have topic-specific evidence, arguments, examples, decisions, and reader outcomes; the final six use six different narrative renderers.",
+  "validation":{"originalityAudit":"PASS","humanizerAudit":"PASS","typecheck":"PASS","tests":"PASS","routineManifest":"PASS","productionBuild":"PASS with pre-existing CSS compatibility warnings","renderedCombinedRoutes":"PASS 17/17"},
+  "articles":[
+    {"slug":"invoice-exchange-rate-evidence-packet","bodyWords":913,"sha256":"e70cc4c5f8945eba363f13decf2fafc4bbc18604fb5880a3b9dec883f422d30e","liveUrl":"https://outsourceaccountspayable.com/blog/invoice-exchange-rate-evidence-packet"},
+    {"slug":"supplier-invoice-contact-change-review","bodyWords":912,"sha256":"3cf353aecb261a0a3930d37c89015bcddbc1cc83ddab0ea81cf3f4e8b4f3a960","liveUrl":"https://outsourceaccountspayable.com/blog/supplier-invoice-contact-change-review"},
+    {"slug":"purchase-order-line-closure-exception","bodyWords":912,"sha256":"5ef3f4905936cab89a528c7055663f81cf041867691be7d656fbae540b702a8a","liveUrl":"https://outsourceaccountspayable.com/blog/purchase-order-line-closure-exception"},
+    {"slug":"cross-entity-duplicate-invoice-review","bodyWords":919,"sha256":"a0c49c1becf3745a1d8a216c97d2f41491b2a6258ea1564460de7ffa7c03299b","liveUrl":"https://outsourceaccountspayable.com/blog/cross-entity-duplicate-invoice-review"},
+    {"slug":"supplier-credit-memo-application-aging","bodyWords":961,"sha256":"c70969aaa014fd3affb21190e937d9a9837bd4c7fd027710eca3a1aa8d0571cf","liveUrl":"https://outsourceaccountspayable.com/blog/supplier-credit-memo-application-aging"},
+    {"slug":"freight-invoice-accessorial-evidence","bodyWords":919,"sha256":"ac127548f7c6d03ca3d201aad5ede499807e6a8cae7b4f7c4b201cffdbd4b4d7","liveUrl":"https://outsourceaccountspayable.com/blog/freight-invoice-accessorial-evidence"},
+    {"slug":"payment-proposal-cutoff-exception-log","bodyWords":909,"sha256":"9ee2d9a76db3dadf5a6c88cddb018c6122524b5afc30efd673d4ab193c6f9a9a","liveUrl":"https://outsourceaccountspayable.com/blog/payment-proposal-cutoff-exception-log"},
+    {"slug":"vendor-tax-document-expiry-queue","bodyWords":994,"sha256":"0e55751468c80aa0eb82c19f49a4aeb79baad837dad044b0bf1782147823943c","liveUrl":"https://outsourceaccountspayable.com/blog/vendor-tax-document-expiry-queue"},
+    {"slug":"employee-expense-merchant-credit-follow-up","bodyWords":915,"sha256":"2ce34b3dac9c8d61ba334298f19757345234a533132e761162667579fdf3cc09","liveUrl":"https://outsourceaccountspayable.com/blog/employee-expense-merchant-credit-follow-up"},
+    {"slug":"ap-mailbox-delivery-failure-triage","bodyWords":959,"sha256":"a99d97d86d8c08aefeb68f00056dbbd732dc9fbdc22adb1e9043f458af06090d","liveUrl":"https://outsourceaccountspayable.com/blog/ap-mailbox-delivery-failure-triage"},
+    {"slug":"goods-received-not-invoiced-close-packet","bodyWords":1063,"sha256":"59fd72c4260ad4553fcbe9530f14219598b1bfcbfea0c2b90c495d51d15c6c9a","liveUrl":"https://outsourceaccountspayable.com/blog/goods-received-not-invoiced-close-packet"},
+    {"slug":"invoice-aging-dispute-milestone-review","bodyWords":1062,"sha256":"873fba84f43df86fea52efcd69f5bc9af34b204c10017a0a86726e9373f30323","liveUrl":"https://outsourceaccountspayable.com/blog/invoice-aging-dispute-milestone-review"}
+  ],
+  "publicationNote":"UTC date reconciled immediately before the sole push. Browser operator deploys; live verification remains pending exact-SHA deployment success."
+}

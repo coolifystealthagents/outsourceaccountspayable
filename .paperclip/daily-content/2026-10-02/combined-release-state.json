@@ -7,8 +7,8 @@
   "integrationBranch": "routine/outaaaaaaa-75-20261002",
   "blog": {
     "requiredCount": 12,
-    "draftedCount": 6,
-    "registeredCount": 0,
+    "draftedCount": 12,
+    "registeredCount": 12,
     "sourceSha": "a3f4e569c58231be11b183c49a7b8b0dd981da69"
   },
   "research": {
@@ -28,12 +28,12 @@
     "qualitativeOriginality": "PASS"
   },
   "publicationDateControl": {
-    "status": "must-reconcile-before-sole-push",
+    "status": "reconciled-2026-10-02-utc-before-sole-push",
     "currentResearchSourceDate": "2026-10-02",
-    "blogSourceDates": null,
+    "blogSourceDates": "2026-10-02",
     "rule": "All source, visible, structured, manifest, index, sitemap, and ledger dates must match the actual UTC first-publication date."
   },
   "productionPushes": 0,
   "blogDeployments": 0,
-  "nextGate": "Complete and register all 12 Blog articles, then run the full combined validation and clean production build before the sole non-force push."
+  "nextGate": "Fetch and rebase onto newest production SHA, rerun affected gates, then perform the sole non-force push and stop production mutations."
 }

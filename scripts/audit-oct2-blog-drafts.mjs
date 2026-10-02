@@ -4,9 +4,16 @@ import ts from 'typescript';
 
 const sourcePath='app/blog-oct2-batch.ts';
 const source=fs.readFileSync(sourcePath,'utf8');
+const remainingSource=fs.readFileSync('app/blog-oct2-remaining.ts','utf8');
+const remainingJavascript=ts.transpileModule(remainingSource,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+const remainingModule={exports:{}};
+vm.runInNewContext(remainingJavascript,{module:remainingModule,exports:remainingModule.exports,require:()=>{throw new Error('unexpected runtime import in remaining Blog drafts');}});
 const javascript=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
 const module={exports:{}};
-vm.runInNewContext(javascript,{module,exports:module.exports,require:()=>{throw new Error('unexpected import in Blog draft source');}});
+vm.runInNewContext(javascript,{module,exports:module.exports,require:(specifier)=>{
+  if(specifier==='./blog-oct2-remaining') return remainingModule.exports;
+  throw new Error(`unexpected import in Blog draft source: ${specifier}`);
+}});
 const posts=module.exports.oct2BlogDrafts;
 if(!Array.isArray(posts)||posts.length>12) throw new Error(`invalid draft count: ${posts?.length}`);
 const tokenize=(value)=>value.toLowerCase().match(/[a-z0-9][a-z0-9'/-]*/g)??[];
@@ -15,6 +22,7 @@ const shingles=(value)=>{const words=tokenize(value);return new Set(words.slice(
 const slugs=new Set();
 const paragraphOwners=new Map();
 const bodies=[];
+const shortBodies=[];
 for(const post of posts){
   if(slugs.has(post.slug)) throw new Error(`duplicate slug: ${post.slug}`);
   slugs.add(post.slug);
@@ -22,13 +30,14 @@ for(const post of posts){
   const paragraphs=post.detail.sections.flatMap((section)=>section.paragraphs);
   const body=paragraphs.join(' ');
   const bodyWords=tokenize(body).length;
-  if(bodyWords<900) throw new Error(`${post.slug} has ${bodyWords} body words`);
+  if(bodyWords<900) shortBodies.push(`${post.slug} has ${bodyWords} body words`);
   for(const paragraph of paragraphs){
     const normalized=tokenize(paragraph).join(' ');
     paragraphOwners.set(normalized,[...(paragraphOwners.get(normalized)??[]),post.slug]);
   }
   bodies.push({slug:post.slug,body,bodyWords,shingles:shingles(body)});
 }
+if(shortBodies.length) throw new Error(shortBodies.join('; '));
 const repeatedParagraphs=[...paragraphOwners.values()].filter((owners)=>new Set(owners).size>1);
 if(repeatedParagraphs.length) throw new Error(`repeated paragraphs: ${repeatedParagraphs.length}`);
 let maximum={score:0,pair:[]};

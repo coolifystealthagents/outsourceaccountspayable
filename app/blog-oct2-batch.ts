@@ -1,4 +1,6 @@
-type Draft = {
+import {remainingOct2BlogDrafts} from './blog-oct2-remaining';
+
+export type Draft = {
   slug: string;
   title: string;
   excerpt: string;
@@ -412,5 +414,12 @@ export const oct2BlogDrafts: Draft[] = [
         {name:'NIST least privilege glossary',url:'https://csrc.nist.gov/glossary/term/least_privilege',note:'Supports narrow access for shipment evidence preparation and retained approval authority.'}
       ]
     }
-  }
+  },
+  ...remainingOct2BlogDrafts
 ];
+
+export const oct2BlogPublicationDate='2026-10-02';
+export const oct2BlogPosts=oct2BlogDrafts.map(({slug,title,excerpt,minutes})=>({slug,title,excerpt,minutes}));
+export const oct2BlogDetails=Object.fromEntries(oct2BlogDrafts.map(({slug,detail})=>[slug,{
+  ...detail,published:oct2BlogPublicationDate,modified:oct2BlogPublicationDate,
+}]));

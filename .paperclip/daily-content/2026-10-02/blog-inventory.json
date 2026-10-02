@@ -1,0 +1,94 @@
+{
+  "cycleLabel": "2026-10-02",
+  "family": "blog",
+  "requiredCount": 12,
+  "siteTimezone": "UTC",
+  "publicationDate": null,
+  "publicationDateRule": "Set immediately before the sole combined push to the UTC date on which each route first passes public verification.",
+  "baselineRemoteSha": "24a683d525882605905f09f4cd3b3cc7ce7a9da8",
+  "branch": "routine/outaaaaaaa-75-20261002",
+  "pairedResearchIssue": "OUTAAAAAAA-74",
+  "pairedResearchRun": "6ac71aa5-01fb-4e3b-b1ad-94708f9edb32",
+  "status": "topic-inventory-validated-drafting-pending",
+  "articles": [
+    {
+      "slug": "invoice-exchange-rate-evidence-packet",
+      "title": "Build an exchange-rate evidence packet for a foreign-currency invoice",
+      "pillar": "invoice-data-capture",
+      "readerOutcome": "Separate the invoice currency, functional-currency translation inputs, rate source, effective date, and finance decision without letting AP support choose accounting policy."
+    },
+    {
+      "slug": "supplier-invoice-contact-change-review",
+      "title": "Review a supplier invoice contact change without weakening payment controls",
+      "pillar": "vendor-onboarding-administration",
+      "readerOutcome": "Authenticate a changed billing contact, preserve the old contact history, and keep contact maintenance separate from bank-detail authority."
+    },
+    {
+      "slug": "purchase-order-line-closure-exception",
+      "title": "Resolve an invoice exception after a purchase order line is closed",
+      "pillar": "purchase-order-reconciliation",
+      "readerOutcome": "Reconstruct receipts, reversals, invoices, commitments, and closure authority before an owner decides whether to reopen or replace the line."
+    },
+    {
+      "slug": "cross-entity-duplicate-invoice-review",
+      "title": "Check for duplicate invoices across related legal entities",
+      "pillar": "duplicate-invoice-review",
+      "readerOutcome": "Compare normalized invoice evidence across entity ledgers while preserving legal-entity ownership and approval boundaries."
+    },
+    {
+      "slug": "supplier-credit-memo-application-aging",
+      "title": "Age and resolve unapplied supplier credit memos",
+      "pillar": "vendor-statement-reconciliation",
+      "readerOutcome": "Trace each credit to its cause, eligible invoices, restrictions, owner, and supplier application rather than treating the balance as generic cash."
+    },
+    {
+      "slug": "freight-invoice-accessorial-evidence",
+      "title": "Review accessorial charges on a freight invoice",
+      "pillar": "three-way-match-support",
+      "readerOutcome": "Connect detention, liftgate, redelivery, and other extra charges to shipment events, contracted terms, and commercial approval."
+    },
+    {
+      "slug": "payment-proposal-cutoff-exception-log",
+      "title": "Maintain a cutoff exception log for payment proposal preparation",
+      "pillar": "payment-run-preparation",
+      "readerOutcome": "Document additions, removals, holds, timing changes, approvals, and final inclusion without giving the preparer release authority."
+    },
+    {
+      "slug": "vendor-tax-document-expiry-queue",
+      "title": "Build a vendor tax-document expiry and refresh queue",
+      "pillar": "tax-document-collection",
+      "readerOutcome": "Track document type, receipt, review owner, expiry trigger, outreach, and unresolved status while leaving tax conclusions to authorized specialists."
+    },
+    {
+      "slug": "employee-expense-merchant-credit-follow-up",
+      "title": "Follow up a merchant credit on an employee expense report",
+      "pillar": "expense-report-review",
+      "readerOutcome": "Link the original charge, return evidence, expected credit, card statement, and employee response without netting unrelated expenses."
+    },
+    {
+      "slug": "ap-mailbox-delivery-failure-triage",
+      "title": "Triage bounced and undeliverable messages from the AP mailbox",
+      "pillar": "ap-inbox-management",
+      "readerOutcome": "Distinguish address errors, security rejections, supplier-domain changes, and closed cases while using verified contact paths."
+    },
+    {
+      "slug": "goods-received-not-invoiced-close-packet",
+      "title": "Prepare a goods-received-not-invoiced review packet for close",
+      "pillar": "month-end-ap-close-support",
+      "readerOutcome": "Reconcile receipts, returns, expected invoices, service evidence, supplier follow-up, and finance ownership for cutoff decisions."
+    },
+    {
+      "slug": "invoice-aging-dispute-milestone-review",
+      "title": "Review dispute milestones before escalating an aged invoice",
+      "pillar": "aging-report-preparation",
+      "readerOutcome": "Measure age from meaningful events, identify the current decision owner, and avoid escalating invoices that await a documented supplier correction."
+    }
+  ],
+  "checks": {
+    "exactCount": true,
+    "uniqueSlugsWithinBatch": true,
+    "absentFromBaselineRepository": true,
+    "priorCycleDraftsExcluded": true,
+    "publicationMetadataDeferredUntilRelease": true
+  }
+}

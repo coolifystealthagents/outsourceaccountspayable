@@ -1,0 +1,62 @@
+{
+  "cycleLabel": "October 2, 2026",
+  "intendedFirstPublicationDate": "2026-10-02",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "productionBranch": "main",
+  "baseSha": "24a683d525882605905f09f4cd3b3cc7ce7a9da8",
+  "branch": "routine/2026-10-02-research-outaaaaaaa-74",
+  "taskId": "678eb35c-f631-4b2a-8389-2e654ab2f64a",
+  "requiredCount": 5,
+  "draftCount": 5,
+  "verifiedCount": 0,
+  "status": "eligible-local-research-handoff",
+  "deploymentResource": "hbmdk3sbdm0u52xlxnn43r9n",
+  "maximumFiveWordShingleJaccard": 0.0008120178643930166,
+  "maximumOverlapPair": [
+    "invoice-resubmission-identity-research",
+    "supplier-statement-unapplied-payment-research"
+  ],
+  "repeatedParagraphCount": 0,
+  "qualitativeOriginality": "PASS: each article has a distinct evidence population, reconstruction method, challenge set, operating boundary, measurement model, limitations, and reader decision.",
+  "validation": {
+    "originalityAudit": "PASS",
+    "typecheck": "PASS",
+    "tests": "PASS",
+    "routineManifest": "PASS",
+    "productionBuild": "PASS with pre-existing CSS compatibility warnings"
+  },
+  "articles": [
+    {
+      "slug": "invoice-prompt-payment-discount-eligibility-research",
+      "bodyWords": 1324,
+      "sha256": "85a715532ed4e27075413dab4676d96af30da10c80f40079e31b1c8cef9c8fc3",
+      "image": "/research-thumbnails/ap-payment-calendar-control-research.svg"
+    },
+    {
+      "slug": "partial-receipt-invoice-allocation-research",
+      "bodyWords": 1274,
+      "sha256": "e8a17f5321cc56d2ebe121933b32368a85aae216b10458de7ac380afc661e1ae",
+      "image": "/research-thumbnails/ap-receipt-evidence-research.svg"
+    },
+    {
+      "slug": "invoice-resubmission-identity-research",
+      "bodyWords": 1245,
+      "sha256": "2e8c269451e0030475d06f6277f8d2deab3087bae40af76d61596c7f07991dd3",
+      "image": "/research-thumbnails/ap-invoice-duplicate-signals-research.svg"
+    },
+    {
+      "slug": "supplier-statement-unapplied-payment-research",
+      "bodyWords": 1229,
+      "sha256": "bd9c78415e2e4e8e4d9c1baeaf74718a14c2b9e8908f1432c3ef36ff07c26320",
+      "image": "/research-thumbnails/ap-vendor-statement-reconciliation-research.svg"
+    },
+    {
+      "slug": "purchase-order-cancellation-invoice-chronology-research",
+      "bodyWords": 1242,
+      "sha256": "a86f1b04e1cbe4c05e192df7b8ea53a61e59a09acc72ae204a03909492d52b1e",
+      "image": "/research-thumbnails/ap-purchase-order-reconciliation-research.svg"
+    }
+  ],
+  "publicationNote": "Unpublished local drafts. Before the sole combined push, the Blog integrator must reconcile every publication-date field to the actual UTC first-publication date. Browser operator alone deploys; Research does not push or deploy."
+}

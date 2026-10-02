@@ -1,0 +1,31 @@
+{
+  "family": "blog",
+  "cycleLabel": "2026-10-02",
+  "status": "partial-draft-not-registered-for-publication",
+  "draftedCount": 2,
+  "requiredCount": 12,
+  "bodyWordCounts": {
+    "invoice-exchange-rate-evidence-packet": 913,
+    "supplier-invoice-contact-change-review": 909
+  },
+  "maximumPairwiseFiveWordShingleJaccard": {
+    "slugs": [
+      "invoice-exchange-rate-evidence-packet",
+      "supplier-invoice-contact-change-review"
+    ],
+    "percent": "0.00%"
+  },
+  "qualitativeOriginality": {
+    "repeatedParagraphs": 0,
+    "sharedArgument": false,
+    "notes": "The exchange-rate article follows currency identification, source selection, calculation, mismatch diagnosis, and correction history. The supplier-contact article follows authority boundaries, independent verification, account scope, system updates, and safe channel testing. They do not reuse an outline, examples, or conclusion."
+  },
+  "humanizerAudit": {
+    "emOrEnDashes": 0,
+    "flaggedStockPhrases": 0,
+    "fabricatedClaims": 0,
+    "notes": "Prose was reviewed for promotional language, vague attribution, generic conclusions, signposting, negative parallelisms, repeated three-item rhythms, and unsupported specifics."
+  },
+  "publicationMetadata": "null until the truthful UTC first-publication date is known",
+  "registration": "app/data.ts intentionally unchanged until all 12 Blog drafts and all 5 Research handoff items pass combined gates"
+}

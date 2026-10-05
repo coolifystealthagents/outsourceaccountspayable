@@ -1,0 +1,94 @@
+{
+  "cycleLabel": "2026-10-05",
+  "family": "blog",
+  "requiredCount": 12,
+  "siteTimezone": "UTC",
+  "publicationDate": null,
+  "publicationDateRule": "Set immediately before the sole combined push to the UTC date on which the routes are expected to become public, then verify that same date after deployment.",
+  "baselineRemoteSha": "8202e73ccf8521a204543f6b90e1fc2b7e10a2ef",
+  "branch": "routine/outaaaaaaa-77-20261005",
+  "pairedResearchIssue": "OUTAAAAAAA-76",
+  "pairedResearchRun": "d2811494-27dc-46e5-93cc-fd9f943af53f",
+  "status": "topic-inventory-validated-drafting-in-progress",
+  "articles": [
+    {
+      "slug": "split-shipment-invoice-receipt-allocation",
+      "title": "Allocate one supplier invoice across split shipment receipts",
+      "pillar": "three-way-match-support",
+      "readerOutcome": "Reconcile one billed quantity to several receipts, reversals, locations, and open balances without manufacturing a match."
+    },
+    {
+      "slug": "supplier-portal-invoice-status-conflict",
+      "title": "Resolve a supplier portal invoice status that conflicts with the AP ledger",
+      "pillar": "vendor-statement-reconciliation",
+      "readerOutcome": "Trace portal status, ERP documents, credits, payments, and synchronization timing before answering the supplier or changing a record."
+    },
+    {
+      "slug": "vendor-payment-terms-change-effective-date",
+      "title": "Review the effective date of a vendor payment-terms change",
+      "pillar": "vendor-onboarding-administration",
+      "readerOutcome": "Separate master-data maintenance from commercial approval and determine which invoices a newly approved term should affect."
+    },
+    {
+      "slug": "service-entry-sheet-rejection-invoice-hold",
+      "title": "Resolve an invoice hold after a service-entry sheet is rejected",
+      "pillar": "purchase-order-reconciliation",
+      "readerOutcome": "Reconstruct the service period, entry sheet, rejection reason, contract line, invoice, and correction owner without creating acceptance evidence."
+    },
+    {
+      "slug": "invoice-withholding-tax-evidence-handoff",
+      "title": "Prepare invoice withholding-tax evidence for specialist review",
+      "pillar": "tax-document-collection",
+      "readerOutcome": "Assemble supplier, jurisdiction, document, calculation, and approval evidence while reserving tax conclusions for the authorized specialist."
+    },
+    {
+      "slug": "supplier-legal-name-invoice-mismatch",
+      "title": "Investigate a supplier legal-name mismatch on an invoice",
+      "pillar": "invoice-data-capture",
+      "readerOutcome": "Distinguish a trading name, entity change, branch, typo, or wrong supplier account before coding or changing vendor master data."
+    },
+    {
+      "slug": "supplier-credit-balance-refund-request",
+      "title": "Build a support packet for a supplier credit-balance refund request",
+      "pillar": "vendor-statement-reconciliation",
+      "readerOutcome": "Prove the credit origin, ownership, open-item history, bank-safe contact path, and approval needed before requesting cash back."
+    },
+    {
+      "slug": "subscription-renewal-invoice-owner-review",
+      "title": "Find the right owner for a subscription renewal invoice",
+      "pillar": "ap-inbox-management",
+      "readerOutcome": "Use contract, requester, access, renewal, and cancellation evidence to route a recurring charge without inventing approval."
+    },
+    {
+      "slug": "utility-invoice-site-account-mismatch",
+      "title": "Review a utility invoice with a site or account-number mismatch",
+      "pillar": "invoice-data-capture",
+      "readerOutcome": "Tie the bill to a meter, service address, billing period, legal entity, and verified provider account before processing."
+    },
+    {
+      "slug": "erp-migration-duplicate-invoice-screening",
+      "title": "Screen for duplicate invoices after an ERP migration",
+      "pillar": "duplicate-invoice-review",
+      "readerOutcome": "Compare legacy and new-system identifiers, normalized invoice fields, conversion records, and payment history without collapsing legitimate splits."
+    },
+    {
+      "slug": "corporate-card-central-bill-allocation",
+      "title": "Reconcile a corporate-card central bill to employee transactions",
+      "pillar": "expense-report-review",
+      "readerOutcome": "Bridge the issuer total to cardholder charges, credits, fees, disputes, and missing reports while keeping payment release separate."
+    },
+    {
+      "slug": "invoice-approval-after-cost-center-reorganization",
+      "title": "Reroute invoice approval after a cost-center reorganization",
+      "pillar": "aging-report-preparation",
+      "readerOutcome": "Preserve the original approval trail, effective-dated ownership, coding questions, and escalation clock when responsibility moves."
+    }
+  ],
+  "checks": {
+    "exactCount": true,
+    "uniqueSlugsWithinBatch": true,
+    "absentFromBaselineRepository": true,
+    "priorCycleDraftsExcluded": true,
+    "publicationMetadataDeferredUntilRelease": true
+  }
+}

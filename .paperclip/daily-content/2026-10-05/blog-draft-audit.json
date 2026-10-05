@@ -1,49 +1,19 @@
 {
-  "cycleLabel": "2026-10-05",
-  "family": "blog",
-  "requiredCount": 12,
-  "draftedCount": 3,
-  "registeredCount": 0,
-  "publicationDate": null,
-  "status": "drafting-in-progress",
-  "articles": [
-    {
-      "slug": "split-shipment-invoice-receipt-allocation",
-      "bodyWords": 1183,
-      "sha256": "328c52a18a0aa80c69012e260e7b31505a134534e26bc24ad523688648d67f90",
-      "asset": "/blog-thumbnails/sep22-2026/goods-receipt-reversal-review.svg",
-      "assetExists": true
-    },
-    {
-      "slug": "supplier-portal-invoice-status-conflict",
-      "bodyWords": 1093,
-      "sha256": "ec9efeb706c2d12fdea298bf81639900cd774fbfa72b5ce19ddc7702bac9d8d6",
-      "asset": "/blog-thumbnails/sep23-2026/supplier-portal-invoice-download-log.svg",
-      "assetExists": true
-    },
-    {
-      "slug": "vendor-payment-terms-change-effective-date",
-      "bodyWords": 1026,
-      "sha256": "a805d9fca0bda478aa2ccf052089d179ed81a52d1d93c5e18b31c1cc14200469",
-      "asset": "/blog-thumbnails/ap-vendor-change-request-workflow.svg",
-      "assetExists": true
-    }
+  "cycleLabel":"2026-10-05","family":"blog","requiredCount":12,"draftedCount":12,"registeredCount":12,"publicationDate":"2026-10-05","timezone":"UTC","status":"combined-gates-passed-awaiting-sole-push",
+  "articles":[
+    {"slug":"split-shipment-invoice-receipt-allocation","bodyWords":1175,"sha256":"328c52a18a0aa80c69012e260e7b31505a134534e26bc24ad523688648d67f90"},
+    {"slug":"supplier-portal-invoice-status-conflict","bodyWords":1087,"sha256":"ec9efeb706c2d12fdea298bf81639900cd774fbfa72b5ce19ddc7702bac9d8d6"},
+    {"slug":"vendor-payment-terms-change-effective-date","bodyWords":1013,"sha256":"a805d9fca0bda478aa2ccf052089d179ed81a52d1d93c5e18b31c1cc14200469"},
+    {"slug":"service-entry-sheet-rejection-invoice-hold","bodyWords":946,"sha256":"168bafe895ceb67a950a9761529af36dca372a9ad8de8868885e49a724d28fff"},
+    {"slug":"invoice-withholding-tax-evidence-handoff","bodyWords":944,"sha256":"656f66d727f4e87bb14d5b2b406d155ef4228375dedd33415c520cfba27f1695"},
+    {"slug":"supplier-legal-name-invoice-mismatch","bodyWords":921,"sha256":"038d8a8bef9a0fffbb09350284d32bb3ad3c6f8de8b7308b68fd64d33f06d417"},
+    {"slug":"supplier-credit-balance-refund-request","bodyWords":906,"sha256":"b5fcc56861231532bb3bc1b8df0ccddb75262072cb5d8d93cb195167d2b4855a"},
+    {"slug":"subscription-renewal-invoice-owner-review","bodyWords":900,"sha256":"824ab23c0fbe1b8785c94ffc4ead965f081765817badf99de7fe39bdf3bc83e3"},
+    {"slug":"utility-invoice-site-account-mismatch","bodyWords":903,"sha256":"8bc8c43466f2c5cd64cc97e4465d9807ae0e411b7f1b93544faa18cb9221d793"},
+    {"slug":"erp-migration-duplicate-invoice-screening","bodyWords":911,"sha256":"f93a41de540091799d43c9c82f9dd342baab41215a6e70218d76b0c01b0172a3"},
+    {"slug":"corporate-card-central-bill-allocation","bodyWords":906,"sha256":"924149a91fbac18a58f9d475bc9c127f99f48e638642a89f5dd3399b17b84504"},
+    {"slug":"invoice-approval-after-cost-center-reorganization","bodyWords":910,"sha256":"04409b51aa31cd4c59ad67720ea82850762463b1e2da0117594e0eefa157ed41"}
   ],
-  "originality": {
-    "maximumPairwiseFiveWordShingleJaccard": 0.000948,
-    "maximumPair": "supplier-portal-invoice-status-conflict <> vendor-payment-terms-change-effective-date",
-    "repeatedSubstantiveParagraphs": 0,
-    "sharedArgumentSequences": 0,
-    "qualitativeReview": "PASS for current drafts: each article has a distinct event model, evidence trail, example, owner boundary, and reader outcome. No article is a title or noun swap of another."
-  },
-  "humanizerReview": {
-    "status": "PASS for current drafts",
-    "notes": "No em or en dashes, canned conversational openings, inflated significance language, promotional claims, invented company results, or generic positive conclusions were found."
-  },
-  "validation": {
-    "typescriptTranspile": "PASS",
-    "fullTypecheck": "DEFERRED: isolated worktree has no node_modules; direct invocation confirmed missing React/Next typings rather than a draft-local diagnostic",
-    "diffCheck": "PASS",
-    "partialRegistration": "NONE"
-  }
+  "originality":{"maximumPairwiseFiveWordShingleJaccard":0.001411764705882353,"maximumPair":"split-shipment-invoice-receipt-allocation <> service-entry-sheet-rejection-invoice-hold","repeatedSubstantiveParagraphs":0,"sharedArgumentSequences":0,"qualitativeReview":"PASS: distinct evidence populations, examples, reasoning, owners, and reader outcomes; no title swaps or shared substantive template."},
+  "validation":{"lockedInstall":"PASS","typecheck":"PASS","tests":"PASS","productionBuild":"PASS with pre-existing CSS compatibility warnings","combinedRenderedRoutes":"PASS 17/17","sourceToRenderParagraphs":"PASS","localImageSignatureDecode":"PASS 17/17","metadataIndexSitemapLinks":"PASS 17/17"}
 }

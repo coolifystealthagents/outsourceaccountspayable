@@ -1,4 +1,6 @@
 import type {Draft} from './blog-oct2-batch';
+import {remainingOct5BlogDrafts} from './blog-oct5-remaining';
+export const oct5BlogPublicationDate = '2026-10-05';
 
 // October 5 cycle drafts remain unregistered until all 12 Blog articles and the
 // paired five-article Research handoff pass the combined release gates.
@@ -11,7 +13,7 @@ export const oct5BlogDrafts: Draft[] = [
     detail: {
       thumbnail: '/blog-thumbnails/sep22-2026/goods-receipt-reversal-review.svg',
       shortAnswer: 'Build a line-level allocation that preserves every shipment and receipt event. Match only the quantity and value supported by valid receipts, show reversals separately, and route any remaining difference to the receiving or purchasing owner instead of creating receipt evidence.',
-      published: null,
+      published: oct5BlogPublicationDate,
       modified: null,
       mainKeyword: 'split shipment invoice receipt allocation',
       sections: [
@@ -80,7 +82,7 @@ export const oct5BlogDrafts: Draft[] = [
     detail: {
       thumbnail: '/blog-thumbnails/sep23-2026/supplier-portal-invoice-download-log.svg',
       shortAnswer: 'Treat the portal and ERP as separate evidence sources. Capture each status with its timestamp and identifiers, reconstruct the invoice history, explain the conflict, and let the system or process owner approve any correction.',
-      published: null,
+      published: oct5BlogPublicationDate,
       modified: null,
       mainKeyword: 'supplier portal invoice status conflict',
       sections: [
@@ -131,7 +133,7 @@ export const oct5BlogDrafts: Draft[] = [
     detail: {
       thumbnail: '/blog-thumbnails/ap-vendor-change-request-workflow.svg',
       shortAnswer: 'Record the old and proposed terms, approval authority, effective-date rule, affected entities, and open invoices. Update master data only after approval, then review existing documents separately instead of assuming the new term rewrites them.',
-      published: null,
+      published: oct5BlogPublicationDate,
       modified: null,
       mainKeyword: 'vendor payment terms change effective date',
       sections: [
@@ -173,7 +175,8 @@ export const oct5BlogDrafts: Draft[] = [
         {name: 'NIST least privilege glossary', url: 'https://csrc.nist.gov/glossary/term/least_privilege', note: 'Supports limiting vendor-master maintenance to the assigned role.'}
       ]
     }
-  }
+  },
+  ...remainingOct5BlogDrafts
 ];
 
 export const oct5BlogPosts = oct5BlogDrafts.map(({slug, title, excerpt, minutes}) => ({slug, title, excerpt, minutes}));

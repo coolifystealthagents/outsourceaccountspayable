@@ -14,6 +14,6 @@ assert.match(record, /href:'\/services\/payment-run-preparation'/, 'the handoff 
 assert.match(record, /Authorized employees keep approval, bank-file release, payment changes, and fund-release decisions\./, 'the ownership boundary must remain explicit');
 assert.doesNotMatch(record, /support role can [^.]*release (?:funds|payments)/i, 'the support role must not be given payment-release authority');
 assert.match(renderer, /\{p\.serviceHandoff&&<section className="plan-block article-block">/, 'the shared renderer must render the data-owned handoff');
-assert.match(renderer, /publishedTime:p\.published,modifiedTime:p\.modified/, 'research metadata must expose the record freshness dates to Open Graph');
+assert.match(renderer, /publishedTime:p\.published,.+p\.modified.+modifiedTime:p\.modified/, 'research metadata must expose a truthful optional modification date to Open Graph');
 
 console.log('payment-file change-control handoff source contract passed');

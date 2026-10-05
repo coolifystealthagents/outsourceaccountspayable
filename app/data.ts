@@ -54,6 +54,7 @@ import {sep25ResearchBatch} from './research-sep25-batch';
 import {sep28ResearchBatch} from './research-sep28-batch';
 import {oct2ResearchBatch} from './research-oct2-batch';
 import {oct5ResearchBatch} from './research-oct5-batch';
+import {oct5BlogPosts,oct5BlogDetails} from './blog-oct5-batch';
 import {oct2BlogPosts,oct2BlogDetails} from './blog-oct2-batch';
 
 export const site = {
@@ -89,6 +90,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...oct5BlogPosts,
   ...oct2BlogPosts,
   ...sep28BlogPosts,
   ...sep25BlogPosts,
@@ -152,6 +154,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...oct5BlogDetails,
   ...oct2BlogDetails,
   ...sep28BlogDetails,
   ...sep25BlogDetails,

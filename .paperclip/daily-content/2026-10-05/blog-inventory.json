@@ -3,13 +3,13 @@
   "family": "blog",
   "requiredCount": 12,
   "siteTimezone": "UTC",
-  "publicationDate": null,
+  "publicationDate": "2026-10-05",
   "publicationDateRule": "Set immediately before the sole combined push to the UTC date on which the routes are expected to become public, then verify that same date after deployment.",
   "baselineRemoteSha": "8202e73ccf8521a204543f6b90e1fc2b7e10a2ef",
   "branch": "routine/outaaaaaaa-77-20261005",
   "pairedResearchIssue": "OUTAAAAAAA-76",
   "pairedResearchRun": "d2811494-27dc-46e5-93cc-fd9f943af53f",
-  "status": "three-of-twelve-drafted-unregistered",
+  "status": "twelve-drafted-registered-combined-gates-passed",
   "articles": [
     {
       "slug": "split-shipment-invoice-receipt-allocation",

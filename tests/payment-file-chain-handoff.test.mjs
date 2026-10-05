@@ -13,6 +13,6 @@ assert.match(record, /heading:'Prepare a payment-run evidence handoff'/, 'the ro
 assert.match(record, /href:'\/services\/payment-run-preparation'/, 'the handoff must use the matching existing service');
 assert.match(record, /Authorized employees still approve changes, release funds, and decide how to handle bank responses\./, 'the ownership boundary must remain explicit');
 assert.doesNotMatch(record, /support role can [^.]*release funds/i, 'the support role must not be given payment-release authority');
-assert.match(renderer, /publishedTime:p\.published,modifiedTime:p\.modified/, 'research metadata must expose the record freshness dates to Open Graph');
+assert.match(renderer, /publishedTime:p\.published,.+p\.modified.+modifiedTime:p\.modified/, 'research metadata must expose a truthful optional modification date to Open Graph');
 
 console.log('payment-file chain handoff source contract passed');

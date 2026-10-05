@@ -6,7 +6,7 @@ export const oct5ResearchPublicationDate='2026-10-05';
 const checked='October 5, 2026';
 const gao={label:`U.S. GAO, Standards for Internal Control in the Federal Government (2025), checked ${checked}`,href:'https://www.gao.gov/greenbook'};
 const nist={label:`NIST SP 800-53 Rev. 5, Security and Privacy Controls, checked ${checked}`,href:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'};
-const fbi={label:`FBI, Business Email Compromise, checked ${checked}`,href:'https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/business-email-compromise'};
+const fbi={label:`FBI, Business Email Compromise, checked ${checked}`,href:'https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise'};
 const irs={label:`IRS Publication 463 (2025), Travel, Gift, and Car Expenses, checked ${checked}`,href:'https://www.irs.gov/publications/p463'};
 
 const nonPoException:ResearchPost={

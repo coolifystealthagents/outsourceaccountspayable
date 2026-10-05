@@ -1,0 +1,35 @@
+{
+  "cycleLabel": "October 5, 2026",
+  "intendedFirstPublicationDate": "2026-10-05",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "productionBranch": "main",
+  "baseSha": "8202e73ccf8521a204543f6b90e1fc2b7e10a2ef",
+  "branch": "routine/2026-10-05-research-outaaaaaaa-76",
+  "task": "OUTAAAAAAA-76",
+  "requiredCount": 5,
+  "draftCount": 5,
+  "verifiedCount": 0,
+  "status": "eligible-local-research-handoff",
+  "deploymentResource": "hbmdk3sbdm0u52xlxnn43r9n",
+  "maximumFiveWordShingleJaccard": 0.0004158004158004158,
+  "maximumOverlapPair": ["corporate-card-reimbursement-overlap-research", "vendor-bank-change-payment-proposal-timing-research"],
+  "repeatedParagraphCount": 0,
+  "qualitativeOriginality": "PASS: distinct evidence populations, reasoning sequences, challenge cases, control boundaries, limitations, and reader outcomes; no shared substantive paragraphs, argument sequence, or examples.",
+  "validation": {
+    "originalityAudit": "PASS",
+    "typecheck": "PASS",
+    "tests": "PASS",
+    "routineManifest": "PASS",
+    "productionBuild": "PASS with pre-existing CSS compatibility warnings",
+    "renderedRouteAudit": "PASS: five HTTP 200 routes with full titles and all nine source paragraphs, self-canonicals, datePublished, Research index and sitemap entries, three live contextual internal links each, and SVG assets returning HTTP 200 image/svg+xml with valid SVG signatures"
+  },
+  "articles": [
+    {"slug":"non-po-invoice-exception-authority-research","bodyWords":1272,"sha256":"f8a8845af9272388f8fefaa7edf4645acc7e9fefcfd76f8bdf49185c4bd81c4b","image":"/research-thumbnails/ap-approval-matrix-research.svg"},
+    {"slug":"invoice-accrual-reversal-match-research","bodyWords":1218,"sha256":"205ded42e2a8bba4f4a66e7e93a3daf6cc9354a6405ba14158c0d5c22f4e29ef","image":"/research-thumbnails/ap-accrual-support-research.svg"},
+    {"slug":"corporate-card-reimbursement-overlap-research","bodyWords":1207,"sha256":"c9b0c04078d2d6588e6214e8ad9c2b5d8be2df96f2998516df7e6c811cf934d4","image":"/research-thumbnails/ap-expense-report-review-controls-research.svg"},
+    {"slug":"vendor-bank-change-payment-proposal-timing-research","bodyWords":1207,"sha256":"b740d47972e851413cba4a084c6a56dda9733a5810c0f61827a3cc6a05295a21","image":"/research-thumbnails/vendor-bank-change-control-research.svg"},
+    {"slug":"invoice-approval-delegation-expiry-research","bodyWords":1200,"sha256":"d80a4e84304d82add133ccda48ff1e7d10af5aee190a373d12212bb1456a7c3d","image":"/research-thumbnails/ap-approval-separation-research.svg"}
+  ],
+  "publicationNote": "Unpublished local drafts. Before the sole combined push, Blog must reconcile every date field to the actual UTC first-publication date. Research does not push or deploy."
+}

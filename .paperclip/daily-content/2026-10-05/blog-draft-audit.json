@@ -1,0 +1,49 @@
+{
+  "cycleLabel": "2026-10-05",
+  "family": "blog",
+  "requiredCount": 12,
+  "draftedCount": 3,
+  "registeredCount": 0,
+  "publicationDate": null,
+  "status": "drafting-in-progress",
+  "articles": [
+    {
+      "slug": "split-shipment-invoice-receipt-allocation",
+      "bodyWords": 1183,
+      "sha256": "328c52a18a0aa80c69012e260e7b31505a134534e26bc24ad523688648d67f90",
+      "asset": "/blog-thumbnails/sep22-2026/goods-receipt-reversal-review.svg",
+      "assetExists": true
+    },
+    {
+      "slug": "supplier-portal-invoice-status-conflict",
+      "bodyWords": 1093,
+      "sha256": "ec9efeb706c2d12fdea298bf81639900cd774fbfa72b5ce19ddc7702bac9d8d6",
+      "asset": "/blog-thumbnails/sep23-2026/supplier-portal-invoice-download-log.svg",
+      "assetExists": true
+    },
+    {
+      "slug": "vendor-payment-terms-change-effective-date",
+      "bodyWords": 1026,
+      "sha256": "a805d9fca0bda478aa2ccf052089d179ed81a52d1d93c5e18b31c1cc14200469",
+      "asset": "/blog-thumbnails/ap-vendor-change-request-workflow.svg",
+      "assetExists": true
+    }
+  ],
+  "originality": {
+    "maximumPairwiseFiveWordShingleJaccard": 0.000948,
+    "maximumPair": "supplier-portal-invoice-status-conflict <> vendor-payment-terms-change-effective-date",
+    "repeatedSubstantiveParagraphs": 0,
+    "sharedArgumentSequences": 0,
+    "qualitativeReview": "PASS for current drafts: each article has a distinct event model, evidence trail, example, owner boundary, and reader outcome. No article is a title or noun swap of another."
+  },
+  "humanizerReview": {
+    "status": "PASS for current drafts",
+    "notes": "No em or en dashes, canned conversational openings, inflated significance language, promotional claims, invented company results, or generic positive conclusions were found."
+  },
+  "validation": {
+    "typescriptTranspile": "PASS",
+    "fullTypecheck": "DEFERRED: isolated worktree has no node_modules; direct invocation confirmed missing React/Next typings rather than a draft-local diagnostic",
+    "diffCheck": "PASS",
+    "partialRegistration": "NONE"
+  }
+}

@@ -19,7 +19,7 @@ for(const item of items){
   if(!text.includes(item.title))throw new Error(`full title missing ${item.slug}`);
   if(!html.includes(`rel="canonical" href="${url}"`))throw new Error(`canonical missing ${item.slug}`);
   if(!html.includes('"datePublished":"2026-10-06"')||!text.includes('October 6, 2026'))throw new Error(`date mismatch ${item.slug}`);
-  if(html.includes('"dateModified":"2026-10-06"'))throw new Error(`untruthful dateModified ${item.slug}`);
+  if(html.includes('"dateModified"'))throw new Error(`untruthful dateModified ${item.slug}`);
   for(const paragraph of item.paragraphs)if(!text.includes(decode(paragraph)))throw new Error(`source paragraph missing from render ${item.slug}`);
   for(const link of item.links)if(!html.includes(`href="${link.href}"`))throw new Error(`contextual link missing ${item.slug} ${link.href}`);
   const image=item.detail.thumbnail,asset=`public${image}`,bytes=fs.readFileSync(asset);if(!html.includes(image))throw new Error(`render image missing ${item.slug}`);if(!bytes.subarray(0,500).toString('utf8').includes('<svg'))throw new Error(`image signature/decode failed ${item.slug}`);

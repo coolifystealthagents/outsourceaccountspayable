@@ -52,7 +52,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
     url,
     mainEntityOfPage: url,
     datePublished: detail.published,
-    dateModified: detail.modified,
+    ...(detail.modified ? {dateModified: detail.modified} : {}),
     author: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
     publisher: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
     image: detail.thumbnail ? `https://${String(site.domain).toLowerCase()}${detail.thumbnail}` : undefined,

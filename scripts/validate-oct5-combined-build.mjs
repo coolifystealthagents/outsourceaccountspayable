@@ -18,12 +18,12 @@ for(const item of items){
   const html=fs.readFileSync(`.next/server/app/${item.family}/${item.slug}.html`,'utf8');const text=decode(html);const url=`https://outsourceaccountspayable.com/${item.family}/${item.slug}`;
   if(!text.includes(item.title))throw new Error(`full title missing ${item.slug}`);
   if(!html.includes(`rel="canonical" href="${url}"`))throw new Error(`canonical missing ${item.slug}`);
-  if(!html.includes('"datePublished":"2026-10-05"')||!text.includes('October 5, 2026'))throw new Error(`date mismatch ${item.slug}`);
-  if(html.includes('"dateModified":"2026-10-05"'))throw new Error(`untruthful dateModified ${item.slug}`);
+  if(!html.includes('"datePublished":"2026-10-06"')||!text.includes('October 6, 2026'))throw new Error(`date mismatch ${item.slug}`);
+  if(html.includes('"dateModified":"2026-10-06"'))throw new Error(`untruthful dateModified ${item.slug}`);
   for(const paragraph of item.paragraphs)if(!text.includes(decode(paragraph)))throw new Error(`source paragraph missing from render ${item.slug}`);
   for(const link of item.links)if(!html.includes(`href="${link.href}"`))throw new Error(`contextual link missing ${item.slug} ${link.href}`);
   const image=item.detail.thumbnail,asset=`public${image}`,bytes=fs.readFileSync(asset);if(!html.includes(image))throw new Error(`render image missing ${item.slug}`);if(!bytes.subarray(0,500).toString('utf8').includes('<svg'))throw new Error(`image signature/decode failed ${item.slug}`);
   if(!indexes[item.family].includes(`/${item.family}/${item.slug}`)||!sitemap.includes(`<loc>${url}</loc>`))throw new Error(`index or sitemap missing ${item.slug}`);
   report.push({family:item.family,slug:item.slug,paragraphs:item.paragraphs.length,renderHash:crypto.createHash('sha256').update(text).digest('hex'),image,mime:'image/svg+xml',signature:'svg',links:item.links.map((link)=>link.href)});
 }
-console.log(JSON.stringify({result:'PASS',publicationDate:'2026-10-05',timezone:'UTC',blogCount:12,researchCount:5,combinedCount:17,checks:['full rendered source paragraphs','render hash','full title','canonical','visible and structured publication date','no untruthful dateModified','rendered image','image MIME/signature/decode','contextual links','family index','sitemap'],routes:report},null,2));
+console.log(JSON.stringify({result:'PASS',publicationDate:'2026-10-06',timezone:'UTC',blogCount:12,researchCount:5,combinedCount:17,checks:['full rendered source paragraphs','render hash','full title','canonical','visible and structured publication date','no untruthful dateModified','rendered image','image MIME/signature/decode','contextual links','family index','sitemap'],routes:report},null,2));

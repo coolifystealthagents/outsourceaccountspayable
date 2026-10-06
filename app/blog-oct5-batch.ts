@@ -1,6 +1,6 @@
 import type {Draft} from './blog-oct2-batch';
 import {remainingOct5BlogDrafts} from './blog-oct5-remaining';
-export const oct5BlogPublicationDate = '2026-10-05';
+export const oct5BlogPublicationDate = '2026-10-06';
 
 // October 5 cycle drafts remain unregistered until all 12 Blog articles and the
 // paired five-article Research handoff pass the combined release gates.

@@ -1,6 +1,6 @@
 {
   "cycleLabel": "October 5, 2026",
-  "intendedFirstPublicationDate": "2026-10-05",
+  "intendedFirstPublicationDate": "2026-10-06",
   "timezone": "UTC",
   "repository": "coolifystealthagents/outsourceaccountspayable",
   "productionBranch": "main",
@@ -22,7 +22,7 @@
     "tests": "PASS",
     "routineManifest": "PASS",
     "productionBuild": "PASS with pre-existing CSS compatibility warnings",
-    "renderedRouteAudit": "PASS: five HTTP 200 routes with full titles and all nine source paragraphs, self-canonicals, datePublished, Research index and sitemap entries, three live contextual internal links each, and SVG assets returning HTTP 200 image/svg+xml with valid SVG signatures"
+    "renderedRouteAudit": "PASS: five HTTP 200 local production-build routes with full titles and all nine source paragraphs, self-canonicals, datePublished 2026-10-06, Research index and sitemap entries, three HTTP 200 contextual internal links each, and featured SVGs rasterized and pixel-decoded at 2400x1260 RGBA via sharp 0.35.5/libvips 8.18.7"
   },
   "articles": [
     {"slug":"non-po-invoice-exception-authority-research","bodyWords":1272,"sha256":"f8a8845af9272388f8fefaa7edf4645acc7e9fefcfd76f8bdf49185c4bd81c4b","image":"/research-thumbnails/ap-approval-matrix-research.svg"},

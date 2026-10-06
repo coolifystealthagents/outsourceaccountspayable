@@ -1,5 +1,5 @@
 {
-  "cycleLabel":"2026-10-05","family":"blog","requiredCount":12,"draftedCount":12,"registeredCount":12,"publicationDate":"2026-10-05","timezone":"UTC","status":"combined-gates-passed-awaiting-sole-push",
+  "cycleLabel":"2026-10-05","family":"blog","requiredCount":12,"draftedCount":12,"registeredCount":12,"publicationDate":"2026-10-06","timezone":"UTC","status":"date-reconciled-awaiting-corrective-push",
   "articles":[
     {"slug":"split-shipment-invoice-receipt-allocation","bodyWords":1175,"sha256":"328c52a18a0aa80c69012e260e7b31505a134534e26bc24ad523688648d67f90"},
     {"slug":"supplier-portal-invoice-status-conflict","bodyWords":1087,"sha256":"ec9efeb706c2d12fdea298bf81639900cd774fbfa72b5ce19ddc7702bac9d8d6"},
@@ -15,5 +15,5 @@
     {"slug":"invoice-approval-after-cost-center-reorganization","bodyWords":910,"sha256":"04409b51aa31cd4c59ad67720ea82850762463b1e2da0117594e0eefa157ed41"}
   ],
   "originality":{"maximumPairwiseFiveWordShingleJaccard":0.001411764705882353,"maximumPair":"split-shipment-invoice-receipt-allocation <> service-entry-sheet-rejection-invoice-hold","repeatedSubstantiveParagraphs":0,"sharedArgumentSequences":0,"qualitativeReview":"PASS: distinct evidence populations, examples, reasoning, owners, and reader outcomes; no title swaps or shared substantive template."},
-  "validation":{"lockedInstall":"PASS","typecheck":"PASS","tests":"PASS","productionBuild":"PASS with pre-existing CSS compatibility warnings","combinedRenderedRoutes":"PASS 17/17","sourceToRenderParagraphs":"PASS","localImageSignatureDecode":"PASS 17/17","metadataIndexSitemapLinks":"PASS 17/17"}
+  "validation":{"lockedInstall":"PASS","typecheck":"PASS","tests":"PASS","productionBuild":"PASS with pre-existing CSS compatibility warnings","combinedRenderedRoutes":"PASS 17/17","sourceToRenderParagraphs":"PASS","localImageSignatureDecode":"PASS 17/17 via sharp 0.35.5/libvips 8.18.7 SVG rasterization and PNG pixel re-decode at 2400x1260 RGBA","metadataIndexSitemapLinks":"PASS 17/17"}
 }

@@ -1,5 +1,5 @@
 import type {Draft} from './blog-oct2-batch';
-const oct5BlogPublicationDate = '2026-10-05';
+const oct5BlogPublicationDate = '2026-10-06';
 
 type Input = {
   slug:string; title:string; excerpt:string; keyword:string; thumbnail:string;

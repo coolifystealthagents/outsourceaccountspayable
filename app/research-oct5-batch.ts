@@ -2,7 +2,7 @@ import type {ResearchPost} from './research-batch';
 
 // Expected first-publication date for the October 5 combined release. The Blog
 // integrator must reconcile this to the actual UTC live date before the sole push.
-export const oct5ResearchPublicationDate='2026-10-05';
+export const oct5ResearchPublicationDate='2026-10-06';
 const checked='October 5, 2026';
 const gao={label:`U.S. GAO, Standards for Internal Control in the Federal Government (2025), checked ${checked}`,href:'https://www.gao.gov/greenbook'};
 const nist={label:`NIST SP 800-53 Rev. 5, Security and Privacy Controls, checked ${checked}`,href:'https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final'};

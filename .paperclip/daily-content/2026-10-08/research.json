@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-08",
+  "type": "research",
+  "count": 5,
+  "articles": [
+    {"slug":"ap-owner-decision-latency-research","title":"AP owner decision latency: an evidence-based queue study"},
+    {"slug":"invoice-packet-reconstruction-research","title":"Invoice packet reconstruction after source evidence changes"},
+    {"slug":"ap-exception-reviewer-agreement-research","title":"AP exception reviewer agreement research"},
+    {"slug":"payment-access-removal-evidence-research","title":"Payment access removal evidence for AP offboarding"},
+    {"slug":"reopened-ap-exception-recurrence-research","title":"Reopened AP exception recurrence research"}
+  ]
+}

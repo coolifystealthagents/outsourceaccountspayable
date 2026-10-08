@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-08",
+  "type": "blog",
+  "count": 12,
+  "articles": [
+    {"slug":"vendor-remittance-email-bank-change-conflict","title":"Resolve a vendor remittance email and bank-change conflict"},
+    {"slug":"invoice-duplicate-after-supplier-legal-name-change","title":"Review a possible duplicate invoice after a supplier legal-name change"},
+    {"slug":"purchase-order-line-closure-late-invoice","title":"Handle a late invoice after its purchase-order line was closed"},
+    {"slug":"goods-receipt-timezone-cutoff-review","title":"Review a goods-receipt timezone conflict at period cutoff"},
+    {"slug":"vendor-credit-memo-allocation-conflict","title":"Resolve a vendor credit-memo allocation conflict"},
+    {"slug":"invoice-tax-amount-mismatch-evidence-packet","title":"Build an evidence packet for an invoice tax-amount mismatch"},
+    {"slug":"payment-run-hold-owner-transfer","title":"Transfer ownership of a payment-run hold without losing control"},
+    {"slug":"supplier-statement-missing-page-review","title":"Review a supplier statement with a missing page"},
+    {"slug":"expense-receipt-identity-mismatch","title":"Investigate an expense receipt identity mismatch"},
+    {"slug":"recurring-invoice-price-amendment-gap","title":"Resolve a recurring invoice price-amendment gap"},
+    {"slug":"vendor-onboarding-beneficial-owner-evidence-route","title":"Route beneficial-owner evidence during vendor onboarding"},
+    {"slug":"ap-offboarding-saved-payment-template-review","title":"Review saved payment templates during AP offboarding"}
+  ]
+}

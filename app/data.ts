@@ -56,7 +56,9 @@ import {oct2ResearchBatch} from './research-oct2-batch';
 import {oct5ResearchBatch} from './research-oct5-batch';
 import {oct5BlogPosts,oct5BlogDetails} from './blog-oct5-batch';
 import {oct8ResearchBatch} from './research-oct8-batch';
+import {oct9ResearchBatch} from './research-oct9-batch';
 import {oct8BlogPosts,oct8BlogDetails} from './blog-oct8-batch';
+import {oct9BlogPosts,oct9BlogDetails} from './blog-oct9-batch';
 import {oct2BlogPosts,oct2BlogDetails} from './blog-oct2-batch';
 
 export const site = {
@@ -93,6 +95,7 @@ export const services = [
 
 export const blogPosts = [
   ...oct8BlogPosts,
+  ...oct9BlogPosts,
   ...oct5BlogPosts,
   ...oct2BlogPosts,
   ...sep28BlogPosts,
@@ -158,6 +161,7 @@ export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug)
 
 export const blogDetails = {
   ...oct8BlogDetails,
+  ...oct9BlogDetails,
   ...oct5BlogDetails,
   ...oct2BlogDetails,
   ...sep28BlogDetails,
@@ -431,10 +435,13 @@ const sep25ResearchSlugs = new Set(sep25ResearchBatch.map(post=>post.slug));
 const sep28ResearchSlugs = new Set(sep28ResearchBatch.map(post=>post.slug));
 const oct5ResearchSlugs = new Set(oct5ResearchBatch.map(post=>post.slug));
 const oct8ResearchSlugs = new Set(oct8ResearchBatch.map(post=>post.slug));
+const oct9ResearchSlugs = new Set(oct9ResearchBatch.map(post=>post.slug));
 const sep11ResearchSlugs = new Set(sep11ResearchBatch.map(post=>post.slug));
 const sep10ResearchSlugs = new Set(sep10ResearchBatch.map(post=>post.slug));
 export const researchPosts = [...oct8ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+export const researchPosts = [...oct9ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   Number(oct8ResearchSlugs.has(b.slug)) - Number(oct8ResearchSlugs.has(a.slug)) ||
+  Number(oct9ResearchSlugs.has(b.slug)) - Number(oct9ResearchSlugs.has(a.slug)) ||
   Number(oct5ResearchSlugs.has(b.slug)) - Number(oct5ResearchSlugs.has(a.slug)) ||
   Number(sep28ResearchSlugs.has(b.slug)) - Number(sep28ResearchSlugs.has(a.slug)) ||
   Number(sep25ResearchSlugs.has(b.slug)) - Number(sep25ResearchSlugs.has(a.slug)) ||
@@ -473,6 +480,7 @@ const sep28ResearchPostBySlug = new Map(sep28ResearchBatch.map(post=>[post.slug,
 const oct2ResearchPostBySlug = new Map(oct2ResearchBatch.map(post=>[post.slug,post]));
 const oct5ResearchPostBySlug = new Map(oct5ResearchBatch.map(post=>[post.slug,post]));
 const oct8ResearchPostBySlug = new Map(oct8ResearchBatch.map(post=>[post.slug,post]));
+const oct9ResearchPostBySlug = new Map(oct9ResearchBatch.map(post=>[post.slug,post]));
 const sep1ResearchPostBySlug = new Map(sep1ResearchBatch.map(post=>[post.slug,post]));
 const sep2ResearchPostBySlug = new Map(sep2ResearchBatch.map(post=>[post.slug,post]));
 const sep4ResearchPostBySlug = new Map(sep4ResearchBatch.map(post=>[post.slug,post]));
@@ -482,3 +490,4 @@ const sep9ResearchPostBySlug = new Map(sep9ResearchBatch.map(post=>[post.slug,po
 const sep11ResearchPostBySlug = new Map(sep11ResearchBatch.map(post=>[post.slug,post]));
 const sep10ResearchPostBySlug = new Map(sep10ResearchBatch.map(post=>[post.slug,post]));
 export const getResearchPostBySlug = (slug:string) => oct8ResearchPostBySlug.get(slug) ?? oct5ResearchPostBySlug.get(slug) ?? oct2ResearchPostBySlug.get(slug) ?? sep28ResearchPostBySlug.get(slug) ?? sep25ResearchPostBySlug.get(slug) ?? sep24ResearchPostBySlug.get(slug) ?? sep23ResearchPostBySlug.get(slug) ?? sep22ResearchPostBySlug.get(slug) ?? sep18ResearchPostBySlug.get(slug) ?? sep14ResearchPostBySlug.get(slug) ?? sep11ResearchPostBySlug.get(slug) ?? sep10ResearchPostBySlug.get(slug) ?? sep9ResearchPostBySlug.get(slug) ?? sep8ResearchPostBySlug.get(slug) ?? sep7ResearchPostBySlug.get(slug) ?? sep4ResearchPostBySlug.get(slug) ?? sep2ResearchPostBySlug.get(slug) ?? sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);
+export const getResearchPostBySlug = (slug:string) => oct9ResearchPostBySlug.get(slug) ?? oct5ResearchPostBySlug.get(slug) ?? oct2ResearchPostBySlug.get(slug) ?? sep28ResearchPostBySlug.get(slug) ?? sep25ResearchPostBySlug.get(slug) ?? sep24ResearchPostBySlug.get(slug) ?? sep23ResearchPostBySlug.get(slug) ?? sep22ResearchPostBySlug.get(slug) ?? sep18ResearchPostBySlug.get(slug) ?? sep14ResearchPostBySlug.get(slug) ?? sep11ResearchPostBySlug.get(slug) ?? sep10ResearchPostBySlug.get(slug) ?? sep9ResearchPostBySlug.get(slug) ?? sep8ResearchPostBySlug.get(slug) ?? sep7ResearchPostBySlug.get(slug) ?? sep4ResearchPostBySlug.get(slug) ?? sep2ResearchPostBySlug.get(slug) ?? sep1ResearchPostBySlug.get(slug) ?? researchPosts.find(post=>post.slug===slug);

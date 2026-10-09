@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-09",
+  "kind": "blog",
+  "count": 12,
+  "publicationDateVisible": true,
+  "items": [
+    {
+      "slug": "outsourceaccountspayable-priority-intake-triage",
+      "title": "Outsourced Accounts Payable Priority Intake Triage",
+      "excerpt": "A practical guide to sequence new requests by evidence, impact, and accepted ownership.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-priority-intake-triage"
+    },
+    {
+      "slug": "outsourceaccountspayable-exception-owner-map",
+      "title": "Outsourced Accounts Payable Exception Owner Map",
+      "excerpt": "A practical guide to route ambiguous work to an authorized decision owner.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-exception-owner-map"
+    },
+    {
+      "slug": "outsourceaccountspayable-source-record-verification",
+      "title": "Outsourced Accounts Payable Source Record Verification",
+      "excerpt": "A practical guide to confirm the governing record before work begins.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-source-record-verification"
+    },
+    {
+      "slug": "outsourceaccountspayable-handoff-acceptance-receipt",
+      "title": "Outsourced Accounts Payable Handoff Acceptance Receipt",
+      "excerpt": "A practical guide to prove the receiving team accepted the next action.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-handoff-acceptance-receipt"
+    },
+    {
+      "slug": "outsourceaccountspayable-backlog-aging-review",
+      "title": "Outsourced Accounts Payable Backlog Aging Review",
+      "excerpt": "A practical guide to separate active handling from documented waiting states.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-backlog-aging-review"
+    },
+    {
+      "slug": "outsourceaccountspayable-quality-sample-calibration",
+      "title": "Outsourced Accounts Payable Quality Sample Calibration",
+      "excerpt": "A practical guide to align reviewers on observable acceptance evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-quality-sample-calibration"
+    },
+    {
+      "slug": "outsourceaccountspayable-access-scope-recertification",
+      "title": "Outsourced Accounts Payable Access Scope Recertification",
+      "excerpt": "A practical guide to keep permissions aligned with current duties.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-access-scope-recertification"
+    },
+    {
+      "slug": "outsourceaccountspayable-change-control-release-note",
+      "title": "Outsourced Accounts Payable Change Control Release Note",
+      "excerpt": "A practical guide to publish a dated rule change with rollback context.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-change-control-release-note"
+    },
+    {
+      "slug": "outsourceaccountspayable-capacity-overflow-trigger",
+      "title": "Outsourced Accounts Payable Capacity Overflow Trigger",
+      "excerpt": "A practical guide to surface demand that exceeds the safe service window.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-capacity-overflow-trigger"
+    },
+    {
+      "slug": "outsourceaccountspayable-client-decision-packet",
+      "title": "Outsourced Accounts Payable Client Decision Packet",
+      "excerpt": "A practical guide to prepare facts without transferring client authority.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-client-decision-packet"
+    },
+    {
+      "slug": "outsourceaccountspayable-correction-propagation-check",
+      "title": "Outsourced Accounts Payable Correction Propagation Check",
+      "excerpt": "A practical guide to reconcile corrected facts across dependent systems.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-correction-propagation-check"
+    },
+    {
+      "slug": "outsourceaccountspayable-monthly-control-closeout",
+      "title": "Outsourced Accounts Payable Monthly Control Closeout",
+      "excerpt": "A practical guide to close open exceptions and preserve review evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/outsourceaccountspayable-monthly-control-closeout"
+    }
+  ]
+}

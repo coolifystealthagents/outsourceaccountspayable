@@ -1,0 +1,182 @@
+{
+  "site": "OutsourceAccountsPayable.com",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "branch": "main",
+  "baseSha": "9b6ed4ceeb4b80e70c698ca7079b8ee616d2b2d8",
+  "publicationDate": "2026-10-12",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/blog-oct12-batch.ts",
+    "app/research-oct12-batch.ts",
+    "app/data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "navigationPath": "app/components.tsx",
+  "sitemapPath": "app/sitemap.xml/route.ts",
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Invoice Due-Date Source Hierarchy for Outsourced AP",
+      "slug": "ap-invoice-due-date-source-hierarchy",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-invoice-due-date-source-hierarchy",
+      "thumbnailPath": "public/oct12-heroes/ap-invoice-due-date-source-hierarchy.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Zero-Balance Supplier Statement Confirmation Without False Closure",
+      "slug": "ap-zero-balance-statement-confirmation",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-zero-balance-statement-confirmation",
+      "thumbnailPath": "public/oct12-heroes/ap-zero-balance-statement-confirmation.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Partial Invoice Dispute Allocation in an Outsourced AP Queue",
+      "slug": "ap-partial-invoice-dispute-allocation",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-partial-invoice-dispute-allocation",
+      "thumbnailPath": "public/oct12-heroes/ap-partial-invoice-dispute-allocation.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "AP Mailbox Attachment Quarantine for Suspicious Invoice Files",
+      "slug": "ap-mailbox-attachment-quarantine",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-mailbox-attachment-quarantine",
+      "thumbnailPath": "public/oct12-heroes/ap-mailbox-attachment-quarantine.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Vendor Portal Invitation Ownership for Outsourced AP Teams",
+      "slug": "ap-vendor-portal-invitation-ownership",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-vendor-portal-invitation-ownership",
+      "thumbnailPath": "public/oct12-heroes/ap-vendor-portal-invitation-ownership.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Reconciling Payment Proposal Reruns Before Approval",
+      "slug": "ap-payment-proposal-rerun-reconciliation",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-payment-proposal-rerun-reconciliation",
+      "thumbnailPath": "public/oct12-heroes/ap-payment-proposal-rerun-reconciliation.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Credit Memo Expiry Tracking Without Invented Deadlines",
+      "slug": "ap-credit-memo-expiry-tracking",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-credit-memo-expiry-tracking",
+      "thumbnailPath": "public/oct12-heroes/ap-credit-memo-expiry-tracking.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Invoice Line-Split Coding Evidence for AP Preparation",
+      "slug": "ap-invoice-line-split-coding",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-invoice-line-split-coding",
+      "thumbnailPath": "public/oct12-heroes/ap-invoice-line-split-coding.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Foreign Supplier Tax-Residency Evidence Handoff",
+      "slug": "ap-foreign-supplier-tax-residency-handoff",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-foreign-supplier-tax-residency-handoff",
+      "thumbnailPath": "public/oct12-heroes/ap-foreign-supplier-tax-residency-handoff.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Procurement Card Receipt Substitution Review for AP Support",
+      "slug": "ap-card-receipt-substitution-review",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-card-receipt-substitution-review",
+      "thumbnailPath": "public/oct12-heroes/ap-card-receipt-substitution-review.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Dormant Purchase Order Cleanup With Open-Item Protection",
+      "slug": "ap-dormant-purchase-order-cleanup",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-dormant-purchase-order-cleanup",
+      "thumbnailPath": "public/oct12-heroes/ap-dormant-purchase-order-cleanup.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Blog",
+      "title": "Duplicate Supplier Site Review Before Master-Data Consolidation",
+      "slug": "ap-duplicate-supplier-site-review",
+      "sourcePath": "app/blog-oct12-batch.ts",
+      "recordSlug": "ap-duplicate-supplier-site-review",
+      "thumbnailPath": "public/oct12-heroes/ap-duplicate-supplier-site-review.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Research",
+      "title": "E-Invoice Clearance Status Research for Outsourced AP",
+      "slug": "ap-einvoice-clearance-status-research",
+      "sourcePath": "app/research-oct12-batch.ts",
+      "recordSlug": "ap-einvoice-clearance-status-research",
+      "thumbnailPath": "public/oct12-heroes/ap-einvoice-clearance-status-research.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Research",
+      "title": "ACH Return-Code Handoff Research for Accounts Payable",
+      "slug": "ap-ach-return-code-handoff-research",
+      "sourcePath": "app/research-oct12-batch.ts",
+      "recordSlug": "ap-ach-return-code-handoff-research",
+      "thumbnailPath": "public/oct12-heroes/ap-ach-return-code-handoff-research.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Supplier Site Hierarchy Research Before AP Master-Data Changes",
+      "slug": "ap-supplier-site-hierarchy-research",
+      "sourcePath": "app/research-oct12-batch.ts",
+      "recordSlug": "ap-supplier-site-hierarchy-research",
+      "thumbnailPath": "public/oct12-heroes/ap-supplier-site-hierarchy-research.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Payment-Term Conflict Research Across AP Source Records",
+      "slug": "ap-payment-term-precedence-research",
+      "sourcePath": "app/research-oct12-batch.ts",
+      "recordSlug": "ap-payment-term-precedence-research",
+      "thumbnailPath": "public/oct12-heroes/ap-payment-term-precedence-research.webp",
+      "registryPath": "app/data.ts"
+    },
+    {
+      "section": "Research",
+      "title": "Supplier Refund Evidence Research for Outsourced AP Teams",
+      "slug": "ap-supplier-refund-evidence-research",
+      "sourcePath": "app/research-oct12-batch.ts",
+      "recordSlug": "ap-supplier-refund-evidence-research",
+      "thumbnailPath": "public/oct12-heroes/ap-supplier-refund-evidence-research.webp",
+      "registryPath": "app/data.ts"
+    }
+  ]
+}

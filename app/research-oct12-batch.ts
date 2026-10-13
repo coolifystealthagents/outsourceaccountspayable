@@ -179,10 +179,10 @@ export const oct12ResearchBatch:ResearchPost[]=[
     ],
     "cta": "Map the evidence boundary to a controlled AP support lane.",
     "serviceHandoff": {
-      "heading": "Turn the evidence design into an AP operating brief",
-      "body": "Bring the source systems, legal entities, document population, exception owners, and treasury, banking, and vendor-master owners to a bounded scoping session.",
-      "label": "Plan the AP workflow",
-      "href": "/contact-us"
+      "heading": "Prepare returned-payment evidence for owner review",
+      "body": "A Philippines-based AP support specialist can organize the return code, approved payment record, supplier follow-up, and bank response for review. Treasury, banking, and vendor-master owners decide any bank-detail change, replacement payment, exception, or release.",
+      "label": "Review payment-run preparation support",
+      "href": "/services/payment-run-preparation"
     }
   },
   {

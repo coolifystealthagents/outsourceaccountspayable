@@ -1,0 +1,193 @@
+{
+  "site": "OutsourceAccountsPayable.com",
+  "canonicalDomain": "https://outsourceaccountspayable.com",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "branch": "main",
+  "baseSha": "ad63f7027070606254a5bb8ce3b7d8c9c7fbd6b0",
+  "publicationDate": "2026-10-13",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Control a Vendor Remit-To Address Change",
+      "slug": "ap-vendor-remit-to-address-change",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-vendor-remit-to-address-change.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2099,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile Residual Commitments Before Closing a Purchase Order",
+      "slug": "ap-po-closure-residual-commitment",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-po-closure-residual-commitment.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2080,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Route an Unreadable Invoice Scan Without Inventing Fields",
+      "slug": "ap-invoice-scan-legibility-rejection",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-invoice-scan-legibility-rejection.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2081,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Manage a Recurring Invoice Schedule Exception",
+      "slug": "ap-recurring-invoice-schedule-exception",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-recurring-invoice-schedule-exception.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2048,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Match Utility Invoice Meter Identity Before Coding",
+      "slug": "ap-utility-meter-identity-match",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-utility-meter-identity-match.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2114,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Build an Expense Reimbursement to AP Handoff",
+      "slug": "ap-expense-reimbursement-handoff",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-expense-reimbursement-handoff.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2081,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Resolve an Orphan Supplier Credit on a Statement",
+      "slug": "ap-orphan-supplier-credit-review",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-orphan-supplier-credit-review.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2113,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Maintain an Invoice Hold Reason Lifecycle",
+      "slug": "ap-invoice-hold-reason-lifecycle",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-invoice-hold-reason-lifecycle.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2083,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Verify a Payment File Control Total Without Approving Release",
+      "slug": "ap-payment-file-control-total",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-payment-file-control-total.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2139,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Route a Vendor Bankruptcy Notice to Qualified Owners",
+      "slug": "ap-vendor-bankruptcy-notice-routing",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-vendor-bankruptcy-notice-routing.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2122,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile an Intercompany Payable Confirmation",
+      "slug": "ap-intercompany-payable-confirmation",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-intercompany-payable-confirmation.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2033,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Blog",
+      "title": "Review Accounts Payable Shared Mailbox Delegation",
+      "slug": "ap-shared-mailbox-delegation-review",
+      "sourcePath": "app/blog-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-shared-mailbox-delegation-review.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 2082,
+      "sha256": "224cd8f50faaeae93cb82736a3f4138906006b41ce8f2d47a1e09db39066df12"
+    },
+    {
+      "section": "Research",
+      "title": "Invoice OCR Confidence Escalation Study",
+      "slug": "ap-ocr-confidence-escalation-study",
+      "sourcePath": "app/research-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-ocr-confidence-escalation-study.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 4052,
+      "sha256": "ec9ec32d3003fbae043479981abc97d023a6f948e4b199977efdf8eadcfd1755"
+    },
+    {
+      "section": "Research",
+      "title": "Supplier Banking Callback Evidence Study",
+      "slug": "ap-supplier-banking-callback-evidence-study",
+      "sourcePath": "app/research-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-supplier-banking-callback-evidence-study.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 4052,
+      "sha256": "ec9ec32d3003fbae043479981abc97d023a6f948e4b199977efdf8eadcfd1755"
+    },
+    {
+      "section": "Research",
+      "title": "AP Approval Chain Interruption Latency Study",
+      "slug": "ap-approval-chain-interruption-latency-study",
+      "sourcePath": "app/research-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-approval-chain-interruption-latency-study.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 4024,
+      "sha256": "ec9ec32d3003fbae043479981abc97d023a6f948e4b199977efdf8eadcfd1755"
+    },
+    {
+      "section": "Research",
+      "title": "Duplicate Invoice Detection False-Negative Study",
+      "slug": "ap-duplicate-invoice-false-negative-study",
+      "sourcePath": "app/research-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-duplicate-invoice-false-negative-study.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 4010,
+      "sha256": "ec9ec32d3003fbae043479981abc97d023a6f948e4b199977efdf8eadcfd1755"
+    },
+    {
+      "section": "Research",
+      "title": "Early Payment Discount Opportunity Evidence Study",
+      "slug": "ap-early-payment-discount-evidence-study",
+      "sourcePath": "app/research-oct13-batch.ts",
+      "thumbnailPath": "public/oct13-heroes/ap-early-payment-discount-evidence-study.webp",
+      "publicationDate": "2026-10-13",
+      "wordCount": 4066,
+      "sha256": "ec9ec32d3003fbae043479981abc97d023a6f948e4b199977efdf8eadcfd1755"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Service-led topical authority ledger
 
-Updated: 2026-10-13
+Updated: 2026-10-18
 
 This planning ledger maps existing Philippines-based accounts payable services to existing research. It is an editorial control list, not a claim that the listed research has been linked to a service page or verified in public. Each future handoff needs a separate route, schema, sitemap, build, deployment, and public-review check.
 
@@ -17,7 +17,7 @@ This planning ledger maps existing Philippines-based accounts payable services t
 | AP Inbox Management | `/research/ap-payment-status-inquiry-research` | What can a support team say about an invoice without promising a payment result? | Existing research batches include this service route; check the exact source before considering another placement. |
 | Duplicate Invoice Review | `/research/ap-invoice-number-normalization-research` | How can an assistant search for possible duplicates without changing the supplier's record? | Review a source-page handoff to `/services/duplicate-invoice-review`. |
 | Aging Report Preparation | `/research/ap-invoice-queue-aging-cause-research` | How can a finance team separate age caused by missing evidence from owner delay? | Review a source-page handoff to `/services/aging-report-preparation`. |
-| Tax Document Collection | `/research/supplier-tax-id-collision-review-research`, `/research/ap-vendor-w9-follow-up-research` | What may an AP support role collect before a tax owner needs to decide? | Delivered locally in rendered-source commit `3a604baf4831326be343a048834f872bc21d5105`: the supplier tax-ID collision research route now has one route-local handoff to `/services/tax-document-collection`. The approved Batched Coolify Deployment routine owns public verification. Do not add another CTA; review the W-9 route only for collection and routing language. Do not imply tax treatment, vendor-data changes, or owner approval. |
+| Tax Document Collection | `/research/supplier-tax-id-collision-review-research`, `/research/ap-vendor-w9-follow-up-research` | What may an AP support role collect before a tax owner needs to decide? | Both routes are delivered locally and non-duplicable. The supplier tax-ID collision handoff is in `3a604baf4831326be343a048834f872bc21d5105`; the W-9 follow-up handoff is in `f34f09a18c0a07fc8e060b2eb511926fc081fce0`. Each has one route-local handoff to `/services/tax-document-collection`. The approved Batched Coolify Deployment routine owns public verification. Do not add another CTA or imply tax treatment, vendor-data changes, or owner approval. |
 | Month-End AP Close Support | `/research/ap-invoice-service-period-evidence-research` | Which service-period records should a close owner see before reviewing an AP item? | Existing handoff to `/services/month-end-ap-close-support` is documented in the source model; do not duplicate it. |
 
 ## Release rule

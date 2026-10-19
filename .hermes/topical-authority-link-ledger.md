@@ -1,12 +1,12 @@
 # Service-led topical authority ledger
 
-Updated: 2026-10-18
+Updated: 2026-10-19
 
 This planning ledger maps existing Philippines-based accounts payable services to existing research. It is an editorial control list, not a claim that the listed research has been linked to a service page or verified in public. Each future handoff needs a separate route, schema, sitemap, build, deployment, and public-review check.
 
 | Service pillar | Existing supporting research | Buyer question | Controlled next action |
 | --- | --- | --- | --- |
-| Invoice Data Capture | `/research/ap-invoice-source-completeness-research` | Which source fields must be present before an assistant prepares an invoice packet? | Delivered locally in rendered-source commit `6fd749292b44e5dc4e64103645021ad17e9bce5c`: one route-local handoff to `/services/invoice-data-capture` is present. Do not add another CTA. |
+| Invoice Data Capture | `/research/ap-invoice-source-completeness-research`, `/research/ap-invoice-attachment-completeness-research` | Which source fields and supporting files must be present before an assistant prepares an invoice packet? | The source-completeness route is delivered locally in rendered-source commit `6fd749292b44e5dc4e64103645021ad17e9bce5c`. The attachment-completeness route now has one route-local handoff to `/services/invoice-data-capture`; it prepares the packet while the finance owner retains completeness, exception, and accounting decisions. Do not add another CTA to either route. |
 | Three-Way Match Support | `/research/ap-purchase-order-line-evidence-research` | What should the preparer compare before the finance owner reviews a PO match? | Review a source-page handoff to `/services/three-way-match-support`. |
 | Purchase Order Reconciliation | `/research/ap-purchase-order-line-evidence-research` | How can a team keep unmatched PO details visible for the right owner? | Existing handoff to `/services/purchase-order-reconciliation` is documented in the source model; do not add a second link without an editorial review. |
 | Vendor Statement Reconciliation | `/research/ap-vendor-statement-cutoff-evidence-research` | Which dates and open-item records make a vendor statement reviewable? | Review a source-page handoff to `/services/vendor-statement-reconciliation`. |

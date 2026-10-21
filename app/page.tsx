@@ -1,7 +1,9 @@
+import type { Metadata } from 'next';
 import { Header, Footer, JsonLd } from './components';
 import { blogPosts, services, site, staffingOffer } from './data';
 
 const serviceHref = (slug: string) => `/services/${slug}`;
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function Home() {
   const schema = {
@@ -26,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="ap-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
+      <main id="main-content" tabIndex={-1} className="ap-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
 
         <section className="ap-hero">
@@ -68,9 +70,8 @@ export default function Home() {
             <p>Start with repeatable admin work. Keep vendor changes, invoice approval, and payment release with named people on your team.</p>
           </div>
           <div className="ap-service-list">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <a href={serviceHref(service.slug)} className="ap-service-row" key={service.slug}>
-                <span className="service-number">0{index + 1}</span>
                 <div>
                   <h3>{service.title}</h3>
                   <p>{service.desc}</p>
@@ -106,9 +107,9 @@ export default function Home() {
             <p>A narrow pilot is easier to check, fix, and expand.</p>
           </div>
           <div className="process-steps">
-            <article><span>01</span><h3>Map the lane</h3><p>Choose one inbox, entity, or vendor group. Set the cutoff, examples, and escalation rules.</p></article>
-            <article><span>02</span><h3>Review live work</h3><p>Check the first invoice packets together. Fix labels and permissions while the scope is still small.</p></article>
-            <article><span>03</span><h3>Add what is stable</h3><p>Expand only after the first tasks are accurate and the finance owner can see every exception.</p></article>
+            <article><h3>Map the lane</h3><p>Choose one inbox, entity, or vendor group. Set the cutoff, examples, and escalation rules.</p></article>
+            <article><h3>Review live work</h3><p>Check the first invoice packets together. Fix labels and permissions while the scope is still small.</p></article>
+            <article><h3>Add what is stable</h3><p>Expand only after the first tasks are accurate and the finance owner can see every exception.</p></article>
           </div>
         </section>
 

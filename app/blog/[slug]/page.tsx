@@ -2,6 +2,9 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {Header, Footer, CTA, JsonLd} from '../../components';
 import {blogDetails, blogPosts, getBlogDetailBySlug, getBlogPostBySlug, site} from '../../data';
+import {EditorialLayout} from '../../editorial-layout';
+import {seoTitle} from '../../lib/content-contracts';
+import {publicImageOrFallback} from '../../lib/public-image';
 
 const publicationDateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -22,7 +25,7 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   const images = detailImage(post.slug);
   return {
-    title: post.title,
+    title: seoTitle(post.title),
     description: post.excerpt,
     alternates: {canonical: url},
     openGraph: {title: post.title, description: post.excerpt, url, type: 'article', images},
@@ -32,7 +35,8 @@ export async function generateMetadata({params}: {params: Promise<{slug: string}
 
 function detailImage(slug: string) {
   const detail = (blogDetails as Record<string, any>)[slug];
-  return detail?.thumbnail ? [{url: `https://${String(site.domain).toLowerCase()}${detail.thumbnail}`, width: 1200, height: 630, alt: blogPosts.find((item) => item.slug === slug)?.title}] : undefined;
+  const image = publicImageOrFallback(detail?.thumbnail, slug);
+  return [{url: `https://${String(site.domain).toLowerCase()}${image}`, width: 1200, height: 630, alt: blogPosts.find((item) => item.slug === slug)?.title}];
 }
 
 export default async function Post({params}: {params: Promise<{slug: string}>}) {
@@ -42,6 +46,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
 
   const detail = getBlogDetailBySlug(slug);
   if (!detail) notFound();
+  const articleImage = publicImageOrFallback(detail.thumbnail, slug);
 
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   const articleSchema = {
@@ -55,7 +60,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
     ...(detail.modified ? {dateModified: detail.modified} : {}),
     author: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
     publisher: {'@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}`},
-    image: detail.thumbnail ? `https://${String(site.domain).toLowerCase()}${detail.thumbnail}` : undefined,
+    image: `https://${String(site.domain).toLowerCase()}${articleImage}`,
     keywords: detail.mainKeyword ? [detail.mainKeyword] : undefined,
     citation: detail.sources?.map((source: any) => source.url),
   };
@@ -80,7 +85,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
 
   return <>
     <Header hideScope/>
-    <main className="section article-page" data-article-marker={slug}>
+    <main className="section article-page" id="main-content" tabIndex={-1} data-article-marker={slug}>
       <JsonLd data={articleSchema}/>
       <JsonLd data={breadcrumbSchema}/>
       {faqSchema && <JsonLd data={faqSchema}/>}
@@ -90,7 +95,17 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
         {detail.published && <p className="article-meta">Published: <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
-        {detail.thumbnail && <img src={detail.thumbnail} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>}
+        <img src={articleImage} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>
+
+        <EditorialLayout items={[
+          {id:'direct-answer',label:'Direct answer'},
+          ...(detail.decisionRows?[{id:'task-line',label:'Task and control line'}]:[]),
+          ...(detail.planningNumbers?[{id:'planning-board',label:'First-month setup'}]:[]),
+          ...detail.sections.map((section:any,index:number)=>({id:`section-${index+1}`,label:section.title})),
+          ...(detail.workflow?[{id:'invoice-path',label:'Sample workflow'}]:[]),
+          ...(detail.faqs?[{id:'faq-title',label:'Common questions'}]:[]),
+          ...(detail.sources?[{id:'sources-title',label:'Sources'}]:[]),
+        ]} related={(detail.relatedLinks||[]).slice(0,4)}><div className="article-body">
 
         <section className="answer-card" aria-labelledby="direct-answer">
           <p className="section-kicker">Direct answer</p>
@@ -159,7 +174,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         {detail.expertQuote && <blockquote className="article-block expert-quote"><p>"{detail.expertQuote.text}"</p><cite>{detail.expertQuote.cite}</cite></blockquote>}
 
         {detail.sections.map((section: any, index: number) => <div key={section.title}>
-          <section className="article-block prose-block">
+          <section className="article-block prose-block" id={`section-${index+1}`}>
             <h2>{section.title}</h2>
             {section.paragraphs.map((paragraph: string) => <p data-narrative="true" key={paragraph}>{paragraph}</p>)}
           </section>
@@ -205,6 +220,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         </section>}
       <p className='article-source-note'><a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces why remote role briefs should document expectations, communication rhythms, and accountable handoffs.</p>
         <p className='article-source-note'><a href='/contact-us'>Contact Us</a> to turn this article into a scoped Philippines-based staffing brief.</p>
+        </div></EditorialLayout>
         </article>
       <CTA/>
     </main>

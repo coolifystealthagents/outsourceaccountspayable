@@ -94,7 +94,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
         <p className="eyebrow">Philippines AP staffing guide</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
-        {detail.published && <p className="article-meta">Published: <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
+        {detail.published && <p className="article-meta">Published <time dateTime={detail.published}>{formatPublicationDate(detail.published)}</time> · {post.minutes} minute read · Philippines-only staffing</p>}
         <img src={articleImage} alt={`${post.title} illustration`} width="1200" height="630" style={{width:'100%',height:'auto'}}/>
 
         <EditorialLayout items={[

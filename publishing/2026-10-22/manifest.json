@@ -1,193 +1,295 @@
 {
   "site": "OutsourceAccountsPayable.com",
-  "canonicalDomain": "https://outsourceaccountspayable.com",
-  "repository": "coolifystealthagents/outsourceaccountspayable",
-  "branch": "main",
-  "baseSha": "ad63f7027070606254a5bb8ce3b7d8c9c7fbd6b0",
-  "publicationDate": "2026-10-22",
+  "slug": "outsourceaccountspayable",
+  "date": "2026-10-22",
+  "repository": "/Users/bohoseventy/fleet/repos/outsourceaccountspayable",
+  "head": "2ffe8eb4675dfe28ea4e440dddb5c456f7fd5a89",
   "counts": {
     "blog": 12,
     "research": 5,
-    "total": 17,
-    "thumbnails": 17
+    "total": 17
   },
-  "registryPaths": [
-    "app/data.ts"
-  ],
-  "routePaths": [
-    "app/blog/[slug]/page.tsx",
-    "app/research/[slug]/page.tsx"
-  ],
   "articles": [
     {
-      "section": "Blog",
-      "title": "Resolve Duplicate Invoice Claims With Evidence",
-      "slug": "ap-duplicate-invoice-claim-evidence",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-duplicate-invoice-claim-evidence.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2091,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Vendor Statement Reconciliation Evidence That Survives Review",
+      "slug": "vendor-statement-reconciliation-evidence",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/vendor-statement-reconciliation-evidence.webp",
+      "category": "vendor reconciliation",
+      "wordCount": 930,
+      "sources": [
+        "SBA: Manage your business",
+        "NARA: Records management policy",
+        "NIST SP 800-53 Rev. 5",
+        "Nacha: Operating Rules"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Reconcile a Supplier Statement Without Adjusting the Ledger",
-      "slug": "ap-supplier-statement-reconciliation",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-supplier-statement-reconciliation.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2090,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Run a Duplicate Payment Recovery Queue Without Losing the Trail",
+      "slug": "duplicate-payment-recovery-queue",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/duplicate-payment-recovery-queue.webp",
+      "category": "payment recovery",
+      "wordCount": 869,
+      "sources": [
+        "Nacha: Operating Rules",
+        "31 CFR Part 210",
+        "NIST SP 800-53 Rev. 5",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Expire AP Approval Delegations on the Recorded Date",
-      "slug": "ap-approval-delegation-expiry",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-approval-delegation-expiry.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2124,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Standardize AP Invoice Hold Reason Codes",
+      "slug": "ap-invoice-hold-reason-standard",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/ap-invoice-hold-reason-standard.webp",
+      "category": "invoice holds",
+      "wordCount": 852,
+      "sources": [
+        "NIST SP 800-53 Rev. 5",
+        "SBA: Manage your business",
+        "NARA: Records management policy",
+        "Nacha: Operating Rules"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Control a Payment Run Cutoff Change",
-      "slug": "ap-payment-cutoff-change",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-payment-cutoff-change.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2075,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Control Supplier W-9 Refresh Without Guessing",
+      "slug": "supplier-w9-refresh-control",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/supplier-w9-refresh-control.webp",
+      "category": "vendor tax records",
+      "wordCount": 889,
+      "sources": [
+        "IRS: About Form W-9",
+        "IRS: About Form 1099-NEC",
+        "NIST Privacy Framework",
+        "NIST: Role Based Access Control",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Check Vendor Tax Form Completeness Before Onboarding",
-      "slug": "ap-vendor-tax-form-completeness",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-vendor-tax-form-completeness.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2149,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Payment Run Cutoff Exception Log",
+      "slug": "payment-run-cutoff-exception-log",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/payment-run-cutoff-exception-log.webp",
+      "category": "payment operations",
+      "wordCount": 977,
+      "sources": [
+        "Nacha: Operating Rules",
+        "31 CFR Part 210",
+        "NIST SP 800-53 Rev. 5",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Triage Suspicious AP Email Attachments Safely",
-      "slug": "ap-email-attachment-malware-triage",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-email-attachment-malware-triage.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2076,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Assign ACH Return Recovery Ownership",
+      "slug": "ach-return-recovery-ownership",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/ach-return-recovery-ownership.webp",
+      "category": "ACH returns",
+      "wordCount": 984,
+      "sources": [
+        "Nacha: Operating Rules",
+        "31 CFR Part 210",
+        "NIST SP 800-53 Rev. 5",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Trace Credit Memo Application to the Correct Invoice",
-      "slug": "ap-credit-memo-application-trace",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-credit-memo-application-trace.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2106,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Review AP Credit Memo Application",
+      "slug": "ap-credit-memo-application-review",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/ap-credit-memo-application-review.webp",
+      "category": "credit memos",
+      "wordCount": 988,
+      "sources": [
+        "Nacha: Operating Rules",
+        "SBA: Stay legally compliant",
+        "NIST SP 800-53 Rev. 5",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Prepare Intercompany Recharge Evidence Before Posting",
-      "slug": "ap-intercompany-recharge-evidence",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-intercompany-recharge-evidence.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2077,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Expire Invoice Approval Delegations on Time",
+      "slug": "invoice-approval-delegation-expiry",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/invoice-approval-delegation-expiry.webp",
+      "category": "approval authority",
+      "wordCount": 995,
+      "sources": [
+        "NIST: Role Based Access Control",
+        "NIST SP 800-53 Rev. 5",
+        "SBA: Stay legally compliant",
+        "NARA: Records management policy"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Close AP Accrual Reversals With a Complete Checklist",
-      "slug": "ap-accrual-reversal-checklist",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-accrual-reversal-checklist.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2099,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Offboard Vendor Portal Credentials",
+      "slug": "vendor-portal-credential-offboarding",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/vendor-portal-credential-offboarding.webp",
+      "category": "access offboarding",
+      "wordCount": 965,
+      "sources": [
+        "NIST: Role Based Access Control",
+        "NIST SP 800-53 Rev. 5",
+        "CISA: Secure Our World",
+        "OWASP: Application Security Verification Standard"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Offboard Supplier Portal Users Without Leaving Access",
-      "slug": "ap-supplier-portal-user-offboarding",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-supplier-portal-user-offboarding.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2092,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "AP Accrual Handoff at Close",
+      "slug": "ap-accrual-handoff-at-close",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/ap-accrual-handoff-at-close.webp",
+      "category": "close and accruals",
+      "wordCount": 950,
+      "sources": [
+        "NARA: Records management policy",
+        "SBA: Stay legally compliant",
+        "NIST SP 800-53 Rev. 5",
+        "31 CFR Part 210"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Validate Invoice Coding Dimensions Before Posting",
-      "slug": "ap-invoice-coding-dimension-check",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-invoice-coding-dimension-check.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2075,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Review Purchase Order Price Variance",
+      "slug": "purchase-order-price-variance-review",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/purchase-order-price-variance-review.webp",
+      "category": "purchase orders",
+      "wordCount": 1036,
+      "sources": [
+        "SBA: Manage your business",
+        "NIST SP 800-53 Rev. 5",
+        "NARA: Records management policy",
+        "SBA: Stay legally compliant"
+      ]
     },
     {
-      "section": "Blog",
-      "title": "Map AP Close Dependencies Before Promising a Date",
-      "slug": "ap-close-calendar-dependency-map",
-      "sourcePath": "app/blog-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-close-calendar-dependency-map.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 2139,
-      "sha256": "06ec7b526ecc4188e05a221d88ec89babb62bd1f740b8c625e391a462a657ef4"
+      "section": "blog",
+      "title": "Prepare an AP Audit Sample",
+      "slug": "ap-audit-sample-preparation",
+      "source": "staging/app/blog-oct22-batch.ts",
+      "thumbnail": "thumbnails/ap-audit-sample-preparation.webp",
+      "category": "audit evidence",
+      "wordCount": 1004,
+      "sources": [
+        "NARA: Records management policy",
+        "NIST SP 800-53 Rev. 5",
+        "SBA: Stay legally compliant",
+        "EEOC: Recordkeeping requirements"
+      ]
     },
     {
-      "section": "Research",
-      "title": "Duplicate Invoice Detection Evidence Study",
-      "slug": "ap-duplicate-detection-evidence-study",
-      "sourcePath": "app/research-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-duplicate-detection-evidence-study.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 3954,
-      "sha256": "85f14f9f8ab34eec5d09a4f6801c14e0ee89e11f76fb5059f52b76f5e2f85a82"
+      "section": "research",
+      "title": "Duplicate Invoice Detection: A Reviewable Method",
+      "slug": "duplicate-invoice-detection-method",
+      "source": "staging/app/research-oct22-batch.ts",
+      "thumbnail": "thumbnails/duplicate-invoice-detection-method.webp",
+      "category": "duplicate detection",
+      "wordCount": 1355,
+      "sources": [
+        "NIST SP 800-53 Rev. 5",
+        "NIST Cybersecurity Framework 2.0",
+        "NARA Records Management Policy",
+        "SBA: Stay legally compliant",
+        "NIST Role Based Access Control",
+        "CISA: Secure Our World",
+        "31 CFR Part 210",
+        "Nacha Operating Rules",
+        "SBA: Manage your business"
+      ]
     },
     {
-      "section": "Research",
-      "title": "AP Approval Delegation Coverage Study",
-      "slug": "ap-approval-delegation-coverage-study",
-      "sourcePath": "app/research-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-approval-delegation-coverage-study.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 4052,
-      "sha256": "85f14f9f8ab34eec5d09a4f6801c14e0ee89e11f76fb5059f52b76f5e2f85a82"
+      "section": "research",
+      "title": "Invoice Hold Aging: Observation Protocol",
+      "slug": "invoice-hold-aging-observation-protocol",
+      "source": "staging/app/research-oct22-batch.ts",
+      "thumbnail": "thumbnails/invoice-hold-aging-observation-protocol.webp",
+      "category": "hold aging",
+      "wordCount": 1348,
+      "sources": [
+        "NIST SP 800-53 Rev. 5",
+        "NARA Records Management Policy",
+        "SBA: Manage your business",
+        "SBA: Stay legally compliant",
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Role Based Access Control",
+        "EEOC Recordkeeping Requirements",
+        "CISA: Secure Our World",
+        "Nacha Operating Rules"
+      ]
     },
     {
-      "section": "Research",
-      "title": "Invoice Coding Correction Study",
-      "slug": "ap-coding-correction-study",
-      "sourcePath": "app/research-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-coding-correction-study.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 4010,
-      "sha256": "85f14f9f8ab34eec5d09a4f6801c14e0ee89e11f76fb5059f52b76f5e2f85a82"
+      "section": "research",
+      "title": "Payment Exception Ownership Audit",
+      "slug": "payment-exception-ownership-audit",
+      "source": "staging/app/research-oct22-batch.ts",
+      "thumbnail": "thumbnails/payment-exception-ownership-audit.webp",
+      "category": "payment ownership",
+      "wordCount": 1355,
+      "sources": [
+        "NIST SP 800-53 Rev. 5",
+        "Nacha Operating Rules",
+        "31 CFR Part 210",
+        "NARA Records Management Policy",
+        "NIST Role Based Access Control",
+        "NIST Cybersecurity Framework 2.0",
+        "CISA: Secure Our World",
+        "SBA: Stay legally compliant",
+        "SBA: Manage your business"
+      ]
     },
     {
-      "section": "Research",
-      "title": "Supplier Statement Reconciliation Completeness Study",
-      "slug": "ap-statement-reconciliation-completeness-study",
-      "sourcePath": "app/research-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-statement-reconciliation-completeness-study.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 4038,
-      "sha256": "85f14f9f8ab34eec5d09a4f6801c14e0ee89e11f76fb5059f52b76f5e2f85a82"
+      "section": "research",
+      "title": "Vendor Master Change Verification Study",
+      "slug": "vendor-master-change-verification-study",
+      "source": "staging/app/research-oct22-batch.ts",
+      "thumbnail": "thumbnails/vendor-master-change-verification-study.webp",
+      "category": "vendor master",
+      "wordCount": 1350,
+      "sources": [
+        "IRS: About Form W-9",
+        "NIST Role Based Access Control",
+        "NIST SP 800-53 Rev. 5",
+        "NIST Privacy Framework",
+        "CISA: Secure Our World",
+        "Nacha Operating Rules",
+        "31 CFR Part 210",
+        "NARA Records Management Policy",
+        "SBA: Stay legally compliant"
+      ]
     },
     {
-      "section": "Research",
-      "title": "AP Payment Cutoff Exception Study",
-      "slug": "ap-payment-cutoff-exception-study",
-      "sourcePath": "app/research-oct22-batch.ts",
-      "thumbnailPath": "public/oct22-heroes/ap-payment-cutoff-exception-study.webp",
-      "publicationDate": "2026-10-22",
-      "wordCount": 3982,
-      "sha256": "85f14f9f8ab34eec5d09a4f6801c14e0ee89e11f76fb5059f52b76f5e2f85a82"
+      "section": "research",
+      "title": "AP Close Reconciliation Timeline",
+      "slug": "ap-close-reconciliation-timeline",
+      "source": "staging/app/research-oct22-batch.ts",
+      "thumbnail": "thumbnails/ap-close-reconciliation-timeline.webp",
+      "category": "close timeline",
+      "wordCount": 1361,
+      "sources": [
+        "NARA Records Management Policy",
+        "NIST SP 800-53 Rev. 5",
+        "SBA: Manage your business",
+        "SBA: Stay legally compliant",
+        "31 CFR Part 210",
+        "Nacha Operating Rules",
+        "NIST Cybersecurity Framework 2.0",
+        "EEOC Recordkeeping Requirements",
+        "ILO: Decent work and the 2030 agenda"
+      ]
     }
   ]
 }

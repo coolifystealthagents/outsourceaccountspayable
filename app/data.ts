@@ -62,6 +62,8 @@ import {oct9BlogPosts,oct9BlogDetails} from './blog-oct9-batch';
 import {oct12BlogPosts,oct12BlogDetails} from './blog-oct12-batch';
 import {oct12ResearchBatch} from './research-oct12-batch';
 import {oct13BlogPosts,oct13BlogDetails} from './blog-oct13-batch';
+import {october22BlogPosts,october22BlogDetails} from './blog-oct22-batch';
+import {october22ResearchBatch} from './research-oct22-batch';
 import {oct13ResearchBatch} from './research-oct13-batch';
 import {oct2BlogPosts,oct2BlogDetails} from './blog-oct2-batch';
 
@@ -98,6 +100,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...october22BlogPosts,
   ...oct13BlogPosts,
   ...oct12BlogPosts,
   ...oct8BlogPosts,
@@ -166,6 +169,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...october22BlogDetails,
   ...oct13BlogDetails,
   ...oct12BlogDetails,
   ...oct8BlogDetails,
@@ -480,6 +484,7 @@ export const researchPosts = [...oct12ResearchBatch,...oct9ResearchBatch,...oct8
   a.slug.localeCompare(b.slug)
 );
 researchPosts.unshift(...oct13ResearchBatch);
+researchPosts.unshift(...october22ResearchBatch);
 const sep14ResearchPostBySlug = new Map(sep14ResearchBatch.map(post=>[post.slug,post]));
 const sep18ResearchPostBySlug = new Map(sep18ResearchBatch.map(post=>[post.slug,post]));
 const sep22ResearchPostBySlug = new Map(sep22ResearchBatch.map(post=>[post.slug,post]));

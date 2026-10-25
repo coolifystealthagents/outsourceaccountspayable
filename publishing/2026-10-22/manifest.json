@@ -1,237 +1,456 @@
 {
-  "date": "2026-10-22",
   "site": "OutsourceAccountsPayable.com",
-  "canonicalDomain": "https://outsourceaccountspayable.com",
+  "domain": "https://outsourceaccountspayable.com",
   "repository": "coolifystealthagents/outsourceaccountspayable",
   "branch": "main",
-  "baseSha": "14cd684e03bfe90b6b3fa66687068d369dae61e7",
-  "blogCount": 12,
-  "researchCount": 5,
-  "blogRegistry": "app/data.ts",
-  "researchRegistry": "app/data.ts",
-  "blogRoute": "app/blog/[slug]/page.tsx",
-  "researchRoute": "app/research/[slug]/page.tsx",
-  "items": [
+  "baseSha": "7bd2eee51313ca3c5827241d84d4c05b4bc7633d",
+  "publicationDate": "2026-10-22",
+  "visibleDate": "October 22, 2026",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/data.ts"
+  ],
+  "articles": [
     {
-      "system": "Blog",
-      "slug": "vendor-statement-reconciliation-evidence",
+      "section": "Blog",
       "title": "Vendor Statement Reconciliation Evidence That Survives Review",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "vendor-statement-reconciliation-evidence",
       "route": "/blog/vendor-statement-reconciliation-evidence",
-      "thumbnail": "/oct22-heroes/vendor-statement-reconciliation-evidence.webp",
-      "thumbnailTitle": "Vendor Statement Reconciliation Evidence That Survives Review",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/vendor-statement-reconciliation-evidence.webp",
       "thumbnailSha256": "c9ac90c8bdf5c5082998a4337652b16b8114f434ef58a44702e9d4599be6c8aa",
-      "contentSha256": "3d72e75bf6a465e6aacbd7f82e4d529d4d449063f934deb7f8906490e780fc03"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 930,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-statement-reconciliation-evidence-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-statement-reconciliation-evidence-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-statement-reconciliation-evidence-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-statement-reconciliation-evidence-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/vendor-statement-reconciliation-evidence-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "duplicate-payment-recovery-queue",
+      "section": "Blog",
       "title": "Run a Duplicate Payment Recovery Queue Without Losing the Trail",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "duplicate-payment-recovery-queue",
       "route": "/blog/duplicate-payment-recovery-queue",
-      "thumbnail": "/oct22-heroes/duplicate-payment-recovery-queue.webp",
-      "thumbnailTitle": "Run a Duplicate Payment Recovery Queue Without Losing the Trail",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/duplicate-payment-recovery-queue.webp",
       "thumbnailSha256": "7fdbb742e2df82c8c6eaff08150800b4f0a7d8b4f00a243d9b1a4313ff1fe448",
-      "contentSha256": "f262051ee37e36f6ffb401d9a68007ee175f73f1cc6ffdbe62f6b80f33de11ae"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 869,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-payment-recovery-queue-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-payment-recovery-queue-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-payment-recovery-queue-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-payment-recovery-queue-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-payment-recovery-queue-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "ap-invoice-hold-reason-standard",
+      "section": "Blog",
       "title": "Standardize AP Invoice Hold Reason Codes",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "ap-invoice-hold-reason-standard",
       "route": "/blog/ap-invoice-hold-reason-standard",
-      "thumbnail": "/oct22-heroes/ap-invoice-hold-reason-standard.webp",
-      "thumbnailTitle": "Standardize AP Invoice Hold Reason Codes",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/ap-invoice-hold-reason-standard.webp",
       "thumbnailSha256": "d6a2a1b8fbce2f07cc1c2895486c1538181ee31c84bd5cef24ef59a85d1d6e92",
-      "contentSha256": "66b12ae00e1e062d9296c174bbff0ea206908f4b62303113e2318456c388604f"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 852,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-invoice-hold-reason-standard-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-invoice-hold-reason-standard-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-invoice-hold-reason-standard-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-invoice-hold-reason-standard-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ap-invoice-hold-reason-standard-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "supplier-w9-refresh-control",
+      "section": "Blog",
       "title": "Control Supplier W-9 Refresh Without Guessing",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "supplier-w9-refresh-control",
       "route": "/blog/supplier-w9-refresh-control",
-      "thumbnail": "/oct22-heroes/supplier-w9-refresh-control.webp",
-      "thumbnailTitle": "Control Supplier W-9 Refresh Without Guessing",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/supplier-w9-refresh-control.webp",
       "thumbnailSha256": "11e7ebdd1ff83b16e2e57d4ea74c51a9cedc3d988344495543f4186be390dcaa",
-      "contentSha256": "bbd543add7c299fe39a4d78e28b26b348afacf056c99b35b98cdf85ecfbe1457"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 889,
+      "sourceCount": 5,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/supplier-w9-refresh-control-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/supplier-w9-refresh-control-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/supplier-w9-refresh-control-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/supplier-w9-refresh-control-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/supplier-w9-refresh-control-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "payment-run-cutoff-exception-log",
+      "section": "Blog",
       "title": "Payment Run Cutoff Exception Log",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "payment-run-cutoff-exception-log",
       "route": "/blog/payment-run-cutoff-exception-log",
-      "thumbnail": "/oct22-heroes/payment-run-cutoff-exception-log.webp",
-      "thumbnailTitle": "Payment Run Cutoff Exception Log",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/payment-run-cutoff-exception-log.webp",
       "thumbnailSha256": "499b14da47961c0ef4fbe67a86563d6804409315385cf7cb0b2bfbc3a962843f",
-      "contentSha256": "c6b9339388722b434431b6c42308ea55fd10d98cf76c9c1af8b50915d10e9956"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 977,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/payment-run-cutoff-exception-log-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/payment-run-cutoff-exception-log-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/payment-run-cutoff-exception-log-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/payment-run-cutoff-exception-log-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/payment-run-cutoff-exception-log-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "ach-return-recovery-ownership",
+      "section": "Blog",
       "title": "Assign ACH Return Recovery Ownership",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "ach-return-recovery-ownership",
       "route": "/blog/ach-return-recovery-ownership",
-      "thumbnail": "/oct22-heroes/ach-return-recovery-ownership.webp",
-      "thumbnailTitle": "Assign ACH Return Recovery Ownership",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/ach-return-recovery-ownership.webp",
       "thumbnailSha256": "29edbfcbd38648354e339fc255de636fcb5e686af43f15f142566c6b05385677",
-      "contentSha256": "544d4fb6fa8b74722f980436304898707be6f90a9ae378c668bb4d2fdf5b7475"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 984,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ach-return-recovery-ownership-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ach-return-recovery-ownership-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ach-return-recovery-ownership-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ach-return-recovery-ownership-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ach-return-recovery-ownership-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "ap-credit-memo-application-review",
+      "section": "Blog",
       "title": "Review AP Credit Memo Application",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "ap-credit-memo-application-review",
       "route": "/blog/ap-credit-memo-application-review",
-      "thumbnail": "/oct22-heroes/ap-credit-memo-application-review.webp",
-      "thumbnailTitle": "Review AP Credit Memo Application",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/ap-credit-memo-application-review.webp",
       "thumbnailSha256": "929fc6b243e3b58fb76a2080b92e34cd90732b5880a25e130a0053ce1c0c3043",
-      "contentSha256": "bed84ca6fa4ba91611d48a284bac3c13c43156d178f3edc0e2523b55c140d82b"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 988,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-credit-memo-application-review-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-credit-memo-application-review-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-credit-memo-application-review-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-credit-memo-application-review-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ap-credit-memo-application-review-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "invoice-approval-delegation-expiry",
+      "section": "Blog",
       "title": "Expire Invoice Approval Delegations on Time",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "invoice-approval-delegation-expiry",
       "route": "/blog/invoice-approval-delegation-expiry",
-      "thumbnail": "/oct22-heroes/invoice-approval-delegation-expiry.webp",
-      "thumbnailTitle": "Expire Invoice Approval Delegations on Time",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/invoice-approval-delegation-expiry.webp",
       "thumbnailSha256": "0098995d91843228d97d3290007c3322dcde4f2778fa06e49cb525ee08ad5bf8",
-      "contentSha256": "94d48b36f0cf9c5a9616a888a6f1951deae07b5e1ad930684a844cdb3c96adb9"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 995,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/invoice-approval-delegation-expiry-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/invoice-approval-delegation-expiry-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/invoice-approval-delegation-expiry-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/invoice-approval-delegation-expiry-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/invoice-approval-delegation-expiry-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "vendor-portal-credential-offboarding",
+      "section": "Blog",
       "title": "Offboard Vendor Portal Credentials",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "vendor-portal-credential-offboarding",
       "route": "/blog/vendor-portal-credential-offboarding",
-      "thumbnail": "/oct22-heroes/vendor-portal-credential-offboarding.webp",
-      "thumbnailTitle": "Offboard Vendor Portal Credentials",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/vendor-portal-credential-offboarding.webp",
       "thumbnailSha256": "409d7cbde3a2cc35afa293e1a6cce0bece46114b09641f47b5bb58c3de6351b8",
-      "contentSha256": "776b3c8ac728ee5c12695d8b5c9c0a32db52da1efc172fe3193cda41ac42699a"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 965,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-portal-credential-offboarding-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-portal-credential-offboarding-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-portal-credential-offboarding-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-portal-credential-offboarding-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/vendor-portal-credential-offboarding-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "ap-accrual-handoff-at-close",
+      "section": "Blog",
       "title": "AP Accrual Handoff at Close",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "ap-accrual-handoff-at-close",
       "route": "/blog/ap-accrual-handoff-at-close",
-      "thumbnail": "/oct22-heroes/ap-accrual-handoff-at-close.webp",
-      "thumbnailTitle": "AP Accrual Handoff at Close",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/ap-accrual-handoff-at-close.webp",
       "thumbnailSha256": "cd247f5183233bdb71fbd296eea507571cfba88bd90f3a3c64fe150676344955",
-      "contentSha256": "3649abf5443cdaa0d553c5f1797bce2a673834d88795662e38dda8a6ca6ef9b2"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 950,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-accrual-handoff-at-close-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-accrual-handoff-at-close-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-accrual-handoff-at-close-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-accrual-handoff-at-close-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ap-accrual-handoff-at-close-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "purchase-order-price-variance-review",
+      "section": "Blog",
       "title": "Review Purchase Order Price Variance",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "purchase-order-price-variance-review",
       "route": "/blog/purchase-order-price-variance-review",
-      "thumbnail": "/oct22-heroes/purchase-order-price-variance-review.webp",
-      "thumbnailTitle": "Review Purchase Order Price Variance",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/purchase-order-price-variance-review.webp",
       "thumbnailSha256": "f3cfc77eb4387cf1e0349109f658fc14217992dae9ff843bb6055fd3caef3424",
-      "contentSha256": "1e9e0305f0dca13d97fdee02f4143d92178489466c2b7d3a1b1d80e9368914c0"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1036,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/purchase-order-price-variance-review-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/purchase-order-price-variance-review-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/purchase-order-price-variance-review-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/purchase-order-price-variance-review-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/purchase-order-price-variance-review-mobile-toc.png"
+      }
     },
     {
-      "system": "Blog",
-      "slug": "ap-audit-sample-preparation",
+      "section": "Blog",
       "title": "Prepare an AP Audit Sample",
-      "date": "2026-10-22",
-      "source": "app/blog-oct22-batch.ts",
+      "slug": "ap-audit-sample-preparation",
       "route": "/blog/ap-audit-sample-preparation",
-      "thumbnail": "/oct22-heroes/ap-audit-sample-preparation.webp",
-      "thumbnailTitle": "Prepare an AP Audit Sample",
-      "sha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "sourcePath": "app/blog-oct22-batch.ts",
+      "sourceSha256": "2184b847191c499d7783dc96d1f2247fb0d7f722441518be02bbd2394d1237c5",
+      "thumbnailPath": "public/oct22-heroes/ap-audit-sample-preparation.webp",
       "thumbnailSha256": "bac7594edc9d1fe44ad57a54630258f2b49bf7afa81eeaf065bf19df53fa65ce",
-      "contentSha256": "12a0982e17e0a6cf0a649b74bb8c07bcb3d20a27fbea68104da613a1b26d59ca"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1004,
+      "sourceCount": 4,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-audit-sample-preparation-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-audit-sample-preparation-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-audit-sample-preparation-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-audit-sample-preparation-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ap-audit-sample-preparation-mobile-toc.png"
+      }
     },
     {
-      "system": "Research",
-      "slug": "duplicate-invoice-detection-method",
+      "section": "Research",
       "title": "Duplicate Invoice Detection: A Reviewable Method",
-      "date": "2026-10-22",
-      "source": "app/research-oct22-batch.ts",
+      "slug": "duplicate-invoice-detection-method",
       "route": "/research/duplicate-invoice-detection-method",
-      "thumbnail": "/oct22-heroes/duplicate-invoice-detection-method.webp",
-      "thumbnailTitle": "Duplicate Invoice Detection: A Reviewable Method",
-      "sha256": "3d35d6632b12bfad24d1526af43dae9a3a432cac37d5b8926793e5361e62a278",
+      "sourcePath": "app/research-oct22-batch.ts",
+      "sourceSha256": "dd808133cf47f2a56a9da65c9212db4e5a12806adeef48a247d91cf44de1b5c8",
+      "thumbnailPath": "public/oct22-heroes/duplicate-invoice-detection-method.webp",
       "thumbnailSha256": "7610cd6a18f34b87846b76e9eacb8b883cdcacdbecb4ce31c43fca0fd6ef3f06",
-      "contentSha256": "776d49ce6f7d795ad45d2dbbc7f766d0b13af152869fbf748768ff3707dee4cb"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1355,
+      "sourceCount": 10,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-invoice-detection-method-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-invoice-detection-method-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-invoice-detection-method-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-invoice-detection-method-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/duplicate-invoice-detection-method-mobile-toc.png"
+      }
     },
     {
-      "system": "Research",
-      "slug": "invoice-hold-aging-observation-protocol",
+      "section": "Research",
       "title": "Invoice Hold Aging: Observation Protocol",
-      "date": "2026-10-22",
-      "source": "app/research-oct22-batch.ts",
+      "slug": "invoice-hold-aging-observation-protocol",
       "route": "/research/invoice-hold-aging-observation-protocol",
-      "thumbnail": "/oct22-heroes/invoice-hold-aging-observation-protocol.webp",
-      "thumbnailTitle": "Invoice Hold Aging: Observation Protocol",
-      "sha256": "3d35d6632b12bfad24d1526af43dae9a3a432cac37d5b8926793e5361e62a278",
+      "sourcePath": "app/research-oct22-batch.ts",
+      "sourceSha256": "dd808133cf47f2a56a9da65c9212db4e5a12806adeef48a247d91cf44de1b5c8",
+      "thumbnailPath": "public/oct22-heroes/invoice-hold-aging-observation-protocol.webp",
       "thumbnailSha256": "56ddcc9dca864820863ca9bb53e95afe1e0605a246a16a67cfbf9c9f546b45ac",
-      "contentSha256": "ca8aba6e07730ae709b0762a4c1ac12b2323c8f69e4acf61ef4957f4b66b6391"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1348,
+      "sourceCount": 10,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/invoice-hold-aging-observation-protocol-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/invoice-hold-aging-observation-protocol-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/invoice-hold-aging-observation-protocol-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/invoice-hold-aging-observation-protocol-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/invoice-hold-aging-observation-protocol-mobile-toc.png"
+      }
     },
     {
-      "system": "Research",
-      "slug": "payment-exception-ownership-audit",
+      "section": "Research",
       "title": "Payment Exception Ownership Audit",
-      "date": "2026-10-22",
-      "source": "app/research-oct22-batch.ts",
+      "slug": "payment-exception-ownership-audit",
       "route": "/research/payment-exception-ownership-audit",
-      "thumbnail": "/oct22-heroes/payment-exception-ownership-audit.webp",
-      "thumbnailTitle": "Payment Exception Ownership Audit",
-      "sha256": "3d35d6632b12bfad24d1526af43dae9a3a432cac37d5b8926793e5361e62a278",
+      "sourcePath": "app/research-oct22-batch.ts",
+      "sourceSha256": "dd808133cf47f2a56a9da65c9212db4e5a12806adeef48a247d91cf44de1b5c8",
+      "thumbnailPath": "public/oct22-heroes/payment-exception-ownership-audit.webp",
       "thumbnailSha256": "7aeea1c093335245effd7ed2775b07129b8e4590cdb4c0fbc2dfd96104d026f8",
-      "contentSha256": "7ab9270949d4871d1fcce1e642d6d71a721d6adeed976b0f7978e479ef949a8a"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1355,
+      "sourceCount": 10,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/payment-exception-ownership-audit-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/payment-exception-ownership-audit-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/payment-exception-ownership-audit-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/payment-exception-ownership-audit-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/payment-exception-ownership-audit-mobile-toc.png"
+      }
     },
     {
-      "system": "Research",
-      "slug": "vendor-master-change-verification-study",
+      "section": "Research",
       "title": "Vendor Master Change Verification Study",
-      "date": "2026-10-22",
-      "source": "app/research-oct22-batch.ts",
+      "slug": "vendor-master-change-verification-study",
       "route": "/research/vendor-master-change-verification-study",
-      "thumbnail": "/oct22-heroes/vendor-master-change-verification-study.webp",
-      "thumbnailTitle": "Vendor Master Change Verification Study",
-      "sha256": "3d35d6632b12bfad24d1526af43dae9a3a432cac37d5b8926793e5361e62a278",
+      "sourcePath": "app/research-oct22-batch.ts",
+      "sourceSha256": "dd808133cf47f2a56a9da65c9212db4e5a12806adeef48a247d91cf44de1b5c8",
+      "thumbnailPath": "public/oct22-heroes/vendor-master-change-verification-study.webp",
       "thumbnailSha256": "3d639a212845b5d825ed8dbc1608b907393a74e4e98f6830dab9f7f66a97abaf",
-      "contentSha256": "1d8b6bdf176b875ee20011bfec97735c8677b2db8aa5e4197c0bf53cf6cef087"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1350,
+      "sourceCount": 10,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-master-change-verification-study-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/vendor-master-change-verification-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-master-change-verification-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/vendor-master-change-verification-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/vendor-master-change-verification-study-mobile-toc.png"
+      }
     },
     {
-      "system": "Research",
-      "slug": "ap-close-reconciliation-timeline",
+      "section": "Research",
       "title": "AP Close Reconciliation Timeline",
-      "date": "2026-10-22",
-      "source": "app/research-oct22-batch.ts",
+      "slug": "ap-close-reconciliation-timeline",
       "route": "/research/ap-close-reconciliation-timeline",
-      "thumbnail": "/oct22-heroes/ap-close-reconciliation-timeline.webp",
-      "thumbnailTitle": "AP Close Reconciliation Timeline",
-      "sha256": "3d35d6632b12bfad24d1526af43dae9a3a432cac37d5b8926793e5361e62a278",
+      "sourcePath": "app/research-oct22-batch.ts",
+      "sourceSha256": "dd808133cf47f2a56a9da65c9212db4e5a12806adeef48a247d91cf44de1b5c8",
+      "thumbnailPath": "public/oct22-heroes/ap-close-reconciliation-timeline.webp",
       "thumbnailSha256": "326e13d892ea6d8b171803ab2afca5f8c6b0987f5353368c84cf50e24f40353a",
-      "contentSha256": "7e09c2b9a72dd79394f6f505d5d7a52ad32f6d667e4fa30c7682d86630ab0a6d"
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "wordCount": 1361,
+      "sourceCount": 10,
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-close-reconciliation-timeline-desktop-top.png",
+        "mobile-top": "qa/coverage-outsourceaccountspayable/render/shots/ap-close-reconciliation-timeline-mobile-top.png",
+        "desktop-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-close-reconciliation-timeline-desktop-mid.png",
+        "mobile-mid": "qa/coverage-outsourceaccountspayable/render/shots/ap-close-reconciliation-timeline-mobile-mid.png",
+        "mobile-toc": "qa/coverage-outsourceaccountspayable/render/shots/ap-close-reconciliation-timeline-mobile-toc.png"
+      }
     }
-  ]
+  ],
+  "errors": [],
+  "generatedAt": "2026-10-25",
+  "coverageJob": "outsourceaccountspayable|2026-10-22|render_evidence",
+  "checks": {
+    "contentCounts": "12 blog + 5 research",
+    "publicationDate": "2026-10-22",
+    "thumbnailSize": "1200x630",
+    "wordBands": "blog 850-1250, research 1300-2000 pass",
+    "uniqueSlugs": true,
+    "uniqueTitles": true,
+    "sourceHashes": "sha256 per source registry",
+    "thumbnailHashes": "sha256 per article",
+    "researchSources": ">=10 authoritative HTTPS sources per research article",
+    "build": "pass (npm run build through safe_build.sh)",
+    "renderedAudit": "17/17 articles pass desktop+mobile",
+    "visibleDate": "October 22, 2026 observed",
+    "timeDatetime": "2026-10-22 observed",
+    "desktopStickyToc": "pass",
+    "mobileStickyToc": "pass",
+    "horizontalOverflow": "0",
+    "missingAnchors": "none",
+    "brokenImages": "none"
+  },
+  "evidence": {
+    "helperArtifact": "helper-2/qa/coverage-outsourceaccountspayable/render/qa.json",
+    "screenshots": "helper-2/qa/coverage-outsourceaccountspayable/render/shots",
+    "note": "Evidence generated from local production server at content commit 7bd2eee; this manifest-only commit follows."
+  }
 }

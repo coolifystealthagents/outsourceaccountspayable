@@ -65,6 +65,10 @@ export const oct22ResearchBatch:ResearchPost[]=[
       {
         "label": "SBA: Manage your business",
         "href": "https://www.sba.gov/business-guide/manage-your-business"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "href": "https://www.gao.gov/products/gao-20-283g"
       }
     ],
     "internalLinks": [
@@ -153,6 +157,10 @@ export const oct22ResearchBatch:ResearchPost[]=[
       {
         "label": "Nacha Operating Rules",
         "href": "https://www.nacha.org/rules"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "href": "https://www.gao.gov/products/gao-20-283g"
       }
     ],
     "internalLinks": [
@@ -241,6 +249,10 @@ export const oct22ResearchBatch:ResearchPost[]=[
       {
         "label": "SBA: Manage your business",
         "href": "https://www.sba.gov/business-guide/manage-your-business"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "href": "https://www.gao.gov/products/gao-20-283g"
       }
     ],
     "internalLinks": [
@@ -329,6 +341,10 @@ export const oct22ResearchBatch:ResearchPost[]=[
       {
         "label": "SBA: Stay legally compliant",
         "href": "https://www.sba.gov/business-guide/manage-your-business/stay-legally-compliant"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "href": "https://www.gao.gov/products/gao-20-283g"
       }
     ],
     "internalLinks": [
@@ -417,6 +433,10 @@ export const oct22ResearchBatch:ResearchPost[]=[
       {
         "label": "ILO: Decent work and the 2030 agenda",
         "href": "https://www.ilo.org/topics-and-sectors/decent-work-and-2030-agenda-sustainable-development"
+      },
+      {
+        "label": "GAO Assessing Data Reliability",
+        "href": "https://www.gao.gov/products/gao-20-283g"
       }
     ],
     "internalLinks": [

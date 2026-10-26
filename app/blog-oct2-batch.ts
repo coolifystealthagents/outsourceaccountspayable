@@ -5,6 +5,7 @@ export type Draft = {
   title: string;
   excerpt: string;
   minutes: number;
+  published?: string;
   detail: {
     thumbnail: string;
     shortAnswer: string;

@@ -1,6 +1,6 @@
 # Service-led topical authority ledger
 
-Updated: 2026-10-27
+Updated: 2026-10-28
 
 This planning ledger maps existing Philippines-based accounts payable services to existing research. It is an editorial control list, not a claim that the listed research has been linked to a service page or verified in public. Each future handoff needs a separate route, schema, sitemap, build, deployment, and public-review check.
 
@@ -12,7 +12,7 @@ This planning ledger maps existing Philippines-based accounts payable services t
 | Vendor Statement Reconciliation | `/research/ap-vendor-statement-cutoff-evidence-research` | Which dates and open-item records make a vendor statement reviewable? | Delivered locally and non-duplicable: the source has one route-local handoff to `/services/vendor-statement-reconciliation`. |
 | Payment Run Preparation | `/research/ap-payment-run-exclusion-evidence-research` | What evidence should explain why an approved invoice stays out of a payment run? | Delivered locally: one route-local handoff to `/services/payment-run-preparation` prepares exclusion records and routes questions while authorized employees retain bank-detail verification, exception approval, and payment release. Do not add another CTA. |
 | Payment Run Preparation | `/research/ap-ach-return-code-handoff-research` | What evidence should a team prepare when a supplier payment returns? | Delivered locally: one route-local handoff to `/services/payment-run-preparation` organizes the return code, approved payment record, supplier follow-up, and bank response for owner review. Treasury, banking, and vendor-master owners retain bank-detail changes, replacement payments, exceptions, and releases. Do not add another CTA. |
-| Vendor Onboarding Administration | `/research/ap-vendor-contact-source-research` | Which vendor contact record should support a follow-up or escalation? | Review a source-page handoff to `/services/vendor-onboarding-administration`. |
+| Vendor Onboarding Administration | `/research/ap-vendor-contact-source-research` | Which vendor contact record should support a follow-up or escalation? | Delivered locally and non-duplicable: one route-local handoff to `/services/vendor-onboarding-administration` preserves the approved contact source and routes changed channels for owner review. Rendered source: `d98b10fd387edc83309d31d44b968a5e2d9a7958`. Preserve rendered-source commit `d98b10fd387edc83309d31d44b968a5e2d9a7958`. The approved Batched Coolify Deployment routine owns deployment and public verification; do not add another CTA. |
 | Expense Report Review | `/research/ap-invoice-receipt-date-evidence-research` | Which received-date evidence helps a reviewer separate timing questions from approval? | Review a source-page handoff to `/services/expense-report-review`. |
 | AP Inbox Management | `/research/ap-payment-status-inquiry-research` | What can a support team say about an invoice without promising a payment result? | Existing research batches include this service route; check the exact source before considering another placement. |
 | Duplicate Invoice Review | `/research/ap-invoice-number-normalization-research` | How can an assistant search for possible duplicates without changing the supplier's record? | Review a source-page handoff to `/services/duplicate-invoice-review`. |

@@ -1,0 +1,274 @@
+{
+  "site": "OutsourceAccountsPayable.com",
+  "domain": "https://outsourceaccountspayable.com",
+  "repository": "coolifystealthagents/outsourceaccountspayable",
+  "branch": "main",
+  "publicationDate": "2026-11-02",
+  "visibleDate": "November 2, 2026",
+  "counts": {
+    "blog": 8,
+    "research": 7,
+    "total": 15,
+    "thumbnails": 15
+  },
+  "registryPaths": [
+    "app/data.ts"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Write an AP Shared-Service SLA That Survives Month-End",
+      "slug": "ap-shared-service-center-sla-evidence",
+      "route": "/blog/ap-shared-service-center-sla-evidence",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-shared-service-center-sla-evidence.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 759,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "52684df41712b80e2fcd3869d94d85a4eba6b9a047119834eddaf24c63ef5387",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile an Invoice Capture Batch Before Posting",
+      "slug": "ap-invoice-capture-batch-reconciliation",
+      "route": "/blog/ap-invoice-capture-batch-reconciliation",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-invoice-capture-batch-reconciliation.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 715,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "f4babbbe1f94f7bb937a09609d61b723cff7c00438d6e824ca803772b2c3db18",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Apply a Vendor Credit Memo Without Overstating the Payable",
+      "slug": "ap-vendor-credit-memo-application",
+      "route": "/blog/ap-vendor-credit-memo-application",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-vendor-credit-memo-application.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 717,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "a453c6ed952223b96c0ccdf097032be72217dc9099918a0fdc3c4650a7f0ddb4",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Handle a Failed Remittance Advice Delivery",
+      "slug": "ap-payment-remittance-advice-failure",
+      "route": "/blog/ap-payment-remittance-advice-failure",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-payment-remittance-advice-failure.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 735,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "2d3d130b37542f513accc4367eb606834380994a19b737e774629a915651d0df",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Reconcile Purchase Card Receipts to the AP Ledger",
+      "slug": "ap-purchase-card-receipt-reconciliation",
+      "route": "/blog/ap-purchase-card-receipt-reconciliation",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-purchase-card-receipt-reconciliation.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 697,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "3cd68eeb907199f4b0067ad5f2becab11f4b1db09142309fd391429eafa3e4ee",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Audit Delegated Approvals That Outlive Their Authority",
+      "slug": "ap-invoice-approval-delegation-expiry",
+      "route": "/blog/ap-invoice-approval-delegation-expiry",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-invoice-approval-delegation-expiry.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 725,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "5c97ec58b48bf55c1710ee9b09cb1f3db2c31fec0686cd3eb046ef867986999c",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Control Accrual Reversals at AP Month-End Close",
+      "slug": "ap-close-cutoff-accrual-reversal",
+      "route": "/blog/ap-close-cutoff-accrual-reversal",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-close-cutoff-accrual-reversal.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 730,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "0bcd0bca12f9b4147ccfceec82c05ca7e682be7fdd11512bcb6b76e547a0e210",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Blog",
+      "title": "Merge Duplicate Vendor Records Without Losing Payment History",
+      "slug": "ap-duplicate-vendor-master-merge",
+      "route": "/blog/ap-duplicate-vendor-master-merge",
+      "sourcePath": "app/blog-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-duplicate-vendor-master-merge.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 689,
+      "sourceCount": 3,
+      "sourceSha256": "cfa221f63c8bfa50b296da8f259d57091689b912b70912ad01e09b8e40cae2e1",
+      "thumbnailSha256": "36d5b07a715a319077bbb3b74972363f8aa81769ba469aab1a21cc5869029b3b",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "Touchless Invoice Capture Rate: Evidence and Measurement Limits",
+      "slug": "ap-touchless-invoice-capture-rate-research",
+      "route": "/research/ap-touchless-invoice-capture-rate-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-touchless-invoice-capture-rate-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 847,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "18d60094cc53413614df713e0d91e33c88e58ae5d2bf637e84aba312331a9da8",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "The Tail of AP Approval Turnaround: A Case-Level Study",
+      "slug": "ap-approval-turnaround-tail-research",
+      "route": "/research/ap-approval-turnaround-tail-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-approval-turnaround-tail-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 841,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "f8e2579e2b74e8b1c100a4ac4b4442534df7a88bf41f2cf00eabf2a05b5e9ffd",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "Paid on Time Versus On-Time Payment: A Measurement Study",
+      "slug": "ap-on-time-payment-measurement-research",
+      "route": "/research/ap-on-time-payment-measurement-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-on-time-payment-measurement-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 834,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "b6343be8d8b198039cc3b932847f444d568035f293637b4fcf325b9ccf6d775b",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "Vendor Master Change Latency and Control Evidence",
+      "slug": "ap-vendor-master-change-latency-research",
+      "route": "/research/ap-vendor-master-change-latency-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-vendor-master-change-latency-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 840,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "347b3c5b762c28b6e4230eb2606219689468cfe413aeaeda6364e7dfcdfa9fbd",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "Unapplied Supplier Credit Balances: A Reconciliation Study",
+      "slug": "ap-unapplied-credit-balance-research",
+      "route": "/research/ap-unapplied-credit-balance-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-unapplied-credit-balance-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 830,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "007350e3ee43fad281557ef9eaca368b1e6754392fb4fdfe194fc54e678dae74",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "AP Shared Mailbox Response Latency and Ownership",
+      "slug": "ap-shared-mailbox-response-latency-research",
+      "route": "/research/ap-shared-mailbox-response-latency-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-shared-mailbox-response-latency-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 835,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "cf9dce82819975320dc52f1d04330c2fae2cb28489688eaa7c9bdb3fe05e0e2a",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "section": "Research",
+      "title": "Accrual Reversal Errors at AP Close: A Bounded Study",
+      "slug": "ap-accrual-reversal-error-research",
+      "route": "/research/ap-accrual-reversal-error-research",
+      "sourcePath": "app/research-nov2-batch.ts",
+      "thumbnailPath": "public/nov2-heroes/ap-accrual-reversal-error-research.webp",
+      "publicationDate": "2026-11-02",
+      "wordCount": 829,
+      "sourceCount": 4,
+      "sourceSha256": "289150892541d234cc361b7d9a7dced4d128ebc4f097bf0c7c5f170a9368f081",
+      "thumbnailSha256": "3e2e3f636b41f2286c1e6c5f84baa7ddbe23931ef0578b7f53cbb620fbf2d984",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ export type Draft = {
     published: string | null;
     modified: string | null;
     mainKeyword: string;
-    sections: {title:string; paragraphs:string[]}[];
+    sections: {title:string; heading?:string; paragraphs:string[]}[];
     checklistTitle: string;
     checklist: string[];
     bodyLinks: {href:string; label:string}[];

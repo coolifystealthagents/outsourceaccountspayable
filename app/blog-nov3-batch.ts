@@ -80,11 +80,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -169,11 +171,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -258,11 +262,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -347,11 +353,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -436,11 +444,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -525,11 +535,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -614,11 +626,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]
@@ -703,11 +717,13 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "sources": [
         {
-          "label": "GAO Green Book",
+          "name": "GAO Green Book",
+          "note": "Frames internal control guidance.",
           "url": "https://www.gao.gov/products/gao-14-704g"
         },
         {
-          "label": "NIST Cybersecurity Framework",
+          "name": "NIST Cybersecurity Framework",
+          "note": "Frames access and audit controls.",
           "url": "https://www.nist.gov/cyberframework"
         }
       ]

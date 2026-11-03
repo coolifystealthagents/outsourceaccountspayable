@@ -70,12 +70,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on invoice intake?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on invoice intake?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -159,12 +159,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on vendor bank changes?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on vendor bank changes?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -248,12 +248,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on three-way match exceptions?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on three-way match exceptions?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -337,12 +337,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on approval escalation?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on approval escalation?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -426,12 +426,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on payment run cutoff?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on payment run cutoff?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -515,12 +515,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on AP aging review?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on AP aging review?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -604,12 +604,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on vendor statement reconciliation?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on vendor statement reconciliation?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [
@@ -693,12 +693,12 @@ export const nov3BlogDrafts:Draft[]=[
       ],
       "faqs": [
         {
-          "q": "What should the team check first on month-end accruals?",
-          "a": "Start with the source record and the named owner. Record the evidence before the case moves forward."
+          "question": "What should the team check first on month-end accruals?",
+          "answer": "Start with the source record and the named owner. Record the evidence before the case moves forward."
         },
         {
-          "q": "Who owns the decision?",
-          "a": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
+          "question": "Who owns the decision?",
+          "answer": "The finance owner keeps decisions that change payment, access, policy, or a vendor commitment."
         }
       ],
       "sources": [

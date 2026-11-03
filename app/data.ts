@@ -63,12 +63,14 @@ import {oct12BlogPosts,oct12BlogDetails} from './blog-oct12-batch';
 import {oct12ResearchBatch} from './research-oct12-batch';
 import {oct13BlogPosts,oct13BlogDetails} from './blog-oct13-batch';
 import {nov2BlogPosts,nov2BlogDetails} from './blog-nov2-batch';
+import {nov3BlogDrafts} from './blog-nov3-batch';
 import {oct28BlogPosts,oct28BlogDetails} from './blog-oct28-batch';
 import {oct27BlogPosts,oct27BlogDetails} from './blog-oct27-batch';
 import {oct26BlogPosts,oct26BlogDetails} from './blog-oct26-batch';
 import {oct25BlogPosts,oct25BlogDetails} from './blog-oct25-batch';
 import {oct22BlogPosts,oct22BlogDetails} from './blog-oct22-batch';
 import {nov2ResearchBatch} from './research-nov2-batch';
+import {nov3ResearchBatch} from './research-nov3-batch';
 import {oct28ResearchBatch} from './research-oct28-batch';
 import {oct27ResearchBatch} from './research-oct27-batch';
 import {oct26ResearchBatch} from './research-oct26-batch';
@@ -110,6 +112,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...nov3BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov2BlogPosts,
   ...oct28BlogPosts,
   ...oct27BlogPosts,
@@ -184,6 +187,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...Object.fromEntries(nov3BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...nov2BlogDetails,
   ...oct28BlogDetails,
   ...oct27BlogDetails,
@@ -505,7 +509,7 @@ export const researchPosts = [...oct12ResearchBatch,...oct9ResearchBatch,...oct8
 );
 researchPosts.unshift(...oct13ResearchBatch);
 researchPosts.unshift(...oct27ResearchBatch);
-researchPosts.unshift(...nov2ResearchBatch);
+researchPosts.unshift(...nov3ResearchBatch,...nov2ResearchBatch);
 researchPosts.unshift(...oct28ResearchBatch);
 researchPosts.unshift(...oct26ResearchBatch);
 researchPosts.unshift(...oct25ResearchBatch);

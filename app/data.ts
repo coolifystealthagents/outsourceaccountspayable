@@ -64,6 +64,7 @@ import {oct12ResearchBatch} from './research-oct12-batch';
 import {oct13BlogPosts,oct13BlogDetails} from './blog-oct13-batch';
 import {nov2BlogPosts,nov2BlogDetails} from './blog-nov2-batch';
 import {nov3BlogDrafts} from './blog-nov3-batch';
+import {nov4BlogDrafts} from './blog-nov4-batch';
 import {oct28BlogPosts,oct28BlogDetails} from './blog-oct28-batch';
 import {oct27BlogPosts,oct27BlogDetails} from './blog-oct27-batch';
 import {oct26BlogPosts,oct26BlogDetails} from './blog-oct26-batch';
@@ -71,6 +72,7 @@ import {oct25BlogPosts,oct25BlogDetails} from './blog-oct25-batch';
 import {oct22BlogPosts,oct22BlogDetails} from './blog-oct22-batch';
 import {nov2ResearchBatch} from './research-nov2-batch';
 import {nov3ResearchBatch} from './research-nov3-batch';
+import {nov4ResearchBatch} from './research-nov4-batch';
 import {oct28ResearchBatch} from './research-oct28-batch';
 import {oct27ResearchBatch} from './research-oct27-batch';
 import {oct26ResearchBatch} from './research-oct26-batch';
@@ -112,6 +114,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...nov4BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov3BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov2BlogPosts,
   ...oct28BlogPosts,
@@ -187,6 +190,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...Object.fromEntries(nov4BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov3BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...nov2BlogDetails,
   ...oct28BlogDetails,
@@ -475,7 +479,7 @@ const oct9ResearchSlugs = new Set(oct9ResearchBatch.map(post=>post.slug));
 const oct12ResearchSlugs = new Set(oct12ResearchBatch.map(post=>post.slug));
 const sep11ResearchSlugs = new Set(sep11ResearchBatch.map(post=>post.slug));
 const sep10ResearchSlugs = new Set(sep10ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...oct12ResearchBatch,...oct9ResearchBatch,...oct8ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+export const researchPosts = [...nov4ResearchBatch,...oct12ResearchBatch,...oct9ResearchBatch,...oct8ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   Number(oct12ResearchSlugs.has(b.slug)) - Number(oct12ResearchSlugs.has(a.slug)) ||
   Number(oct8ResearchSlugs.has(b.slug)) - Number(oct8ResearchSlugs.has(a.slug)) ||
   Number(oct9ResearchSlugs.has(b.slug)) - Number(oct9ResearchSlugs.has(a.slug)) ||

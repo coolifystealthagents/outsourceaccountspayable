@@ -67,23 +67,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -166,23 +166,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -265,23 +265,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -364,23 +364,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -463,23 +463,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -562,23 +562,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [
@@ -661,23 +661,23 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     "citations": [
       {
         "label": "GAO Green Book",
-        "url": "https://www.gao.gov/products/gao-14-704g"
+        "href": "https://www.gao.gov/products/gao-14-704g"
       },
       {
         "label": "NIST Cybersecurity Framework",
-        "url": "https://www.nist.gov/cyberframework"
+        "href": "https://www.nist.gov/cyberframework"
       },
       {
         "label": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "href": "https://www.nist.gov/privacy-framework"
       },
       {
         "label": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "href": "https://www.dol.gov/"
       },
       {
         "label": "U.S. Small Business Administration",
-        "url": "https://www.sba.gov/"
+        "href": "https://www.sba.gov/"
       }
     ],
     "internalLinks": [

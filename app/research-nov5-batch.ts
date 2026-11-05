@@ -80,10 +80,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this vendor credit note matching workflow with bounded roles and evidence.",
@@ -169,10 +166,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this purchase order coverage workflow with bounded roles and evidence.",
@@ -258,10 +252,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this three-way match exception aging workflow with bounded roles and evidence.",
@@ -347,10 +338,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this statement credit posting time workflow with bounded roles and evidence.",
@@ -436,10 +424,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this duplicate payment verification time workflow with bounded roles and evidence.",
@@ -525,10 +510,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this approval matrix currency workflow with bounded roles and evidence.",
@@ -614,10 +596,7 @@ const nov5ResearchRecords:Nov5ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
       "heading": "Related service",
       "body": "Plan this vendor onboarding evidence workflow with bounded roles and evidence.",

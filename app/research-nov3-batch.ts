@@ -689,4 +689,4 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
     }
   }
 ];
-export const nov3ResearchBatch:ResearchPost[]=nov3ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`).join("\n\n")}));
+export const nov3ResearchBatch:ResearchPost[]=nov3ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`)}));

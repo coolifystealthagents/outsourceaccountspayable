@@ -1,7 +1,7 @@
 import type {ResearchPost} from './research-batch';
-export const nov5ResearchPublicationDate='2026-11-04';
-type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;paragraphs:string[]}[]};
-const nov5ResearchRecords:Nov4ResearchRecord[]=[
+export const nov5ResearchPublicationDate='2026-11-05';
+type Nov5ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;paragraphs:string[]}[]};
+const nov5ResearchRecords:Nov5ResearchRecord[]=[
   {
     "slug": "how-often-do-vendor-credit-notes-match-the-open-invoice",
     "title": "How often do vendor credit notes match the open invoice?",
@@ -85,7 +85,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this vendor credit note matching workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor credit note matching workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -172,7 +174,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this purchase order coverage workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this purchase order coverage workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -259,7 +263,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this three-way match exception aging workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this three-way match exception aging workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -346,7 +352,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this statement credit posting time workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this statement credit posting time workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -433,7 +441,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this duplicate payment verification time workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this duplicate payment verification time workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -520,7 +530,9 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this approval matrix currency workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this approval matrix currency workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -607,9 +619,11 @@ const nov5ResearchRecords:Nov4ResearchRecord[]=[
       "href": "/contact-us"
     },
     "serviceHandoff": {
-      "text": "Plan this vendor onboarding evidence workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor onboarding evidence workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   }
 ];
-export const nov5ResearchBatch:ResearchPost[]=nov5ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`).join("\n\n")}));
+export const nov5ResearchBatch:ResearchPost[]=nov5ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`)}));

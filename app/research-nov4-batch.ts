@@ -80,12 +80,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this vendor statement reconciliation workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor statement reconciliation workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -167,12 +166,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this invoice approval exception aging workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this invoice approval exception aging workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -254,12 +252,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this payment run checklist reproducibility workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this payment run checklist reproducibility workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -341,12 +338,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this AP inbox missing purchase order workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this AP inbox missing purchase order workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -428,12 +424,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this vendor tax document currency workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor tax document currency workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -515,12 +510,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this month-end AP close completeness workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this month-end AP close completeness workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -602,12 +596,11 @@ const nov4ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this vendor bank change verification time workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor bank change verification time workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   }

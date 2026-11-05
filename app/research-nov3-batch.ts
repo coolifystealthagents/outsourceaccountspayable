@@ -92,12 +92,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this duplicate invoice rate workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this duplicate invoice rate workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -191,12 +190,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this vendor master change cycle workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor master change cycle workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -290,12 +288,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this three-way match exception age workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this three-way match exception age workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -389,12 +386,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this approval coverage workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this approval coverage workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -488,12 +484,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this payment run exclusions workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this payment run exclusions workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -587,12 +582,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this AP aging traceability workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this AP aging traceability workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   },
@@ -686,12 +680,11 @@ const nov3ResearchRecords:Nov3ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
+    "cta": "Review the AP workflow",
     "serviceHandoff": {
-      "text": "Plan this vendor statement variance workflow with bounded roles and evidence.",
+      "heading": "Related service",
+      "body": "Plan this vendor statement variance workflow with bounded roles and evidence.",
+      "label": "Review the AP workflow",
       "href": "/services"
     }
   }

@@ -1,6 +1,7 @@
 import type {ResearchPost} from './research-batch';
 export const nov6ResearchPublicationDate='2026-11-06';
-type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;paragraphs:string[
+type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;paragraphs:string[]}[]};
+const nov6ResearchRecords:Nov4ResearchRecord[]=[
   {
     "slug": "how-often-do-freight-invoices-match-the-shipment-record",
     "title": "How often do freight invoices match the shipment record?",
@@ -17,49 +18,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the freight invoice matching file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. Every closed item carries a destination reference and a next check date."
+          "This measurement note covers the freight invoice matching file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one freight invoice, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. The exception log separates a source gap from a disputed amount."
+          "The unit is one freight invoice, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for freight invoice matching before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The exception log separates a source gap from a disputed amount."
+          "Agree the completeness test for freight invoice matching before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. The exception log separates a source gap from a disputed amount."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A freight invoice posts while the shipment record and the rate confirmation disagree. A queue export is the starting point, not a list assembled after the result is known. A vendor change requires a second reviewer and a dated call-back."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A freight invoice posts while the shipment record and the rate confirmation disagree. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the freight invoice matching report. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the freight invoice matching report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. A reviewer can rebuild the decision from the ledger, the source document, and the approval note."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. A vendor change requires a second reviewer and a dated call-back."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -79,11 +80,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this freight invoice matching workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this freight invoice matching workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -103,49 +105,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the statement credit coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. Duplicate bank details are checked before the batch leaves the queue."
+          "This measurement note covers the statement credit coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one vendor statement, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. Every closed item carries a destination reference and a next check date."
+          "The unit is one vendor statement, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for statement credit coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The reconciliation note links the statement line to the ledger entry."
+          "Agree the completeness test for statement credit coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. A missing document is marked missing rather than reconstructed from memory."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A statement shows a credit that the ledger has not applied. A queue export is the starting point, not a list assembled after the result is known. Duplicate bank details are checked before the batch leaves the queue."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A statement shows a credit that the ledger has not applied. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the statement credit coverage report. A missing document is marked missing rather than reconstructed from memory."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the statement credit coverage report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. The exception log separates a source gap from a disputed amount."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. A reviewer can rebuild the decision from the ledger, the source document, and the approval note."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -165,11 +167,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this statement credit coverage workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this statement credit coverage workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -189,49 +192,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the remittance advice coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. Access stays limited to the specialist handling that vendor record."
+          "This measurement note covers the remittance advice coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one payment batch, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. A missing document is marked missing rather than reconstructed from memory."
+          "The unit is one payment batch, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for remittance advice coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Agree the completeness test for remittance advice coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. Access stays limited to the specialist handling that vendor record."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A batch releases while one or more payments lack remittance advice. A queue export is the starting point, not a list assembled after the result is known. The reconciliation note links the statement line to the ledger entry."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A batch releases while one or more payments lack remittance advice. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the remittance advice coverage report. Access stays limited to the specialist handling that vendor record."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the remittance advice coverage report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. Access stays limited to the specialist handling that vendor record."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -251,11 +254,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this remittance advice coverage workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this remittance advice coverage workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -275,49 +279,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the purchase card dispute time file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. The exception log separates a source gap from a disputed amount."
+          "This measurement note covers the purchase card dispute time file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one purchase card dispute, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "The unit is one purchase card dispute, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for purchase card dispute time before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The release decision records who approved the payment and when."
+          "Agree the completeness test for purchase card dispute time before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. Access stays limited to the specialist handling that vendor record."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A dispute waits while the card statement and the merchant response are unclear. A queue export is the starting point, not a list assembled after the result is known. The release decision records who approved the payment and when."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A dispute waits while the card statement and the merchant response are unclear. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the purchase card dispute time report. Duplicate bank details are checked before the batch leaves the queue."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the purchase card dispute time report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. The reconciliation note links the statement line to the ledger entry."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The exception log separates a source gap from a disputed amount."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -337,11 +341,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this purchase card dispute time workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this purchase card dispute time workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -361,49 +366,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the vendor master change verification file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. The exception log separates a source gap from a disputed amount."
+          "This measurement note covers the vendor master change verification file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one vendor master change, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. Access stays limited to the specialist handling that vendor record."
+          "The unit is one vendor master change, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for vendor master change verification before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The reconciliation note links the statement line to the ledger entry."
+          "Agree the completeness test for vendor master change verification before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. The working file keeps the vendor reference, the payment date, and the controller beside the exception."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A bank or address change is saved without a documented call-back. A queue export is the starting point, not a list assembled after the result is known. The exception log separates a source gap from a disputed amount."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: A bank or address change is saved without a documented call-back. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the vendor master change verification report. Duplicate bank details are checked before the batch leaves the queue."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the vendor master change verification report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. A missing document is marked missing rather than reconstructed from memory."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The working file keeps the vendor reference, the payment date, and the controller beside the exception."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -423,11 +428,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this vendor master change verification workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this vendor master change verification workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -447,49 +453,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the accrual support reproducibility file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. Duplicate bank details are checked before the batch leaves the queue."
+          "This measurement note covers the accrual support reproducibility file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one accrual support, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "The unit is one accrual support, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for accrual support reproducibility before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. A vendor change requires a second reviewer and a dated call-back."
+          "Agree the completeness test for accrual support reproducibility before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. Every closed item carries a destination reference and a next check date."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: An accrual cannot be rebuilt from the invoice, receipt, and approval. A queue export is the starting point, not a list assembled after the result is known. The reconciliation note links the statement line to the ledger entry."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: An accrual cannot be rebuilt from the invoice, receipt, and approval. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the accrual support reproducibility report. The release decision records who approved the payment and when."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the accrual support reproducibility report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. The release decision records who approved the payment and when."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -509,11 +515,12 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this accrual support reproducibility workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this accrual support reproducibility workflow with bounded roles and evidence.",
       "href": "/services"
     }
   },
@@ -533,49 +540,49 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This measurement note covers the invoice coding approval coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below. The release decision records who approved the payment and when."
+          "This measurement note covers the invoice coding approval coverage file inside one accounts payable operation. It is a local review design, not a published finance rate or an audit conclusion. The finding applies to one population and one observation window. A controller can reproduce the method from the definition below."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "The unit is one invoice coding change, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample. Access stays limited to the specialist handling that vendor record."
+          "The unit is one invoice coding change, followed from opening to verified close. Write the start trigger, the end evidence, and the pause rule before counting anything. A bare total is not a measurement if the queue size shifts during the close. Each exclusion is listed so a second reviewer can rebuild the sample."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Agree the completeness test for invoice coding approval coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Agree the completeness test for invoice coding approval coverage before opening the queue. Name the required fields, the acceptable source documents, and the rule for a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved items. A rate without a denominator and a window is not a finding."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend. The exception log separates a source gap from a disputed amount."
+          "Every sampled item needs the source, the observation time, the field it supports, the reviewer, and the finance owner. Missing and confirmed-negative values stay separate in the report. Vendor and payment detail remains in the approved system; working notes use a reference. The protocol collects only evidence it can defend."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: An invoice is recoded without the approver or the reason. A queue export is the starting point, not a list assembled after the result is known. The reconciliation note links the statement line to the ledger entry."
+          "Pull routine, exception, and reopened items from across the window. If a definition changes, preserve the earlier observation and write down the change date. Example: An invoice is recoded without the approver or the reason. A queue export is the starting point, not a list assembled after the result is known."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the invoice coding approval coverage report. Every closed item carries a destination reference and a next check date."
+          "Report the observation before the interpretation. Show the oldest open item and the missing fields, not only the completion rate. Name the next decision and the finance owner who must make it. Put the sample size beside every rate in the invoice coding approval coverage report."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result. Every closed item carries a destination reference and a next check date."
+          "General control and recordkeeping guidance frames the review but cannot answer this sample or a specific payment question. A complete file does not prove that a payment decision was correct. The method measures evidence quality rather than financial accuracy. Limits belong beside the result."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The queue owner reviews aged items at a fixed cutoff and names the next action."
+          "Choose a fixed review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
         ]
       }
     ],
@@ -595,13 +602,14 @@ type Nov4ResearchRecord=Omit<ResearchPost,'body'>&{sections:{heading:string;para
         "href": "/services"
       }
     ],
-    "cta": "Review the AP workflow",
+    "cta": {
+      "text": "Review the AP workflow",
+      "href": "/contact-us"
+    },
     "serviceHandoff": {
-      "heading": "Related service",
-      "body": "Plan this invoice coding approval coverage workflow with bounded roles and evidence.",
-      "label": "Review the AP workflow",
+      "text": "Plan this invoice coding approval coverage workflow with bounded roles and evidence.",
       "href": "/services"
     }
   }
 ];
-export const nov6ResearchBatch:ResearchPost[]=nov6ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`)}));
+export const nov6ResearchBatch:ResearchPost[]=nov6ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`).join("\n\n")}));

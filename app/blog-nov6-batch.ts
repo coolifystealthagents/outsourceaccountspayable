@@ -1,6 +1,6 @@
 import type {Draft} from './blog-oct2-batch';
 export const nov6BlogPublicationDate='2026-11-06';
-export const nov6BlogDrafts:Draft[
+export const nov6BlogDrafts:Draft[]=[
   {
     "slug": "match-a-freight-invoice-to-the-shipment-record",
     "title": "Match a freight invoice to the shipment record",

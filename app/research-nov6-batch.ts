@@ -80,14 +80,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this freight invoice matching workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this freight invoice matching workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "what-share-of-vendor-statements-have-unapplied-credits",
@@ -167,14 +161,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this statement credit coverage workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this statement credit coverage workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "do-payment-batches-include-remittance-advice",
@@ -254,14 +242,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this remittance advice coverage workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this remittance advice coverage workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "how-long-do-purchase-card-disputes-take-to-resolve",
@@ -341,14 +323,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this purchase card dispute time workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this purchase card dispute time workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "are-vendor-master-changes-backed-by-a-call-back-record",
@@ -428,14 +404,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this vendor master change verification workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this vendor master change verification workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "is-month-end-accrual-support-reproducible",
@@ -515,14 +485,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this accrual support reproducibility workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this accrual support reproducibility workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   },
   {
     "slug": "how-often-do-invoice-coding-changes-carry-approval",
@@ -602,14 +566,8 @@ const nov6ResearchRecords:Nov4ResearchRecord[]=[
         "href": "/services"
       }
     ],
-    "cta": {
-      "text": "Review the AP workflow",
-      "href": "/contact-us"
-    },
-    "serviceHandoff": {
-      "text": "Plan this invoice coding approval coverage workflow with bounded roles and evidence.",
-      "href": "/services"
-    }
+    "cta": "Review the AP workflow",
+    "serviceHandoff": {"heading": "Related service", "body": "Plan this invoice coding approval coverage workflow with bounded roles and evidence.", "label": "Review the AP workflow", "href": "/services"}
   }
 ];
-export const nov6ResearchBatch:ResearchPost[]=nov6ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`).join("\n\n")}));
+export const nov6ResearchBatch:ResearchPost[]=nov6ResearchRecords.map((record)=>({...record,body:record.sections.map((section)=>`## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`)}));

@@ -66,6 +66,7 @@ import {nov2BlogPosts,nov2BlogDetails} from './blog-nov2-batch';
 import {nov3BlogDrafts} from './blog-nov3-batch';
 import {nov4BlogDrafts} from './blog-nov4-batch';
 import {nov6BlogDrafts} from './blog-nov6-batch';
+import {nov8BlogDrafts} from './blog-nov8-batch';
 import {nov7BlogDrafts} from './blog-nov7-batch';
 import {nov5BlogDrafts} from './blog-nov5-batch';
 import {oct28BlogPosts,oct28BlogDetails} from './blog-oct28-batch';
@@ -77,6 +78,7 @@ import {nov2ResearchBatch} from './research-nov2-batch';
 import {nov3ResearchBatch} from './research-nov3-batch';
 import {nov4ResearchBatch} from './research-nov4-batch';
 import {nov6ResearchBatch} from './research-nov6-batch';
+import {nov8ResearchBatch} from './research-nov8-batch';
 import {nov7ResearchBatch} from './research-nov7-batch';
 import {nov5ResearchBatch} from './research-nov5-batch';
 import {oct28ResearchBatch} from './research-oct28-batch';
@@ -120,6 +122,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...nov8BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov7BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov6BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov5BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
@@ -199,6 +202,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...Object.fromEntries(nov8BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov7BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov6BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov5BlogDrafts.map((d)=>[d.slug,d.detail])),
@@ -491,7 +495,7 @@ const oct9ResearchSlugs = new Set(oct9ResearchBatch.map(post=>post.slug));
 const oct12ResearchSlugs = new Set(oct12ResearchBatch.map(post=>post.slug));
 const sep11ResearchSlugs = new Set(sep11ResearchBatch.map(post=>post.slug));
 const sep10ResearchSlugs = new Set(sep10ResearchBatch.map(post=>post.slug));
-export const researchPosts = [...nov7ResearchBatch,...nov6ResearchBatch,...nov5ResearchBatch,...nov4ResearchBatch,...oct12ResearchBatch,...oct9ResearchBatch,...oct8ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
+export const researchPosts = [...nov8ResearchBatch,...nov7ResearchBatch,...nov6ResearchBatch,...nov5ResearchBatch,...nov4ResearchBatch,...oct12ResearchBatch,...oct9ResearchBatch,...oct8ResearchBatch,...oct5ResearchBatch,...oct2ResearchBatch,...sep28ResearchBatch,...sep25ResearchBatch,...sep24ResearchBatch,...sep23ResearchBatch,...sep22ResearchBatch,...sep18ResearchBatch,...sep14ResearchBatch,...sep11ResearchBatch,...sep10ResearchBatch,...sep9ResearchBatch,...sep8ResearchBatch,...sep7ResearchBatch,...sep4ResearchBatch,...sep3ResearchBatch,...sep2ResearchBatch,...sep1ResearchBatch,...aug31ResearchBatch,...aug23V8ResearchBatch,...aug23ResearchBatch,...aug21ResearchBatch,...aug20ResearchBatch,...aug18ResearchBatch,...aug17ResearchBatch,...aug14ResearchBatch,...aug13ResearchBatch,...aug11ResearchBatch,...researchBatch].sort((a,b)=>
   Number(oct12ResearchSlugs.has(b.slug)) - Number(oct12ResearchSlugs.has(a.slug)) ||
   Number(oct8ResearchSlugs.has(b.slug)) - Number(oct8ResearchSlugs.has(a.slug)) ||
   Number(oct9ResearchSlugs.has(b.slug)) - Number(oct9ResearchSlugs.has(a.slug)) ||

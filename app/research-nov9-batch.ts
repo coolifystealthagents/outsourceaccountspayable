@@ -829,3 +829,7 @@ const nov9ResearchRecords:Nov9ResearchRecord[]= [
     }
   }
 ];
+export const nov9ResearchBatch: ResearchPost[] = nov9ResearchRecords.map((record) => ({
+  ...record,
+  body: record.sections.map((section) => `## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`),
+}));

@@ -113,8 +113,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.gao.gov/products/gao-20-283g"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "check-a-recurring-subscription-invoice-against-the-contract-term",
@@ -228,8 +227,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.nist.gov/privacy-framework"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "reconcile-a-freight-broker-invoice-to-the-shipment-record",
@@ -343,8 +341,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.transportation.gov/"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "review-a-vendor-portal-payment-status-against-the-erp",
@@ -458,8 +455,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.afponline.org/"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "verify-a-purchase-order-close-after-the-final-receipt",
@@ -573,8 +569,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.gao.gov/products/gao-20-283g"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "check-a-utility-invoice-against-the-meter-and-tariff",
@@ -688,8 +683,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.energy.gov/"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "prepare-a-month-end-accounts-payable-cutoff-list",
@@ -803,8 +797,7 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.fasb.org/"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   },
   {
     "slug": "reconcile-a-customer-refund-payable-to-the-credit-memo",
@@ -918,7 +911,6 @@ export const nov9BlogDrafts:Draft[]= [
           "url": "https://www.afponline.org/"
         }
       ]
-    },
-    "modified": "2026-11-09"
+    }
   }
 ];

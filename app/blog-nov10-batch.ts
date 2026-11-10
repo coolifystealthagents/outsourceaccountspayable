@@ -113,8 +113,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.gao.gov/products/gao-20-283g"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "check-a-freight-invoice-accessorial-against-the-rate-confirmation",
@@ -228,8 +227,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.transportation.gov/"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "review-a-payment-batch-for-a-duplicate-payee",
@@ -343,8 +341,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.afponline.org/"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "reconcile-a-petty-cash-replenishment-to-receipts",
@@ -458,8 +455,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.gao.gov/products/gao-20-283g"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "check-a-contractor-invoice-against-the-signed-sow",
@@ -573,8 +569,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "reconcile-a-rent-invoice-against-the-lease-schedule",
@@ -688,8 +683,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.gao.gov/products/gao-20-283g"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "review-a-utility-invoice-against-the-meter-read",
@@ -803,8 +797,7 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.energy.gov/"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   },
   {
     "slug": "close-a-month-end-accrual-with-invoice-support",
@@ -918,7 +911,6 @@ export const nov10BlogDrafts:Draft[]= [
           "url": "https://www.fasb.org/"
         }
       ]
-    },
-    "modified": "2026-11-10"
+    }
   }
 ];

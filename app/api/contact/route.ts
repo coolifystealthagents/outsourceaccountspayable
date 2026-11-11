@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
       await sendLeadFallbackToMattermost(fallbackPayload).catch(() => undefined);
       return failure(502, 'The request was not accepted. Please try again.');
     }
-    if (request.headers.get('accept')?.includes('text/html')) return NextResponse.redirect(new URL('/thank-you?lead=accepted', request.url), 303);
+    if (request.headers.get('accept')?.includes('text/html')) return NextResponse.redirect(new URL('/thank-you?lead=accepted', 'https://outsourceaccountspayable.com'), 303);
     return NextResponse.json({ ok: true }, { status: 201, headers: { 'cache-control': 'no-store' } });
   } catch {
     await sendLeadFallbackToMattermost(fallbackPayload).catch(() => undefined);

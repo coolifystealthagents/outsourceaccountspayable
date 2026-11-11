@@ -188,8 +188,8 @@ export const nov11BlogDrafts:Draft[]=[
           "title": "The monthly fuel surcharge review audit",
           "heading": "The monthly fuel surcharge review audit",
           "paragraphs": [
-            "When the same fuel surcharge review defect returns, repair the template or the source instead of repeating the coaching. Remove fields nobody uses so the record stays short under pressure. Outsource Accounts Payable files the review note with the change it produced. Record the change date in the same note. The change note should name the owner and the next check date.",
-            "Outsource Accounts Payable keeps a monthly list of the fuel surcharge review files that took longest to close. The list names the missing source, the owner who was unavailable, and the decision that waited. Patterns in that list point to a form change or a staffing gap. Neither problem is solved by telling the team to move faster. The audit should confirm that the current form still collects the evidence the review expects."
+            "If the fuel surcharge review defect repeats, change the form or the source before scheduling more coaching. Strip fields nobody reads so the file stays short when the run is busy. Outsource Accounts Payable stores the review note with the change that followed it. Put the change date in that same note. The change note should name the owner and the next check date.",
+            "Outsource Accounts Payable tracks the slowest fuel surcharge review items in a short monthly register. Each row names the absent source, the unavailable reviewer, and the decision that stalled. A repeated row points to a form or staffing repair. Speed coaching does not fix either cause. The audit should confirm that the current form still collects the evidence the review expects."
           ]
         }
       ],
@@ -530,8 +530,8 @@ export const nov11BlogDrafts:Draft[]=[
           "title": "The monthly duplicate payment recovery audit",
           "heading": "The monthly duplicate payment recovery audit",
           "paragraphs": [
-            "When the same duplicate payment recovery defect returns, repair the template or the source instead of repeating the coaching. Remove fields nobody uses so the record stays short under pressure. Outsource Accounts Payable files the review note with the change it produced. Record the change date in the same note. The change note should name the owner and the next check date.",
-            "Outsource Accounts Payable keeps a monthly list of the duplicate payment recovery files that took longest to close. The list names the missing source, the owner who was unavailable, and the decision that waited. Patterns in that list point to a form change or a staffing gap. Neither problem is solved by telling the team to move faster. The audit should confirm that the current form still collects the evidence the review expects."
+            "If the duplicate payment recovery defect repeats, change the form or the source before scheduling more coaching. Strip fields nobody reads so the file stays short when the run is busy. Outsource Accounts Payable stores the review note with the change that followed it. Put the change date in that same note. The change note should name the owner and the next check date.",
+            "Outsource Accounts Payable tracks the slowest duplicate payment recovery items in a short monthly register. Each row names the absent source, the unavailable reviewer, and the decision that stalled. A repeated row points to a form or staffing repair. Speed coaching does not fix either cause. The audit should confirm that the current form still collects the evidence the review expects."
           ]
         }
       ],
@@ -872,8 +872,8 @@ export const nov11BlogDrafts:Draft[]=[
           "title": "The monthly currency rounding review audit",
           "heading": "The monthly currency rounding review audit",
           "paragraphs": [
-            "When the same currency rounding review defect returns, repair the template or the source instead of repeating the coaching. Remove fields nobody uses so the record stays short under pressure. Outsource Accounts Payable files the review note with the change it produced. Record the change date in the same note. The change note should name the owner and the next check date.",
-            "Outsource Accounts Payable keeps a monthly list of the currency rounding review files that took longest to close. The list names the missing source, the owner who was unavailable, and the decision that waited. Patterns in that list point to a form change or a staffing gap. Neither problem is solved by telling the team to move faster. The audit should confirm that the current form still collects the evidence the review expects."
+            "If the currency rounding review defect repeats, change the form or the source before scheduling more coaching. Strip fields nobody reads so the file stays short when the run is busy. Outsource Accounts Payable stores the review note with the change that followed it. Put the change date in that same note. The change note should name the owner and the next check date.",
+            "Outsource Accounts Payable tracks the slowest currency rounding review items in a short monthly register. Each row names the absent source, the unavailable reviewer, and the decision that stalled. A repeated row points to a form or staffing repair. Speed coaching does not fix either cause. The audit should confirm that the current form still collects the evidence the review expects."
           ]
         }
       ],

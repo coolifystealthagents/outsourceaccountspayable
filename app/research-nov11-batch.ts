@@ -74,9 +74,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; a change to the workflow should be recorded before comparison.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; the next review should start from the same definition and the same population rule."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; the next review should start from the same definition and the same population rule."
         ]
       }
     ],
@@ -192,9 +192,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; the next review should start from the same definition and the same population rule.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; the follow-up should name the owner and the date."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; the follow-up should name the owner and the date."
         ]
       }
     ],
@@ -310,9 +310,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; the follow-up should name the owner and the date.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; a change to the workflow should be recorded before comparison."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; a change to the workflow should be recorded before comparison."
         ]
       }
     ],
@@ -428,9 +428,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; a change to the workflow should be recorded before comparison.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; the next review should start from the same definition and the same population rule."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; the next review should start from the same definition and the same population rule."
         ]
       }
     ],
@@ -546,9 +546,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; the next review should start from the same definition and the same population rule.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; the follow-up should name the owner and the date."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; the follow-up should name the owner and the date."
         ]
       }
     ],
@@ -664,9 +664,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; the follow-up should name the owner and the date.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; a change to the workflow should be recorded before comparison."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; a change to the workflow should be recorded before comparison."
         ]
       }
     ],
@@ -782,9 +782,9 @@ const nov11ResearchRecords:Nov8ResearchRecord[]=[
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Assign a follow-up owner and a review date. Close the report with one action: repair the source, simplify the field, change the queue, or pause the work until the owner decides. Run the protocol again after the change and compare the same definitions. Keep the codebook and population rule unchanged for that comparison. A follow-up without a date is only a suggestion.",
+          "Give the follow-up a named reviewer and a calendar date. Pick one action: fix the source, trim the field, change the queue, or stop the work until the owner rules on it. Repeat the review after that action using the same definitions. Do not change the codebook or population rule during the comparison. Without a date, the follow-up is only a wish.",
           "Say what moved, what stayed the same, and what remains unknown. That final sentence is the honest close of an internal measurement note. It beats a precise rate built on a fuzzy denominator. The aim is a decision someone can review, not a perfect number. Record the decision beside the evidence so the next reviewer sees both; a change to the workflow should be recorded before comparison.",
-          "Set the next review date before filing the current report. Tie the date to a named owner and a specific process change. If the change is not ready, say so instead of repeating the finding. A follow-up that never happens is not a control. The next sample should use the same codebook and population rule; the next review should start from the same definition and the same population rule."
+          "Put the next review on the calendar before the current report is filed. Connect it to one owner and one concrete process change. If the change is not ready, write that down instead of restating the finding. A control without a follow-up date is unfinished. The next draw should keep the same codebook and population rule; the next review should start from the same definition and the same population rule."
         ]
       }
     ],

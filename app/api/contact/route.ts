@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sendLeadFallbackToMattermost } from '../../lib/lead-fallback-mattermost';
 
 const MAX_BODY_BYTES = 64_000;
 const MAX_FIELD_LENGTH = 4_000;
@@ -135,13 +134,13 @@ export async function POST(request: NextRequest) {
     const upstream = await fetch(endpoint, { method: 'POST', headers: { 'content-type': 'application/json', 'x-lead-token': token }, body: JSON.stringify(payload), cache: 'no-store', signal: AbortSignal.timeout(12_000) });
     const result = await upstream.json().catch(() => null) as { ok?: boolean } | null;
     if (!upstream.ok || result?.ok !== true) {
-      await sendLeadFallbackToMattermost(fallbackPayload).catch(() => undefined);
+
       return failure(502, 'The request was not accepted. Please try again.');
     }
     if (request.headers.get('accept')?.includes('text/html')) return NextResponse.redirect(new URL('/thank-you?lead=accepted', 'https://outsourceaccountspayable.com'), 303);
     return NextResponse.json({ ok: true }, { status: 201, headers: { 'cache-control': 'no-store' } });
   } catch {
-    await sendLeadFallbackToMattermost(fallbackPayload).catch(() => undefined);
+
     return failure(502, 'The request could not be delivered. Please try again.');
   }
 }

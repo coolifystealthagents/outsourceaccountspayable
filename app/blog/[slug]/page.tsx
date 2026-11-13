@@ -105,7 +105,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           ...(detail.workflow?[{id:'invoice-path',label:'Sample workflow'}]:[]),
           ...(detail.faqs?[{id:'faq-title',label:'Common questions'}]:[]),
           ...(detail.sources?[{id:'sources-title',label:'Sources'}]:[]),
-        ]} related={(detail.relatedLinks||[]).slice(0,4)}><div className="article-body">
+        ]} related={(detail.relatedLinks||[]).filter((link:any)=>link?.href).slice(0,4)}><div className="article-body">
 
         <section className="answer-card" aria-labelledby="direct-answer">
           <p className="section-kicker">Direct answer</p>
@@ -181,7 +181,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           {detail.banners && (index + 1) % 2 === 0 && detail.banners[(index + 1) / 2 - 1] && <aside className="article-banner" data-article-banner="true"><div><span>{detail.banners[(index + 1) / 2 - 1].eyebrow}</span><strong>{detail.banners[(index + 1) / 2 - 1].title}</strong><p>{detail.banners[(index + 1) / 2 - 1].text}</p></div><a href={detail.banners[(index + 1) / 2 - 1].href}>{detail.banners[(index + 1) / 2 - 1].label}</a></aside>}
         </div>)}
 
-        {detail.bodyLinks && <p className="article-context-links">Continue with <a href={detail.bodyLinks[0].href}>{detail.bodyLinks[0].label}</a> and the <a href={detail.bodyLinks[1].href}>{detail.bodyLinks[1].label}</a>.</p>}
+        {detail.bodyLinks?.length > 0 && <p className="article-context-links">Continue exploring: {detail.bodyLinks.filter((link:any)=>link?.href).map((link:any,index:number)=><span key={link.href}>{index > 0 ? " · " : ""}<a href={link.href}>{link.label}</a></span>)}</p>}
 
         {detail.workflow && <section className="article-block" aria-labelledby="invoice-path">
           <p className="section-kicker">Sample workflow</p>
@@ -203,7 +203,7 @@ export default async function Post({params}: {params: Promise<{slug: string}>}) 
           <p className="section-kicker">Keep planning</p>
           <h2 id="related-planning">Related AP role pages</h2>
           <p>Use the service pages to narrow the first task lane before you contact a staffing provider. The onboarding guide can then turn that lane into a first-week review plan.</p>
-          <div className="related-grid">{detail.relatedLinks.map((link: any) => <a href={link.href} key={link.href}>{link.label}<span>Read more</span></a>)}</div>
+          <div className="related-grid">{detail.relatedLinks.filter((link:any)=>link?.href).map((link: any) => <a href={link.href} key={link.href}>{link.label}<span>Read more</span></a>)}</div>
         </section>}
 
         {detail.faqs && <section className="article-block faq-block" aria-labelledby="faq-title">

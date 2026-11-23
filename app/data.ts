@@ -71,6 +71,7 @@ import {nov9BlogDrafts} from './blog-nov9-batch';
 import {nov8BlogDrafts} from './blog-nov8-batch';
 import {nov12BlogDrafts} from './blog-nov12-batch';
 import {nov22BlogDrafts} from './blog-nov22-batch';
+import {nov23BlogDrafts} from './blog-nov23-batch';
 import {nov21BlogDrafts} from './blog-nov21-batch';
 import {nov20BlogDrafts} from './blog-nov20-batch';
 import {nov19BlogDrafts} from './blog-nov19-batch';
@@ -94,6 +95,7 @@ import {nov9ResearchBatch} from './research-nov9-batch';
 import {nov8ResearchBatch} from './research-nov8-batch';
 import {nov12ResearchBatch} from './research-nov12-batch';
 import {nov22ResearchBatch} from './research-nov22-batch';
+import {nov23ResearchBatch} from './research-nov23-batch';
 import {nov21ResearchBatch} from './research-nov21-batch';
 import {nov20ResearchBatch} from './research-nov20-batch';
 import {nov19ResearchBatch} from './research-nov19-batch';
@@ -144,6 +146,7 @@ export const services = [
 ] as const;
 
 export const blogPosts = [
+  ...nov23BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov22BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov21BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
   ...nov20BlogDrafts.map(({detail,...draft})=>({...draft,detail})),
@@ -235,6 +238,7 @@ const sep10BlogPostBySlug = new Map(sep10BlogPosts.map(post => [post.slug, post]
 export const getBlogPostBySlug = (slug: string) => sep14BlogPostBySlug.get(slug) ?? sep11BlogPostBySlug.get(slug) ?? sep10BlogPostBySlug.get(slug) ?? sep9BlogPostBySlug.get(slug) ?? sep8BlogPostBySlug.get(slug) ?? sep7BlogPostBySlug.get(slug) ?? sep4BlogPostBySlug.get(slug) ?? sep2BlogPostBySlug.get(slug) ?? sep1BlogPostBySlug.get(slug) ?? blogPosts.find(post => post.slug === slug);
 
 export const blogDetails = {
+  ...Object.fromEntries(nov23BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov22BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov21BlogDrafts.map((d)=>[d.slug,d.detail])),
   ...Object.fromEntries(nov20BlogDrafts.map((d)=>[d.slug,d.detail])),
